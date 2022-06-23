@@ -1,7 +1,7 @@
-import '../styles/globals.css'
+import "@views/libs/tailwind.css"
 
-function MyApp({ Component, pageProps }) {
+
+export default function Application({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
-export default MyApp

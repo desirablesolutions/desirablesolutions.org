@@ -6,6 +6,7 @@
       "@models/*": ["models/*"],
       "@controllers/*": ["controllers/*"],
       "@configs/*": ["models/configs/*"],
+      "@layouts/*":["views/layouts/*"]
 
     }
   },

@@ -1,3 +1,4 @@
+import Meta from "@includes/Meta"
 
 
 const RootLayout = (props) => {

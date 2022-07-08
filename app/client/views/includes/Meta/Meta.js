@@ -10,6 +10,8 @@ const defaultParameters = {
 const Meta = (props) => {
 
     const { title, description, url, image } = props || {}
+
+    
     return (
         <Head>
             <meta charSet="utf-8" />

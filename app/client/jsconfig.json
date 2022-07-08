@@ -6,9 +6,11 @@
       "@models/*": ["models/*"],
       "@controllers/*": ["controllers/*"],
       "@configs/*": ["models/configs/*"],
-      "@layouts/*":["views/layouts/*"]
+      "@layouts/*":["views/layouts/*"],
+      "@includes/*":["views/includes/*"]
 
     }
   },
   "exclude": ["node_modules", "**/node_modules", "dist"]
 }
+

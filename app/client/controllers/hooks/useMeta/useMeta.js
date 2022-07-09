@@ -1,11 +1,10 @@
-import meta from "@models/configs/meta"
-
-
+import meta from "@configs/meta"
 
 const useMeta = () => {
 
-const { title } = meta
-
+    return {
+        ...meta
+    }
 }
 
 export default useMeta

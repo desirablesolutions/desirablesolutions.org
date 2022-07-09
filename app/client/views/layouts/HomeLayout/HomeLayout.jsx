@@ -1,4 +1,6 @@
 import PageLayout from "@layouts/PageLayout"
+import CTA from "@includes/CTA"
+
 
 const HomeLayout = (props) => {
 
@@ -7,8 +9,8 @@ const HomeLayout = (props) => {
     return (
 
         <PageLayout>
+            <CTA/>
             {children}
-
         </PageLayout>
 
     )

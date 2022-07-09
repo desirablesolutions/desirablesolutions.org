@@ -1,5 +1,6 @@
 import RootLayout from "@layouts/RootLayout"
 import NavBar from "@includes/Navbar"
+import BottomNav from "@includes/BottomNav"
 
 const PageLayout = (props) => {
 
@@ -9,6 +10,7 @@ const PageLayout = (props) => {
         <RootLayout>
             <NavBar />
             {children}
+            <BottomNav />
         </RootLayout>
     )
 

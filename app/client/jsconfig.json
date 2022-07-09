@@ -7,7 +7,9 @@
       "@controllers/*": ["controllers/*"],
       "@configs/*": ["models/configs/*"],
       "@layouts/*":["views/layouts/*"],
-      "@includes/*":["views/includes/*"]
+      "@includes/*":["views/includes/*"],
+      "@hooks/*":["controllers/hooks/*"],
+      "@components/*":["views/components/*"],
 
     }
   },

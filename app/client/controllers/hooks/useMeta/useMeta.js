@@ -1,7 +1,11 @@
+import meta from "@models/configs/meta"
+
 
 
 const useMeta = () => {
 
+const { title } = meta
 
-    return 0;
 }
+
+export default useMeta

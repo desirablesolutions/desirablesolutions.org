@@ -1,0 +1,22 @@
+{
+  "name": "desirable.solutions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inform-Inspire-LLC/desirable.solutions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Inform-Inspire-LLC/desirable.solutions/issues"
+  },
+  "homepage": "https://github.com/Inform-Inspire-LLC/desirable.solutions#readme"
+}

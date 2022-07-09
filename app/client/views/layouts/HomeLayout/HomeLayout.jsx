@@ -1,4 +1,4 @@
-import RootLayout from "@layouts/RootLayout"
+import PageLayout from "@layouts/PageLayout"
 
 const HomeLayout = (props) => {
 
@@ -6,10 +6,10 @@ const HomeLayout = (props) => {
 
     return (
 
-        <RootLayout>
+        <PageLayout>
             {children}
 
-        </RootLayout>
+        </PageLayout>
 
     )
 }

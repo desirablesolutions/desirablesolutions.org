@@ -1,6 +1,9 @@
 
 
-const Navbar = (props) => {
+
+const Header = (props) => {
+
+    let { user } = props
 
     return (
         <section>
@@ -280,5 +283,4 @@ const Navbar = (props) => {
     )
 }
 
-
-export default Navbar
+export default Header

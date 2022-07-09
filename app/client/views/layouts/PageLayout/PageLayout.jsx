@@ -1,5 +1,5 @@
 import RootLayout from "@layouts/RootLayout"
-
+import NavBar from "@includes/Navbar"
 
 const PageLayout = (props) => {
 
@@ -7,6 +7,7 @@ const PageLayout = (props) => {
 
     return (
         <RootLayout>
+            <NavBar />
             {children}
         </RootLayout>
     )

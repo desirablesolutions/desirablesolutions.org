@@ -3,13 +3,13 @@ import useMeta from "@hooks/useMeta"
 
 const Meta = () => {
 
-  const { title, description, url, image } = useMeta()
+  const { title, pageTitle, description, url, image } = useMeta()
 
 
   return (
 
     <Head>
-      <title>Desirable Solutions</title>
+      <title>{title} | {pageTitle}</title>
       <>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />

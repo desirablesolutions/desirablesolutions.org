@@ -1,15 +1,14 @@
 
 
-
 const Header = (props) => {
 
-    let { user } = props
+    let { logoSrc } = props
 
     return (
         <section>
-            <nav className="relative bg-gray-900 px-6 sm:px-12 pt-4">
+            <nav className="relative px-6 sm:px-12 pt-4">
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-                    <a className="inline-block" href="#">
+                    <a className="inline-block" href="/">
                         <img src="wrexa-assets/logos/logo-wrexa.svg" alt="" width="auto" />
                     </a>
                 </div>

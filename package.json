@@ -7,6 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
+    "app:dev": "cd app/client && npm i && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

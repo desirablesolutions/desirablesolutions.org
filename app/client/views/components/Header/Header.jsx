@@ -16,7 +16,7 @@ const Header = (props) => {
                     </div>
                     <div className="3xl:hidden pb-4">
                         <button className="flex navbar-burger ml-auto items-center justify-center w-14 h-14 rounded-full bg-white hover:bg-gray-200">
-                           <MenuIcon/>
+
                         </button>
                     </div>
                 </nav>

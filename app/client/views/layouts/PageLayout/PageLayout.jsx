@@ -8,7 +8,6 @@ const PageLayout = (props) => {
 
     return (
         <RootLayout>
-            <NavBar />
             {children}
             <BottomNav />
         </RootLayout>

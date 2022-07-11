@@ -1,9 +1,9 @@
-import CSSBaseline from "@mui/material/CSSBaseline"
+import CssBaseline from "@mui/material/CssBaseline"
 
 const CSSReset = () => {
 
     return (
-        <CSSBaseline />
+        <CssBaseline />
     )
 }
 

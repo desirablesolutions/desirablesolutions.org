@@ -1,19 +1,23 @@
 :root {
     --black: #000000;
     --white: #ffffff;
+
+    --the-seasons-font: 'The Seasons', serif, cursive;
 }
 
-html, body {
+html,
+body {
     background-color: var(--black);
     color: #fff;
+
 }
 
+* {
+    font-family: serif !important;
 
+}
 
 @font-face {
-    font-family: "CustomFont";
-    src: url("https://yoursite.com/css/fonts/CustomFont.eot");
-    src: url("https://yoursite.com/css/fonts/CustomFont.woff") format("woff"),
-    url("https://yoursite.com/css/fonts/CustomFont.otf") format("opentype"),
-    url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg");
-    }
+    font-family: "The Seasons";
+    src: url("/assets/fonts/the-seasons/theseasons-reg.otf") format("opentype");
+}

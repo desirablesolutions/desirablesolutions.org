@@ -6,7 +6,7 @@ const Header = (props) => {
 
     return (
         <Headroom>
-            <section className="bg-black">
+            <section>
                 <nav className="relative px-6 sm:px-12 pt-4">
                     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
                         <a className="inline-block" href="">
@@ -44,6 +44,7 @@ const Header = (props) => {
                         </button>
                     </div>
                 </nav>
+
             </section>
         </Headroom>
 

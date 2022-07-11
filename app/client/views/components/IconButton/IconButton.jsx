@@ -1,13 +1,16 @@
-import { IconButton as MuiIconButton } from '@mui/material/IconButton';
+import { default as MuiIconButton } from '@mui/material/IconButton';
 
 
 
-const IconButton = ({ children, ...props }) => {
+const IconButton = ({ children }) => {
 
-    
+
     return (
-        <IconButton>
-            { children }
-        </IconButton>
+
+        <MuiIconButton>
+            {children}
+        </MuiIconButton>
     )
 }
+
+export default IconButton

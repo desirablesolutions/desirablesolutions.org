@@ -1,4 +1,5 @@
 import Headroom from "react-headroom"
+import MenuIcon from "@components/MenuIcon"
 
 const Header = (props) => {
 
@@ -15,32 +16,7 @@ const Header = (props) => {
                     </div>
                     <div className="3xl:hidden pb-4">
                         <button className="flex navbar-burger ml-auto items-center justify-center w-14 h-14 rounded-full bg-white hover:bg-gray-200">
-                            <svg
-                                width={20}
-                                height={9}
-                                viewBox="0 0 20 9"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <line
-                                    x1="0.75"
-                                    y1="1.25"
-                                    x2="19.25"
-                                    y2="1.25"
-                                    stroke="black"
-                                    strokeWidth="1.5"
-                                    strokeLinecap="round"
-                                />
-                                <line
-                                    x1="0.75"
-                                    y1="8.25"
-                                    x2="13.25"
-                                    y2="8.25"
-                                    stroke="black"
-                                    strokeWidth="1.5"
-                                    strokeLinecap="round"
-                                />
-                            </svg>
+                           <MenuIcon/>
                         </button>
                     </div>
                 </nav>

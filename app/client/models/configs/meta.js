@@ -1,8 +1,12 @@
 const meta = {
-    title: 'Does this actually work?',
-    description: 'Desirable Solutions is a web developme',
+    title: 'Désirable Solutions',
+    description: 'We solve problems.',
     url: 'https://desirable.solutions',
-    pageTitle: 'Home'
+    pageTitle: 'Home',
+    basePaths: {
+        icons: '/assets/icons/',
+        images: '/assets/images/',
+    }
 }
 
 export default meta

@@ -16,7 +16,12 @@
     "@twistezo/react-text-scramble": "^1.0.6",
     "next": "12.2.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-headroom": "^3.2.0",
+    "react-reveal": "^1.2.2",
+    "react-use": "^17.4.0",
+    "recoil": "^0.7.4",
+    "use-memo-one": "^1.1.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",

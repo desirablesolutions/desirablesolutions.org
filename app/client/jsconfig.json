@@ -10,6 +10,7 @@
       "@includes/*":["views/includes/*"],
       "@hooks/*":["controllers/hooks/*"],
       "@components/*":["views/components/*"],
+      "@store/*":["models/data/store/*"],
 
     }
   },

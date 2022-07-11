@@ -1,10 +1,11 @@
 import Head from "next/head"
 import useMeta from "@hooks/useMeta"
 
+
+let { title, pageTitle, description, url, image, basePaths } = useMeta()
+
+
 const Meta = () => {
-
-  const { title, pageTitle, description, url, image } = useMeta()
-
 
   return (
 

@@ -2,6 +2,12 @@ import HomeLayout from "@layouts/HomeLayout"
 import TeamGallery from "@includes/TeamGallery"
 import RequestForm from "@includes/RequestForm"
 import PortfolioShowcase from "@includes/PortfolioShowcase"
+import AdvantagesTable from "@includes/AdvantagesTable"
+import FAQs from "@includes/FAQs"
+import ToolsShowcase from "@includes/ToolsShowcase"
+import Pillars from "@includes/Pillars"
+import Goals from "@views/includes/Goals"
+
 
 
 export default function HomePage() {
@@ -10,7 +16,12 @@ export default function HomePage() {
 
     <HomeLayout>
       <PortfolioShowcase />
+      <Goals />
+      <AdvantagesTable />
+      <Pillars />
+      <ToolsShowcase />
       <TeamGallery />
+      <FAQs />
       <RequestForm />
     </HomeLayout>
   )

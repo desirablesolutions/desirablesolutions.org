@@ -1,3 +1,3 @@
-const Database = {
-    
+const images = {
+    logo_transparent: ""
 }

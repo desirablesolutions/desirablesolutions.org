@@ -5,10 +5,13 @@
     --font-primary: var(--the-seasons-font);
 }
 
-html,
 body {
-    background-color: var(--black);
     color: #fff;
+    background: url('/assets/images/bg.png') no-repeat center center fixed !important; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
 }
 

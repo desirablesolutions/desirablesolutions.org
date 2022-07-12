@@ -23,6 +23,15 @@ const Meta = () => {
     <Head>
       <title>{title} | {pageTitle}</title>
       <Icons />
+
+      <meta name="description" content={description}/>
+      
+      <link href={url} rel="canonical"/>
+
+      <meta name="og:title" property="og:title" content={title}/>
+      <meta name="robots" content="index, follow"/>
+
+
     </Head>
   )
 

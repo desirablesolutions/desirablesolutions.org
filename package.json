@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "app:dev": "cd app/client && npm i && npm run dev",
+    "app:dev": "cd app/client && npm i --force && npm run dev",
     "readme:g":"npx @appnest/readme generate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

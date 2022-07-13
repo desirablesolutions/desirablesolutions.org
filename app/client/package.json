@@ -1,7 +1,6 @@
 {
   "name": "desirable-solutions",
   "version": "11.11.11",
-  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",

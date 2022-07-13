@@ -1,5 +1,5 @@
 import PageLayout from "@layouts/PageLayout"
-import CTA from "@includes/CTA"
+import WhoWeAre from "@includes/WhoWeAre"
 import FadeAnimation from "@components/FadeAnimation"
 
 const HomeLayout = (props) => {
@@ -8,7 +8,7 @@ const HomeLayout = (props) => {
 
     return (
         <PageLayout>
-            <CTA />
+            <WhoWeAre />
             <FadeAnimation>
                 {children}
             </FadeAnimation>

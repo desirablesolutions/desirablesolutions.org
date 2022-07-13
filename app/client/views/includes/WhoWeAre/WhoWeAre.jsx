@@ -1,11 +1,10 @@
 import Hero from "@components/Hero"
 
-const CTA = () => {
+const WhoWeAre = () => {
 
     return (
-
         <Hero />
     )
 }
 
-export default CTA
+export default WhoWeAre

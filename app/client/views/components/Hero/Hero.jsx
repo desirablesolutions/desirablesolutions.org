@@ -1,5 +1,4 @@
 
-import TextScramble  from "@twistezo/react-text-scramble"
 
 
 const Hero = (props) => {
@@ -21,22 +20,12 @@ const Hero = (props) => {
                     <h1 className="text-6xl xl:text-8xl 3xl:text-9xl text-white font-medium mb-20">
                         <span className="block leading-none">We solve</span>
                         <span className="block leading-none">
-                            <TextScramble texts={[
-                                "business",
-                                "technology",
-                                "marketing",
-                                "design",
-                            ]}/>
+                          
                             Brand Identity problems
                         </span>
                         <span className="relative inline-block">
                             <span className="relative z-10 block leading-none">
-                            <TextScramble pauseTime={2500} letterSpeed={25} texts={[
-                                "business",
-                                "technology",
-                                "marketing",
-                                "design",
-                            ]}/>                            </span>
+                                                    </span>
                             <div className="hidden lg:block absolute bottom-0 left-0 w-full h-px mb-1 xl:mb-3 3xl:mb-4 bg-white" />
                         </span>
                     </h1>

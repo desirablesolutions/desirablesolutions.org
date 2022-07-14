@@ -2,9 +2,30 @@ import Hero from "@components/Hero"
 import TextScrambler from 'react-scramble-text'
 
 
+const problems = [
+    "Web Marketing",
+    "Brand Identity",
+    "Web Design",
+    "Web Development",
+    "Graphic Design",
+    "Logo Design",
+    "Motion Graphics",
+    "Technology Orchestration",
+    "Illustration"
+
+]
 
 
-const phrases = ["The way to get started is to", "quit talking", "and", "begin doing", "-Walt Disney"]
+const sectors = [
+    "Churches",
+    "Small Businesses",
+    "Creators",
+    "Startups",
+    "Non-profits",
+    "Creative Production Agencies",
+    "Communities"
+]
+
 
 const WhoWeAre = () => {
 
@@ -13,18 +34,17 @@ const WhoWeAre = () => {
             firstLine: "We solve",
             secondLine: (
                 <>
-                    <TextScrambler phrases={phrases}
-                        speed={50}
-                        pauseTime={800} /> problems.
+                    <TextScrambler className="inline-block" phrases={problems}
+                        speed={40}
+                        pauseTime={12000} /> problems for
 
                 </>
             ),
             thirdLine: (
                 <>
-                    for
-                    <TextScrambler phrases={phrases}
-                        speed={50}
-                        pauseTime={800} />
+                    <TextScrambler phrases={sectors}
+                        speed={40}
+                        pauseTime={4343} />
                 </>
             )
         }}

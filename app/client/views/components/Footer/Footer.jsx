@@ -4,7 +4,7 @@ const Footer = (props) => {
     return (
 
         <section>
-            <div className="pt-10 pb-16 bg-gray-900">
+            <div className="pt-10 pb-16">
                 <div className="container px-4 mx-auto">
                     <div className="flex flex-wrap items-start xl:items-center justify-center">
                         <div className="w-1/2 xl:w-auto flex flex-wrap items-center justify-center xl:-mb-6">

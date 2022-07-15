@@ -2,7 +2,7 @@ const SummarySection = () => {
 
     return (
 
-        <section className="py-24 md:py-40 bg-gray-900">
+        <section className="py-24 md:py-40">
             <div className="container px-4 mx-auto">
                 <div className="flex items-center mb-10">
                     <span className="font-heading text-xl text-white">05</span>

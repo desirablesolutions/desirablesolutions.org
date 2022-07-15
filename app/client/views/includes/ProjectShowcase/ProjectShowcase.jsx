@@ -28,8 +28,23 @@ const projects = {
 const ProjectShowcase = () => {
 
     return (
-        <Showcase issueId="01"
-                   title="Our Projects"/>
+        <Showcase id="01"
+            name="Our Projects"
+            title="Designed by masters, inspired by life"
+            featured={{
+                name: 'Yonder Airways',
+                description: '',
+                tags: [{
+                    name: 'logo kit'
+                }],
+                sector: 'Brand Kit',
+                completed: 'March 25, 2022',
+                provisoner: {
+                    name: 'Joshua Desir',
+                    avatar: ''
+                }
+            }}
+        />
     )
 }
 

@@ -5,7 +5,7 @@ const TextCarousel = () => {
 
     return (
 
-        <section className="py-24 md:py-40 bg-orange-800">
+        <section className="py-24 md:py-40">
             <div className="container px-4 mx-auto">
                 <div className="flex items-center mb-20">
                     <span className="font-heading text-xl">04</span>

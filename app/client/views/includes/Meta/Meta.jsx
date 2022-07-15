@@ -5,8 +5,6 @@ import useMeta from "@hooks/useMeta"
 let { title, pageTitle, description, url, image, basePaths, icons } = useMeta()
 
 
-
-
 let Icons = () => (
   icons.map((icon, index) => (
     <link key={`Icon-${index}`} rel="shortcut android-chrome icon" href={`${basePaths.icons}${icon}.png`} sizes={`${icon}`} type="image/x-icon" />
@@ -14,8 +12,6 @@ let Icons = () => (
 
 )
 
-
-console.log(useMeta())
 const Meta = () => {
 
   return (

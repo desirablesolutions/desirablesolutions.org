@@ -4,7 +4,7 @@ const ComparisonTable = () => {
 
     return (
 
-        <section className="pt-32 pb-40 bg-gray-900">
+        <section className="pt-32 pb-40">
             <div className="container px-4 mx-auto mb-24 sm:mb-40">
                 <div className="flex items-center mb-12">
                     <span className="font-heading text-xl text-white">05</span>

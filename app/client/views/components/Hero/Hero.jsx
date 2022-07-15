@@ -12,8 +12,8 @@ const Hero = ({ lineTexts, bgImg, cta }) => {
             background: `url(${bgImg}) no-repeat center center fixed`,
             backgroundSize: 'cover'
         }} className="relative pb-20  md:pb-52 overflow-hidden">
-            <div className="bg-black h-6">
-                <div className="absolute top-0 left-1/2">
+            <div className="bg-transparent h-6 ">
+                <div className="absolute top-0 heartbeat left-1/2">
                     <div className="w-px h-16 bg-gray-900" />
                     <div className="w-px h-24 bg-white" />
                 </div>
@@ -34,8 +34,7 @@ const Hero = ({ lineTexts, bgImg, cta }) => {
                         <span className="block leading-none">{secondLine}</span>
 
                         <span className="relative inline-block">
-                            <span className="relative z-10 block leading-none">{thirdLine}</span>
-                            <div className="hidden lg:block absolute bottom-0 left-0 w-full h-px mb-1 xl:mb-3 3xl:mb-4 bg-white" />
+                            <span className="relative z-10 block hover:underline leading-none">{thirdLine}</span>
                         </span>
                     </h1>
 

@@ -1,7 +1,7 @@
 const IconsShowcase = (props) => {
 
     return (
-        <section className="relative pt-24 pb-40 bg-orange-800">
+        <section className="relative pt-24 pb-40">
             <img
                 className="absolute bottom-0 left-0 w-full"
                 src="wrexa-assets/elements/white-triple-circle-wide.svg"

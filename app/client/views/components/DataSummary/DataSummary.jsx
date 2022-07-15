@@ -1,7 +1,7 @@
 const DataSummary = () => {
 
     return (
-        <section className="relative pb-24 md:pb-40 bg-gray-900 overflow-hidden">
+        <section className="relative pb-24 md:pb-40  overflow-hidden">
             <div className="bg-white h-16 mb-56">
                 <div className="absolute top-0 left-1/2">
                     <div className="w-px h-16 bg-gray-900" />

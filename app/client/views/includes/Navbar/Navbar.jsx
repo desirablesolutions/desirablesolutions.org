@@ -3,9 +3,13 @@ import Header from "@components/Header"
 const Navbar = () => {
 
     return (
-       <Header imgSrc="/assets/images/logo-transparent.png"
-               imgHref="/"
-               imgAlt="desirable-solutions-logo"/>
+        <Header favicon={{
+            src: "/assets/images/logo-transparent.png",
+            alt: "desirable-solutions-logo",
+            href: "/"
+        }}
+        
+        />
     )
 }
 

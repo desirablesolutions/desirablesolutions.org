@@ -1,11 +1,13 @@
 import Hero from "@components/Hero"
 import TextScrambler from 'react-scramble-text'
 
+import FordwardLinkIcon from "@components/ForwardLinkIcon"
 
 const problems = [
     "Web Marketing",
     "Brand Identity",
     "Web Design",
+    "Social Engineering",
     "Web Development",
     "Graphic Design",
     "Logo Design",
@@ -35,16 +37,16 @@ const WhoWeAre = () => {
             secondLine: (
                 <>
                     <TextScrambler className="inline-block" phrases={problems}
-                        speed={40}
-                        pauseTime={12000} /> problems for
+                        speed={30}
+                        pauseTime={3000} />problems for
 
                 </>
             ),
             thirdLine: (
                 <>
                     <TextScrambler phrases={sectors}
-                        speed={40}
-                        pauseTime={4343} />
+                        speed={60}
+                        pauseTime={12000} />
                 </>
             )
         }}

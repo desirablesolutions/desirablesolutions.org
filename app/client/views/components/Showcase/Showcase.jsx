@@ -1,15 +1,14 @@
 
-
-const Showcase = ({ title, featured, latest }) => {
+const Showcase = ({ title, featured, latest, issueId, sx }) => {
 
     return (
 
         <section className="py-24 md:py-40">
             <div className="container px-4 mx-auto">
                 <div className="flex items-center mb-24">
-                    <span className="font-heading text-xl">07</span>
+                    <span className="font-heading text-white text-xl">{issueId}</span>
                     <div className="mx-4 rounded-full bg-gray-200 h-1 w-1" />
-                    <span className="font-heading text-xl">Our Blog</span>
+                    <span className="font-heading text-white text-xl">{title}</span>
                 </div>
                 <div className="text-center">
                     <div className="mb-12">

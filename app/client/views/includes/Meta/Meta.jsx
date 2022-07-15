@@ -22,14 +22,16 @@ const Meta = () => {
 
     <Head>
       <title>{title} | {pageTitle}</title>
+      <link rel="preload" href="/assets/fonts/the-seasons/the-seasons-Regular.ttf" as="font" type="font/ttf" crossorigin />
+
       <Icons />
 
-      <meta name="description" content={description}/>
-      
-      <link href={url} rel="canonical"/>
+      <meta name="description" content={description} />
 
-      <meta name="og:title" property="og:title" content={title}/>
-      <meta name="robots" content="index, follow"/>
+      <link href={url} rel="canonical" />
+
+      <meta name="og:title" property="og:title" content={title} />
+      <meta name="robots" content="index, follow" />
 
 
     </Head>

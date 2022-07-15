@@ -1,7 +1,5 @@
 import Showcase from "@components/Showcase"
 
-
-
 const projects = {
     featured: {
         name: 'Yonder Airways',
@@ -27,11 +25,12 @@ const projects = {
 
 
 
-const PortfolioShowcase = () => {
+const ProjectShowcase = () => {
 
     return (
-        <Showcase/>
+        <Showcase issueId="01"
+                   title="Our Projects"/>
     )
 }
 
-export default PortfolioShowcase
+export default ProjectShowcase

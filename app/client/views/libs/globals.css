@@ -5,6 +5,10 @@
     --font-primary: var(--the-seasons-font);
 }
 
+html {
+    opacity: 0;
+}
+
 
 body {
 
@@ -98,3 +102,7 @@ body {
     }
   }
   
+
+  html {
+    opacity: 1;
+}

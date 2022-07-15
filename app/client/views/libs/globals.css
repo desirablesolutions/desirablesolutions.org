@@ -1,3 +1,8 @@
+html {
+    opacity: 0;
+}
+
+
 :root {
     --black: #000000;
     --white: #ffffff;
@@ -5,9 +10,6 @@
     --font-primary: var(--the-seasons-font);
 }
 
-html {
-    opacity: 0;
-}
 
 
 body {
@@ -104,5 +106,6 @@ body {
   
 
   html {
-    opacity: 1;
-}
+    opacity: 1.0;
+    transition: opacity .434s ease-in-out;
+  }

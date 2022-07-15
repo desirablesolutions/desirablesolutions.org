@@ -8,12 +8,12 @@ const TextCarousel = () => {
         <section className="py-24 md:py-40">
             <div className="container px-4 mx-auto">
                 <div className="flex items-center mb-20">
-                    <span className="font-heading text-xl">04</span>
+                    <span className="font-heading  text-white text-xl">04</span>
                     <div className="mx-4 rounded-full bg-white h-1 w-1" />
-                    <span className="font-heading text-xl">FAQs</span>
+                    <span className="font-heading text-white text-xl">FAQs</span>
                 </div>
                 <div className="max-w-max mx-auto border-b border-white mb-20">
-                    <h4 className="text-center font-heading text-3xl sm:text-4xl">
+                    <h4 className="text-center font-heading text-white text-3xl sm:text-4xl">
                         01. Can i change my plan?
                     </h4>
                 </div>

@@ -230,8 +230,8 @@ body {
                   animation-timing-function: ease-in;
         }
         45% {
-          -webkit-transform: scale(2);
-                  transform: scale(2);
+          -webkit-transform: scale(1.67);
+                  transform: scale(1.67);
           -webkit-animation-timing-function: ease-out;
                   animation-timing-function: ease-out;
         }

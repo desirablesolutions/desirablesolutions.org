@@ -1,13 +1,16 @@
-import Drawer from "@components/Drawer"
+import Drawer from '@mui/material/Drawer';
 
 
 const MenuNav = () => {
 
 
     return (
-        <Drawer open={false}>
+        <Drawer sx={{
+            width: '25%',
+            minWidth: '400px',
+            background: 'transparent',
 
-        </Drawer>
+        }} open={false}>Hello World</Drawer>
     )
 }
 

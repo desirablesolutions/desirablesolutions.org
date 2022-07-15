@@ -8,7 +8,7 @@
   },
   "scripts": {
     "app:dev": "cd app/client && npm i --force && npm run dev",
-    "readme:g":"npx @appnest/readme generate",
+    "readme:g": "npx @appnest/readme generate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Inform-Inspire-LLC/desirable.solutions/issues"
   },
-  "homepage": "https://github.com/Inform-Inspire-LLC/desirable.solutions#readme"
+  "homepage": "https://github.com/Inform-Inspire-LLC/desirable.solutions#readme",
+  "dependencies": {
+    "react-hover-animation": "^2.1.1"
+  }
 }

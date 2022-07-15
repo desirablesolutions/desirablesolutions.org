@@ -8,8 +8,14 @@ const useDrawerStates = {
     close,
 }
 
-const useDrawer = ({ toggle, state }) => {
+const useDrawer = ({ isOpen }) => {
 
+    let [drawerState, setDrawerState] = useRecoilState(drawerStateAtom)
+
+    
+   isOpen && setDrawerState(!drawerState)
 
 
 }
+
+export default useDrawer

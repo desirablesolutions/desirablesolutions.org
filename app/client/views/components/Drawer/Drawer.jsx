@@ -1,4 +1,4 @@
-import { Drawer as MuiDrawer } from '@mui/material/Drawer';
+import { Drawer as MuiDrawer } from '@mui/material';
 
 
 

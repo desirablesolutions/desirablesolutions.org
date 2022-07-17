@@ -1,11 +1,11 @@
 import Gallery from "@components/Gallery"
 
 
-
 const TeamGallery = () => {
 
     return (
-        <Gallery/>
+        <Gallery
+            order={"04"} />
     )
 }
 

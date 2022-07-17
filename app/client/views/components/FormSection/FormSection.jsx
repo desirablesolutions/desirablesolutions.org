@@ -3,7 +3,7 @@
 const FormSection = (props) => {
 
     return (
-        <section className="pt-24 md:pt-40 xl:pb-40 bg-gray-900 relative overflow-hidden">
+        <section className="pt-24 md:pt-40 xl:pb-40  relative overflow-hidden">
             <div className="container px-4 mx-auto">
                 <img
                     className="hidden xl:block absolute top-0 right-0 w-1/4 mt-10 h-full object-cover"

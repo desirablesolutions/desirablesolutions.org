@@ -38,7 +38,7 @@ const TextCarousel = () => {
                     </a>
                     <div className="w-full md:w-5/6 xl:w-2/3 mx-auto text-center order-first md:order-none mb-20 md:mb-0">
                         <p
-                            className="font-heading leading-relaxed text-3xl sm:text-4xl md:text-5xl"
+                            className="font-heading text-white leading-relaxed text-3xl sm:text-4xl md:text-5xl"
                             style={{ lineHeight: "1.5" }}
                         >
                             <span>

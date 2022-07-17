@@ -105,7 +105,7 @@ const Footer = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="py-12 text-center bg-gray-800">
+            <div className="py-12 text-center">
                 <div className="container px-4 mx-auto">
                     <div className="sm:flex items-center justify-center mb-5">
                         <a className="inline-block mb-2 sm:mb-0" href="#">

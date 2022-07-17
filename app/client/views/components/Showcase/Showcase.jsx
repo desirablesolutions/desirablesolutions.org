@@ -1,15 +1,23 @@
 
+import { Affix } from 'antd';
+
+
 const Showcase = ({ title, featured, name, latest, id, sx }) => {
+
+
 
     return (
 
         <section className="py-24 md:py-40">
             <div className="container px-4 mx-auto">
-                <div className="flex items-center sticky mb-24">
-                    <span className="font-heading text-white text-xl">{id}</span>
-                    <div className="mx-4 rounded-full bg-gray-200 h-1 w-1" />
-                    <span className="font-heading text-white text-xl">{name}</span>
-                </div>
+                <Affix offsetTop={15}>
+                    <div className="flex items-center sticky mb-24">
+                        <span className="font-heading text-white text-xl">{id}</span>
+                        <div className="mx-4 rounded-full bg-gray-200 h-1 w-1" />
+                        <span className="font-heading text-white text-xl">{name}</span>
+                    </div>
+                </Affix>
+
                 <div className="text-center">
                     <div className="mb-12">
                         <span className="inline-block px-5 py-2 mr-6 text-sm bg-white rounded-full">
@@ -19,7 +27,7 @@ const Showcase = ({ title, featured, name, latest, id, sx }) => {
                             {featured.completed}
                         </span>
                     </div>
-                    <h2 className="font-heading text-white text-4xl sm:text-5xl mb-24">
+                    <h2 className="font-heading tracking-in-expand text-white text-4xl sm:text-5xl mb-24">
                         {title}
                     </h2>
                 </div>
@@ -67,7 +75,7 @@ const Showcase = ({ title, featured, name, latest, id, sx }) => {
                                                     className="inline-block mr-6 text-white hover:text-gray-600 hover:underline"
                                                     href={tag.href}
                                                 >
-                                                    {tag.name}
+                                                    #{tag.name}
                                                 </a>
                                             )
                                         }

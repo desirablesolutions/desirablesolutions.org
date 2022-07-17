@@ -1,4 +1,4 @@
-const Gallery = (props) => {
+const Gallery = ({ title }) => {
 
 
   return (
@@ -14,6 +14,7 @@ const Gallery = (props) => {
           <div className="w-full md:w-1/2 px-4 mb-6 md:mb-0">
             <h1 className="font-heading text-5xl sm:text-6xl">Our Team</h1>
           </div>
+
           <div className="w-full md:w-1/2 px-4 md:text-right">
             <a className="inline-block" href="#">
               <img
@@ -23,7 +24,10 @@ const Gallery = (props) => {
               />
             </a>
           </div>
+
         </div>
+
+
         <div className="flex flex-wrap justify-center -mx-4 relative">
           <a
             className="hidden lg:inline-block absolute top-1/2 left-0 ml-2 2xl:ml-4"
@@ -72,7 +76,7 @@ const Gallery = (props) => {
               <div className="absolute top-0 left-0 -mt-2 w-full">
                 <div className="mx-5 rounded-t-xl h-4 bg-gray-200" />
               </div>
-              <div className="relative bg-white rounded-md">
+              <div className="relative  rounded-md">
                 <img
                   className="block w-full h-96 object-cover rounded-md"
                   src="wrexa-assets/images/men-blue-short.png"
@@ -107,7 +111,7 @@ const Gallery = (props) => {
               <div className="absolute top-0 left-0 -mt-2 w-full">
                 <div className="mx-5 rounded-t-xl h-4 bg-gray-200" />
               </div>
-              <div className="relative bg-white rounded-md">
+              <div className="relative  rounded-md">
                 <img
                   className="block w-full h-96 object-cover rounded-md"
                   src="wrexa-assets/images/smiling-young-woman.png"

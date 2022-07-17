@@ -8,8 +8,6 @@ import ToolsShowcase from "@includes/ToolsShowcase"
 import Pillars from "@includes/Pillars"
 import Goals from "@views/includes/Goals"
 
-
-
 export default function HomePage() {
 
   return (

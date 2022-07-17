@@ -26,12 +26,12 @@ const Hero = ({ lineTexts, bgImg, cta }) => {
                         <span className="block leading-none">
                         
                         <a className="inline-flex text-white" href={link}>
-                            <span className="mr-4">{firstLine}</span>
+                            <span className="mr-4 hover:underline">{firstLine}</span>
                             <FordwardLinkIcon />
                         </a>
                         
                         </span>
-                        <span className="block leading-none">{secondLine}</span>
+                        <span className="block hover:underline leading-none">{secondLine}</span>
 
                         <span className="relative inline-block">
                             <span className="relative z-10 block hover:underline leading-none">{thirdLine}</span>

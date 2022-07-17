@@ -5,6 +5,9 @@ const projects = {
         name: 'Yonder Airways',
         cover: '',
         description: '',
+        img: {
+            src: ''
+        },
         tags: []
     },
 
@@ -34,6 +37,10 @@ const ProjectShowcase = () => {
             featured={{
                 name: 'Yonder Airways',
                 description: '',
+                cover: {
+                    src: '/assets/images/yonder-airways-1.png',
+                    alt: 'Yonder Airways'
+                },
                 tags: [{
                     name: 'logo kit'
                 }],

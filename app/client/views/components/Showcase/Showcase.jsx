@@ -5,7 +5,7 @@ const Showcase = ({ title, featured, name, latest, id, sx }) => {
 
         <section className="py-24 md:py-40">
             <div className="container px-4 mx-auto">
-                <div className="flex items-center mb-24">
+                <div className="flex items-center sticky mb-24">
                     <span className="font-heading text-white text-xl">{id}</span>
                     <div className="mx-4 rounded-full bg-gray-200 h-1 w-1" />
                     <span className="font-heading text-white text-xl">{name}</span>
@@ -27,8 +27,8 @@ const Showcase = ({ title, featured, name, latest, id, sx }) => {
                     <div className="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
                         <img
                             className="block mx-auto"
-                            src="wrexa-assets/images/graphic-white-background.png"
-                            alt=""
+                            src={featured.cover.src}
+                            alt={featured.cover.alt}
                         />
                     </div>
                     <div className="w-full lg:w-1/2 px-4">
@@ -37,8 +37,8 @@ const Showcase = ({ title, featured, name, latest, id, sx }) => {
                             <div>
 
                                 <h4 className="text-3xl text-white mb-5">
-{featured.name}                          
-      </h4>
+                                    {featured.name}
+                                </h4>
                                 <a className="inline-block relative text-white mb-8" href="#">
                                     <span>
                                         {featured.description}
@@ -59,21 +59,21 @@ const Showcase = ({ title, featured, name, latest, id, sx }) => {
                                     </span>
                                 </a>
                                 <div className="pb-8 mb-6 border-b">
-                                   {
-                                        featured.tags.map((tag, index) => { 
+                                    {
+                                        featured.tags.map((tag, index) => {
                                             return (
                                                 <a
-                                                key={`${tag.name}-${index}`}
-                                                className="inline-block mr-6 text-white hover:text-gray-600 hover:underline"
-                                                href={tag.href}
-                                            >
-                                                {tag.name}
-                                            </a>
+                                                    key={`${tag.name}-${index}`}
+                                                    className="inline-block mr-6 text-white hover:text-gray-600 hover:underline"
+                                                    href={tag.href}
+                                                >
+                                                    {tag.name}
+                                                </a>
                                             )
-                                   }
+                                        }
                                         )
-                                }
-                               
+                                    }
+
                                 </div>
                             </div>
                             <div className="flex items-center">

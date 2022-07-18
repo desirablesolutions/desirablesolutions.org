@@ -1,5 +1,6 @@
 
 import { Affix } from 'antd';
+import FadeAnimation from '@components/FadeAnimation';
 
 
 const Showcase = ({ title, featured, name, latest, id, sx }) => {
@@ -8,7 +9,7 @@ const Showcase = ({ title, featured, name, latest, id, sx }) => {
 
     return (
 
-        <section className="py-24 md:py-40">
+        <section  className="py-24 md:py-40">
             <div className="container px-4 mx-auto">
                 <Affix offsetTop={15}>
                     <div className="flex items-center sticky mb-24">

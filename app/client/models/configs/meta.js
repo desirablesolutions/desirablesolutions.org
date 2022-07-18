@@ -2,6 +2,16 @@ const meta = {
     title: 'Désirable Solutions',
     description: 'We solve problems.',
     url: 'https://desirable.solutions',
+    copyright: `© 2022 Desirable Solutions. All rights reserved.`,
+    contact: {
+        phoneNumber: '+1 (786) 766-9054',
+        email: 'help@desirable.solutions'
+    },
+    favicon: {
+        src: '',
+        alt: '',
+        href: '',
+    },
     pageTitle: 'Home',
     basePaths: {
         icons: '/assets/icons/',

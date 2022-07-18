@@ -2,19 +2,28 @@ import meta from "@configs/meta"
 
 
 const footer = {
-    copyright: meta.copyright,
-    actionLinks: [
-        {
-            name: 'Support'
-        },
-        {
-            name: meta.contact.phoneNumber
-        },
-        {
-            name: 'help@desirable.solutions'
+    copyright: {
+        text: meta.copyright,
+        logo: {
+            src: "/assets/images/logo-transparent.png",
+            alt: 'desirable-solutions-logo'
         }
-    ],
-    navLinks: {
+    },
+    actionLinks: {
+        title: 'We\'re here to help',
+        links: [
+            {
+                name: 'Support'
+            },
+            {
+                name: meta.contact.phoneNumber
+            },
+            {
+                name: 'help@desirable.solutions'
+            }
+        ],
+    }
+    , navLinks: {
         major: [
             {
                 name: 'Our Vision',

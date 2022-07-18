@@ -6,20 +6,20 @@ const Gallery = ({ title }) => {
     <section className="pt-24 pb-24 md:pb-40">
       <div className="container px-4 mx-auto">
         <div className="flex items-center mb-6">
-          <span className="font-heading text-xl">02</span>
+          <span className="font-heading text-white text-xl">02</span>
           <div className="mx-4 rounded-full bg-gray-200 h-1 w-1" />
-          <span className="font-heading text-xl">Creative team</span>
+          <span className="font-heading text-white text-xl">Creative team</span>
         </div>
         <div className="flex flex-wrap -mx-4 mb-20">
           <div className="w-full md:w-1/2 px-4 mb-6 md:mb-0">
-            <h1 className="font-heading text-5xl sm:text-6xl">Our Team</h1>
+            <h1 className="font-heading text-white text-5xl sm:text-6xl">Our Team</h1>
           </div>
 
           <div className="w-full md:w-1/2 px-4 md:text-right">
             <a className="inline-block" href="#">
               <img
                 className="w-16 h-16"
-                src="wrexa-assets/logos/logo-wrexa.svg"
+                src="/assets/images/logo-transparent.png"
                 alt=""
               />
             </a>
@@ -83,11 +83,11 @@ const Gallery = ({ title }) => {
                   alt=""
                 />
                 <div className="pt-12 pb-16 px-6 sm:px-12">
-                  <h4 className="text-2xl mb-2">Joshua Desir</h4>
-                  <span className="text-indigo-500">
+                  <h4 className="text-2xl text-white mb-2">Joshua Desir</h4>
+                  <span className="text-gray-500">
                     Founder &amp; Master Designer
                   </span>
-                  <p className="mt-8 font-light">
+                  <p className="mt-8 text-white font-light">
                     The house by the pond cras ornare, some chords for a three
                     moments, like a sense of truth. The lorem ipsum house by the
                     pond cras ornare, some chords for a three moments, like.
@@ -118,9 +118,9 @@ const Gallery = ({ title }) => {
                   alt=""
                 />
                 <div className="pt-12 pb-16 px-6 sm:px-12">
-                  <h4 className="text-2xl mb-2">Jeffrey Desir</h4>
-                  <span className="text-indigo-500">DevOps Engineer</span>
-                  <p className="mt-8 font-light">
+                  <h4 className="text-2xl text-white mb-2">Jeffrey Desir</h4>
+                  <span className="text-gray-500">DevOps Engineer</span>
+                  <p className="mt-8 text-white font-light">
                     The house by the pond cras ornare, some chords for a three
                     moments, like a sense of truth. The lorem ipsum house by the
                     pond cras ornare, some chords for a three moments, like.

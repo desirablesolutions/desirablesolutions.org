@@ -6,6 +6,11 @@ const theme = {
         tertiary: 'monospace'
     },
     colors: {
-        background: ''
+        background: '',
+        text: {
+            utilityClass: 'text-white',
+        }
     }
 }
+
+export default theme

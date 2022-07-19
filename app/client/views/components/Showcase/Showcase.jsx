@@ -1,9 +1,9 @@
 
-import { Affix } from 'antd';
+import Affix from "@components/Affix"
 import FadeAnimation from '@components/FadeAnimation';
 
 
-const Showcase = ({ title, featured, name, latest, id, sx }) => {
+const Showcase = ({ title, featured, latest, order, sx, heading }) => {
 
 
 
@@ -12,10 +12,10 @@ const Showcase = ({ title, featured, name, latest, id, sx }) => {
         <section  className="py-24 md:py-40">
             <div className="container px-4 mx-auto">
                 <Affix offsetTop={15}>
-                    <div className="flex items-center sticky mb-24">
-                        <span className="font-heading text-white text-xl">{id}</span>
+                    <div className="flex items-center mb-24">
+                        <span className="font-heading text-white text-xl">{order}</span>
                         <div className="mx-4 rounded-full bg-gray-200 h-1 w-1" />
-                        <span className="font-heading text-white text-xl">{name}</span>
+                        <span className="font-heading text-white text-xl">{title}</span>
                     </div>
                 </Affix>
 
@@ -29,7 +29,7 @@ const Showcase = ({ title, featured, name, latest, id, sx }) => {
                         </span>
                     </div>
                     <h2 className="font-heading tracking-in-expand text-white text-4xl sm:text-5xl mb-24">
-                        {title}
+                        {heading}
                     </h2>
                 </div>
                 <div className="flex flex-wrap -mx-4 pb-24 mb-20 border-b">

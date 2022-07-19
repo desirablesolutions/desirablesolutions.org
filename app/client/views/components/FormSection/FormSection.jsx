@@ -1,6 +1,6 @@
 
-
-const FormSection = (props) => {
+import Affix from "@components/Affix"
+const FormSection = ({ order, title, heading }) => {
 
     return (
         <section className="pt-24 md:pt-40 xl:pb-40  relative overflow-hidden">
@@ -10,14 +10,18 @@ const FormSection = (props) => {
                     src="wrexa-assets/images/women-right-messages.png"
                     alt=""
                 />
+
                 <div className="w-full xl:w-4/5">
-                    <div className="flex items-center mb-12">
-                        <span className="font-heading text-xl text-white">07</span>
-                        <div className="mx-4 rounded-full bg-gray-200 h-1 w-1" />
-                        <span className="font-heading text-xl text-white">Contact us</span>
-                    </div>
+                    <Affix>
+                        <div className="flex items-center mb-12">
+                            <span className="font-heading text-xl text-white">{order}</span>
+                            <div className="mx-4 rounded-full bg-gray-200 h-1 w-1" />
+                            <span className="font-heading text-xl text-white">{title}</span>
+                        </div>
+                    </Affix>
+
                     <h2 className="font-heading text-5xl sm:text-6xl xl:text-7xl text-white mb-24">
-                        Have a question?
+                        {heading}
                     </h2>
                     <form action="#" method="post">
                         <div className="max-w-xs lg:max-w-none mx-auto">
@@ -79,6 +83,7 @@ const FormSection = (props) => {
                     </form>
                 </div>
             </div>
+
             <img
                 className="xl:hidden block mt-24 w-full h-128 object-cover"
                 src="wrexa-assets/images/women-right-messages.png"

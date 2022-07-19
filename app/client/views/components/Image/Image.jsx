@@ -1,19 +1,11 @@
-import { CustomPlaceholder } from 'react-placeholder-image';
-import Image from 'next/image'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
-const Image = (props) => {
+
+
+const Image = ({ src }) => {
 
     return (
-    
-        <CustomPlaceholder
-         width={200}
-         height={100}
-         backgroundColor="#123456"
-         textColor="#ffffff"
-         text="Hello World!"/>
-    
+        <LazyLoadImage />
     )
 }
-
-export default Image

@@ -1,9 +1,12 @@
 import FormSection from "@components/FormSection"
 
-const RequestForm = () => {
+const RequestForm = ({ order }) => {
 
     return (
-        <FormSection/>
+        <FormSection
+            order={"08"}
+            title={"Contact Us"}
+            heading={"Describe your problem."} />
 
     )
 

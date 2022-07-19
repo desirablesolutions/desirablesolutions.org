@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
 
     <HomeLayout>
-      <ProjectShowcase />
+      <ProjectShowcase order={"01"}/>
       <Goals />
       <AdvantagesTable />
       <Pillars />

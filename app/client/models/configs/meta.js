@@ -3,6 +3,19 @@ const meta = {
     description: 'We solve problems.',
     url: 'https://desirable.solutions',
     copyright: `© 2022 Desirable Solutions. All rights reserved.`,
+    impressum: `In God We Trust.`,
+    pages: {
+        static: [
+            {
+                name: 'Home',
+                href: '/'
+            },
+            {
+                name: 'Our Vision',
+                href: '/ourvision'
+            }
+        ]
+    },
     contact: {
         phoneNumber: '+1 (786) 766-9054',
         email: 'help@desirable.solutions'

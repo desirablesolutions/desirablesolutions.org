@@ -5,12 +5,12 @@ import projects from "@db/projects"
 
 const yonderAirways = projects[0]
 
-const ProjectShowcase = () => {
+const ProjectShowcase = ({ order }) => {
 
 
     return (
         <Showcase
-            id="01"
+            order={order}
             name="Our Projects"
             title="Designed by masters, inspired by life"
             featured={{

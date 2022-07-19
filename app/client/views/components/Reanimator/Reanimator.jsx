@@ -8,6 +8,7 @@ const Reanimator = ({ children, type, ...params }) => {
             {children}
         </AnimationWrapper>
 
-
     )
 }
+
+export default Reanimator

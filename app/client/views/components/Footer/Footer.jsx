@@ -1,13 +1,16 @@
-const NavLink = ({ key, href, name }) => (
-    <a key={key}
-        className="inline-block w-full lg:w-auto text-sm text-white hover:transition-all hover:rounded hover:bg-blue-600 hover:text-gray-200 mb-6 mr-14"
-        href={href}
-    >
-        {name}
-    </a>
+import Button from "@components/Button"
+
+const NavLink = ({ key, icon, href, name }) => (
+    <>
+
+        <Button key={key} href={href} icon={icon}>
+            {name}
+        </Button>
+
+    </>
 )
 
-const Footer = ({ copyright, navLinks, actionLinks, contact }) => {
+const Footer = ({ copyright, navLinks, actionLinks, contact, impressum }) => {
 
     return (
 
@@ -22,30 +25,30 @@ const Footer = ({ copyright, navLinks, actionLinks, contact }) => {
 
                             {
                                 navLinks.major.map((link, index) => (
-                                    <NavLink key={`${link.name}-${index}`} {...link} />
+                                    <NavLink key={`${link.name}-${index}`} name={link.name} href={link.href} icon={link.icon} />
                                 ))}
 
                         </div>
                         <div className="w-1/2 xl:w-auto flex flex-wrap items-center justify-center -mb-6">
                             {
                                 navLinks.minor.map((link, index) => (
-                                    <NavLink key={`${link.name}-${index}`} {...link} />
+                                    <NavLink key={`${link.name}-${index}`}
+                                        icon={link.icon}
+                                        name={link.name} />
                                 ))}
                         </div>
                     </div>
 
                     <h2 className="font-heading text-center text-4xl text-white mt-20 mb-8">
-                        {actionLinks.title}                    </h2>
+                        {actionLinks.title.icon}{actionLinks.title.text}
+                    </h2>
                     <div className="text-center mb-16">
+
                         {
                             actionLinks.links.map((link, index) => (
-                                <a
-                                    key={`${link.name}-${index}`}
-                                    className="inline-block w-full sm:w-auto px-7 py-4 mb-4 sm:mb-0 mr-3 text-center text-white font-medium border border-gray-700 hover:border-gray-600 rounded"
-                                    href={link.href}
-                                >
+                                <Button variant="outlined" icon={link.icon} key={`${link.name}-${index}`} href={link.href}>
                                     {link.name}
-                                </a>
+                                </Button>
                             ))
                         }
 
@@ -63,10 +66,13 @@ const Footer = ({ copyright, navLinks, actionLinks, contact }) => {
                                 alt=""
                             />
                         </a>
-                        <span className="block text-sm border-b transition-all hover:text-gray-500 text-white font-light">
+                        <span className="block text-sm text-shadow-2 transition-all hover:text-gray-500 text-white font-light">
                             {copyright.text}
                         </span>
                     </div>
+                    <p class="max-w-3xl animate-pulse mx-auto text-gray-400 text-xs font-light">
+                        {impressum}
+                    </p>
                 </div>
             </div>
         </section>

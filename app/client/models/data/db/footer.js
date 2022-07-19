@@ -1,7 +1,16 @@
 import meta from "@configs/meta"
-
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import PeopleIcon from '@mui/icons-material/People';
+import CoffeeIcon from '@mui/icons-material/Coffee';
+import RedeemIcon from '@mui/icons-material/Redeem';
+import DesignServicesIcon from '@mui/icons-material/DesignServices';
+import HandshakeIcon from '@mui/icons-material/Handshake';
 
 const footer = {
+    impressum: meta.impressum,
     copyright: {
         text: meta.copyright,
         logo: {
@@ -10,16 +19,22 @@ const footer = {
         }
     },
     actionLinks: {
-        title: 'We\'re here to help',
+        title: {
+            text: 'We are here to serve.',
+            icon: <VolunteerActivismIcon />
+        },
         links: [
             {
-                name: 'Support'
+                name: 'Support Us',
+                icon: <CoffeeIcon />
             },
             {
-                name: meta.contact.phoneNumber
+                name: meta.contact.phoneNumber,
+                icon: <PhoneIcon />
             },
             {
-                name: 'help@desirable.solutions'
+                name: meta.contact.email,
+                icon: <EmailIcon sx={{ color: 'white' }} />
             }
         ],
     }
@@ -27,16 +42,29 @@ const footer = {
         major: [
             {
                 name: 'Our Vision',
-                href: ''
+                icon: <VisibilityIcon />,
+                href: '/vision'
             },
             {
                 name: 'Our Projects',
+                icon: <RedeemIcon />,
+                href: '/projects'
+            },
+            {
+                name: 'Our Team',
+                href: '/team',
+                icon: <PeopleIcon />
             }
 
         ],
         minor: [
             {
-                name: 'Contributions'
+                name: 'Our Story',
+                icon: <HandshakeIcon />
+            },
+            {
+                name: 'Our Services',
+                icon: <DesignServicesIcon />
             }
 
         ]

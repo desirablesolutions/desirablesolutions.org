@@ -1,10 +1,10 @@
 import IconsShowcase from "@views/components/IconsShowcase";
 
 
-const ToolsShowcase = () => {
+const ToolsShowcase = ({ order }) => {
 
     return (
-        <IconsShowcase/>
+        <IconsShowcase order={order}/>
     )
 }
 

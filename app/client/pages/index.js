@@ -13,14 +13,14 @@ export default function HomePage() {
   return (
 
     <HomeLayout>
-      <ProjectShowcase order={"01"}/>
-      <Goals />
-      <AdvantagesTable />
-      <Pillars />
-      <ToolsShowcase />
-      <TeamGallery />
-      <FAQs />
-      <RequestForm />
+      <ProjectShowcase order={"01"} />
+      <Goals order={"02"} />
+      <AdvantagesTable order={"03"} />
+      <Pillars order={"04"} />
+      <ToolsShowcase order={"05"} />
+      <TeamGallery order={"06"} />
+      <FAQs order={"07"} />
+      <RequestForm order={"08"} />
     </HomeLayout>
   )
 

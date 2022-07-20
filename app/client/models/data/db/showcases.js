@@ -1,13 +1,36 @@
+import projects from "@db/projects"
+import find from "@controllers/utils/find"
+
 const showcases = [
 
     {
-        id: 'project-showcase',
-        order: '01',
-        name: 'Project Showcase',
-        title: 'Design by masters, inspired by life',
-        latest: [],
-        featured: {},
-    
+        id: 'projects-showcase',
+        title: 'Our Projects',
+        heading: 'Design by masters, inspired by life',
+        latest: [
+            {
+                ...find({
+                    arr: projects,
+                    id: 'yonder-airways'
+                })
+            },
+            {
+                ...find({
+                    arr: projects,
+                    id: 'yonder-airways'
+                })
+            },
+            {
+                ...find({
+                    arr: projects,
+                    id: 'yonder-airways'
+                })
+            }
+        ],
+        featured: {...find({
+            arr: projects,
+            id: 'yonder-airways'
+        }) }
     }
 ]
 

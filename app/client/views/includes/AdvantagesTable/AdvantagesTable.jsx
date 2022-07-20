@@ -4,10 +4,10 @@
 import ComparisonTable from "@components/ComparisonTable";
 
 
-const AdvantagesTable = (props) => {
+const AdvantagesTable = ({ order }) => {
 
     return (
-        <ComparisonTable />
+        <ComparisonTable order={order} />
     )
 
 

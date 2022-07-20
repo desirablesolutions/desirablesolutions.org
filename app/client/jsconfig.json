@@ -5,16 +5,16 @@
       "@views/*": ["views/*"],
       "@models/*": ["models/*"],
       "@controllers/*": ["controllers/*"],
+      "@utils/*":["controllers/utils/*"],
       "@configs/*": ["models/configs/*"],
-      "@layouts/*":["views/layouts/*"],
+      "@layouts/*": ["views/layouts/*"],
       "@db/*": ["models/data/db/*"],
-      "@includes/*":["views/includes/*"],
-      "@hooks/*":["controllers/hooks/*"],
-      "@components/*":["views/components/*"],
-      "@store/*":["models/data/store/*"],
+      "@includes/*": ["views/includes/*"],
+      "@hooks/*": ["controllers/hooks/*"],
+      "@components/*": ["views/components/*"],
+      "@store/*": ["models/data/store/*"],
 
     }
   },
   "exclude": ["node_modules", "**/node_modules", "dist"]
 }
-

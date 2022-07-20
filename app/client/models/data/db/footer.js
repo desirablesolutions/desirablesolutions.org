@@ -8,6 +8,7 @@ import CoffeeIcon from '@mui/icons-material/Coffee';
 import RedeemIcon from '@mui/icons-material/Redeem';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import HandshakeIcon from '@mui/icons-material/Handshake';
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined"
 
 const footer = {
     impressum: meta.impressum,
@@ -41,17 +42,17 @@ const footer = {
     , navLinks: {
         major: [
             {
-                name: 'Our Vision',
+                name: 'Vision',
                 icon: <VisibilityIcon />,
                 href: '/vision'
             },
             {
-                name: 'Our Projects',
+                name: 'Projects',
                 icon: <RedeemIcon />,
                 href: '/projects'
             },
             {
-                name: 'Our Team',
+                name: 'Team',
                 href: '/team',
                 icon: <PeopleIcon />
             }
@@ -59,12 +60,16 @@ const footer = {
         ],
         minor: [
             {
-                name: 'Our Story',
+                name: 'Story',
                 icon: <HandshakeIcon />
             },
             {
-                name: 'Our Services',
+                name: 'Services',
                 icon: <DesignServicesIcon />
+            },
+            {
+                name: 'Information',
+                icon: <InfoOutlinedIcon/>
             }
 
         ]

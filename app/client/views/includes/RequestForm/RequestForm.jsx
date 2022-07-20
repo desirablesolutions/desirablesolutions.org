@@ -4,10 +4,9 @@ const RequestForm = ({ order }) => {
 
     return (
         <FormSection
-            order={"08"}
+            order={order}
             title={"Contact Us"}
             heading={"Describe your problem."} />
-
     )
 
 }

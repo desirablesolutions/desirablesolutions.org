@@ -1,17 +1,19 @@
-const DataSummary = () => {
+const DataSummary = ({ order, title, heading }) => {
 
     return (
         <section className="relative pb-24 md:pb-40  overflow-hidden">
             <div className="bg-white h-16 mb-56">
-                <div className="absolute top-0 left-1/2">
+                <div className="heartbeat absolute top-0 left-1/2">
                     <div className="w-px h-16 bg-gray-900" />
                     <div className="w-px h-24 bg-white" />
                 </div>
             </div>
+
+
             <div className="container px-4 mx-auto">
                 <div className="max-w-4xl mx-auto text-center mb-32">
                     <h2 className="font-heading text-5xl sm:text-6xl text-white">
-                        Don’t take our word for it. Trust our stats
+                        {heading}
                     </h2>
                 </div>
                 <div className="flex flex-wrap -mx-4 mb-32">

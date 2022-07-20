@@ -1,7 +1,7 @@
 import { atom } from "recoil";
 
 const drawerStateAtom = atom({
-    name: "drawerStateAtom",
+    key: "drawerStateAtom",
     default: {
         isOpen: false,
     }

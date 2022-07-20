@@ -1,6 +1,6 @@
 
 
-const TextCarousel = () => {
+const TextCarousel = ({ order, title, heading }) => {
 
 
     return (
@@ -8,13 +8,13 @@ const TextCarousel = () => {
         <section className="py-24 md:py-40">
             <div className="container px-4 mx-auto">
                 <div className="flex items-center mb-20">
-                    <span className="font-heading  text-white text-xl">04</span>
+                    <span className="font-heading outline p-1 text-white text-xl">{order}</span>
                     <div className="mx-4 rounded-full bg-white h-1 w-1" />
-                    <span className="font-heading text-white text-xl">FAQs</span>
+                    <span className="font-heading text-white text-xl">{title}</span>
                 </div>
                 <div className="max-w-max mx-auto border-b border-white mb-20">
                     <h4 className="text-center font-heading text-white text-3xl sm:text-4xl">
-                        01. Can i change my plan?
+                        {heading}
                     </h4>
                 </div>
                 <div className="flex flex-wrap items-center justify-center mb-20">
@@ -70,7 +70,7 @@ const TextCarousel = () => {
                 </div>
                 <div className="text-center">
                     <a
-                        className="inline-block w-full sm:w-auto px-7 py-4 text-center font-medium bg-indigo-500 hover:bg-indigo-600 text-white rounded transition duration-250"
+                        className="inline-block w-full sm:w-auto px-7 py-4 text-center font-medium bg-red-700 hover:bg-red-300 text-white rounded transition-all"
                         href="#"
                     >
                         Have any questions?

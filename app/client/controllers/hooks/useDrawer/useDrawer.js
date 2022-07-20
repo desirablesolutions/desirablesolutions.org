@@ -3,18 +3,9 @@ import drawerStateAtom from "@store/drawerStateAtom"
 
 
 
-const useDrawerStates = {
-    open, 
-    close,
-}
+const useDrawer = ({ open, debug }) => {
 
-const useDrawer = ({ isOpen }) => {
-
-    let [drawerState, setDrawerState] = useRecoilState(drawerStateAtom)
-
-    
-   isOpen && setDrawerState(!drawerState)
-
+    return null
 
 }
 

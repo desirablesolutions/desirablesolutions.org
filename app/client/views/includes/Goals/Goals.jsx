@@ -1,11 +1,11 @@
 import DataSummary from "@views/components/DataSummary";
 
 
-const Goals = () => {
+const Goals = ({ order }) => {
 
     return (
 
-        <DataSummary />
+        <DataSummary order={order}/>
     )
 }
 

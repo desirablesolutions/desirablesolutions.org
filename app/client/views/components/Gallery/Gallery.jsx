@@ -1,4 +1,4 @@
-const Gallery = ({ title }) => {
+const Gallery = ({ title, order, heading }) => {
 
 
   return (
@@ -6,13 +6,13 @@ const Gallery = ({ title }) => {
     <section className="pt-24 pb-24 md:pb-40">
       <div className="container px-4 mx-auto">
         <div className="flex items-center mb-6">
-          <span className="font-heading text-white text-xl">02</span>
+          <span className="font-heading text-white text-xl">{order}</span>
           <div className="mx-4 rounded-full bg-gray-200 h-1 w-1" />
-          <span className="font-heading text-white text-xl">Creative team</span>
+          <span className="font-heading text-white text-xl">{title}</span>
         </div>
         <div className="flex flex-wrap -mx-4 mb-20">
           <div className="w-full md:w-1/2 px-4 mb-6 md:mb-0">
-            <h1 className="font-heading text-white text-5xl sm:text-6xl">Our Team</h1>
+            <h1 className="font-heading text-white text-5xl sm:text-6xl">{heading}</h1>
           </div>
 
           <div className="w-full md:w-1/2 px-4 md:text-right">
@@ -71,6 +71,9 @@ const Gallery = ({ title }) => {
               />
             </svg>
           </a>
+
+
+
           <div className="w-full lg:w-1/2 3xl:w-auto px-4 3xl:px-12 mb-16 lg:mb-0 lg:border-r">
             <div className="max-w-md mx-auto relative pb-16 lg:pb-0 border-b lg:border-b-0">
               <div className="absolute top-0 left-0 -mt-2 w-full">
@@ -119,7 +122,7 @@ const Gallery = ({ title }) => {
                 />
                 <div className="pt-12 pb-16 px-6 sm:px-12">
                   <h4 className="text-2xl text-white mb-2">Jeffrey Desir</h4>
-                  <span className="text-gray-500">DevOps Engineer</span>
+                  <span className="text-gray-500">Technomancer</span>
                   <p className="mt-8 text-white font-light">
                     The house by the pond cras ornare, some chords for a three
                     moments, like a sense of truth. The lorem ipsum house by the
@@ -139,6 +142,10 @@ const Gallery = ({ title }) => {
               </div>
             </div>
           </div>
+
+
+
+
           <div className="lg:hidden mt-16 text-center">
             <a className="inline-block mr-6" href="#">
               <svg

@@ -1,8 +1,8 @@
 import TextCarousel from "@views/components/TextCarousel";
 
-const FAQs = () => {
+const FAQs = ({ order, }) => {
     return (
-        <TextCarousel />
+        <TextCarousel title="FAQs" order={order}/>
     )
 }
 

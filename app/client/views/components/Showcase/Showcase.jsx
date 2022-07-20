@@ -1,5 +1,4 @@
 
-import Affix from "@components/Affix"
 import FadeAnimation from '@components/FadeAnimation';
 
 
@@ -9,19 +8,17 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
 
     return (
 
-        <section  className="py-24 md:py-40">
+        <section className="py-24 md:py-40">
             <div className="container px-4 mx-auto">
-                <Affix offsetTop={15}>
-                    <div className="flex items-center mb-24">
-                        <span className="font-heading text-white text-xl">{order}</span>
-                        <div className="mx-4 rounded-full bg-gray-200 h-1 w-1" />
-                        <span className="font-heading text-white text-xl">{title}</span>
-                    </div>
-                </Affix>
+                <div className="flex animate-pulse items-center mb-24">
+                    <span className="font-heading outline p-1 text-white text-xl">{order}</span>
+                    <div className="mx-4 rounded-full bg-gray-200 h-1 w-1" />
+                    <span className="font-heading text-white text-xl">{title}</span>
+                </div>
 
                 <div className="text-center">
                     <div className="mb-12">
-                        <span className="inline-block px-5 py-2 mr-6 text-sm bg-white rounded-full">
+                        <span className="inline-block px-5 py-2 mr-6 text-sm bg-gray-800 hover:outline cursor-select rounded-full">
                             {featured.sector}
                         </span>
                         <span className="font-light text-sm text-white">
@@ -62,7 +59,7 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
                                         >
                                             <path
                                                 d="M14.9983 2.97487L12.8444 2.94712L12.9539 11.4487L1.76433 0.259107L0.261729 1.76171L11.4513 12.9513L2.94974 12.8418L2.97749 14.9957L15.1552 15.1525L14.9983 2.97487Z"
-                                                fill="black"
+                                                fill="white"
                                             />
                                         </svg>
                                     </span>
@@ -73,7 +70,7 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
                                             return (
                                                 <a
                                                     key={`${tag.name}-${index}`}
-                                                    className="inline-block mr-6 text-white hover:text-gray-600 hover:underline"
+                                                    className="inline-block mr-6 text-white hover:outline p-1 hover:text-gray-600 hover:underline"
                                                     href={tag.href}
                                                 >
                                                     #{tag.name}
@@ -82,6 +79,7 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
                                         }
                                         )
                                     }
+
 
                                 </div>
                             </div>
@@ -179,7 +177,7 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
                                         >
                                             <path
                                                 d="M14.9983 2.97487L12.8444 2.94712L12.9539 11.4487L1.76433 0.259107L0.261729 1.76171L11.4513 12.9513L2.94974 12.8418L2.97749 14.9957L15.1552 15.1525L14.9983 2.97487Z"
-                                                fill="black"
+                                                fill="white"
                                             />
                                         </svg>
                                     </span>

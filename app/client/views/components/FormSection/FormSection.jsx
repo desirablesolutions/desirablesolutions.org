@@ -1,5 +1,4 @@
 
-import Affix from "@components/Affix"
 const FormSection = ({ order, title, heading }) => {
 
     return (
@@ -12,13 +11,11 @@ const FormSection = ({ order, title, heading }) => {
                 />
 
                 <div className="w-full xl:w-4/5">
-                    <Affix>
                         <div className="flex items-center mb-12">
-                            <span className="font-heading text-xl text-white">{order}</span>
+                            <span className="font-heading text-xl outline p-1 text-white">{order}</span>
                             <div className="mx-4 rounded-full bg-gray-200 h-1 w-1" />
                             <span className="font-heading text-xl text-white">{title}</span>
                         </div>
-                    </Affix>
 
                     <h2 className="font-heading text-5xl sm:text-6xl xl:text-7xl text-white mb-24">
                         {heading}

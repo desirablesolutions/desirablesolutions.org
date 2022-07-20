@@ -1,19 +1,14 @@
 import Header from "@components/Header"
+import navBar from "@db/navBar"
 
+const Navbar = ({ order, showDebug }) => {
 
-
-
-
-
-const Navbar = () => {
+    showDebug && (
+        console.log(`[NavBar]: Order => ${order}`)
+    )
 
     return (
-        <Header favicon={{
-            src: "/assets/images/logo-transparent.png",
-            alt: "desirable-solutions-logo",
-            href: "/"
-        }}
-        
+        <Header {...navBar}
         />
     )
 }

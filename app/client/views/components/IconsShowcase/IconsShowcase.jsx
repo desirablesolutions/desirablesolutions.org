@@ -1,4 +1,4 @@
-const IconsShowcase = (props) => {
+const IconsShowcase = ({ order }) => {
 
     return (
         <section className="relative pt-24 pb-40">

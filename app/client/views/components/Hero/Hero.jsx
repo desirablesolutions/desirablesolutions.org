@@ -18,12 +18,13 @@ const Hero = ({ lineTexts, bgImg, cta }) => {
                     <div className="w-px h-24 bg-white" />
                 </div>
             </div>
+
+
             <div className="container px-4 mx-auto">
-                <div className="pt-40 sm:pt-64">
+                <div className="pt-30 sm:pt-64">
 
 
-                    <h1 className="text-6xl xl:text-8xl 3xl:text-9xl text-white font-medium mb-20">
-
+                    <h1 className="text-7xl xl:text-8xl 3xl:text-9xl text-gray-100 font-light mb-28">
 
                         <span className="block leading-none">
 
@@ -37,14 +38,15 @@ const Hero = ({ lineTexts, bgImg, cta }) => {
                         <span className="block hover:underline transition-all  hover:animate-pulse leading-none"><a href="#">{secondLine}</a></span>
 
                         <span className="relative inline-block">
-                            <span className="relative block hover:underline hover:animate-pulse transition-all leading-none"><a href="/">
-                                {thirdLine}</a></span>
+                            <span className="relative block hover:underline hover:animate-pulse transition-all leading-none">
+                                <a href="/">
+                                {thirdLine}</a>
+                            </span>
                         </span>
                     </h1>
 
                     <div>
                         <a className="inline-flex mb-20 items-center text-white" href={link}>
-
                             <span className="mr-4">{text}</span>
                         </a>
                     </div>

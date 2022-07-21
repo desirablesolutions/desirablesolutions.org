@@ -68,8 +68,8 @@ const footer = {
                 icon: <DesignServicesIcon />
             },
             {
-                name: 'Information',
-                icon: <InfoOutlinedIcon/>
+                name: 'Info',
+                icon: <InfoOutlinedIcon />
             }
 
         ]

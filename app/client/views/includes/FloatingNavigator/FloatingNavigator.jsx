@@ -8,7 +8,7 @@ import SaveIcon from '@mui/icons-material/Save';
 import PrintIcon from '@mui/icons-material/Print';
 import ShareIcon from '@mui/icons-material/Share';
 
-
+import ArchitectureIcon from '@mui/icons-material/Architecture';
 
 const actions = [
   { icon: <FileCopyIcon />, name: 'Copy' },
@@ -30,13 +30,13 @@ export default function FloatingNavigator() {
           backgroundColor: 'red'
         }, position: 'fixed', bottom: 16, right: 16, border: '2px'
       }}
-      icon={<SpeedDialIcon />}
+      icon={<ArchitectureIcon />}
     >
       {actions.map((action) => (
         <SpeedDialAction
           key={action.name}
           icon={action.icon}
-          tooltipTitle={action.name}
+          tooltipTitle={<span className="text-white">{action.name}</span>}
         />
       ))}
     </SpeedDial>

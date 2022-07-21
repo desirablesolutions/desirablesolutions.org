@@ -1,5 +1,6 @@
 import { Carousel } from 'react-responsive-carousel';
 import Image from "@components/Image"
+import Avatar from "@components/Avatar"
 
 const Showcase = ({ title, featured, latest, order, sx, heading }) => {
 
@@ -16,7 +17,7 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
 
                 <div className="text-center">
                     <div className="mb-12">
-                        <span className="inline-block px-5 py-2 mr-6 text-sm bg-gray-800 hover:outline cursor-select rounded-full">
+                        <span className="inline-block text-white px-5 py-2 mr-6 text-sm bg-gray-900 border-white cursor-select rounded-full">
                             {featured.sector}
                         </span>
                         <span className="font-light text-sm text-white">
@@ -27,7 +28,7 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
                         {heading}
                     </h2>
                 </div>
-                <div className="flex flex-row -mx-4 pb-24 mb-20 border-b">
+                <div className="flex flex-row xl:flex-row lg:flex-row xs:flex-col sm:flex-col md:flex-col -mx-4 pb-24 mb-20 border-b">
                     <div className="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
                         <Carousel
                             infiniteLoop={true}
@@ -50,7 +51,7 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
                     </div>
 
 
-                    <div className="w-full lg:w-1/2 px-4">
+                    <div className="w-full flex lg:w-1/2 px-4">
                         <div className="max-w-sm mx-auto">
 
                             <div>
@@ -102,13 +103,13 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
                                     featured.provisoners.map((provisioner, index) => {
                                         return (
                                             <>
-                                                 <img
-                                                    className="w-10 h-10 mr-4 rounded-full"
+                                                <Avatar
+                                                    className="w-12 pr-1 h-12 mr-4 rounded-full"
                                                     src={provisioner.avatar}
                                                     alt=""
                                                 />
                                                 <span key={`${index}`} className="text-gray-200">{provisioner.name}</span>
-                                           
+
                                             </>
                                         )
                                     })
@@ -130,7 +131,7 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
                                         <span className="text-sm pr-2 text-gray-300">{project.production}</span>
                                         <a className="inline-block mt-6 mb-8 font-heading text-2xl" href={project.url}>
                                             <span className="relative">
-                                                <span>{project.name}</span>
+                                                <span className="text-white">{project.name}</span>
                                                 <span className="absolute bottom-0 right-0 -mr-8 mb-1">
                                                     <svg
                                                         width={16}
@@ -152,13 +153,14 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
                                                 project.provisoners.map((provisioner, index) => {
                                                     return (
                                                         <>
-                                                            <img
-                                                                key={`${index}`}
-                                                                className="w-10 h-10 mr-4 rounded-full"
+
+                                                            <Avatar
+                                                                className="w-12 pr-1 h-12 mr-4 rounded-full"
                                                                 src={provisioner.avatar}
-                                                                alt=""
+                                                                alt={provisioner.name}
                                                             />
-                                                            <span className="text-gray-400">{provisioner.name}</span></>
+
+                                                            <span className="text-white">{provisioner.name}</span></>
                                                     )
                                                 })}
                                         </div>

@@ -12,7 +12,7 @@ const Hero = ({ lineTexts, bgImg, cta }) => {
             background: `url(${bgImg}) no-repeat center center fixed`,
             backgroundSize: 'cover',
             maxHeight: '100vh',
-            minHeight: '95h'
+            minHeight: '99vh'
         }} className="relative pb-20 md:pb-52 box-border overflow-hidden">
             <div className="h-6 ">
                 <div className="animate-pulse absolute top-0 heartbeat left-1/2">
@@ -43,17 +43,12 @@ const Hero = ({ lineTexts, bgImg, cta }) => {
                         <span className="relative inline-block">
                             <span className="relative block hover:underline hover:animate-pulse transition-all leading-none">
                                 <a href="/">
-                                {thirdLine}</a>
+                                    {thirdLine}</a>
                             </span>
                         </span>
                     </h1>
 
-                    <div>
-                        <a className="inline-flex mb-20 items-center text-white" href={link}>
-                            <span className="mr-4">{text}</span>
-                        </a>
-                    </div>
-
+    
                 </div>
             </div>
         </section>

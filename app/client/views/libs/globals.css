@@ -331,5 +331,6 @@ body {
 
 html {
         opacity: 1.0;
-        transition: opacity .434s ease-in;
+        transition: height 0.66s ease-out;
+        transition: opacity 1.434s ease-in-out;
 }

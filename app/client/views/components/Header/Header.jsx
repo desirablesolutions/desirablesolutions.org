@@ -22,7 +22,7 @@ const Header = ({ favicon, action }) => {
                     </div>
 
                     <div className="3xl:hidden pb-4">
-                        <button onClick={() => action()} className="flex ml-auto items-center justify-center w-14 h-14">
+                        <button className="flex navbar-burger ml-auto items-center justify-center w-14 h-14">
                             <MenuIcon/>
                         </button>
                     </div>

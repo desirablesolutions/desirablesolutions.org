@@ -24,7 +24,8 @@ const Hero = ({ lineTexts, bgImg, cta }) => {
                 <div className="pt-30 sm:pt-64">
 
 
-                    <h1 className="text-7xl xl:text-8xl 3xl:text-9xl text-gray-100 font-light mb-28">
+                    <h1 className="text-5xl xl:text-8xl 3xl:text-9xl text-white font-medium mb-18">
+
 
                         <span className="block leading-none">
 

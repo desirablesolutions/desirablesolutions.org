@@ -4,7 +4,7 @@ const team = [
         name: 'Joshua Desir',
         role: 'CEO & Master Designer',
         description: ``,
-        avatar: ''
+        avatar: "/assets/images/media/people/joshua-desir/joshua-desir-profile.jpg"
     },
     {
         id:'jeffrey-desir',

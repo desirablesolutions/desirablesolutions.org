@@ -1,4 +1,3 @@
-import FordwardLinkIcon from "@components/ForwardLinkIcon"
 
 
 const Hero = ({ lineTexts, bgImg, cta }) => {
@@ -16,8 +15,8 @@ const Hero = ({ lineTexts, bgImg, cta }) => {
         }} className="relative pb-20 md:pb-52 box-border overflow-hidden">
             <div className="h-6 ">
                 <div className="animate-pulse absolute top-0 heartbeat left-1/2">
-                    <div className="w-px h-16 bg-gray-900" />
-                    <div className="w-px h-24 bg-white" />
+                    <div className="w-px h-14 bg-gray-900" />
+                    <div className="w-px h-22 bg-white" />
                 </div>
             </div>
 

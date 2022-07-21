@@ -37,7 +37,7 @@ const WhoWeAre = ({ order }) => {
             secondLine: (
                 <>
                     <TextScrambler chars="₥৳₫ʤ←∆∂√∝∞∛⊖⊇⨂⨊" className="inline-block" phrases={problems}
-                        speed={33}
+                        speed={50}
                         pauseTime={3333} />problems for
 
                 </>
@@ -45,7 +45,7 @@ const WhoWeAre = ({ order }) => {
             thirdLine: (
                 <>
                     <TextScrambler chars="₥৳₫ʤ←∆∂√∝∞∛⊖⊇⨂⨊" className="incline-block" phrases={sectors}
-                        speed={66}
+                        speed={40}
                         pauseTime={12222} />
                 </>
             )

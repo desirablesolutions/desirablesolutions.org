@@ -3,9 +3,17 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 
-const Image = ({ src }) => {
+const Image = ({ width, height, src, alt, className }) => {
 
     return (
-        <LazyLoadImage />
+        <LazyLoadImage
+            classNmae={className}
+            alt={alt}
+            height={height}
+            effect="black-and-white"
+            src={src}
+            width={width} />
     )
 }
+
+export default Image

@@ -329,8 +329,8 @@ body {
 }
 
 
-html {
+html:before, html, html:after {
         opacity: 1.0;
-        transition: height 0.66s ease-out;
-        transition: opacity 1.434s ease-in-out;
+
+        transition: opacity .434s ease-in-out;
 }

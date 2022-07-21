@@ -1,10 +1,13 @@
 import "@views/libs/tailwind.css"
 import "@views/libs/globals.css"
 import 'react-scramble-text/dist/index.css'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+
+
 import Store from "@components/Store"
 
 export default function Application({ Component, pageProps }) {
-  
+
   return (
     <Store>
       <Component {...pageProps} />

@@ -1,5 +1,6 @@
 import find from "@controllers/utils/find"
 import team from "@db/team"
+import images from "@db/images"
 
 const projects = [
     {
@@ -7,11 +8,12 @@ const projects = [
         name: 'Yonder Airways',
         status: ["featured"],
         sector: ["Logo Kit"],
-        cover: {
-            src: '/assets/images/yonder-airways-1.png',
-            alt: 'Yonder Airways'
-        },
-        provisoner: [find({
+        covers: [...find({
+            arr: images.projects,
+            id: 'yonder-airways'
+        }).covers],
+        url: '/',
+        provisoners: [find({
             arr: team,
             id: 'joshua-desir'
         })],
@@ -24,10 +26,10 @@ const projects = [
         {
             name: 'design system'
         }],
-        completed: 'July 15, 2022',
-        description: (`Yonder Airways is a travel company that provides a wide range of services to its customers
-                       The company is spearheaded by a team of creative and innovative people who are dedicated to providing the best travel 
-                       experience to its customers.`)
+        production: 'July 15, 2022',
+        description: (` Yonder Airways is an airline logo identity that communicates its competitive edge 
+                        to its audience through a voice that is bold and friendly with a logo that conveys a preferable
+                        travel experience for its passengers.`)
     },
     {
         id: 'keithandes.me',

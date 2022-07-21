@@ -1,4 +1,6 @@
 
+import meta from "@configs/meta"
+
 
 const images = {
     logo: {
@@ -14,22 +16,22 @@ const images = {
             covers: [
                 {
                     id: 'yonder-airways-logo',
-                    src: ''
-                }
-            ]
-        },
-        {
-            id: 'elixir'
-        },
-        {
-            id: 'desirable.solutions',
-            covers: [
+                    src: `${meta.basePaths.projects}yonder-airways/yonder-airways-logo.png`,
+
+                },
                 {
-                    id: ''
+                    id: 'yonder-airways-circle-favicon',
+                    src: `${meta.basePaths.projects}yonder-airways/yonder-airways-circle-favicon.png`,
+                },
+                {
+                    id: 'yonder-airways-square-favicon',
+                    src: `${meta.basePaths.projects}yonder-airways/yonder-airways-square-favicon.png`,
                 }
             ]
         }
+
     ]
 }
 
 export default images
+

@@ -6,7 +6,7 @@ const showcases = [
     {
         id: 'projects-showcase',
         title: 'Our Projects',
-        heading: 'Design by masters, inspired by life',
+        heading: 'Designed by masters, inspired by life.',
         latest: [
             {
                 ...find({

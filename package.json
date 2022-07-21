@@ -23,6 +23,7 @@
   "homepage": "https://github.com/Inform-Inspire-LLC/desirable.solutions#readme",
   "dependencies": {
     "react-hover-animation": "^2.1.1",
-    "react-lazy-load-image-component": "^1.5.5"
+    "react-lazy-load-image-component": "^1.5.5",
+    "react-responsive-carousel": "^3.2.23"
   }
 }

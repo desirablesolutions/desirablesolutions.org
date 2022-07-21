@@ -11,7 +11,6 @@ import Goals from "@views/includes/Goals"
 export default function HomePage() {
 
   return (
-
     <HomeLayout>
       <ProjectShowcase order={"01"} />
       <Goals order={"02"} />
@@ -26,3 +25,9 @@ export default function HomePage() {
 
 }
 
+export async function getStaticProps() {
+  const data = {}
+  return {
+    props: data
+  }
+}

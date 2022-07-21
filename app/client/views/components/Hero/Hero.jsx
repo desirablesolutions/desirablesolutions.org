@@ -10,8 +10,10 @@ const Hero = ({ lineTexts, bgImg, cta }) => {
     return (
         <section style={{
             background: `url(${bgImg}) no-repeat center center fixed`,
-            backgroundSize: 'cover'
-        }} className="relative pb-20  md:pb-52 overflow-hidden">
+            backgroundSize: 'cover',
+            maxHeight: '100vh',
+            minHeight: '95h'
+        }} className="relative pb-20 md:pb-52 box-border overflow-hidden">
             <div className="h-6 ">
                 <div className="animate-pulse absolute top-0 heartbeat left-1/2">
                     <div className="w-px h-16 bg-gray-900" />
@@ -21,10 +23,10 @@ const Hero = ({ lineTexts, bgImg, cta }) => {
 
 
             <div className="container px-4 mx-auto">
-                <div className="pt-30 sm:pt-64">
+                <div className="pt-40 sm:pt-64">
 
 
-                    <h1 className="text-5xl xl:text-8xl 3xl:text-9xl text-white font-medium mb-18">
+                    <h1 className="text-6xl xl:text-8xl 3xl:text-9xl text-white font-medium mb-20">
 
 
                         <span className="block leading-none">

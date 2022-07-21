@@ -12,7 +12,7 @@ const projects = [
             arr: images.projects,
             id: 'yonder-airways'
         }).covers],
-        url: '/',
+        url: '/projects/yonder-airways',
         provisoners: [find({
             arr: team,
             id: 'joshua-desir'

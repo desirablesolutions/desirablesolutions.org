@@ -28,7 +28,7 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
                         {heading}
                     </h2>
                 </div>
-                <div className="flex flex-row xl:flex-row lg:flex-row xs:flex-col sm:flex-col md:flex-col -mx-4 pb-24 mb-20 border-b">
+                <div className="flex flex-row xl:flex-row  lg:flex-col xs:flex-col sm:flex-col md:flex-col -mx-4 pb-24 mb-20 border-b">
                     <div className="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
                         <Carousel
                             infiniteLoop={true}
@@ -59,7 +59,7 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
                                 <h4 className="text-3xl text-white mb-5">
                                     {featured.name}
                                 </h4>
-                                <a className="inline-block relative hover:text-red-300 transition-all cursor-pointer text-white mb-8" href="#">
+                                <a className="inline-block relative hover:text-red-300 transition-all cursor-pointer text-white mb-8" href={featured.url}>
                                     <span>
                                         {featured.description}
                                     </span>
@@ -129,10 +129,14 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
                                 <div key={`${index}`} className="w-full lg:w-1/3 px-4 mb-16 lg:mb-0">
                                     <div className="max-w-sm mx-auto">
                                         <span className="text-sm pr-2 text-gray-300">{project.production}</span>
+
+
                                         <a className="inline-block mt-6 mb-8 font-heading text-2xl" href={project.url}>
                                             <span className="relative">
                                                 <span className="text-white">{project.name}</span>
+                                           
                                                 <span className="absolute bottom-0 right-0 -mr-8 mb-1">
+                                                    
                                                     <svg
                                                         width={16}
                                                         height={16}
@@ -145,8 +149,14 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
                                                             fill="white"
                                                         />
                                                     </svg>
+                                                    
                                                 </span>
                                             </span>
+                                            <Avatar
+                                                    className="w-12 pr-1 h-12 mr-4 rounded-full"
+                                                    src={project.covers[0].src}
+                                                    alt=""
+                                                />
                                         </a>
                                         <div className="flex items-center">
                                             {

@@ -21,6 +21,7 @@ const Button = ({ children, icon, variant }) => {
            variant={variant}
            sx={{
             fontFamily: 'var(--font-primary)',
+            outline: 'none',
             color: 'white',
             textTransform: 'none',
             "&:hover": {

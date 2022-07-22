@@ -49,8 +49,10 @@ const images = {
             id: 'elixir-and-cream-cafe',
             covers: [
                 {
-                    id: 'elixir-and-cream-cafe-logo'
-                }
+                    id: 'elixir-and-cream-cafe-logo',
+                    src: `${meta.basePaths.projects}elixir-and-cream-cafe/elixir-and-cream-cafe-logo.png`,
+                },
+
             ]
         }
 

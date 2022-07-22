@@ -4,9 +4,9 @@ import find from "@controllers/utils/find"
 const team = [
     {
         id: 'joshua-desir',
-        name: 'Joshua Desir',
+        name: 'Joshua D. Desir',
         role: 'CEO & Master Designer',
-        description: ``,
+        description: `I am a graphic designer & amateur engineer by trade; and founder of the unique organizational web Inform & Inspire, LLC.`,
         info: [
             "Taurus"
         ],
@@ -17,9 +17,9 @@ const team = [
     },
     {
         id: 'jeffrey-desir',
-        name: 'Jeffrey Desir',
+        name: 'Jeffrey J. Desir',
         role: 'Techonomancer',
-        description: ``,
+        description: `I am a techonomancer, a person who is passionate about technology. I coordiante, strategize, & innovate solutions & processes our people need.`,
         info: [
             "Libra",
             "Atlanta, GA",

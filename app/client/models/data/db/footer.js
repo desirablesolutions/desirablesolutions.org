@@ -27,7 +27,8 @@ const footer = {
         links: [
             {
                 name: 'Support Us',
-                icon: <CoffeeIcon />
+                icon: <CoffeeIcon />,
+                href: 'https://ko-fi.com'
             },
             {
                 name: meta.contact.phoneNumber,
@@ -61,11 +62,13 @@ const footer = {
         minor: [
             {
                 name: 'Story',
-                icon: <HandshakeIcon />
+                icon: <HandshakeIcon />,
+                href: '/story'
             },
             {
                 name: 'Services',
-                icon: <DesignServicesIcon />
+                icon: <DesignServicesIcon />,
+                href: '/services'
             },
             {
                 name: 'Info',
@@ -78,7 +81,13 @@ const footer = {
         phoneNumber: '+1 (786) 766-9054',
         email: 'help@desirable.solutions',
         socials: {
-            kofi: ''
+            kofi: '',
+            linkedin: '',
+            facebook: '',
+            twitter: '',
+            instagram: '',
+            youtube: ''
+
         }
     }
 }

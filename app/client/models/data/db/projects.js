@@ -32,11 +32,14 @@ const projects = [
                         travel experience for its passengers.`)
     },
     {
-        id: 'elixir-and-cream',
+        id: 'elixir-and-cream-cafe',
         name: 'Elixir and Cream',
         status: ["Production"],
         sector: ["Brand Kit"],
-        covers: [""],
+        covers: [...find({
+            arr: images.projects,
+            id: 'elixir-and-cream-cafe'
+        }).covers],
         url: '/projects/elixir-and-cream',
         provisioners: [find({
             arr: team,

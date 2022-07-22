@@ -4,12 +4,18 @@ const DataSummary = ({ order, title, heading }) => {
 
     return (
         <section className="relative pb-24 md:pb-40  overflow-hidden">
+            
             <div className="bg-white h-16 mb-56">
                 <div className="heartbeat absolute top-0 left-1/2">
                     <div className="w-px h-16 bg-gray-900" />
                     <div className="w-px h-24 bg-white" />
                 </div>
             </div>
+            <div className="flex items-center m-4 mb-12">
+                    <span className="animate-pulse font-heading text-xl outline p-1 text-white">{order}</span>
+                    <div className="mx-4 rounded-full bg-gray-200 h-1 w-1" />
+                    <span className="font-heading text-xl text-white">{title}</span>
+                </div>
 
 
             <div className="container px-4 mx-auto">

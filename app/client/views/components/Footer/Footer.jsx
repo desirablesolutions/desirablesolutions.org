@@ -34,7 +34,8 @@ const Footer = ({ copyright, navLinks, actionLinks, contact, impressum }) => {
                                 navLinks.minor.map((link, index) => (
                                     <NavLink key={`${link.name}-${index}`}
                                         icon={link.icon}
-                                        name={link.name} />
+                                        name={link.name}
+                                        href={link.href} />
                                 ))}
                         </div>
                     </div>

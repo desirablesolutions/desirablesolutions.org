@@ -22,14 +22,11 @@ export default function FloatingNavigator() {
 
     <SpeedDial
       ariaLabel="SpeedDial basic example"
-      fabProps={{
-        sx: {
-
-          border: 'red'
-
-        }
-      }}
       sx={{
+        ".MuiSpeedDial-fab": {
+          backgroundColor: 'black',
+          border: '2px red solid'
+        },
         position: 'fixed', bottom: 16, right: 16, border: '2px', zIndex: '9999999999'
       }}
       icon={<ArchitectureIcon />}

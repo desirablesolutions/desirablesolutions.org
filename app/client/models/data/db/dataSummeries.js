@@ -1,6 +1,7 @@
 
 const dataSummeries = [
     {
-        id: 'goals'
+        id: 'goals',
+        heading: '',
     }
 ]

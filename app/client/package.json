@@ -23,6 +23,8 @@
     "react-dom": "18.2.0",
     "react-headroom": "^3.2.0",
     "react-hook-clipboard": "^1.0.3",
+    "react-icons": "^4.4.0",
+    "react-in-viewport": "^1.0.0-alpha.28",
     "react-placeholder-image": "^0.1.8",
     "react-reveal": "^1.2.2",
     "react-scramble-text": "^1.0.1",

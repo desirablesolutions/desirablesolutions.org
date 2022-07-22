@@ -11,8 +11,8 @@ const meta = {
                 href: '/'
             },
             {
-                name: 'Our Vision',
-                href: '/ourvision'
+                name: 'Vision',
+                href: '/vision'
             }
         ]
     },
@@ -31,6 +31,7 @@ const meta = {
         images: '/assets/images/',
         media: '/assets/images/media',
         projects: '/assets/images/media/projects/',
+        people: '/assets/images/media/people/',
 
     },
     icons: ['57x57', '72x72', '114x114', '144x144', '152x152', '180x180'],

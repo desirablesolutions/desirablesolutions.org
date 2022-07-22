@@ -29,7 +29,7 @@ const DataSummary = ({ order, title, heading }) => {
                             <div>
                                 <span className="text-sm text-gray-400">Your top</span>
                                 <h4 className="font-heading text-3xl text-white mt-2 mb-7">
-                                   <CountUp duration={4} delay={3} end={10200}/>
+                                    <CountUp duration={4} delay={3} end={10200} />
                                 </h4>
                                 <span className="text-xs text-gray-400 font-light">
                                     No-look-pass
@@ -97,7 +97,7 @@ const DataSummary = ({ order, title, heading }) => {
                         className="inline-block w-full sm:w-auto px-7 py-4 text-center font-medium bg-red-500 hover:bg-red-300 text-white rounded transition"
                         href="#"
                     >
-                        All Reviews
+                        Our Vision
                     </a>
                 </div>
             </div>

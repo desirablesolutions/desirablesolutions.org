@@ -135,7 +135,7 @@ const ProjectsLayout = ({ children }) => {
                                         </td>
                                         <td className="py-5 pr-14">
                                             <div className="relative flex pl-12 items-center">
-                                                <div className="absolute top-1/2 left-0 transform -translate-y-1/2 px-px h-3 rounded-full bg-gray-700" />
+                                                <div className="absolute top-1/2 left-0 transform -translate-y-1/2 px-px h-3 rounded-full gray-7bg-00" />
                                                 <img
                                                     className="w-12 h-12 rounded-full object-cover"
                                                     src="wrexa-assets/images/avatar-women1.png"

@@ -1,5 +1,5 @@
 import useMeta from "@hooks/useMeta"
-import PageLayout from "@layouts/PageLayout"
+import ProjectsLayout from "@layouts/ProjectsLayout"
 import { useEffect } from "react"
 
 
@@ -14,8 +14,8 @@ export default function YonderAirwaysPage() {
     }, [])
 
     return (
-        <PageLayout>
+        <ProjectsLayout>
 
-        </PageLayout>
+        </ProjectsLayout>
     )
 }

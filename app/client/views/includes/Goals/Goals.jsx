@@ -5,7 +5,7 @@ const Goals = ({ order }) => {
 
     return (
 
-        <DataSummary order={order}/>
+        <DataSummary heading={"Goals & Milestones"} order={order}/>
     )
 }
 

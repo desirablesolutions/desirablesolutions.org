@@ -1,3 +1,5 @@
+import team from "@db/team"
+
 const Gallery = ({ title, order, heading }) => {
 
 
@@ -72,76 +74,58 @@ const Gallery = ({ title, order, heading }) => {
             </svg>
           </a>
 
-
-
-          <div className="w-full lg:w-1/2 3xl:w-auto px-4 3xl:px-12 mb-16 lg:mb-0 lg:border-r">
-            <div className="max-w-md mx-auto relative pb-16 lg:pb-0 border-b lg:border-b-0">
-              <div className="absolute top-0 left-0 -mt-2 w-full">
-                <div className="mx-5 rounded-t-xl h-4 bg-gray-200" />
-              </div>
-              <div className="relative  rounded-md">
-                <img
-                  className="block w-full h-96 object-cover rounded-md"
-                  src="wrexa-assets/images/men-blue-short.png"
-                  alt=""
-                />
-                <div className="pt-12 pb-16 px-6 sm:px-12">
-                  <h4 className="text-2xl text-white mb-2">Joshua Desir</h4>
-                  <span className="text-gray-500">
-                    Founder &amp; Master Designer
-                  </span>
-                  <p className="mt-8 text-white font-light">
-                    The house by the pond cras ornare, some chords for a three
-                    moments, like a sense of truth. The lorem ipsum house by the
-                    pond cras ornare, some chords for a three moments, like.
-                  </p>
-                </div>
-                <div className="pt-6 pb-7 px-6 sm:px-12 border-t border-gray-200">
-                  <div className="flex items-center">
-                    <img
-                      className="w-10 h-10 mr-4"
-                      src="wrexa-assets/logos/logo-wrexa.svg"
-                      alt=""
-                    />
-                    <span className="text-gray-300">London, UK</span>
+          {
+            team.map((member, index) => {
+              return (
+                <div key={`${index}`} className="w-full lg:w-1/2 3xl:w-auto px-4 3xl:px-12">
+                  <div className="max-w-md mx-auto relative">
+                    <div className="absolute top-0 left-0 -mt-2 w-full">
+                      <div className="mx-5 rounded-t-xl h-4 bg-gray-200" />
+                    </div>
+                    <div className="relative  rounded-md">
+                      <img
+                        className="block w-full h-96 object-cover rounded-md"
+                        src="wrexa-assets/images/smiling-young-woman.png"
+                        alt=""
+                      />
+                      <div className="pt-12 pb-16 px-6 sm:px-12">
+                        <h4 className="text-2xl text-white mb-2">{member.name}</h4>
+                        <span className="text-gray-500">{member.role}</span>
+                        <p className="mt-8 text-white font-light">
+                          {member.description}
+                        </p>
+                      </div>
+                      <div className="pt-6 pb-7 px-6 sm:px-12 border-t border-gray-200">
+                        <div className="flex items-center">
+                          <img
+                            className="w-10 h-10 mr-4"
+                            src={member.profile.src}
+                            alt=""
+                          />
+                          <span className="text-gray-300">{member.info[0]}</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="w-full lg:w-1/2 3xl:w-auto px-4 3xl:px-12">
-            <div className="max-w-md mx-auto relative">
-              <div className="absolute top-0 left-0 -mt-2 w-full">
-                <div className="mx-5 rounded-t-xl h-4 bg-gray-200" />
-              </div>
-              <div className="relative  rounded-md">
-                <img
-                  className="block w-full h-96 object-cover rounded-md"
-                  src="wrexa-assets/images/smiling-young-woman.png"
-                  alt=""
-                />
-                <div className="pt-12 pb-16 px-6 sm:px-12">
-                  <h4 className="text-2xl text-white mb-2">Jeffrey Desir</h4>
-                  <span className="text-gray-500">Technomancer</span>
-                  <p className="mt-8 text-white font-light">
-                    The house by the pond cras ornare, some chords for a three
-                    moments, like a sense of truth. The lorem ipsum house by the
-                    pond cras ornare, some chords for a three moments, like.
-                  </p>
-                </div>
-                <div className="pt-6 pb-7 px-6 sm:px-12 border-t border-gray-200">
-                  <div className="flex items-center">
-                    <img
-                      className="w-10 h-10 mr-4"
-                      src="wrexa-assets/logos/logo-wrexa.svg"
-                      alt=""
-                    />
-                    <span className="text-gray-300">Leeds, UK</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+              )
+            })
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

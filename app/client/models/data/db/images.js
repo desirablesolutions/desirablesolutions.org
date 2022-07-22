@@ -46,6 +46,17 @@ const images = {
             ]
         }
 
+    ],
+
+    people: [
+        {
+            id: 'joshua-desir',
+            src: `${meta.basePaths.people}joshua-desir/joshua-desir-profile.jpg`,
+        },
+        {
+            id: 'jeffrey-desir',
+            src: `${meta.basePaths.people}jeffrey-desir/jeffrey-desir-profile.png`,
+        }
     ]
 }
 

@@ -44,6 +44,14 @@ const images = {
                     src: `${meta.basePaths.projects}yonder-airways/yonder-airways-logo-schema.png`,
                 }
             ]
+        },
+        {
+            id: 'elixir-and-cream-cafe',
+            covers: [
+                {
+                    id: 'elixir-and-cream-cafe-logo'
+                }
+            ]
         }
 
     ],

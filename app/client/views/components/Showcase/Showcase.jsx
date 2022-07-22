@@ -28,7 +28,7 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
                         {heading}
                     </h2>
                 </div>
-                <div className="flex flex-row xl:flex-row  lg:flex-col xs:flex-col sm:flex-col md:flex-col -mx-4 pb-24 mb-20 border-b">
+                <div className="flex flex-wrap -mx-4 pb-24 mb-20 border-b">
                     <div className="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
                         <Carousel
                             infiniteLoop={true}

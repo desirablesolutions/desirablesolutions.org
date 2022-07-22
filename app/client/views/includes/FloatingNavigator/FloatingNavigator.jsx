@@ -11,7 +11,7 @@ import ShareIcon from '@mui/icons-material/Share';
 import ArchitectureIcon from '@mui/icons-material/Architecture';
 
 const actions = [
-  { icon: <FileCopyIcon />, name: 'Copy' },
+  { icon: <FileCopyIcon sx={{ color: 'white' }} />, name: 'Top' },
   { icon: <SaveIcon />, name: 'Save' },
   { icon: <PrintIcon />, name: 'Print' },
   { icon: <ShareIcon />, name: 'Share' },
@@ -23,12 +23,14 @@ export default function FloatingNavigator() {
     <SpeedDial
       ariaLabel="SpeedDial basic example"
       fabProps={{
-       color: 'error'
+        sx: {
+
+          border: 'red'
+
+        }
       }}
       sx={{
-        root: {
-          backgroundColor: 'red'
-        }, position: 'fixed', bottom: 16, right: 16, border: '2px'
+        position: 'fixed', bottom: 16, right: 16, border: '2px', zIndex: '9999999999'
       }}
       icon={<ArchitectureIcon />}
     >

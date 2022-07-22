@@ -19,7 +19,7 @@ const Gallery = ({ title, order, heading }) => {
           </div>
 
           <div className="w-full md:w-1/2 px-4 md:text-right">
-            <a className="inline-block" href="#">
+            <a className="inline-block" href="/">
               <img
                 className="w-16 h-16"
                 src="/assets/images/logo-transparent.png"

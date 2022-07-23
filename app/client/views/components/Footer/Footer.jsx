@@ -1,4 +1,5 @@
 import Button from "@components/Button"
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const NavLink = ({ key, icon, href, name }) => (
     <>
@@ -47,9 +48,13 @@ const Footer = ({ copyright, navLinks, actionLinks, contact, impressum }) => {
 
                         {
                             actionLinks.links.map((link, index) => (
-                                <Button variant="text" icon={link.icon} key={`${link.name}-${index}`} href={link.href}>
-                                    {link.name}
-                                </Button>
+                                <CopyToClipboard onClick={() => alert('text copied!')} text={link.name}>
+
+                                    <Button variant="text" icon={link.icon} key={`${link.name}-${index}`} href={link.href}>
+                                        {link.name}
+                                    </Button>
+                                </CopyToClipboard>
+
                             ))
                         }
 

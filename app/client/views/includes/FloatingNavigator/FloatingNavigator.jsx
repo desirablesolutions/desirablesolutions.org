@@ -24,7 +24,7 @@ const actions = [
 
   {
     icon: (
-      <ScrollToTop className='relative' component={(
+      <ScrollToTop color={'#FF0000'}className='relative' component={(
         <ArrowCircleUpIcon sx={{ color: 'var(--red-300)' }} />
       )} smooth />
     ), name: 'Top'

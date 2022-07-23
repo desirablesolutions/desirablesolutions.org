@@ -9,7 +9,7 @@ const showcases = [
             name: 'Our Projects'
         },
         title: 'The Showcase.',
-        heading: '✒️Designed by masters, inspired by life.',
+        heading: 'Designed by masters, inspired by life.',
         latest: [
             {
                 ...find({

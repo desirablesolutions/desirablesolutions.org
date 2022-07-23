@@ -3,7 +3,8 @@ import useDrawer from "@hooks/useDrawer"
 
 const navBar = {
     favicon: {
-        src: images.logo.transparent.src
+        src: images.logo.transparent.src,
+        href: '/'
     },
     action: () => [
         useDrawer()

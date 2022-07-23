@@ -20,6 +20,12 @@ const Button = ({ children, icon, variant }) => {
            startIcon={icon} 
            variant={variant}
            sx={{
+           ".MuiButtonBase-root": {
+                cursor:' not-allowed',
+                pointerEvents: 'auto',
+                outline: 'none',
+                color: 'white'
+              },
             fontFamily: 'var(--font-primary)',
             outline: 'none',
             color: 'white',

@@ -1,4 +1,4 @@
-import DataSummary from "@views/components/DataSummary";
+import DataSummary from "@components/DataSummary";
 import dataSummeries from "@db/dataSummeries"
 import find from "@controllers/utils/find";
 

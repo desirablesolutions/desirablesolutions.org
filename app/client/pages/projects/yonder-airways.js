@@ -8,10 +8,10 @@ export default function YonderAirwaysPage() {
 
     useMeta({
         pageTitle: 'Yonder Airways',
-    }) 
-    
+    })
+
     return (
-        <ProjectsLayout>
+        <ProjectsLayout title={"Yonder Airways"}>
 
         </ProjectsLayout>
     )

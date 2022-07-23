@@ -95,7 +95,7 @@ const images = {
     people: [
         {
             id: 'joshua-desir',
-            src: `${meta.basePaths.people}joshua-desir/joshua-desir-profile.png`,
+            src: `${meta.basePaths.people}joshua-desir/joshua-desir-profile.jpg`,
         },
         {
             id: 'jeffrey-desir',

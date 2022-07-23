@@ -4,7 +4,7 @@ const DataSummary = ({ order, title, heading }) => {
 
     return (
         <section className="relative pb-24 md:pb-40  overflow-hidden">
-            
+
             <div className="bg-white h-16 mb-56">
                 <div className="heartbeat absolute top-0 left-1/2">
                     <div className="w-px h-16 bg-gray-900" />
@@ -12,10 +12,10 @@ const DataSummary = ({ order, title, heading }) => {
                 </div>
             </div>
             <div className="flex items-center m-4 mb-12">
-                    <span className="animate-pulse font-heading text-xl outline p-1 text-white">{order}</span>
-                    <div className="mx-4 rounded-full bg-gray-200 h-1 w-1" />
-                    <span className="font-heading text-xl text-white">{title}</span>
-                </div>
+                <span className="animate-pulse font-heading text-xl outline p-1 text-white">{order}</span>
+                <div className="mx-4 rounded-full bg-gray-200 h-1 w-1" />
+                <span className="font-heading text-xl text-white">{title}</span>
+            </div>
 
 
             <div className="container px-4 mx-auto">
@@ -33,17 +33,17 @@ const DataSummary = ({ order, title, heading }) => {
                                 alt=""
                             />
                             <div>
-                                <span className="text-sm text-gray-400">Your top</span>
+                                <span className="text-sm text-gray-400">Value</span>
                                 <h4 className="font-heading text-3xl text-white mt-2 mb-7">
-                                    <CountUp duration={4} delay={3} end={10200} />
+                                    $<CountUp duration={6} delay={4} end={500000} />
                                 </h4>
                                 <span className="text-xs text-gray-400 font-light">
-                                    No-look-pass
+                                    To be provided to non-profits & ethical organizations.
                                 </span>
                             </div>
                         </div>
                     </div>
-                    <div className="w-full lg:w-1/2 3xl:w-1/4 px-4 border-b lg:border-b-0 3xl:border-r border-gray-800">
+                    <div className="w-full lg:w-1/2 3xl:w-1/4 px-4 border-b lg:border-b-0 3xl:border-r border-gray-200">
                         <div className="sm:flex max-w-xs mx-auto 3xl:px-10 py-10 items-start">
                             <img
                                 className="block mb-6 sm:mb-0 sm:mr-8"
@@ -51,12 +51,12 @@ const DataSummary = ({ order, title, heading }) => {
                                 alt=""
                             />
                             <div>
-                                <span className="text-sm text-gray-400">Your top</span>
+                                <span className="text-sm text-gray-400">Services</span>
                                 <h4 className="font-heading text-3xl text-white mt-2 mb-7">
-                                    $13,560
+                                    +<CountUp duration={6} delay={4} end={100} />
                                 </h4>
                                 <span className="text-xs text-gray-400 font-light">
-                                    Some chords for a three moments
+                                   To be developed & decentralized for B2B & P2P.
                                 </span>
                             </div>
                         </div>
@@ -69,12 +69,13 @@ const DataSummary = ({ order, title, heading }) => {
                                 alt=""
                             />
                             <div>
-                                <span className="text-sm text-gray-400">Your top</span>
+                                <span className="text-sm text-gray-400">Identities</span>
                                 <h4 className="font-heading text-3xl text-white mt-2 mb-7">
-                                    $13,560
+                                    +<CountUp duration={6} delay={4} end={1500} />
+
                                 </h4>
                                 <span className="text-xs text-gray-400 font-light">
-                                    Waiting, watching, designing
+                                    To be cohered into a single body of skills & services from every race, ethnicity, sex, age, & ability.
                                 </span>
                             </div>
                         </div>
@@ -87,12 +88,12 @@ const DataSummary = ({ order, title, heading }) => {
                                 alt=""
                             />
                             <div>
-                                <span className="text-sm text-gray-400">Your top</span>
+                                <span className="text-sm text-gray-400">Infrastructures</span>
                                 <h4 className="font-heading text-3xl text-white mt-2 mb-7">
-                                    +17,500
+                                    *<CountUp duration={6} delay={4} end={21} />
                                 </h4>
                                 <span className="text-xs text-gray-400 font-light">
-                                    The final projects
+                                    Run by evil governments & corporations to be replaced with a meritocracy of development & vision.
                                 </span>
                             </div>
                         </div>
@@ -100,8 +101,8 @@ const DataSummary = ({ order, title, heading }) => {
                 </div>
                 <div className="text-center">
                     <a
-                        className="inline-block w-full sm:w-auto px-7 py-4 text-center font-medium bg-red-500 hover:bg-red-300 text-white rounded transition"
-                        href="#"
+                        className="inline-block w-full sm:w-auto px-7 py-4 text-center font-medium bg-red-500 hover:bg-red-300 text-white hover:text-black rounded transition"
+                        href="/vision"
                     >
                         Our Vision
                     </a>

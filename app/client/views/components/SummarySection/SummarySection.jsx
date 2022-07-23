@@ -13,8 +13,8 @@ const SummarySection = ({ order, title, heading }) => {
                 </div>
                 <h2 className="text-center font-heading text-3xl sm:text-6xl md:text-5xl text-white mb-24">
 
-                    {heading}           
-                         </h2>
+                    {heading}
+                </h2>
                 <div className="flex flex-wrap -mx-4">
                     <div className="w-full lg:w-1/3 px-4 pb-20 lg:pb-0 mb-16 lg:mb-0 relative">
                         <div className="hidden lg:block absolute top-0 right-0 pt-14 h-full w-px">
@@ -40,9 +40,8 @@ const SummarySection = ({ order, title, heading }) => {
                                     Dependability
                                 </h5>
                                 <div className="max-w-xs px-10 mx-auto">
-                                    <p className="font-light text-gray-500">
-                                        The house by the pond cras ornare, some chords for a three
-                                        moments, like a sense of truth that.
+                                    <p className="font-light text-gray-200">
+                                        Our in-house tools & honed disciplines has made us robust against uncertainity.
                                     </p>
                                 </div>
                             </div>
@@ -51,11 +50,11 @@ const SummarySection = ({ order, title, heading }) => {
 
                     <div className="w-full lg:w-1/3 px-4 pb-20 lg:pb-0 mb-16 lg:mb-0 relative">
                         <div className="hidden lg:block absolute top-0 right-0 pt-14 h-full w-px">
-                            <div className="h-full w-px bg-gray-800" />
+                            <div className="h-full w-px bg-gray-400" />
                         </div>
-                        <div className="lg:hidden absolute bottom-0 left-0 w-full h-px bg-gray-800" />
+                        <div className="lg:hidden absolute bottom-0 left-0 w-full h-px bg-gray-300" />
                         <div className="max-w-sm mx-auto text-center">
-                            <span className="inline-block text-indigo-500">
+                            <span className="inline-block text-red-500">
                                 <svg
                                     width={40}
                                     height={28}
@@ -115,9 +114,9 @@ const SummarySection = ({ order, title, heading }) => {
                                     Development
                                 </h5>
                                 <div className="max-w-xs px-10 mx-auto">
-                                    <p className="font-light text-gray-500">
-                                        The lorem ipsum house by the pond cras ornare, some chords for a
-                                        three moments, lorem like this.
+                                    <p className="font-light text-gray-200">
+                                        Single-Responsibility, Open-Closed, Liskov-Substitution, Interface Segregation, Dependency Inversion...are fancy words for
+                                        development patterns & practices that are future-proof and "simple".
                                     </p>
                                 </div>
                             </div>
@@ -125,7 +124,7 @@ const SummarySection = ({ order, title, heading }) => {
                     </div>
                     <div className="w-full lg:w-1/3 px-4">
                         <div className="max-w-sm mx-auto text-center">
-                            <span className="inline-block text-indigo-500">
+                            <span className="inline-block text-red-500">
                                 <svg
                                     width={35}
                                     height={31}
@@ -176,9 +175,8 @@ const SummarySection = ({ order, title, heading }) => {
                             <div className="mt-8">
                                 <h5 className="font-heading text-xl text-white mb-16">Design</h5>
                                 <div className="max-w-xs px-10 mx-auto">
-                                    <p className="font-light text-gray-500">
-                                        The house by lorem ipsum the pond cras ornare, some chords for a
-                                        three moments.
+                                    <p className="font-light text-gray-300">
+                                        We craft designs from First Principles - simple, beautiful, and functional.
                                     </p>
                                 </div>
                             </div>

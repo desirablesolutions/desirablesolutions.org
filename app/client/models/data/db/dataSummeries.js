@@ -1,9 +1,12 @@
+import HourglassTopIcon from '@mui/icons-material/HourglassTop';
 
 const dataSummeries = [
     {
         id: 'the-road-ahead',
         title: 'The Road Ahead.',
-        heading: '🛣️Serious work, serious results.',
+        heading: (<>
+        <HourglassTopIcon/>Sincere work, serious results.
+        </>),
         data:[
             {
                 id: '',

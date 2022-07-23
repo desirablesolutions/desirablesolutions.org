@@ -70,7 +70,7 @@ const TextCarousel = ({ order, title, heading }) => {
                 </div>
                 <div className="text-center">
                     <a
-                        className="inline-block w-full sm:w-auto px-7 py-4 text-center font-medium bg-red-700 hover:bg-red-300 text-white rounded transition-all"
+                        className="inline-block w-full sm:w-auto px-7 py-4 text-center font-medium bg-red-700 hover:text-black hover:bg-red-300 text-white rounded transition-all"
                         href="#"
                     >
                         Have any questions?

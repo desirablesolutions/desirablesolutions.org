@@ -16,7 +16,7 @@ const dataSummeries = [
             }
         ],
         cta: {
-            name: ''
+            name: 'Our Projects'
         }
     }
 ]

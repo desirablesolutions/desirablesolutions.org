@@ -2,7 +2,7 @@ import { Carousel } from 'react-responsive-carousel';
 import Image from "@components/Image"
 import Avatar from "@components/Avatar"
 
-const Showcase = ({ title, featured, latest, order, sx, heading }) => {
+const Showcase = ({ title, featured, latest, order, sx, heading, cta }) => {
 
 
     return (
@@ -179,8 +179,18 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
                             )
                         })
                     }
+                    
                 </div>
+                
             </div>
+            <div className="text-center">
+                    <a
+                        className="inline-block mt-14 w-full sm:w-auto px-7 py-4 text-center font-medium bg-red-500 hover:bg-red-300 text-white hover:text-black rounded transition"
+                        href="/projects"
+                    >
+                        {cta.name}
+                    </a>
+                </div>
         </section>
 
     )

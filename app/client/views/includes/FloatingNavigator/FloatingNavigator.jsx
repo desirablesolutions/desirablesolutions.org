@@ -14,13 +14,21 @@ import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 import GroupIcon from '@mui/icons-material/Group';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 
+import ScrollToTop from "react-scroll-to-top";
 
 const actions = [
-  { icon: <WorkOutlineIcon sx={{ color: 'var(--red-300)' }} />, name: 'Projects' },
-  { icon: <SaveIcon sx={{ color: 'var(--red-300)' }}  />, name: 'Info' },
-  { icon: <GroupIcon sx={{ color: 'var(--red-300)' }} />, name: 'Team' },
-  { icon: <CardGiftcardIcon sx={{ color: 'var(--red-300)' }}/>, name: 'Showcase' },
-  { icon: <ArrowCircleUpIcon sx={{ color: 'var(--red-300)' }} />, name: 'Top' }
+  {
+    icon: <WorkOutlineIcon sx={{ color: 'var(--red-300)' }} />, name: 'Projects',
+    url: '/projects'
+  },
+
+  {
+    icon: (
+      <ScrollToTop className='relative' component={(
+        <ArrowCircleUpIcon sx={{ color: 'var(--red-300)' }} />
+      )} smooth />
+    ), name: 'Top'
+  }
 ];
 
 export default function FloatingNavigator() {
@@ -43,7 +51,6 @@ export default function FloatingNavigator() {
     >
       {actions.map((action) => (
         <SpeedDialAction
- 
           key={action.name}
           tooltipOpen={true}
           icon={action.icon}

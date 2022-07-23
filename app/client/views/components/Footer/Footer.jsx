@@ -47,7 +47,7 @@ const Footer = ({ copyright, navLinks, actionLinks, contact, impressum }) => {
 
                         {
                             actionLinks.links.map((link, index) => (
-                                <Button variant="outlined" icon={link.icon} key={`${link.name}-${index}`} href={link.href}>
+                                <Button variant="text" icon={link.icon} key={`${link.name}-${index}`} href={link.href}>
                                     {link.name}
                                 </Button>
                             ))

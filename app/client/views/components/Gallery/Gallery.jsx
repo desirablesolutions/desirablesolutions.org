@@ -1,6 +1,10 @@
 import Image from "@components/Image"
 import team from "@db/team"
 import Avatar from "@components/Avatar"
+import Card from '@mui/material/Card';
+
+
+
 const Gallery = ({ title, order, heading }) => {
 
 
@@ -36,7 +40,7 @@ const Gallery = ({ title, order, heading }) => {
           {
             team.map((member, index) => {
               return (
-                <div key={`${index}`} className="w-full border-white lg:w-1/2 3xl:w-auto px-4 3xl:px-12">
+                <div key={`${index}`} className="w-full border-r-white border-white lg:w-1/2 3xl:w-auto px-4 3xl:px-12">
                   <div className="max-w-md mx-auto relative">
                     <div className="absolute top-0 left-0 -mt-2 w-full">
                       <div className="mx-5 rounded-t-xl h-4" />

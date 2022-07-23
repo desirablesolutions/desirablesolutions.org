@@ -6,7 +6,7 @@ const FormSection = ({ order, title, heading }) => {
             <div className="container px-4 mx-auto">
                 <img
                     className="hidden xl:block absolute top-0 right-0 w-1/4 mt-10 h-full object-cover"
-                    src="wrexa-assets/images/women-right-messages.png"
+                    src="/assets/images/banner.png"
                     alt=""
                 />
 
@@ -71,10 +71,10 @@ const FormSection = ({ order, title, heading }) => {
                                 </label>
                             </div>
                             <a
-                                className="inline-block w-full lg:w-auto px-7 py-4 text-center font-medium bg-indigo-500 hover:bg-indigo-600 text-white rounded transition duration-250"
+                                className="inline-block w-full lg:w-auto px-7 py-4 text-center font-medium bg-red-500 hover:bg-indigo-600 text-white rounded transition duration-250"
                                 href="#"
                             >
-                                Send message!
+                                Send!
                             </a>
                         </div>
                     </form>
@@ -83,7 +83,7 @@ const FormSection = ({ order, title, heading }) => {
 
             <img
                 className="xl:hidden block mt-24 w-full h-128 object-cover"
-                src="wrexa-assets/images/women-right-messages.png"
+                src="/assets/images/banner.png"
                 alt=""
             />
         </section>

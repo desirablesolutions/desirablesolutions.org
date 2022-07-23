@@ -105,7 +105,7 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
                                             <>
                                                 <Avatar
                                                     className="w-12 pr-1 h-12 mr-4 rounded-full"
-                                                    src={provisioner.avatar}
+                                                    src={provisioner.profile.src}
                                                     alt=""
                                                 />
                                                 <span key={`${index}`} className="text-gray-200">{provisioner.name}</span>
@@ -126,7 +126,7 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
 
                         latest.map((project, index) => {
                             return (
-                                <div key={`${index}`} className="w-full lg:w-1/3 px-4 mb-16 lg:mb-0">
+                                <div key={`${index}`} className="w-full hover:border-white lg:w-1/3 px-4 mb-16 lg:mb-0">
                                     <div className="max-w-sm mx-auto">
                                         <span className="text-sm pr-2 text-gray-300">{project.production}</span>
 
@@ -153,7 +153,7 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
                                                 </span>
                                             </span>
                                             <Avatar
-                                                    className="w-12 pr-1 h-12 mr-4 rounded-full"
+                                                    className="w-12 pr-1 h-12 mr-4 rounded"
                                                     src={project.covers[0].src}
                                                     alt=""
                                                 />
@@ -165,8 +165,8 @@ const Showcase = ({ title, featured, latest, order, sx, heading }) => {
                                                         <>
 
                                                             <Avatar
-                                                                className="w-12 pr-1 h-12 mr-4 rounded-full"
-                                                                src={provisioner.avatar}
+                                                                className="w-12 pr-1 h-12 mr-4 rounded"
+                                                                src={provisioner.profile.src}
                                                                 alt={provisioner.name}
                                                             />
 

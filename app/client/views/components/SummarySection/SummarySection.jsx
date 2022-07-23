@@ -1,19 +1,20 @@
-const SummarySection = ({ order }) => {
+const SummarySection = ({ order, title, heading }) => {
 
     return (
 
         <section className="py-24 md:py-40">
             <div className="container px-4 mx-auto">
                 <div className="flex items-center mb-10">
-                    <span className="font-heading text-xl text-white">{order}</span>
+                    <span className="font-heading text-xl outline p-1 text-white">{order}</span>
                     <div className="mx-4 rounded-full bg-gray-200 h-1 w-1" />
                     <span className="font-heading text-xl text-white">
-                        Be unique with features
+                        {title}
                     </span>
                 </div>
-                <h1 className="text-center font-heading text-5xl sm:text-6xl md:text-7xl text-white mb-24">
-                    Pillars
-                </h1>
+                <h2 className="text-center font-heading text-3xl sm:text-6xl md:text-5xl text-white mb-24">
+
+                    {heading}           
+                         </h2>
                 <div className="flex flex-wrap -mx-4">
                     <div className="w-full lg:w-1/3 px-4 pb-20 lg:pb-0 mb-16 lg:mb-0 relative">
                         <div className="hidden lg:block absolute top-0 right-0 pt-14 h-full w-px">
@@ -21,7 +22,7 @@ const SummarySection = ({ order }) => {
                         </div>
                         <div className="lg:hidden absolute bottom-0 left-0 w-full h-px bg-gray-800" />
                         <div className="max-w-sm mx-auto text-center">
-                            <span className="inline-block text-indigo-500">
+                            <span className="inline-block text-red-500">
                                 <svg
                                     width={34}
                                     height={34}
@@ -47,6 +48,7 @@ const SummarySection = ({ order }) => {
                             </div>
                         </div>
                     </div>
+
                     <div className="w-full lg:w-1/3 px-4 pb-20 lg:pb-0 mb-16 lg:mb-0 relative">
                         <div className="hidden lg:block absolute top-0 right-0 pt-14 h-full w-px">
                             <div className="h-full w-px bg-gray-800" />

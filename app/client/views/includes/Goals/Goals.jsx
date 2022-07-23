@@ -1,11 +1,15 @@
 import DataSummary from "@views/components/DataSummary";
-
+import dataSummeries from "@db/dataSummeries"
+import find from "@controllers/utils/find";
 
 const Goals = ({ order }) => {
 
     return (
 
-        <DataSummary heading={"Goals & Milestones"} order={order}/>
+        <DataSummary {...find({
+            arr: dataSummeries,
+            id: 'the-road-ahead'
+        })} order={order}/>
     )
 }
 

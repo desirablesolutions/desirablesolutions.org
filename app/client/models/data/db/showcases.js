@@ -5,8 +5,8 @@ const showcases = [
 
     {
         id: 'projects-showcase',
-        title: 'Our Projects',
-        heading: 'Designed by masters, inspired by life.',
+        title: 'The Showcase.',
+        heading: '✒️Designed by masters, inspired by life.',
         latest: [
             {
                 ...find({
@@ -17,13 +17,13 @@ const showcases = [
             {
                 ...find({
                     arr: projects,
-                    id: 'yonder-airways'
+                    id: 'elixir-and-cream-cafe'
                 })
             },
             {
                 ...find({
                     arr: projects,
-                    id: 'yonder-airways'
+                    id: 'green-harvest-farmers-market'
                 })
             }
         ],

@@ -25,7 +25,7 @@ export default function FloatingNavigator() {
       sx={{
         ".MuiSpeedDial-fab": {
           backgroundColor: 'black',
-          border: '2px red solid'
+          border: '1px var(--red-800) solid'
         },
         position: 'fixed', bottom: 16, right: 16, border: '2px', zIndex: '9999999999'
       }}
@@ -34,6 +34,7 @@ export default function FloatingNavigator() {
       {actions.map((action) => (
         <SpeedDialAction
           key={action.name}
+          tooltipOpen={true}
           icon={action.icon}
           tooltipTitle={<span className="text-white">{action.name}</span>}
         />

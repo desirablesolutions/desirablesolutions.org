@@ -52,6 +52,40 @@ const images = {
                     id: 'elixir-and-cream-cafe-logo',
                     src: `${meta.basePaths.projects}elixir-and-cream-cafe/elixir-and-cream-cafe-logo.png`,
                 },
+                {
+                    id: 'elixir-and-cream-cafe-logo',
+                    src: `${meta.basePaths.projects}elixir-and-cream-cafe/elixir-and-cream-cafe-logo.png`,
+                },
+                {
+                    id: 'elixir-and-cream-cafe-logo',
+                    src: `${meta.basePaths.projects}elixir-and-cream-cafe/elixir-and-cream-cafe-logo.png`,
+                },
+                {
+                    id: 'elixir-and-cream-cafe-logo',
+                    src: `${meta.basePaths.projects}elixir-and-cream-cafe/elixir-and-cream-cafe-logo.png`,
+                },
+
+            ]
+        },
+        {
+            id: 'green-harvest-farmers-market',
+            covers: [
+                {
+                    id: 'elixir-and-cream-cafe-logo',
+                    src: `${meta.basePaths.projects}green-harvest-farmers-market/green-harvest-farmers-market-logo.png`,
+                },
+                {
+                    id: 'elixir-and-cream-cafe-logo',
+                    src: `${meta.basePaths.projects}elixir-and-cream-cafe/elixir-and-cream-cafe-logo.png`,
+                },
+                {
+                    id: 'elixir-and-cream-cafe-logo',
+                    src: `${meta.basePaths.projects}elixir-and-cream-cafe/elixir-and-cream-cafe-logo.png`,
+                },
+                {
+                    id: 'elixir-and-cream-cafe-logo',
+                    src: `${meta.basePaths.projects}elixir-and-cream-cafe/elixir-and-cream-cafe-logo.png`,
+                },
 
             ]
         }
@@ -61,7 +95,7 @@ const images = {
     people: [
         {
             id: 'joshua-desir',
-            src: `${meta.basePaths.people}joshua-desir/joshua-desir-profile.jpg`,
+            src: `${meta.basePaths.people}joshua-desir/joshua-desir-profile.png`,
         },
         {
             id: 'jeffrey-desir',

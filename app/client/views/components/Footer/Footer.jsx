@@ -70,9 +70,15 @@ const Footer = ({ copyright, navLinks, actionLinks, contact, impressum }) => {
                         <span className="block text-sm text-shadow-2 transition-all hover:text-gray-500 text-white font-light">
                             {copyright.text}
                         </span>
+                        <span className="block text-sm text-shadow-2 transition-all hover:text-gray-500 text-white font-light">
+                            {copyright.text}
+                        </span>
                     </div>
                     <p class="max-w-3xl animate-pulse mx-auto text-gray-400 text-xs font-light">
                         {impressum}
+                    </p>
+                    <p class="max-w-3xl animate-pulse mx-auto text-gray-400 text-xs font-light">
+                        MACH: 11.11.11
                     </p>
                 </div>
             </div>

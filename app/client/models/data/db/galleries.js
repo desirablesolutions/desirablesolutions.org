@@ -1,8 +1,8 @@
 const galleries = [
     {
         id: 'team-gallery',
-        title: 'Our Family',
-        heading: 'Team'
+        title: 'The Family',
+        heading: 'AKA "The A-Team"'
         
     }
 ]

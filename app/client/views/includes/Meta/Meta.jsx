@@ -18,6 +18,8 @@ const Meta = () => {
   return (
 
     <Head>
+      <Icons />
+
       <title>{title} | {pageTitle}</title>
       <link rel="preload" href="/assets/fonts/the-seasons/the-seasons-Regular.ttf" as="font" type="font/ttf" crossOrigin={true} />
       <meta name="theme-color" content="#000000" />
@@ -25,7 +27,6 @@ const Meta = () => {
       <link href={url} rel="canonical" />
       <meta name="og:title" property="og:title" content={title} />
       <meta name="robots" content="index, follow" />
-      <Icons />
     </Head>
   )
 

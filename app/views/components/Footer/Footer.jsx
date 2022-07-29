@@ -79,9 +79,6 @@ const Footer = ({ copyright, navLinks, actionLinks, contact, impressum }) => {
                     <p class="max-w-3xl animate-pulse mx-auto text-gray-400 text-xs font-light">
                         {impressum}
                     </p>
-                    <p class="max-w-3xl animate-pulse mx-auto text-gray-400 text-xs font-light">
-                        MACH: 11.11.11
-                    </p>
                 </div>
             </div>
         </section>

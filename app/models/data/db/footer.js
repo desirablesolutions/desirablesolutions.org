@@ -72,7 +72,8 @@ const footer = {
             },
             {
                 name: 'Info',
-                icon: <InfoOutlinedIcon />
+                icon: <InfoOutlinedIcon />,
+                href: '/info'
             }
 
         ]

@@ -1,12 +1,11 @@
-import ProjectLayout from "@views/layouts/ProjectLayout"
-
+import PageLayout from "@layouts/PageLayout/"
 
 
 export default function ProjectsPage() {
 
-    return ( 
-        <ProjectLayout>
+    return (
+        <PageLayout>
 
-        </ProjectLayout>
+        </PageLayout>
     )
 }

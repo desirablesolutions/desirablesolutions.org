@@ -1,8 +1,8 @@
 const meta = {
     title: 'Désirable Solutions',
     description: 'We solve problems.',
-    url: 'https://desirable.solutions',
-    copyright: `© 2022 Desirable Solutions. All rights reserved.`,
+    url: 'https://desirable.solutions/',
+    copyright: `© 2022 Désirable Solutions. All rights reserved.`,
     impressum: `In God We Trust.`,
     pages: {
         static: [

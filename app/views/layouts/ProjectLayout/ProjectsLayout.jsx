@@ -1,6 +1,6 @@
 import PageLayout from "@layouts/PageLayout"
 
-const ProjectsLayout = ({ children, title }) => {
+const ProjectLayout = ({ children, title }) => {
 
     return (
         <PageLayout>
@@ -352,4 +352,4 @@ const ProjectsLayout = ({ children, title }) => {
     )
 }
 
-export default ProjectsLayout
+export default ProjectLayout

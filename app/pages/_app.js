@@ -3,7 +3,7 @@ import "@views/libs/globals.css"
 import 'react-scramble-text/dist/index.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "@views/libs/dashvars.css"
-
+import "@views/libs/hover.css"
 
 import Store from "@components/Store"
 
@@ -28,8 +28,10 @@ export default class Application extends App {
     const { Component, pageProps } = this.props
     return (
       <>
-        <PageTransition timeout={300} classNames="page-transition">
-          <Component {...pageProps}  />
+        <PageTransition timeout={434} classNames="page-transition">
+          <Store>
+            <Component {...pageProps} />
+          </Store>
         </PageTransition>
         <style jsx global>{`
           .page-transition-enter {

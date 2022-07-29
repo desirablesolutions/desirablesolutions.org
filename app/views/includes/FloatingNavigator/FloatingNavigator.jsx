@@ -1,31 +1,22 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
 import SpeedDial from '@mui/material/SpeedDial';
-import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
-import FileCopyIcon from '@mui/icons-material/FileCopyOutlined';
-import SaveIcon from '@mui/icons-material/Save';
-import PrintIcon from '@mui/icons-material/Print';
-import ShareIcon from '@mui/icons-material/Share';
-
+import MenuIcon from '@mui/icons-material/Menu';
 import ArchitectureIcon from '@mui/icons-material/Architecture';
 import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
-import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
-import GroupIcon from '@mui/icons-material/Group';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 
 import ScrollToTop from "react-scroll-to-top";
 
 const actions = [
   {
-    icon: <WorkOutlineIcon sx={{ color: 'var(--red-300)' }} />, name: 'Projects',
-    url: '/projects'
+    icon: <MenuIcon sx={{ color: 'var(--red-300)' }} />, name: 'Menu',
+    url: '#menu'
   },
 
   {
     icon: (
-      <ScrollToTop color={'#FF0000'}className='relative' component={(
-        <ArrowCircleUpIcon sx={{ color: 'var(--red-300)' }} />
+      <ScrollToTop className='relative z-50' component={(
+        <ArrowCircleUpIcon sx={{ zIndex: '9999999', color: 'var(--red-300)' }} />
       )} smooth />
     ), name: 'Top'
   }
@@ -38,10 +29,11 @@ export default function FloatingNavigator() {
       ariaLabel="SpeedDial basic example"
       sx={{
         ".MuiSpeedDial-fab": {
-          backgroundColor: 'black',
+          backgroundColor: '#000000',
+          boxShadow:'var(--box-shadow-2)',
           border: '1px var(--red-800) solid',
           "&:hover": {
-            backgroundColor: 'var(--gray-700)',
+            backgroundColor: 'var(--gray-900)',
             border: '1px var(--red-200) solid',
           },
         },

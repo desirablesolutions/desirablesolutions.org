@@ -2,6 +2,11 @@ html {
         opacity: 0;
 }
 
+@media only screen and (max-width: 600px) {
+        .carousel-wrapper {
+                max-width: 100%;
+        }
+}
 
 :root {
         --black: #000000;
@@ -329,7 +334,9 @@ body {
 }
 
 
-html:before, html, html:after {
+html:before,
+html,
+html:after {
         opacity: 1.0;
 
         transition: opacity .434s ease-in-out;

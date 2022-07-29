@@ -1,5 +1,10 @@
 const theme = {
-    name: 'Men In Black',
+    animations: {
+        textScrambler: {
+            chars: '₥৳₫ʤ←∆∂√∝∞∛⊖⊇⨂⨊',
+            className: 'inline-block'
+        }
+    },
     fonts: {
         primary: 'The Seasons',
         secondary: 'serif',

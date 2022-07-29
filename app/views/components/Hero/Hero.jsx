@@ -1,25 +1,22 @@
 
+import TextScrambler from 'react-scramble-text'
+import theme from "@configs/theme"
 
-const Hero = ({ lineTexts, bgImg, cta }) => {
+const Hero = ({ lines, bgImage }) => {
 
-    let { firstLine, secondLine, thirdLine } = lineTexts
-    let { link, text } = cta
+    let { firstLine, secondLine } = lines
 
+    const { animations: {
+        textScrambler
+    } } = theme
 
     return (
         <section style={{
-            background: `url(${bgImg}) no-repeat center center fixed`,
+            background: `url(${bgImage.src}) no-repeat center center fixed`,
             backgroundSize: 'cover',
             maxHeight: '100vh',
             minHeight: '99vh'
         }} className="relative pb-20 md:pb-52 box-border overflow-hidden">
-            <div className="h-6 ">
-                <div className="animate-pulse absolute top-0 heartbeat left-1/2">
-                    <div className="w-px h-14 bg-gray-900" />
-                    <div className="w-px h-22 bg-white" />
-                </div>
-            </div>
-
 
             <div className="container px-4 mx-auto">
                 <div className="pt-40 sm:pt-64">
@@ -27,27 +24,33 @@ const Hero = ({ lineTexts, bgImg, cta }) => {
 
                     <h1 className="text-6xl xl:text-8xl 3xl:text-9xl text-white font-medium mb-20">
 
+                        <span className="block leading-none">
+                            <a className="inline-flex text-white" href={firstLine.href}>
+                                <span className="mr-4 underline-from-left hover:animate-pulse transition-all">
+                                    {firstLine.before}
+                                    <TextScrambler chars={textScrambler.chars} className={textScrambler.className} phrases={firstLine.texts}
+                                        speed={firstLine.speed}
+                                        pauseTime={firstLine.pauseTime} />
+                                    {firstLine.after}
+                                </span>
+                            </a>
+                        </span>
 
                         <span className="block leading-none">
-
-                            <a className="inline-flex text-white" href={link}>
-                                <span className="mr-4 underline-from-left hover:animate-pulse transition-all">{firstLine}</span>
+                            <a className="inline-flex text-white" href={secondLine.href}>
+                                <span className="mr-4 underline-from-left hover:animate-pulse transition-all">
+                                    {secondLine.before}
+                                    <TextScrambler chars={textScrambler.chars} className={textScrambler.className} phrases={secondLine.texts}
+                                        speed={secondLine.speed}
+                                        pauseTime={secondLine.pauseTime} />
+                                    {secondLine.after}
+                                </span>
                             </a>
-
                         </span>
 
 
-                        <span className="block underline-from-left transition-all  hover:animate-pulse leading-none"><a href="#">{secondLine}</a></span>
-
-                        <span className="relative inline-block">
-                            <span className="relative block underline-from-left  hover:animate-pulse transition-all leading-none">
-                                <a href="/">
-                                    {thirdLine}</a>
-                            </span>
-                        </span>
                     </h1>
 
-    
                 </div>
             </div>
         </section>

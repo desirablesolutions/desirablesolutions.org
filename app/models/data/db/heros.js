@@ -2,25 +2,28 @@ const problems = [
     "Web Marketing",
     "Brand Identity",
     "Web Design",
-    "Web Development",
+    "Software Development",
     "Graphic Design",
+    "Communication",
+    "Blueprinting",
     "Logo Design",
     "Technology",
     "Administration",
     "Illustration"
-
 ]
 
 
 const sectors = [
     "Churches.",
     "Temples.",
-    "Families",
+    "Gods Glory",
     "Small Businesses",
-    "Creators.",
+    "Artists.",
+    "Creatives.",
+    "Entrepreneurs",
     "Startups.",
     "Non-profits.",
-    "Creative Communities.",
+    "Communities.",
 ]
 
 

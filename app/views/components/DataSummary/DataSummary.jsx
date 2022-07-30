@@ -3,9 +3,14 @@ import CountUp from 'react-countup';
 const DataSummary = ({ order, title, heading }) => {
 
     return (
-        <section className="relative pb-24 md:pb-40  overflow-hidden">
+        <section style={{
+            borderTop: '1px solid #e6e6e6',
+            background: `url('/assets/images/bg.png') #000000 no-repeat center center fixed`,
+            filter: 'opacity(0.8)'
 
-            <div className="bg-white h-16 mb-56">
+        }} className="relative pb-24 md:pb-40  overflow-hidden">
+
+            <div className="h-16 mb-56">
                 <div className="heartbeat absolute top-0 left-1/2">
                     <div className="w-px h-16 bg-gray-900" />
                     <div className="w-px h-24 bg-white" />
@@ -56,7 +61,7 @@ const DataSummary = ({ order, title, heading }) => {
                                     +<CountUp duration={6} delay={4} end={100} />
                                 </h4>
                                 <span className="text-xs text-gray-400 font-light">
-                                   To be developed & decentralized for B2B & P2P.
+                                    To be developed & decentralized for B2B & P2P.
                                 </span>
                             </div>
                         </div>

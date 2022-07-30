@@ -1,7 +1,6 @@
-import Image from "@components/Image"
-import team from "@db/team"
-import Avatar from "@components/Avatar"
-import Card from '@mui/material/Card';
+import Avatar from "@components/Avatar";
+import Image from "@components/Image";
+import team from "@db/team";
 
 
 
@@ -10,7 +9,12 @@ const Gallery = ({ title, order, heading }) => {
 
   return (
 
-    <section className="pt-24 pb-24 md:pb-40">
+    <section style={{
+      borderTop: '1px solid #e6e6e6',
+      background: `url('/assets/images/bg.png') #000000 no-repeat center center fixed`,
+      filter: 'opacity(0.8)'
+
+  }} className="pt-24 pb-24 md:pb-40">
       <div className="container px-4 mx-auto">
         <div className="flex items-center mb-6">
           <span className="font-heading outline p-1 text-white text-xl">{order}</span>

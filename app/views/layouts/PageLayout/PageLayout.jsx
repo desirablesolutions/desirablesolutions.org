@@ -1,17 +1,19 @@
-import RootLayout from "@layouts/RootLayout"
-import NavBar from "@includes/Navbar"
+import FadeAnimation from "@components/FadeAnimation"
 import BottomNav from "@includes/BottomNav"
 import FloatingNavigator from "@includes/FloatingNavigator"
-import FadeAnimation from "@components/FadeAnimation"
 import MenuNav from "@includes/MenuNav"
+import NavBar from "@includes/Navbar"
+import RootLayout from "@layouts/RootLayout"
+
+
 
 const PageLayout = ({ children }) => {
 
     return (
         <RootLayout>
-            <FloatingNavigator/>
-            <NavBar />
             <MenuNav />
+            <FloatingNavigator />
+            <NavBar />
             <FadeAnimation>
                 {children}
             </FadeAnimation>

@@ -61,9 +61,9 @@ const footer = {
         ],
         minor: [
             {
-                name: 'Story',
+                name: 'Help',
                 icon: <HandshakeIcon />,
-                href: '/story'
+                href: '/help'
             },
             {
                 name: 'Services',
@@ -71,9 +71,9 @@ const footer = {
                 href: '/services'
             },
             {
-                name: 'Info',
+                name: 'About',
                 icon: <InfoOutlinedIcon />,
-                href: '/info'
+                href: '/About'
             }
 
         ]

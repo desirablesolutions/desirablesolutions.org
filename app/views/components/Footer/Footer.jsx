@@ -17,6 +17,9 @@ const Footer = ({ copyright, navLinks, actionLinks, contact, impressum }) => {
 
         <section style={{
             borderTop: '1px solid #e6e6e6',
+            background: `url('/assets/images/bg.png') #000000 no-repeat center center fixed`,
+            filter: 'opacity(0.8)'
+
         }}>
             <div className="pt-10 pb-16">
                 <div className="container px-4 mx-auto">

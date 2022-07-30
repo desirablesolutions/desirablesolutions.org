@@ -7,7 +7,7 @@ const navBar = {
         href: '/'
     },
     action: () => [
-        useDrawer()
+        useDrawer({ toggle: true })
     ]
 }
 

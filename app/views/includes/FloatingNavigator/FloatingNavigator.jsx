@@ -8,10 +8,6 @@ import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import ScrollToTop from "react-scroll-to-top";
 
 const actions = [
-  {
-    icon: <MenuIcon sx={{ color: 'var(--red-300)' }} />, name: 'Menu',
-    url: '#menu'
-  },
 
   {
     icon: (
@@ -30,7 +26,7 @@ export default function FloatingNavigator() {
       sx={{
         ".MuiSpeedDial-fab": {
           backgroundColor: '#000000',
-          boxShadow:'var(--box-shadow-2)',
+          boxShadow: 'var(--box-shadow-2)',
           border: '1px var(--red-800) solid',
           "&:hover": {
             backgroundColor: 'var(--gray-900)',

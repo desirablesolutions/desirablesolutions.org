@@ -7,6 +7,7 @@ import "@views/libs/hover.css"
 
 import Store from "@components/Store"
 
+import RecoilNexus from "recoil-nexus";
 
 
 import App, { Container } from 'next/app'
@@ -30,6 +31,7 @@ export default class Application extends App {
       <>
         <PageTransition timeout={434} classNames="page-transition">
           <Store>
+            <RecoilNexus/>
             <Component {...pageProps} />
           </Store>
         </PageTransition>

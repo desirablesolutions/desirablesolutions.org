@@ -1,6 +1,6 @@
 import PageLayout from "@layouts/PageLayout"
 
-const ProjectLayout = ({ children, title }) => {
+const ProjectLayout = ({ title, coverImage , accentImage}) => {
 
     return (
         <PageLayout>
@@ -9,19 +9,19 @@ const ProjectLayout = ({ children, title }) => {
                     <div className="container px-4 mx-auto">
                         <div className="pb-20 mb-16 border-b border-gray-700">
                             <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl text-white mb-32">
-                               {title}
+                                {title}
                             </h1>
                             <div className="flex flex-wrap -mx-4">
                                 <div className="w-full lg:w-1/2 px-4 mb-32 lg:mb-0">
                                     <div className="max-w-md mx-auto relative">
                                         <img
                                             className="block mx-auto"
-                                            src="/assets/images/media/projects/yonder-airways/yonder-airways-logo.png"
+                                            src={coverImage.src}
                                             alt=""
                                         />
                                         <img
                                             className="absolute bottom-0 left-0 md:-ml-8 -mb-20"
-                                            src="wrexa-assets/images/women-photo2.png"
+                                            src={accentImage.src}
                                             alt=""
                                         />
                                     </div>
@@ -345,7 +345,7 @@ const ProjectLayout = ({ children, title }) => {
                     </div>
                 </div>
             </section>
-        
+
 
         </PageLayout>
 

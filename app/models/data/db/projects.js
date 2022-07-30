@@ -40,7 +40,7 @@ const projects = [
             arr: images.projects,
             id: 'elixir-and-cream-cafe'
         }).covers],
-        url: '/projects/yonder-airways',
+        url: '/projects/elixir-and-cream-cafe',
         provisoners: [find({
             arr: team,
             id: 'joshua-desir'
@@ -68,7 +68,7 @@ const projects = [
             arr: images.projects,
             id: 'green-harvest-farmers-market'
         }).covers],
-        url: '/projects/yonder-airways',
+        url: '/projects/green-harvest-farmers-market',
         provisoners: [find({
             arr: team,
             id: 'joshua-desir'

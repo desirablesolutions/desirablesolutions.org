@@ -1,1 +1,1 @@
-export { default } from "./ProjectsLayout"
+export { default } from "./ProjectLayout"

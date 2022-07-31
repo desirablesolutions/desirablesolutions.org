@@ -24,6 +24,7 @@ export default function FloatingNavigator() {
     <SpeedDial
       ariaLabel="SpeedDial basic example"
       sx={{
+        zIndex: '9999999',
         ".MuiSpeedDial-fab": {
           backgroundColor: '#000000',
           boxShadow: 'var(--box-shadow-2)',
@@ -39,6 +40,7 @@ export default function FloatingNavigator() {
     >
       {actions.map((action) => (
         <SpeedDialAction
+   
           key={action.name}
           tooltipOpen={true}
           icon={action.icon}

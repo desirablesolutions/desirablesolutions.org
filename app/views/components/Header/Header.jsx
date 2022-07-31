@@ -1,6 +1,7 @@
 import Headroom from "react-headroom"
 import MenuIcon from "@components/MenuIcon"
 import Image from 'next/image'
+import useDrawer from "@controllers/hooks/useDrawer"
 
 const Header = ({ favicon }) => {
 
@@ -23,7 +24,7 @@ const Header = ({ favicon }) => {
                         </a>
                     </div>
                     <div className="3xl:hidden pb-4">
-                        <button  className="flex navbar-burger ml-auto items-center justify-center w-12 h-12 rounded-full bg-gray-200 hover:bg-red-800">
+                        <button onClick={() => useDrawer({ toggle: true })} className="flex navbar-burger ml-auto items-center justify-center w-12 h-12 rounded-full bg-gray-200 hover:bg-red-800">
                             <MenuIcon />
                         </button>
                     </div>

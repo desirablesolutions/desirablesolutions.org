@@ -1,4 +1,4 @@
-export const tags = [
+const tags = [
     {
         id: 'art'
     },
@@ -6,3 +6,5 @@ export const tags = [
         id: 'branding'
     }
 ]
+
+export default tags

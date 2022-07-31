@@ -1,16 +1,15 @@
 import drawerStateAtom from "@store/drawerStateAtom";
-import { getRecoil, setRecoil } from "recoil-nexus";
-
+import { getRecoil, setRecoil } from 'recoil-nexus'
 
 
 const useDrawer = ({ toggle = false }) => {
+    let { isOpen } = getRecoil(drawerStateAtom)
 
-    const drawerState = getRecoil(drawerStateAtom)
+    toggle && setRecoil(drawerStateAtom, { isOpen: !isOpen })
 
-    toggle && setRecoil(drawerStateAtom, true)
-    console.log(drawerState)
+    console.log(`[Drawer State]: ${toggle} | ${isOpen}`)
 
-    return drawerState
+    return isOpen
 }
 
 export default useDrawer

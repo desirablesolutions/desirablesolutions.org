@@ -12,7 +12,7 @@ const Gallery = ({ title, order, heading }) => {
     <section style={{
       borderTop: '1px solid #e6e6e6',
       background: `url('/assets/images/bg.png') #000000 no-repeat center center fixed`,
-      filter: 'opacity(0.8)'
+      filter: 'opacity(0.91)'
 
   }} className="pt-24 pb-24 md:pb-40">
       <div className="container px-4 mx-auto">

@@ -73,7 +73,7 @@ const footer = {
             {
                 name: 'About',
                 icon: <InfoOutlinedIcon />,
-                href: '/About'
+                href: '/about'
             }
 
         ]

@@ -1,12 +1,13 @@
+import FAQs from "@includes/FAQs"
 import Pillars from "@includes/Pillars"
 import RequestForm from "@includes/RequestForm"
 import TeamGallery from "@includes/TeamGallery"
+import WhoWeAre from "@includes/WhoWeAre"
 import PageLayout from "@layouts/PageLayout"
+import AdvantagesTable from "@views/includes/AdvantagesTable"
 import Goals from "@views/includes/Goals"
 import ProjectShowcase from "@views/includes/ProjectShowcase"
-import WhoWeAre from "@includes/WhoWeAre"
-import FAQs from "@includes/FAQs"
-import AdvantagesTable from "@views/includes/AdvantagesTable"
+
 export default function HomePage() {
 
   return (

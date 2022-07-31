@@ -3,13 +3,17 @@ import { getRecoil, setRecoil } from 'recoil-nexus'
 
 
 const useDrawer = ({ toggle = false }) => {
-    let { isOpen } = getRecoil(drawerStateAtom)
 
-    toggle && setRecoil(drawerStateAtom, { isOpen: !isOpen })
+    let isOpen = () => {
+        let { isOpen } = getRecoil(drawerStateAtom)
+        return isOpen
+    }
 
-    console.log(`[Drawer State]: ${toggle} | ${isOpen}`)
+    toggle && setRecoil(drawerStateAtom, { isOpen: !isOpen() })
 
-    return isOpen
+    console.log(`[Drawer State]: ${toggle} | ${isOpen()}`)
+
+    return isOpen()
 }
 
 export default useDrawer

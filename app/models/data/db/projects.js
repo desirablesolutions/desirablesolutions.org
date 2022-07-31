@@ -1,5 +1,6 @@
 import find from "@controllers/utils/find"
 import team from "@db/team"
+import tags from "@db/tags"
 import images from "@db/images"
 
 const projects = [
@@ -7,7 +8,7 @@ const projects = [
         id: 'yonder-airways',
         name: 'Yonder Airways',
         status: ["featured"],
-        sector: ["Logo Kit"],
+        type: ["Logo Kit"],
         covers: [...find({
             arr: images.projects,
             id: 'yonder-airways'

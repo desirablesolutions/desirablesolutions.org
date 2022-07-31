@@ -13,7 +13,7 @@ const Header = ({ favicon }) => {
 
 
             <section style={{
-                borderBottom: '1px solid gray',
+                borderBottom: '1px solid white',
             }}
                 className="relative backdrop-blur-xl z-50">
                 <nav className="relative px-6 sm:px-12 pt-4">

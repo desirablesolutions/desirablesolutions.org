@@ -1,31 +1,4 @@
-const problems = [
-    "Web Marketing",
-    "Brand Identity",
-    "Web Design",
-    "Software Development",
-    "Graphic Design",
-    "Communication",
-    "Blueprinting",
-    "Logo Design",
-    "Technology",
-    "Administration",
-    "Illustration"
-]
-
-
-const sectors = [
-    "Churches.",
-    "Temples.",
-    "Gods Glory",
-    "Small Businesses",
-    "Artists.",
-    "Creatives.",
-    "Entrepreneurs",
-    "Startups.",
-    "Non-profits.",
-    "Communities.",
-]
-
+import meta from "@configs/meta"
 
 const heros = [
     {
@@ -38,22 +11,22 @@ const heros = [
                 firstLine: {
                     href: '/team',
                     before: 'We solve',
-                    texts: [...problems],
+                    texts: [...meta.info.problems],
                     speed: 77,
                     pauseTime: 3333,
                 },
                 secondLine: {
                     href: '/projects',
-                    texts: [...sectors],
+                    texts: [...meta.info.sectors],
                     before: 'problems for',
                     speed: 90,
                     pauseTime: 13000,
                 },
-            
+
             }
         }
     },
-    
+
     {
         id: 'our-projects',
         data: {

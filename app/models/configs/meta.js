@@ -4,6 +4,34 @@ const meta = {
     url: 'https://desirable.solutions/',
     copyright: `© 2022 Désirable Solutions. All rights reserved.`,
     impressum: `In God We Trust.`,
+    info: {
+        problems: [
+            "Web Marketing",
+            "Brand Identity",
+            "Web Design",
+            "Software Development",
+            "Graphic Design",
+            "Communication",
+            "Idea Blueprinting",
+            "Logo Design",
+            "Technology",
+            "Administration",
+            "Illustration"
+        ],
+
+        sectors: [
+            "Artists.",
+            "Creatives.",
+            "Entrepreneurs",
+            "Small Businesses",
+            "Startups.",
+            "Non-profits.",
+            "Communities.",
+            "Churches.",
+            "Temples.",
+            "Gods Glory",
+        ]
+    },
     pages: {
         static: [
             {

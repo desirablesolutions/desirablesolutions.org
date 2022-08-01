@@ -35,7 +35,14 @@ const Showcase = ({ title, featured, latest, order, heading, cta }) => {
                 </div>
                 <div className="flex flex-wrap -mx-4 pb-24 mb-20 border-b">
                     <div className="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
-                        <Carousel responsive={vendor.carousel.responsive}>
+                        <Carousel swipeable={false}
+                            draggable={true}
+                            showDots={true}
+                            ssr={true}
+                            infinite={true}
+                            autoPlay={true}
+                            keyBoardControl={true}
+                            transitionDuration={500} responsive={vendor.carousel.responsive}>
                             {featured.covers.map((cover, index) => {
                                 return (
                                     <img key={`${index}${cover.src}`} src={cover.src} className="w-auto object-fill" />

@@ -1,14 +1,14 @@
 import CountUp from 'react-countup';
 
-const DataSummary = ({ order, title, heading }) => {
+const DataSummary = ({ order, title, heading, cta }) => {
 
     return (
         <section style={{
             borderTop: '1px solid #e6e6e6',
             background: `url('/assets/images/bg.png') #000000 no-repeat center center fixed`,
-            filter: 'opacity(0.8)'
+            filter: 'opacity(0.91)'
 
-        }} className="relative pb-24 md:pb-40  overflow-hidden">
+        }} className="relative pb-24 md:pb-40 overflow-hidden">
 
             <div className="h-16 mb-56">
                 <div className="heartbeat absolute top-0 left-1/2">
@@ -29,26 +29,28 @@ const DataSummary = ({ order, title, heading }) => {
                         {heading}
                     </h2>
                 </div>
+
+
                 <div className="flex flex-wrap -mx-4 mb-32">
-                    <div className="w-full lg:w-1/2 3xl:w-1/4 px-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+                    <div className="w-full lg:w-1/2 3xl:w-1/4 px-4 border-b lg:border-b-0 lg:border-r border-gray-100">
                         <div className="sm:flex max-w-xs mx-auto 3xl:px-10 py-10 items-start">
                             <img
                                 className="block mb-6 sm:mb-0 sm:mr-8"
-                                src="wrexa-assets/elements/stats-icon2.svg"
+                                src="/assets/images/logo-transparent.png"
                                 alt=""
                             />
                             <div>
                                 <span className="text-sm text-gray-400">Value</span>
                                 <h4 className="font-heading text-3xl text-white mt-2 mb-7">
-                                    $<CountUp duration={6} delay={4} end={500000} />
+                                    $<CountUp duration={8} delay={2} end={500000} />
                                 </h4>
-                                <span className="text-xs text-gray-400 font-light">
+                                <span className="text-sm text-gray-400 font-light">
                                     To be provided to non-profits & ethical organizations.
                                 </span>
                             </div>
                         </div>
                     </div>
-                    <div className="w-full lg:w-1/2 3xl:w-1/4 px-4 border-b lg:border-b-0 3xl:border-r border-gray-200">
+                    <div className="w-full lg:w-1/2 3xl:w-1/4 px-4 border-b lg:border-b-0 3xl:border-r border-gray-100">
                         <div className="sm:flex max-w-xs mx-auto 3xl:px-10 py-10 items-start">
                             <img
                                 className="block mb-6 sm:mb-0 sm:mr-8"
@@ -66,7 +68,7 @@ const DataSummary = ({ order, title, heading }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-full lg:w-1/2 3xl:w-1/4 px-4 border-b lg:border-b-0 lg:border-r border-gray-800">
+                    <div className="w-full lg:w-1/2 3xl:w-1/4 px-4 border-b lg:border-b-0 lg:border-r border-gray-100">
                         <div className="sm:flex max-w-xs mx-auto 3xl:px-10 py-10 items-start">
                             <img
                                 className="block mb-6 sm:mb-0 sm:mr-8"
@@ -104,15 +106,23 @@ const DataSummary = ({ order, title, heading }) => {
                         </div>
                     </div>
                 </div>
+
+
+
+
+
                 <div className="text-center">
                     <a
-                        className="inline-block w-full sm:w-auto px-7 py-4 text-center font-medium bg-red-500 hover:bg-red-300 text-white hover:text-black rounded transition"
-                        href="/vision"
+                        className="inline-block w-full sm:w-auto px-7 py-4 text-center font-medium bg-red-700 hover:bg-red-200 text-white hover:text-black rounded transition"
+                        href={cta.href}
                     >
-                        Our Vision
+                        {cta.name}
                     </a>
                 </div>
+
             </div>
+
+
         </section>
 
     )

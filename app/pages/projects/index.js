@@ -8,8 +8,8 @@ export default function ProjectsPage() {
     return (
         <PageLayout>
             <ProjectsPortfolio />
-            <ProofOfModels />
             <ProjectsManifest />
+            <ProofOfModels />
         </PageLayout>
     )
 }

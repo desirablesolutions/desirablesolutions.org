@@ -32,18 +32,17 @@ const Drawer = ({ links, heading }) => {
         drawerOpenStateDelayed &&
 
         <div className={`fade-in-left navbar-menu transition-all fixed top-0 left-0 bottom-0 w-5/6 sm:max-w-xs z-50`}>
-            <div className="navbar-backdrop fixed bg-black inset-0 opacity-80" />
+            <div className="navbar-backdrop fixed bg-black opacity-80" />
             <ClickAwayListener onClickAway={() => setDrawerState({ isOpen: !drawerState })}>
 
                 <nav style={{
-                    borderTop: '1px solid #e6e6e6',
                     background: `url('/assets/images/bg.png') #000000 no-repeat center center fixed`,
                     filter: 'opacity(0.91)'
 
                 }} className="relative flex flex-col pt-12 pb-40 h-full w-full overflow-y-hidden">
                     <div className="px-12">
                         <div>
-                            <a className="inline-block w-44 mb-10" href="/">
+                            <a className="inline-block w-46 mb-12" href="/">
                                 <img src="/assets/images/logo-transparent.png" alt="" width="auto" />
 
                                 <h1 className="text-center text-lg text-white">{heading}</h1>

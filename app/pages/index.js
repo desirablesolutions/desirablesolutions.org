@@ -5,7 +5,7 @@ import TeamGallery from "@includes/TeamGallery"
 import WhoWeAre from "@includes/WhoWeAre"
 import PageLayout from "@layouts/PageLayout"
 import AdvantagesTable from "@views/includes/AdvantagesTable"
-import Goals from "@views/includes/Goals"
+import Vision from "@views/includes/Vision"
 import ProjectShowcase from "@views/includes/ProjectShowcase"
 
 export default function HomePage() {
@@ -15,7 +15,7 @@ export default function HomePage() {
     <PageLayout>
       <WhoWeAre order={"00"} />
       <ProjectShowcase order={"01"} />
-      <Goals order={"02"} />
+      <Vision order={"02"} />
       <Pillars order={"03"} />
       <AdvantagesTable order={"04"} />
       <FAQs order={"05"} />

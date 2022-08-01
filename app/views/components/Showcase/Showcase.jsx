@@ -9,7 +9,7 @@ const Showcase = ({ title, featured, latest, order, heading, cta }) => {
         <section style={{
             borderTop: '1px solid var(--red-100)',
             background: `url('/assets/images/bg.png') #000000 no-repeat center center fixed`,
-            filter: 'opacity(0.91)'
+            filter: 'opacity(0.89)'
         }} className="py-24 md:py-40">
             <div className="container px-4 mx-auto">
                 <div className="flex animate-pulse items-center mb-24">
@@ -42,7 +42,7 @@ const Showcase = ({ title, featured, latest, order, heading, cta }) => {
                             infinite={true}
                             autoPlay={true}
                             keyBoardControl={true}
-                            transitionDuration={500} responsive={vendor.carousel.responsive}>
+                            transitionDuration={700} responsive={vendor.carousel.responsive}>
                             {featured.covers.map((cover, index) => {
                                 return (
                                     <img key={`${index}${cover.src}`} src={cover.src} className="w-auto object-fill" />
@@ -126,31 +126,34 @@ const Showcase = ({ title, featured, latest, order, heading, cta }) => {
 
                                         <a className="inline-block mt-6 mb-8 font-heading text-2xl" href={project.url}>
                                             <span className="relative">
-                                                <span className="text-white">{project.name}</span>
+                                                <span className="text-white underline-from-left">{project.name}</span>
 
                                                 <span className="absolute bottom-0 right-0 -mr-8 mb-1">
 
-                                                    <svg
-                                                        width={16}
-                                                        height={16}
-                                                        viewBox="0 0 16 16"
-                                                        fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                    >
-                                                        <path
-                                                            d="M14.9983 2.97487L12.8444 2.94712L12.9539 11.4487L1.76433 0.259107L0.261729 1.76171L11.4513 12.9513L2.94974 12.8418L2.97749 14.9957L15.1552 15.1525L14.9983 2.97487Z"
-                                                            fill="white"
-                                                        />
-                                                    </svg>
+                                                    <LinkArrowIcon />
 
                                                 </span>
+
                                             </span>
+
                                             <Avatar
                                                 className="w-12 pr-1 h-12 mr-4 rounded"
                                                 src={project.covers[0].src}
                                                 alt=""
                                             />
                                         </a>
+
+
+                                        <a
+                                            
+                                            className="inline-block mr-6 text-white hover:outline p-1 hover:text-gray-600 hover:underline"
+                                            href={featured.tags[0].href}
+                                        >
+                                            #{featured.tags[0].name}
+                                        </a>
+
+
+
                                         <div className="flex items-center">
                                             {
                                                 project.provisoners.map((provisioner, index) => {
@@ -180,8 +183,8 @@ const Showcase = ({ title, featured, latest, order, heading, cta }) => {
             </div>
             <div className="text-center">
                 <a
-                    className="inline-block mt-14 w-full sm:w-auto px-7 py-4 text-center font-medium bg-red-500 hover:bg-red-300 text-white hover:text-black rounded transition"
-                    href="/projects"
+                    className="inline-block mt-14 w-full sm:w-auto px-7 py-4 text-center font-medium bg-red-700 hover:bg-red-200 text-white hover:text-black rounded transition"
+                    href={cta.href}
                 >
                     {cta.name}
                 </a>

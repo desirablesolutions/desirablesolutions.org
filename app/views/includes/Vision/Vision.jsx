@@ -2,15 +2,15 @@ import DataSummary from "@components/DataSummary";
 import dataSummeries from "@db/dataSummeries"
 import find from "@controllers/utils/find";
 
-const Goals = ({ order }) => {
+const Vision = ({ order }) => {
 
     return (
 
         <DataSummary {...find({
             arr: dataSummeries,
-            id: 'the-road-ahead'
+            id: 'vision'
         })} order={order}/>
     )
 }
 
-export default Goals
+export default Vision

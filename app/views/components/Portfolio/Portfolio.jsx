@@ -1,7 +1,12 @@
 const Portfolio = () => {
 
     return (
-        <section className="py-24 md:pb-40 md:pt-52  overflow-hidden">
+        <section  style={{
+            borderTop: '1px solid #e6e6e6',
+            background: `url('/assets/images/bg.png') #000000 no-repeat center center fixed`,
+            filter: 'opacity(0.91)'
+
+        }}  className="py-24 md:pb-40 md:pt-52  overflow-hidden">
             <div className="container px-4 mx-auto">
                 <div className="flex flex-wrap items-center -mx-4 mb-32">
                     <div className="w-full 3xl:w-1/2 px-4 mb-16 3xl:mb-0">

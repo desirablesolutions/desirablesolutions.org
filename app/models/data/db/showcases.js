@@ -6,7 +6,8 @@ const showcases = [
     {
         id: 'projects-showcase',
         cta: {
-            name: 'Our Projects'
+            name: 'See more',
+            href: '/projects'
         },
         title: 'Projects.',
         heading: 'Designed by masters, inspired by life.',

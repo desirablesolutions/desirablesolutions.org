@@ -1,4 +1,5 @@
 import "@views/libs/tailwind.css"
+import "@views/libs/animations.css"
 import "@views/libs/globals.css"
 import 'react-scramble-text/dist/index.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css";

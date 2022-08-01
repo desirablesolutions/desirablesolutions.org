@@ -1,3 +1,15 @@
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import PeopleIcon from '@mui/icons-material/People';
+import CoffeeIcon from '@mui/icons-material/Coffee';
+import RedeemIcon from '@mui/icons-material/Redeem';
+import DesignServicesIcon from '@mui/icons-material/DesignServices';
+import HandshakeIcon from '@mui/icons-material/Handshake';
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined"
+
+
 const meta = {
     title: 'Désirable Solutions',
     description: 'We solve problems.',
@@ -32,18 +44,17 @@ const meta = {
             "Gods Glory",
         ]
     },
-    pages: {
-        static: [
-            {
-                name: 'Home',
-                href: '/'
-            },
-            {
-                name: 'Vision',
-                href: '/vision'
-            }
-        ]
-    },
+    pages: [
+        {
+            name: 'Home',
+            href: '/'
+        },
+        {
+            name: 'Vision',
+            href: '/vision',
+            icon: <VisibilityIcon/>
+        }
+    ],
     contact: {
         phoneNumber: '+1 (786) 766-9054',
         email: 'help@desirable.solutions'

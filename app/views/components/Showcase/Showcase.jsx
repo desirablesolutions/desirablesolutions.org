@@ -156,7 +156,9 @@ const Showcase = ({ title, featured, latest, order, heading, cta }) => {
                                                                 alt={provisioner.name}
                                                             />
 
-                                                            <span className="text-white">{provisioner.name}</span></>
+                                                            <span className="text-white">
+                                                                <a href={`/team/${provisioner.id}`} className="text-white  underline-from-left">{provisioner.name}</a>
+                                                            </span></>
                                                     )
                                                 })}
                                         </div>

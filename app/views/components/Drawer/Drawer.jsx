@@ -1,25 +1,24 @@
 
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 import drawerStateAtom from "@store/drawerStateAtom";
-
 import { useRecoilState } from "recoil";
+import useDelayUnmount from '@utils/useDelayUnmount';
 
-import { useEffect, useState } from "react";
+import AnalogClock from 'analog-clock-react';
 
-function useDelayUnmount(isMounted, delayTime) {
-    const [showDiv, setShowDiv] = useState(false);
-    useEffect(() => {
-        let timeoutId;
-        if (isMounted && !showDiv) {
-            setShowDiv(true);
-        } else if (!isMounted && showDiv) {
-            timeoutId = setTimeout(() => setShowDiv(false), delayTime); //delay our unmount
-        }
-        return () => clearTimeout(timeoutId); // cleanup mechanism for effects , the use of setTimeout generate a sideEffect
-    }, [isMounted, delayTime, showDiv]);
-    return showDiv;
-}
-
+let options = {
+    width: "50px",
+    border: true,
+    borderColor: "#000000",
+    baseColor: "#000000",
+    centerColor: "#FFFFFF",
+    centerBorderColor: "#ffffff",
+    handColors: {
+        second: "#FFFFFF",
+        minute: "#ffffff",
+        hour: "#ffffff"
+    }
+};
 
 
 const Drawer = ({ links }) => {
@@ -32,7 +31,7 @@ const Drawer = ({ links }) => {
 
         drawerOpenStateDelayed &&
 
-        <div className={`fade-in-left ${!drawerState.isOpen ? "hidden" : ""} navbar-menu transition-all fixed top-0 left-0 bottom-0 w-5/6 sm:max-w-xs z-50`}>
+        <div className={`fade-in-left navbar-menu transition-all fixed top-0 left-0 bottom-0 w-5/6 sm:max-w-xs z-50`}>
             <div className="navbar-backdrop fixed bg-black inset-0 opacity-80" />
             <ClickAwayListener onClickAway={() => setDrawerState({ isOpen: !drawerState })}>
 
@@ -44,8 +43,9 @@ const Drawer = ({ links }) => {
                 }} className="relative flex flex-col pt-12 pb-40 h-full w-full overflow-y-hidden">
                     <div className="px-12">
                         <div>
-                            <a className="inline-block mb-10" href="/">
+                            <a className="inline-block w-44 mb-10" href="/">
                                 <img src="/assets/images/logo-transparent.png" alt="" width="auto" />
+
                                 <h1 className="text-center text-lg text-white">To love is to serve.</h1>
                             </a>
                             <button type="button" aria-label="Close" />
@@ -73,13 +73,10 @@ const Drawer = ({ links }) => {
             <div className="absolute bottom-0 left-0 w-full">
                 <a className="flex items-center pt-4 pb-5 pl-6 pr-4" href="#">
                     <div className="relative mr-4">
-                        <img
-                            className="w-12 h-12 rounded-full"
-                            src="/assets/images/logo-transparent.png"
-                            alt=""
-                        />
+
+                        <AnalogClock {...options} />
                         <div className="absolute bottom-0 left-0 -ml-2 flex items-center justify-center w-2 h-2 bg-green-800 rounded-full text-white text-xs">
-                            
+
                         </div>
                     </div>
                     <div className="pr-5 mr-auto">

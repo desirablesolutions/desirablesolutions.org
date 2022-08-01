@@ -46,13 +46,34 @@ const meta = {
     },
     pages: [
         {
-            name: 'Home',
-            href: '/'
+            name: 'Projects',
+            href: '/projects',
+            icon: <RedeemIcon/>
+        },
+        {
+            name: 'Team',
+            href: '/team',
+            icon: <PeopleIcon/>
         },
         {
             name: 'Vision',
             href: '/vision',
             icon: <VisibilityIcon/>
+        },
+        {
+            name: 'Help',
+            href: '/help',
+            icon: <HandshakeIcon/>
+        },
+        {
+           name: 'Services',
+           href: '/services',
+              icon: <DesignServicesIcon/>
+        },
+        {
+            name: 'About',
+            href: '/about',
+            icon: <InfoOutlinedIcon/>
         }
     ],
     contact: {

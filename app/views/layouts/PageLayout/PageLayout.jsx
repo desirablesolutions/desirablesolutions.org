@@ -4,6 +4,7 @@ import FloatingNavigator from "@includes/FloatingNavigator"
 import Drawer from "@components/Drawer"
 import NavBar from "@includes/Navbar"
 import RootLayout from "@layouts/RootLayout"
+import MenuNav from "@views/includes/MenuNav"
 
 
 
@@ -11,7 +12,7 @@ const PageLayout = ({ children }) => {
 
     return (
         <RootLayout>
-            <Drawer />
+            <MenuNav />
             <FloatingNavigator />
             <NavBar />
             <FadeAnimation>

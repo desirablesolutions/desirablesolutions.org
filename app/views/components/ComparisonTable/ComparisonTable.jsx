@@ -4,7 +4,11 @@ const ComparisonTable = ({ order, title, heading }) => {
 
     return (
 
-        <section className="pt-32 pb-40">
+        <section style={{
+            borderTop: '1px solid var(--red-100)',
+            background: `url('/assets/images/bg.png') #000000 no-repeat center center fixed`,
+            filter: 'opacity(0.91)'
+        }} className="pt-32 pb-40">
             <div className="container px-4 mx-auto mb-24 sm:mb-40">
                 <div className="flex items-center mb-12">
                     <span className="animate-pulse font-heading text-xl outline p-1 text-white">{order}</span>
@@ -21,8 +25,8 @@ const ComparisonTable = ({ order, title, heading }) => {
                 </div>
             </div>
             <div className="relative">
-                <div className="hidden lg:block absolute bottom-0 left-0 h-px w-full mb-68 bg-gray-700 bg-opacity-50 z-10" />
-                <div className="hidden lg:block absolute bottom-0 left-0 h-px w-full mb-92 bg-gray-700 bg-opacity-50 z-10" />
+                <div className="hidden lg:block absolute bottom-0 left-0 h-px w-full mb-68  bg-opacity-50 z-10" />
+                <div className="hidden lg:block absolute bottom-0 left-0 h-px w-full mb-92  bg-opacity-50 z-10" />
                 <div className="container px-4 mx-auto">
                     <div className="flex flex-wrap -mx-4">
                         <div className="w-full lg:w-1/3 px-4 mb-16 lg:mb-0 relative">
@@ -39,8 +43,8 @@ const ComparisonTable = ({ order, title, heading }) => {
                             </div>
                         </div>
                         <div className="w-full lg:w-1/3 px-4 mb-16 lg:mb-0 relative">
-                            <div className="lg:hidden absolute bottom-0 left-0 h-px w-full mb-68 bg-gray-700 bg-opacity-50" />
-                            <div className="lg:hidden absolute bottom-0 left-0 h-px w-full mb-92 bg-gray-700 bg-opacity-50" />
+                            <div className="lg:hidden absolute bottom-0 left-0 h-px w-full mb-68 bg-opacity-50" />
+                            <div className="lg:hidden absolute bottom-0 left-0 h-px w-full mb-92 bg-opacity-50" />
                             <div className="max-w-md mx-auto pt-18 px-12 pb-20 bg-gray-800 rounded-2xl">
                                 <h2 className="font-heading text-4xl text-white mb-8">Team</h2>
                                 <div className="flex mb-20">

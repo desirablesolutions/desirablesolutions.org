@@ -23,8 +23,11 @@ const Showcase = ({ title, featured, latest, order, sx, heading, cta }) => {
 
                 <div className="text-center">
                     <div className="mb-12">
-                        <span className="inline-block text-white px-5 py-2 mr-6 text-sm bg-gray-900 border-white cursor-select rounded-full">
-                            {featured.sector}
+                        <span className="inline-block text-white px-5 py-2 mr-6 text-sm bg-gray-900 hover:outline rounded-full">
+                            <a href="/" className='text-white'>
+
+                                {featured.tags[0].name}
+                            </a>
                         </span>
                         <span className="font-light text-sm text-white">
                             {featured.production}

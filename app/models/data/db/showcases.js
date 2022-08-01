@@ -8,7 +8,7 @@ const showcases = [
         cta: {
             name: 'Our Projects'
         },
-        title: 'The Showcase.',
+        title: 'Projects.',
         heading: 'Designed by masters, inspired by life.',
         latest: [
             {

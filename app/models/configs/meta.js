@@ -1,14 +1,9 @@
-import EmailIcon from '@mui/icons-material/Email';
-import PhoneIcon from '@mui/icons-material/Phone';
-import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
-import VisibilityIcon from '@mui/icons-material/Visibility';
-import PeopleIcon from '@mui/icons-material/People';
-import CoffeeIcon from '@mui/icons-material/Coffee';
-import RedeemIcon from '@mui/icons-material/Redeem';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 import HandshakeIcon from '@mui/icons-material/Handshake';
-import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined"
-
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
+import PeopleIcon from '@mui/icons-material/People';
+import RedeemIcon from '@mui/icons-material/Redeem';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 
 const meta = {
     title: 'Désirable Solutions',

@@ -1,14 +1,8 @@
-import meta from "@configs/meta"
+import meta from "@configs/meta";
+import CoffeeIcon from '@mui/icons-material/Coffee';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
-import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
-import VisibilityIcon from '@mui/icons-material/Visibility';
-import PeopleIcon from '@mui/icons-material/People';
-import CoffeeIcon from '@mui/icons-material/Coffee';
-import RedeemIcon from '@mui/icons-material/Redeem';
-import DesignServicesIcon from '@mui/icons-material/DesignServices';
-import HandshakeIcon from '@mui/icons-material/Handshake';
-import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined"
+import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 
 const footer = {
     impressum: meta.impressum,
@@ -41,42 +35,9 @@ const footer = {
         ],
     }
     , navLinks: {
-        major: [
-            {
-                name: 'Vision',
-                icon: <VisibilityIcon />,
-                href: '/vision'
-            },
-            {
-                name: 'Projects',
-                icon: <RedeemIcon />,
-                href: '/projects'
-            },
-            {
-                name: 'Team',
-                href: '/team',
-                icon: <PeopleIcon />
-            }
+        major: [...meta.pages.slice(0, 3)],
+        minor: [...meta.pages.slice(3)]
 
-        ],
-        minor: [
-            {
-                name: 'Help',
-                icon: <HandshakeIcon />,
-                href: '/help'
-            },
-            {
-                name: 'Services',
-                icon: <DesignServicesIcon />,
-                href: '/services'
-            },
-            {
-                name: 'About',
-                icon: <InfoOutlinedIcon />,
-                href: '/about'
-            }
-
-        ]
     },
     contact: {
         phoneNumber: '+1 (786) 766-9054',

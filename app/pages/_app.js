@@ -5,6 +5,8 @@ import 'react-scramble-text/dist/index.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "@views/libs/dashvars.css"
 import "@views/libs/hover.css"
+import "react-multi-carousel/lib/styles.css";
+
 
 import Store from "@components/Store"
 

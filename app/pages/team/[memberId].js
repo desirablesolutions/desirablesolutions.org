@@ -1,5 +1,6 @@
 import PageLayout from "@views/layouts/PageLayout"
 import team from "@db/team"
+import find from "@utils/find"
 
 export default function TeamMemberPage() {
 

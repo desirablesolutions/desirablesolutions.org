@@ -7,7 +7,8 @@ import meta from "@configs/meta"
 const MenuNav = () => {
 
     return (
-        <Drawer links={meta.pages} />
+        <Drawer heading={"To love is to serve."}
+                links={meta.pages} />
     )
 }
 

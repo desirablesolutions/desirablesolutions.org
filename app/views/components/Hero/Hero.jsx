@@ -1,5 +1,5 @@
 
-import TextScrambler from 'react-scramble-text'
+import ScrambleTexts from "@components/ScrambleTexts"
 import theme from "@configs/theme"
 
 const Hero = ({ lines, bgImage }) => {
@@ -28,7 +28,7 @@ const Hero = ({ lines, bgImage }) => {
                             <a className="inline-flex text-white" href={firstLine.href}>
                                 <span className="mr-4 underline-from-left hover:animate-pulse transition-all">
                                     {firstLine.before}
-                                    <TextScrambler chars={textScrambler.chars} className={textScrambler.className} phrases={firstLine.texts}
+                                    <ScrambleTexts lines={firstLine.texts}
                                         speed={firstLine.speed}
                                         pauseTime={firstLine.pauseTime} />
                                     {firstLine.after}
@@ -40,7 +40,7 @@ const Hero = ({ lines, bgImage }) => {
                             <a className="inline-flex text-white" href={secondLine.href}>
                                 <span className="mr-4 underline-from-left hover:animate-pulse transition-all">
                                     {secondLine.before}
-                                    <TextScrambler chars={textScrambler.chars} className={textScrambler.className} phrases={secondLine.texts}
+                                    <ScrambleTexts lines={secondLine.texts}
                                         speed={secondLine.speed}
                                         pauseTime={secondLine.pauseTime} />
                                     {secondLine.after}

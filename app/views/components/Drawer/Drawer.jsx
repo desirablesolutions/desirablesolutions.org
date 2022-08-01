@@ -3,7 +3,7 @@ import ClickAwayListener from '@mui/material/ClickAwayListener';
 import drawerStateAtom from "@store/drawerStateAtom";
 import { useRecoilState } from "recoil";
 import useDelayUnmount from '@utils/useDelayUnmount';
-
+import ScrambleTexts from "@components/ScrambleTexts"
 import AnalogClock from 'analog-clock-react';
 
 let options = {
@@ -21,7 +21,7 @@ let options = {
 };
 
 
-const Drawer = ({ links }) => {
+const Drawer = ({ links, heading }) => {
 
 
     let [drawerState, setDrawerState] = useRecoilState(drawerStateAtom);
@@ -46,7 +46,7 @@ const Drawer = ({ links }) => {
                             <a className="inline-block w-44 mb-10" href="/">
                                 <img src="/assets/images/logo-transparent.png" alt="" width="auto" />
 
-                                <h1 className="text-center text-lg text-white">To love is to serve.</h1>
+                                <h1 className="text-center text-lg text-white">{heading}</h1>
                             </a>
                             <button type="button" aria-label="Close" />
                         </div>
@@ -81,7 +81,7 @@ const Drawer = ({ links }) => {
                     </div>
                     <div className="pr-5 mr-auto">
                         <h4 className="text-xs text-gray-400">Mach: 11.11.11</h4>
-                        <span className="text-white">Desirable Solutions</span>
+                        <span className="text-white"><ScrambleTexts pauseTime={4000} speed={40} lines={["Do all to the glory of God.", "Désirable Solutions"]} /></span>
                     </div>
 
                 </a>

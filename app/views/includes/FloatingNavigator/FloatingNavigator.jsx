@@ -1,9 +1,6 @@
+import ArchitectureIcon from '@mui/icons-material/Architecture';
 import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
-import MenuIcon from '@mui/icons-material/Menu';
-import ArchitectureIcon from '@mui/icons-material/Architecture';
-import ArrowCircleUpIcon from '@mui/icons-material/ArrowCircleUp';
-import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 
 import ScrollToTop from "react-scroll-to-top";
 
@@ -11,9 +8,7 @@ const actions = [
 
   {
     icon: (
-      <ScrollToTop className='relative z-50' component={(
-        <ArrowCircleUpIcon sx={{ zIndex: '9999999', color: 'var(--red-300)' }} />
-      )} smooth />
+      <ScrollToTop className='relative' smooth />
     ), name: 'Top'
   }
 ];
@@ -27,11 +22,10 @@ export default function FloatingNavigator() {
         zIndex: '9999999',
         ".MuiSpeedDial-fab": {
           backgroundColor: '#000000',
-          boxShadow: 'var(--box-shadow-2)',
-          border: '1px var(--red-800) solid',
+          boxShadow: 'var(--box-shadow-4)',
+          border: '1px var(--red-700) solid',
           "&:hover": {
             backgroundColor: 'var(--gray-900)',
-            border: '1px var(--red-200) solid',
           },
         },
         position: 'fixed', bottom: 16, right: 16, border: '2px', zIndex: '9999999999'

@@ -1,21 +1,10 @@
-import useDrawer from '@controllers/hooks/useDrawer';
-import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
-import VisibilityIcon from '@mui/icons-material/Visibility';
-import PeopleIcon from '@mui/icons-material/People';
-import CoffeeIcon from '@mui/icons-material/Coffee';
-import RedeemIcon from '@mui/icons-material/Redeem';
-import DesignServicesIcon from '@mui/icons-material/DesignServices';
-import HandshakeIcon from '@mui/icons-material/Handshake';
-import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined"
 
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 import drawerStateAtom from "@store/drawerStateAtom";
-import { getRecoil, setRecoil } from 'recoil-nexus'
-import TextScrambler from 'react-scramble-text'
 
-import { useRecoilState } from "recoil"
+import { useRecoilState } from "recoil";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 function useDelayUnmount(isMounted, delayTime) {
     const [showDiv, setShowDiv] = useState(false);
@@ -37,24 +26,22 @@ const Drawer = ({ links }) => {
 
 
     let [drawerState, setDrawerState] = useRecoilState(drawerStateAtom);
-
-
     let drawerOpenStateDelayed = useDelayUnmount(drawerState.isOpen, 750)
 
     return (
 
         drawerOpenStateDelayed &&
 
-        <div className={`fade-in-left ${drawerOpenStateDelayed != undefined ? "fade-out-left" : ""} navbar-menu transition-all fixed top-0 left-0 bottom-0 w-5/6 sm:max-w-xs z-50`}>
+        <div className={`fade-in-left ${!drawerState.isOpen ? "hidden" : ""} navbar-menu transition-all fixed top-0 left-0 bottom-0 w-5/6 sm:max-w-xs z-50`}>
             <div className="navbar-backdrop fixed bg-black inset-0 opacity-80" />
             <ClickAwayListener onClickAway={() => setDrawerState({ isOpen: !drawerState })}>
 
                 <nav style={{
                     borderTop: '1px solid #e6e6e6',
                     background: `url('/assets/images/bg.png') #000000 no-repeat center center fixed`,
-                    filter: 'opacity(0.98)'
+                    filter: 'opacity(0.91)'
 
-                }} className="relative flex flex-col pt-12 pb-40 h-full w-full overflow-y-auto">
+                }} className="relative flex flex-col pt-12 pb-40 h-full w-full overflow-y-hidden">
                     <div className="px-12">
                         <div>
                             <a className="inline-block mb-10" href="/">

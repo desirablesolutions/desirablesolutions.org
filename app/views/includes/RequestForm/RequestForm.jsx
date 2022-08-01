@@ -5,8 +5,8 @@ const RequestForm = ({ order }) => {
     return (
         <FormSection
             order={order}
-            title={"Contact Us"}
-            heading={"Describe your problem."} />
+            title={"Help"}
+            heading={"What's your problem?"} />
     )
 
 }

@@ -5,7 +5,7 @@ export default function Custom404() {
         <PageLayout>
 
             <section className="pb-24 md:pb-96 pt-24  relative overflow-hidden">
-                <div className="hidden xl:block absolute top-0 left-0 w-8 h-full bg-white" />
+                <div className="hidden xl:block absolute top-0 left-0 w-8 h-full" />
                 <div className="absolute bottom-0 left-0 -mb-20 w-full">
                     <img
                         className="block mx-auto"

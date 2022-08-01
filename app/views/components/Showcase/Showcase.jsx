@@ -1,11 +1,8 @@
-import { Carousel } from 'react-responsive-carousel';
-import Image from "@components/Image"
-import Avatar from "@components/Avatar"
-import Paper from '@mui/material/Paper';
-import Chip from '@mui/material/Chip';
+import Avatar from "@components/Avatar";
+import LinkArrowIcon from '@components/LinkArrowIcon';
 
-const Showcase = ({ title, featured, latest, order, sx, heading, cta }) => {
-
+const Showcase = ({ title, featured, latest, order, heading, cta }) => {
+   
 
     return (
 
@@ -25,7 +22,6 @@ const Showcase = ({ title, featured, latest, order, sx, heading, cta }) => {
                     <div className="mb-12">
                         <span className="inline-block text-white px-5 py-2 mr-6 text-sm bg-gray-900 hover:outline rounded-full">
                             <a href="/" className='text-white'>
-
                                 {featured.tags[0].name}
                             </a>
                         </span>
@@ -39,51 +35,23 @@ const Showcase = ({ title, featured, latest, order, sx, heading, cta }) => {
                 </div>
                 <div className="flex flex-wrap -mx-4 pb-24 mb-20 border-b">
                     <div className="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
-                        <Carousel
-                            infiniteLoop={true}
-                            useKeyboardArrows
-                            delay={7000}
-                            autoPlay
-                            animationHandler="fade"
-                            showThumbs={false}
-                            className="flex flex-row">
-                            {featured.covers.map((cover, index) => (
-                                <Image
-                                    key={`${index}-${cover.src}`}
-                                    className="block min-h-max mx-auto"
-                                    src={cover.src}
-                                    alt={cover.src}
-                                />
-
-                            ))}
-                        </Carousel>
+                 
                     </div>
                     <div className="w-full flex lg:w-1/2 px-4">
                         <div className="max-w-sm mx-auto">
 
                             <div>
 
-                                <h4 className="text-3xl text-white mb-5">
-                                    {featured.name}
+                                <h4 className="text-3xl underline-from-left text-white mb-5">
+                                    <a className="text-white" href={featured.url}>
+                                        {featured.name}
+                                    </a>
                                 </h4>
-                                <a className="inline-block relative hover:text-red-300 transition-all cursor-pointer text-white mb-8" href={featured.url}>
+                                <a className="inline-block relative hover:text-red-400 transition-all cursor-pointer text-white mb-8" href={featured.url}>
                                     <span>
                                         {featured.description}
                                     </span>
-                                    <span className="absolute bottom-0  right-0 mb-1">
-                                        <svg
-                                            width={16}
-                                            height={16}
-                                            viewBox="0 0 16 16"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                d="M14.9983 2.97487L12.8444 2.94712L12.9539 11.4487L1.76433 0.259107L0.261729 1.76171L11.4513 12.9513L2.94974 12.8418L2.97749 14.9957L15.1552 15.1525L14.9983 2.97487Z"
-                                                fill="white"
-                                            />
-                                        </svg>
-                                    </span>
+                                    <LinkArrowIcon />
                                 </a>
                                 <div className="pb-8 mb-6 border-b">
                                     {
@@ -115,7 +83,9 @@ const Showcase = ({ title, featured, latest, order, sx, heading, cta }) => {
                                                     src={provisioner.profile.src}
                                                     alt=""
                                                 />
-                                                <span key={`${index}`} className="text-gray-200">{provisioner.name}</span>
+                                                <span key={`${index}`} className="text-gray-200 underline-from-left">
+                                                    <a href="/team" className="text-gray-200">{provisioner.name}</a>
+                                                </span>
 
                                             </>
                                         )

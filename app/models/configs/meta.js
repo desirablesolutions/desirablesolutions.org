@@ -87,6 +87,7 @@ const meta = {
         media: '/assets/images/media',
         projects: '/assets/images/media/projects/',
         people: '/assets/images/media/people/',
+        banners: '/assets/images/media/banners/',
 
     },
     icons: ['57x57', '72x72', '114x114', '144x144', '152x152', '180x180'],

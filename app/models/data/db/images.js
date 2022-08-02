@@ -92,6 +92,25 @@ const images = {
 
     ],
 
+    icons: [
+        {
+            id: 'values',
+            src: `${meta.basePaths.banners}values.svg`,
+        },
+        {
+            id: 'values',
+            src: `${meta.basePaths.banners}values.svg`,
+        },
+        {
+            id: 'values',
+            src: `${meta.basePaths.banners}values.svg`,
+        },
+        {
+            id: 'values',
+            src: `${meta.basePaths.banners}values.svg`,
+        }
+    ],
+
     people: [
         {
             id: 'joshua-desir',

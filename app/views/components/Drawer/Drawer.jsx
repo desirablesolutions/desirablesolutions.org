@@ -49,7 +49,7 @@ const Drawer = ({ links, heading }) => {
                     }} className="relative flex flex-col pt-12 pb-40 h-full w-full overflow-y-hidden">
                         <div className="px-12">
                             <div>
-                                <a className="inline-block w-46 mb-12" href="/">
+                                <a className="inline-block w-44 mb-14" href="/">
                                     <img src="/assets/images/logo-transparent.png" alt="" width="auto" />
 
                                     <h1 className="text-center text-lg text-white">{heading}</h1>

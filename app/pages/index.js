@@ -2,7 +2,7 @@ import FAQs from "@includes/FAQs"
 import Pillars from "@includes/Pillars"
 import RequestForm from "@includes/RequestForm"
 import TeamGallery from "@includes/TeamGallery"
-import WhoWeAre from "@includes/WhoWeAre"
+import WhatWeDo from "@views/includes/WhatWeDo"
 import PageLayout from "@layouts/PageLayout"
 import AdvantagesTable from "@views/includes/AdvantagesTable"
 import Vision from "@views/includes/Vision"
@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
 
     <PageLayout>
-      <WhoWeAre order={"00"} />
+      <WhatWeDo order={"00"} />
       <ProjectShowcase order={"01"} />
       <Vision order={"02"} />
       <Pillars order={"03"} />

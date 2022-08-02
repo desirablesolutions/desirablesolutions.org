@@ -1,14 +1,12 @@
 
 import ScrambleTexts from "@components/ScrambleTexts"
 import theme from "@configs/theme"
+import HandshakeIcon from '@mui/icons-material/Handshake';
 
-const Hero = ({ lines, bgImage }) => {
+const Hero = ({ lines, bgImage, cta }) => {
 
     let { firstLine, secondLine } = lines
 
-    const { animations: {
-        textScrambler
-    } } = theme
 
     return (
         <section style={{
@@ -49,8 +47,8 @@ const Hero = ({ lines, bgImage }) => {
                         </span>
 
                         <span className="inline-block absolute bottom text-center text-white px-5 py-4 mt-12 mr-8 text-sm bg-red-800 outline-white opacity-80 hover:outline border-white rounded-full">
-                            <a href="/help" className='text-white'>
-Need help?
+                            <a href={cta.href} className='text-white'>
+                                {cta.icon}{cta.name}
                             </a>
                         </span>
 

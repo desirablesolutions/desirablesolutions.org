@@ -1,11 +1,17 @@
 import meta from "@configs/meta"
+import HandshakeIcon from '@mui/icons-material/Handshake';
 
 const heros = [
     {
-        id: 'who-we-are',
+        id: 'what-we-do',
         data: {
             bgImage: {
                 src: '/assets/images/banner-primary.png'
+            },
+            cta: {
+                name: 'Need help?',
+                icon: <HandshakeIcon />,
+                href: '/help'
             },
             lines: {
                 firstLine: {

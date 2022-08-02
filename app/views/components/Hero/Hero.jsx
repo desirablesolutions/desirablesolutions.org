@@ -48,6 +48,12 @@ const Hero = ({ lines, bgImage }) => {
                             </a>
                         </span>
 
+                        <span className="inline-block absolute bottom text-center text-white px-5 py-4 mt-12 mr-8 text-sm bg-red-800 outline-white opacity-80 hover:outline border-white rounded-full">
+                            <a href="/help" className='text-white'>
+Need help?
+                            </a>
+                        </span>
+
 
                     </h1>
 

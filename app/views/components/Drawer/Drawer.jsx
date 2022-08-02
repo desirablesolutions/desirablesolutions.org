@@ -40,7 +40,7 @@ const Drawer = ({ links, heading }) => {
         >
             <div className={`${drawerState.isOpen ? "fade-in-left" : "fade-out-left"} navbar-menu transition-all fixed top-0 left-0 bottom-0 w-5/6 sm:max-w-xs z-50`}>
                 <div className="navbar-backdrop fixed bg-black opacity-80" />
-                <ClickAwayListener onClickAway={() => setDrawerState({ isOpen: !drawerState.isOpen })}>
+                <ClickAwayListener onClickAway={() => setDrawerState({ isOpen: false })}>
 
                     <nav style={{
                         background: `url('/assets/images/bg.png') #000000 no-repeat center center fixed`,

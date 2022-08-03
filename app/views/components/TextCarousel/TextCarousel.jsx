@@ -1,4 +1,5 @@
 
+import Carousel from "@components/Carousel"
 
 const TextCarousel = ({ order, title, heading }) => {
 
@@ -52,6 +53,8 @@ const TextCarousel = ({ order, title, heading }) => {
                             <span className="border-b-2 border-black">40-minute onboarding</span>
                             <span>call to get you up and running as soon as possible.</span>
                         </p>
+
+
                     </div>
                     <a className="inline-block px-4" href="#">
                         <svg

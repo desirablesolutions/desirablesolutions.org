@@ -1,4 +1,4 @@
-import useMemo from "react"
+import { useMemoOne } from "react-memo-one"
 
 const useMemoizer = ({ op }) => {
 

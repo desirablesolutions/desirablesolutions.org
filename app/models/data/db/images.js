@@ -92,22 +92,22 @@ const images = {
 
     ],
 
-    icons: [
+    banners: [
         {
-            id: 'values',
+            id: 'value',
             src: `${meta.basePaths.banners}values.svg`,
         },
         {
-            id: 'values',
-            src: `${meta.basePaths.banners}values.svg`,
+            id: 'community',
+            src: `${meta.basePaths.banners}community.svg`,
         },
         {
-            id: 'values',
-            src: `${meta.basePaths.banners}values.svg`,
+            id: 'tools',
+            src: `${meta.basePaths.banners}tools.svg`,
         },
         {
-            id: 'values',
-            src: `${meta.basePaths.banners}values.svg`,
+            id: 'services',
+            src: `${meta.basePaths.banners}services.svg`,
         }
     ],
 

@@ -39,17 +39,17 @@ const DataSummary = ({ order, title, heading, cta, data }) => {
                                 <div key={`${index}--${item.title.name}`} className="w-full lg:w-1/2 3xl:w-1/4 px-4 border-b lg:border-b-0 lg:border-r border-gray-100">
                                     <div className="sm:flex max-w-xs mx-auto 3xl:px-10 py-10 items-start">
                                         <img
-                                            className="block mb-6 w-1/2 h-1/2 sm:mb-0 sm:mr-8"
+                                            className="heartbeat-1 block mb-6 w-1/2 h-1/2 sm:mb-0 sm:mr-8"
                                             src={item.image.src}
                                             alt={item.image.alt}
                                         />
                                         <div>
-                                            <span className="text-sm text-gray-400">{item.title.icon}{item.title.name}</span>
+                                            <span className="text-md underline-from-left text-gray-400">{item.title.icon}{item.title.name}</span>
                                             <h4 className="font-heading text-3xl text-white mt-2 mb-7">
                                                 {item.value.before}<CountUp duration={6} delay={4} end={item.value.number} />
                                             </h4>
 
-                                            <span className="text-xs text-gray-400 font-light">
+                                            <span className="text-sm text-gray-400 font-light">
                                                 {item.description}
                                             </span>
                                         </div>

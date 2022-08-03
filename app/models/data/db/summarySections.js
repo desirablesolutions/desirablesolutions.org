@@ -1,10 +1,19 @@
-export const summarySections = [
+import TerrainIcon from '@mui/icons-material/Terrain';
+
+
+
+const summarySections = [
     {
-        id: 'the-principles',
+        id: 'principles',
         data: {
-            heading: '',
-            title: 'The Principles',
+            heading: {
+                name: 'Solid Principles make a Solid Foundation.',
+                icon: <TerrainIcon />,
+            },
+            title: 'Principles',
         }
     }
 
 ]
+
+export default summarySections

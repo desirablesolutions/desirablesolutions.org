@@ -18,14 +18,14 @@ const dataSummeries = [
                     icon: ''
                 },
                 value: {
-                    before: '$',
-                    number: 500000000
+                    before: '~',
+                    number: 790000000
                 },
                 image: {
                     src: '/assets/images/media/banners/value.svg',
                     alt: ''
                 },
-                description: ''
+                description: `7.9 billion invaluable human beings shall witness the birth of a loving meritocracy - the land of milk and honey. May our example of sincere & transformative service pave the way.`
             },     {
                 id: 'values',
                 title: {
@@ -33,8 +33,8 @@ const dataSummeries = [
                     icon: ''
                 },
                 value: {
-                    before: '$',
-                    number: 500000000
+                    before: '~',
+                    number: 980000000
                 },
                 image: {
                     src: '/assets/images/media/banners/community.svg',

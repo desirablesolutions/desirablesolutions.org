@@ -1,12 +1,15 @@
 import PageLayout from "@layouts/PageLayout"
 
 
-
-
 export default function VisionPage() {
 
+    const VisionPageMeta = {
+        pageTitle: 'Vision',
+        description: ''
+    }
+
     return (
-        <PageLayout>
+        <PageLayout meta={VisionPageMeta}>
 
         </PageLayout>
     )

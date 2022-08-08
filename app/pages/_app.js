@@ -1,23 +1,18 @@
-import "@views/libs/tailwind.css"
-import "@views/libs/animations.css"
-import "@views/libs/globals.css"
-import 'react-scramble-text/dist/index.css'
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import "@views/libs/dashvars.css"
-import "@views/libs/hover.css"
+import "@views/libs/animations.css";
+import "@views/libs/dashvars.css";
+import "@views/libs/globals.css";
+import "@views/libs/hover.css";
+import "@views/libs/tailwind.css";
 import "react-multi-carousel/lib/styles.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import 'react-scramble-text/dist/index.css';
 
-
-import Store from "@components/Store"
-
+import Store from "@components/Store";
 import RecoilNexus from "recoil-nexus";
 
-import PageLayout from "@layouts/PageLayout"
-
-import App, { Container } from 'next/app'
-import React from 'react'
-import NavBar from "@includes/NavBar"
-import { PageTransition } from 'next-page-transitions'
+import { PageTransition } from 'next-page-transitions';
+import App from 'next/app';
+import React from 'react';
 
 export default class Application extends App {
   static async getInitialProps({ Component, router, ctx }) {
@@ -34,12 +29,10 @@ export default class Application extends App {
     const { Component, pageProps } = this.props
     return (
       <>
-        <PageTransition timeout={434} classNames="page-transition">
+        <PageTransition timeout={500} classNames="page-transition">
           <Store>
             <RecoilNexus/>
-            <NavBar/>
             <Component {...pageProps} />
-
           </Store>
         </PageTransition>
         <style jsx global>{`

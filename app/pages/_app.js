@@ -12,9 +12,11 @@ import Store from "@components/Store"
 
 import RecoilNexus from "recoil-nexus";
 
+import PageLayout from "@layouts/PageLayout"
 
 import App, { Container } from 'next/app'
 import React from 'react'
+import NavBar from "@includes/NavBar"
 import { PageTransition } from 'next-page-transitions'
 
 export default class Application extends App {
@@ -35,23 +37,28 @@ export default class Application extends App {
         <PageTransition timeout={434} classNames="page-transition">
           <Store>
             <RecoilNexus/>
+            <NavBar/>
             <Component {...pageProps} />
+
           </Store>
         </PageTransition>
         <style jsx global>{`
           .page-transition-enter {
             opacity: 0;
+            backdropFilter: blur(50px);
           }
           .page-transition-enter-active {
             opacity: 1;
-            transition: opacity 900ms;
+            backdropFilter: blur(0px);
+
+            transition: opacity backdropFilter 900ms;
           }
           .page-transition-exit {
             opacity: 1;
           }
           .page-transition-exit-active {
             opacity: 0;
-            transition: opacity 900ms;
+            transition: opacity 1s;
           }
         `}</style>
       </>

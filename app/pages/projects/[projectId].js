@@ -12,8 +12,10 @@ export default function ProjectPage({ projectData }) {
     return (
         <ProjectLayout
             title={projectData.name}
-            coverImage={{ src: projectData.covers[1].src }}
-            accentImage={{ src: projectData.covers[0].src }} />
+            impressum={projectData.impressum}
+            description={projectData.description}
+            covers={projectData.covers}
+           />
     )
 }
 

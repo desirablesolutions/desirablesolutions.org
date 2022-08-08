@@ -14,7 +14,6 @@ const PageLayout = ({ children, pageTitle }) => {
         <RootLayout pageTitle={pageTitle}>
             <MenuNav />
             <FloatingNavigator />
-            <NavBar />
             <FadeAnimation>
                 {children}
             </FadeAnimation>

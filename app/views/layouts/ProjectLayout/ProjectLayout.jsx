@@ -17,20 +17,20 @@ const ProjectLayout = ({ title, covers, impressum, description }) => {
                             <div className="flex flex-wrap -mx-4">
                                 <div className="w-full lg:w-1/2 px-4 mb-32 lg:mb-0">
                                     <div className="max-w-md mx-auto relative">
-                                    <Carousel swipeable={false}
-                            draggable={true}
-                            showDots={true}
-                            ssr={true}
-                            infinite={true}
-                            autoPlay={true}
-                            keyBoardControl={true}
-                            transitionDuration={700} responsive={vendor.carousel.responsive}>
-                            {covers.map((cover, index) => {
-                                return (
-                                    <img key={`${index}${cover.src}`} src={cover.src} className="object-fill rounded" />
-                                )
-                            })}
-                        </Carousel>
+                                        <Carousel swipeable={false}
+                                            draggable={true}
+                                            showDots={false}
+                                            ssr={true}
+                                            infinite={true}
+                                            autoPlay={true}
+                                            keyBoardControl={true}
+                                            transitionDuration={700} responsive={vendor.carousel.responsive}>
+                                            {covers.map((cover, index) => {
+                                                return (
+                                                    <img key={`${index}${cover.src}`} src={cover.src} className="object-fill rounded" />
+                                                )
+                                            })}
+                                        </Carousel>
                                     </div>
                                 </div>
                                 <div className="w-full lg:w-1/2 px-4">
@@ -141,7 +141,7 @@ const ProjectLayout = ({ title, covers, impressum, description }) => {
                                                 <td className="py-5 pr-14">
                                                     <div className="relative flex pl-12 items-center">
                                                         <div className="absolute top-1/2 left-0 transform -translate-y-1/2 px-px h-3 rounded-full gray-7bg-00" />
-                                                
+
                                                         <a
                                                             className="inline-block text-gray-700 hover:text-gray-600"
                                                             href="#"

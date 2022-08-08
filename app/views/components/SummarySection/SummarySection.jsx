@@ -7,9 +7,9 @@ const SummarySection = ({ order, title, heading }) => {
         <Section order={order} title={title}>
 
             <h2 className="text-center font-heading text-3xl sm:text-6xl md:text-5xl text-white mb-24">
-                {heading}
+                {heading.icon}{heading.name}
             </h2>
-            
+
             <div className="flex flex-wrap -mx-4">
                 <div className="w-full lg:w-1/3 px-4 pb-20 lg:pb-0 mb-16 lg:mb-0 relative">
                     <div className="hidden lg:block absolute top-0 right-0 pt-14 h-full w-px">

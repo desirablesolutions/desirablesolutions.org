@@ -6,7 +6,7 @@ import SummarySection from "@views/components/SummarySection";
 const Principles = ({ order }) => {
 
     return (
-        <SummarySection {...find({ arr: summarySections, id: 'principles ' })} order={order} />
+        <SummarySection order={order} title={"Principles"} {...find({ arr: summarySections, id: 'principles' })} />
     )
 }
 

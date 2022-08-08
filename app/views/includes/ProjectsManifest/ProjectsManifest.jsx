@@ -1,3 +1,6 @@
+import projects from "@db/projects"
+
+
 const ProjectsManifest = () => {
 
     return (
@@ -5,36 +8,28 @@ const ProjectsManifest = () => {
             <div className="container px-4 mx-auto">
                 <div className="flex flex-wrap -mx-4 mb-20">
                     <div className="w-full xl:w-1/3 px-4 mb-16 xl:mb-0">
-                        <div className="flex flex-col h-full items-start px-6 sm:px-12 pt-16 pb-24 bg-gray-800 rounded-2xl">
+                        <div className="flex flex-col h-full items-start px-6 sm:px-12 pt-16 pb-24 rounded-2xl">
                             <div className="w-full mb-16 pb-2 border-b border-gray-700">
-                                <h4 className="font-heading text-4xl text-white">Files</h4>
+                                <h4 className="font-heading text-4xl text-white">Projects</h4>
                             </div>
-                            <div className="flex mb-14 items-center">
-                                <img
-                                    className="block mr-8"
-                                    src="wrexa-assets/elements/folder1.svg"
-                                    alt=""
-                                />
-                                <span className="text-lg text-white">All inspirations</span>
-                            </div>
-                            <div className="flex mb-14 items-center">
-                                <img
-                                    className="block mr-8"
-                                    src="wrexa-assets/elements/folder2.svg"
-                                    alt=""
-                                />
-                                <span className="text-lg text-white">Bathroom design</span>
-                            </div>
-                            <div className="flex mb-20 items-center">
-                                <img
-                                    className="block mr-8"
-                                    src="wrexa-assets/elements/folder3.svg"
-                                    alt=""
-                                />
-                                <span className="text-lg text-white">Songs</span>
-                            </div>
+                            {
+                                projects.map((project, index) => {
+
+                                    return (
+                                        <div key={index} className="flex mb-14 items-center">
+                                            <img
+                                                className="block mr-8 w-14 h-14 rounded"
+                                                src={project.covers[0].src}
+                                                alt={project.name}
+                                            />
+                                            <span className="text-lg underline-from-left text-white">{project.name}</span>
+                                        </div>
+                                    )
+                                })
+                            }
+
                             <a
-                                className="inline-block w-full sm:w-auto px-7 py-4 mt-auto text-center font-medium bg-indigo-500 hover:bg-indigo-600 text-white rounded transition duration-250"
+                                className="inline-block w-full sm:w-auto px-7 py-4 mt-auto text-center font-medium bg-red-700 hover:bg-red-300 hover:text-black text-white rounded transition duration-250"
                                 href="#"
                             >
                                 All files
@@ -77,7 +72,7 @@ const ProjectsManifest = () => {
                                             </th>
                                             <td className="py-5">
                                                 <div className="relative flex pl-12 items-center">
-                                                    <div className="absolute top-1/2 left-0 transform -translate-y-1/2 px-px h-3 rounded-full bg-gray-700" />
+                                                    <div className="absolute top-1/2 left-0 transform -translate-y-1/2 px-px h-3 rounded-full" />
                                                     <img
                                                         className="w-12 h-12 rounded-full object-cover"
                                                         src="wrexa-assets/images/avatar-women1.png"
@@ -164,7 +159,7 @@ const ProjectsManifest = () => {
                                             </th>
                                             <td className="py-5">
                                                 <div className="relative flex px-12 items-center">
-                                                    <div className="absolute top-1/2 left-0 transform -translate-y-1/2 px-px h-3 rounded-full bg-gray-700" />
+                                                    <div className="absolute top-1/2 left-0 transform -translate-y-1/2 px-px h-3 rounded-full" />
                                                     <img
                                                         className="w-12 h-12 rounded-full object-cover"
                                                         src="wrexa-assets/images/avatar-women1.png"
@@ -251,7 +246,7 @@ const ProjectsManifest = () => {
                                             </th>
                                             <td className="py-5">
                                                 <div className="relative flex px-12 items-center">
-                                                    <div className="absolute top-1/2 left-0 transform -translate-y-1/2 px-px h-3 rounded-full bg-gray-700" />
+                                                    <div className="absolute top-1/2 left-0 transform -translate-y-1/2 px-px h-3 rounded-full" />
                                                     <img
                                                         className="w-12 h-12 rounded-full object-cover"
                                                         src="wrexa-assets/images/avatar-women1.png"
@@ -328,7 +323,7 @@ const ProjectsManifest = () => {
                             </div>
                             <div>
                                 <a
-                                    className="inline-block w-full sm:w-auto px-7 py-4 mb-4 sm:mb-0 sm:mr-4 text-center font-medium bg-indigo-500 hover:bg-indigo-600 text-white rounded transition duration-250"
+                                    className="inline-block w-full sm:w-auto px-7 py-4 mb-4 sm:mb-0 sm:mr-4 text-center font-medium bg-red-500 hover:bg-red-600 text-white rounded transition duration-250"
                                     href="#"
                                 >
                                     Sign in

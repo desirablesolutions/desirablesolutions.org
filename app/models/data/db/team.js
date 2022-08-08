@@ -5,10 +5,10 @@ const team = [
     {
         id: 'joshua-desir',
         name: 'Joshua D. Desir',
-        role: 'CEO & Master Designer',
+        role: 'Founder & Master Designer',
         description: `I am a graphic designer & amateur engineer by trade; and founder of the unique organizational web Inform & Inspire, LLC.`,
         info: [
-            "Taurus"
+            "Orlando, FL"
         ],
         profile: find({
             arr: images.people,
@@ -18,10 +18,9 @@ const team = [
     {
         id: 'jeffrey-desir',
         name: 'Jeffrey J. Desir',
-        role: 'Techonomancer',
-        description: `I am a techonomancer, a person who is passionate about technology. I coordiante, strategize, & innovate solutions & processes our people need.`,
+        role: 'Technomancer',
+        description: `I am a professional who is passionate about technology. I coordiante, strategize, & innovate solutions & processes our people need.`,
         info: [
-            "Libra",
             "Atlanta, GA",
         ],
         profile: find({

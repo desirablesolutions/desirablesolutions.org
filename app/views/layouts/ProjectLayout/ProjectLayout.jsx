@@ -3,7 +3,7 @@ import PageLayout from "@layouts/PageLayout"
 const ProjectLayout = ({ title, coverImage , accentImage}) => {
 
     return (
-        <PageLayout>
+        <PageLayout pageTitle={title}>
             <section className="bg-transparent">
                 <div className="md:ml-10 py-24 md:py-40 ">
                     <div className="container px-4 mx-auto">

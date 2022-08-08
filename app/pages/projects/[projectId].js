@@ -8,11 +8,6 @@ import { useEffect } from "react"
 
 export default function ProjectPage({ projectData }) {
 
-    useEffect(() => {
-        useMeta({
-            pageTitle: projectData.name
-        })
-    }, [projectData])
 
     return (
         <ProjectLayout

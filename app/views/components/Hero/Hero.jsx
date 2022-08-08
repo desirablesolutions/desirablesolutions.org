@@ -2,6 +2,8 @@
 import ScrambleTexts from "@components/ScrambleTexts"
 import theme from "@configs/theme"
 import HandshakeIcon from '@mui/icons-material/Handshake';
+import Section from "@components/Section"
+
 
 const Hero = ({ lines, bgImage, cta }) => {
 

@@ -2,22 +2,16 @@ import Avatar from "@components/Avatar";
 import LinkArrowIcon from '@components/LinkArrowIcon';
 import Carousel from "react-multi-carousel";
 import vendor from "@configs/vendor"
+import Section from "@components/Section"
+
 
 const Showcase = ({ title, featured, latest, order, heading, cta }) => {
+    
+    
     return (
 
-        <section style={{
-            borderTop: '1px solid var(--red-100)',
-            background: `url('/assets/images/bg.png') #000000 no-repeat center center fixed`,
-            filter: 'opacity(0.89)'
-        }} className="py-24 md:py-40">
+        <Section order={order} title={title}>
             <div className="container px-4 mx-auto">
-                <div className="flex animate-pulse items-center mb-24">
-                    <span className="font-heading outline p-1 text-white text-xl">{order}</span>
-                    <div className="mx-4 rounded-full bg-gray-200 h-1 w-1" />
-                    <span className="font-heading text-white text-xl">{title}</span>
-                </div>
-
                 <div className="text-center">
                     <div className="mb-12">
                         <span className="inline-block text-white px-5 py-2 mr-6 text-sm bg-gray-900 hover:outline rounded-full">
@@ -145,7 +139,7 @@ const Showcase = ({ title, featured, latest, order, heading, cta }) => {
 
 
                                         <a
-                                            
+
                                             className="inline-block mr-6 text-white hover:outline p-1 hover:text-gray-600 hover:underline"
                                             href={featured.tags[0].href}
                                         >
@@ -189,7 +183,7 @@ const Showcase = ({ title, featured, latest, order, heading, cta }) => {
                     {cta.name}
                 </a>
             </div>
-        </section>
+        </Section>
 
     )
 }

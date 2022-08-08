@@ -33,7 +33,7 @@ const showcases = [
         ],
         featured: {...find({
             arr: projects,
-            id: 'green-harvest-farmers-market'
+            id: 'yonder-airways'
         }) }
     }
 ]

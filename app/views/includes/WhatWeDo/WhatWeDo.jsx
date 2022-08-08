@@ -2,7 +2,7 @@ import Hero from "@components/Hero"
 import heros from "@db/heros"
 import find from "@utils/find"
 
-const WhatWeDo = ({ order }) => {
+const WhatWeDo = () => {
 
     const WhatWeDo = find({
         arr: heros,
@@ -10,7 +10,7 @@ const WhatWeDo = ({ order }) => {
     }).data
 
     return (
-        <Hero order={order} {...WhatWeDo} />
+        <Hero  {...WhatWeDo} />
     )
 }
 

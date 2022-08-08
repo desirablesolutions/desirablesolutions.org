@@ -2,13 +2,12 @@ import Meta from "@includes/Meta"
 import CSSReset from "@components/CSSReset"
 import Box from "@components/Box"
 
-const RootLayout = (props) => {
+const RootLayout = ({ children, pageTitle }) => {
 
-    let { children } = props
 
     return (
         <>
-            <Meta />
+            <Meta pageTitle={pageTitle} />
             <CSSReset />
             <Box>
                 {children}

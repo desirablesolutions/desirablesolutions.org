@@ -26,7 +26,7 @@ const heros = [
                     texts: [...meta.info.sectors],
                     before: 'problems for',
                     speed: 90,
-                    pauseTime: 13000,
+                    pauseTime: 14000,
                 },
 
             }

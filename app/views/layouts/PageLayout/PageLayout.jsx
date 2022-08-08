@@ -3,18 +3,15 @@ import BottomNav from "@includes/BottomNav"
 import FloatingNavigator from "@includes/FloatingNavigator"
 import NavBar from "@includes/Navbar"
 import RootLayout from "@layouts/RootLayout"
-import MenuNav from "@views/includes/MenuNav"
+import MenuNav from "@includes/MenuNav"
 import useMeta from "@hooks/useMeta"
 
 
-const PageLayout = ({ children, meta }) => {
+const PageLayout = ({ children, pageTitle }) => {
 
-    useMeta({
-        ...meta
-    })
-
+ 
     return (
-        <RootLayout>
+        <RootLayout pageTitle={pageTitle}>
             <MenuNav />
             <FloatingNavigator />
             <NavBar />

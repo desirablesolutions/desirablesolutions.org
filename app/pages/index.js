@@ -13,9 +13,8 @@ export default function HomePage() {
   const { pageTitle } = {
     pageTitle: 'Home'
   }
-  
-  return (
 
+  return (
     <PageLayout pageTitle={pageTitle}>
       <WhatWeDo />
       <ProjectShowcase order={"01"} />

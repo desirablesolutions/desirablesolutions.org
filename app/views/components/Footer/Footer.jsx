@@ -1,5 +1,6 @@
 import Button from "@components/Button"
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import Section from "@components/Section"
 
 const NavLink = ({ key, icon, href, name }) => (
     <>
@@ -18,7 +19,7 @@ const Footer = ({ copyright, navLinks, actionLinks, contact, impressum }) => {
         <section style={{
             borderTop: '1px solid #e6e6e6',
             background: `url('/assets/images/bg.png') #000000 no-repeat center center fixed`,
-            filter: 'opacity(0.8)'
+            filter: 'opacity(0.91)'
 
         }}>
             <div className="pt-10 pb-16">

@@ -1,11 +1,15 @@
 import PageLayout from "@layouts/PageLayout"
 
 
-export default function InfoPage() {
+export default function AboutPage() {
+
+    const { pageTitle } = {
+        pageTitle: 'About'
+    }
 
     return (
 
-        <PageLayout>
+        <PageLayout pageTitle={pageTitle}>
 
         </PageLayout>
     )

@@ -1,12 +1,14 @@
 import PageLayout from "@layouts/PageLayout"
 import Carousel from "react-multi-carousel";
 import vendor from "@configs/vendor"
-
+import Section from "@components/Section"
 
 const ProjectLayout = ({ title, covers, impressum, description }) => {
 
     return (
         <PageLayout pageTitle={title}>
+
+            <Section>
             <section className="bg-transparent">
                 <div className="md:ml-10 py-24 md:py-40 ">
                     <div className="container px-4 mx-auto">
@@ -191,6 +193,8 @@ const ProjectLayout = ({ title, covers, impressum, description }) => {
                 </div>
             </section>
 
+            </Section>
+         
 
         </PageLayout>
 

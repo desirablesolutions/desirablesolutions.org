@@ -12,13 +12,7 @@ const PageLayout = ({ children, pageTitle }: ILayout) => {
  
     return (
         <RootLayout pageTitle={pageTitle}>
-            <MenuNav />
-            <FloatingNavigator />
-            <NavBar />
-            <FadeAnimation>
-                {children}
-            </FadeAnimation>
-            <BottomNav />
+   
         </RootLayout>
     )
 

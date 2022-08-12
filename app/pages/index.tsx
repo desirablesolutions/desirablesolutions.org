@@ -16,8 +16,3 @@ const HomePage: IPage = () => {
 }
 
 export default HomePage
-
-
-export const getStaticProps = async () => {
-
-}

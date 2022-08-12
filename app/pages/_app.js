@@ -4,7 +4,6 @@ import "@views/libs/globals.css";
 import "@views/libs/hover.css";
 import "@views/libs/tailwind.css";
 import "react-multi-carousel/lib/styles.css";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import 'react-scramble-text/dist/index.css';
 
 import Store from "@components/Store";

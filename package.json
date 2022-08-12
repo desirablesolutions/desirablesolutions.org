@@ -1,13 +1,13 @@
 {
   "name": "desirable.solutions",
-  "version": "1.0.0",
+  "version": "9.11.0",
   "description": "",
   "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "app:dev": "cd app/client && npm i --force && npm run dev",
+    "app:dev": "cd app && npm i --force && npm run dev",
     "readme:g": "npx @appnest/readme generate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,15 +15,11 @@
     "type": "git",
     "url": "git+https://github.com/Inform-Inspire-LLC/desirable.solutions.git"
   },
-  "author": "",
+  "author": "Jeffrey J. Desir",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Inform-Inspire-LLC/desirable.solutions/issues"
   },
   "homepage": "https://github.com/Inform-Inspire-LLC/desirable.solutions#readme",
-  "dependencies": {
-    "react-hover-animation": "^2.1.1",
-    "react-lazy-load-image-component": "^1.5.5",
-    "react-responsive-carousel": "^3.2.23"
-  }
+
 }

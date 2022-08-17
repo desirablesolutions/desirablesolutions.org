@@ -1,5 +1,5 @@
 
-const FormSection = ({ order, title, heading }) => {
+const FormSection = ({ order, title, heading, services }) => {
 
     return (
         <section style={{
@@ -43,18 +43,29 @@ const FormSection = ({ order, title, heading }) => {
                             </div>
                             <div className="flex flex-wrap mt-6 -mb-6">
                                 <span className="mr-4 mb-6 text-2xl xl:text-3xl text-white font-heading">
-                                    for a
+                                    for
                                 </span>
                                 <div>
                                     <select
                                         className="block max-w-xs mr-4 px-6 pb-2 mb-6 text-center text-2xl xl:text-3xl font-heading border-b border-gray-700 bg-transparent text-gray-700 outline-none"
                                         aria-label="New select example"
                                     >
-                                        <option selected="">select here</option>
-                                        <option value={1}>job</option>
-                                        <option value={1}>work</option>
+                                        <option selected="">select service</option>
+
+                                        {
+                                            services.map((service, index) => {
+                                                return (
+                                                    <option value={index}>{service.name}</option>
+                                                )
+                                            })
+                                        }
+
+
                                     </select>
                                 </div>
+                                <span className="mb-6 text-2xl xl:text-3xl text-white font-heading">
+                                    services.
+                                </span>
                             </div>
                             <div className="flex flex-wrap mt-6 -mb-6">
                                 <span className="mr-4 mb-6 text-2xl xl:text-3xl text-white font-heading">
@@ -64,18 +75,13 @@ const FormSection = ({ order, title, heading }) => {
                                     <input
                                         className="block max-w-xs mr-4 px-6 pb-2 mb-6 text-center text-2xl xl:text-3xl font-heading border-b border-gray-700 bg-transparent text-gray-700 placeholder-gray-700 outline-none"
                                         type="email"
-                                        placeholder="your Email here"
+                                        placeholder="joe@shmoe.com"
                                     />
                                 </div>
                             </div>
-                            <div className="flex items-center mt-16 mb-24">
-                                <input type="checkbox" defaultValue="" id="" />
-                                <label className="ml-6 text-gray-600" htmlFor="">
-                                    Accept all terms and conditions
-                                </label>
-                            </div>
+                          
                             <a
-                                className="inline-block w-full lg:w-auto px-7 py-4 text-center font-medium bg-red-500 hover:bg-indigo-600 text-white rounded transition duration-250"
+                                className="inline-block w-full lg:w-auto px-7 py-4 mt-3 text-center font-medium bg-red-700 hover:bg-red-400 hover:text-black text-white rounded transition duration-250"
                                 href="#"
                             >
                                 Send!

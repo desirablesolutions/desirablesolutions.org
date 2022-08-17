@@ -1,16 +1,16 @@
 import Hero from "@components/Hero"
-import heros from "@db/heros"
-import find from "@utils/find"
+import heros from "@models/data/db/herosata/db/heros"
 
 const WhatWeDo = () => {
 
-    const WhatWeDo = find({
-        arr: heros,
-        id: 'what-we-do'
-    }).data
+    const whatWeDo = heros({
+        query: {
+            id: 'what-we-do'
+        }
+    })
 
     return (
-        <Hero  {...WhatWeDo} />
+        <Hero {...whatWeDo} />
     )
 }
 

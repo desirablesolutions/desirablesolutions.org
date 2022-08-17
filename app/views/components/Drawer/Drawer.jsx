@@ -2,7 +2,7 @@
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 import drawerStateAtom from "@store/drawerStateAtom";
 import { useRecoilState } from "recoil";
-import useDelayUnmount from '@utils/useDelayUnmount';
+import useDelayUnmount from '@hooks/useDelayUnmount';
 import ScrambleTexts from "@components/ScrambleTexts"
 import AnalogClock from 'analog-clock-react';
 import { CSSTransition } from 'react-transition-group';
@@ -26,12 +26,11 @@ const Drawer = ({ links, heading }) => {
 
 
     let [drawerState, setDrawerState] = useRecoilState(drawerStateAtom);
-    let drawerOpenStateDelayed = useDelayUnmount(drawerState.isOpen, 700)
 
     return (
 
         <CSSTransition
-            in={drawerOpenStateDelayed}
+            in={drawerState.isOpen}
             timeout={300}
             classNames="fade-in-left"
             onEnter={() =>setDrawerState({ isOpen: true })}

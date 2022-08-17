@@ -7,12 +7,23 @@ import RootLayout from "@layouts/RootLayout"
 import type { ILayout } from "@typings/Layout"
 
 
-const PageLayout = ({ children, pageTitle }: ILayout) => {
+const PageLayout = ({ children, metaData }: ILayout) => {
 
- 
+
     return (
-        <RootLayout pageTitle={pageTitle}>
-   
+
+        <RootLayout metaData={metaData}>
+            <MenuNav />
+            <FloatingNavigator />
+
+
+            <NavBar />
+            <FadeAnimation>
+                {children}
+
+
+                <BottomNav />
+            </FadeAnimation>
         </RootLayout>
     )
 

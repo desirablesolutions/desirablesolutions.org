@@ -1,3 +1,3 @@
-export interface IComponents {
-    
+export interface IComponent {
+    data: any;
 }

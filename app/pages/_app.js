@@ -1,8 +1,8 @@
-import "@views/libs/animations.css";
-import "@views/libs/dashvars.css";
-import "@views/libs/globals.css";
-import "@views/libs/hover.css";
-import "@views/libs/tailwind.css";
+import "@libs/animations.css";
+import "@libs/dashvars.css";
+import "@libs/globals.css";
+import "@libs/hover.css";
+import "@libs/tailwind.css";
 import "react-multi-carousel/lib/styles.css";
 import 'react-scramble-text/dist/index.css';
 

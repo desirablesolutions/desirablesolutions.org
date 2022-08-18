@@ -4,11 +4,10 @@ import Showcase from "@components/Showcase"
 import FormSection from "@components/FormSection"
 import SummarySection from "@components/SummarySection"
 import TextCarousel from "@views/components/TextCarousel"
-
-
 import homePage from "@pages/homePage"
-
 import PageLayout from "@layouts/PageLayout"
+
+
 
 const HomePage: IPage = () => {
 
@@ -56,13 +55,12 @@ const HomePage: IPage = () => {
       <Hero {...homePage.hero} />
         <Showcase order={"01"} {...homePage.showcase} />
         <SummarySection order={"02"} {...homePage.summarySection} />
-        <TextCarousel title="Questions" order={"03"} />
+        <TextCarousel heading={"WHat's your problem?"} title="Questions" order={"03"} />
         <FormSection
         order={"04"}
         title={"Help"}
         heading={"What's your problem?"}
         services={servicesData} />
-
     </PageLayout>
 
   )

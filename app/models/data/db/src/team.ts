@@ -1,7 +1,8 @@
-import images from '@db/images'
-import find from "@controllers/utils/find"
+import { Images } from "@db/index"
+import makeQueryable from '@utils/makeQueryable'
 
-const team = [
+
+const data = [
     {
         id: 'joshua-desir',
         name: 'Joshua D. Desir',
@@ -10,10 +11,7 @@ const team = [
         info: [
             "Orlando, FL"
         ],
-        profile: find({
-            arr: images.people,
-            id: 'joshua-desir'
-        })
+        profile: []
     },
     {
         id: 'jeffrey-desir',
@@ -23,11 +21,20 @@ const team = [
         info: [
             "Atlanta, GA",
         ],
-        profile: find({
-            arr: images.people,
-            id: 'jeffrey-desir'
-        })
+        profile: []
     }
 ]
 
-export default team
+const Team = makeQueryable({ data: data })
+
+export default Team
+
+
+Team({
+    query: {
+        property: 'id',
+        value: 'joshua-desir',
+        limit: 1
+    }
+})
+

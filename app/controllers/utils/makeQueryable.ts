@@ -1,15 +1,14 @@
 
 
-const makeQueryable = ({ collection, query }) => {
+const makeQueryable = ({ data }) => {
 
-   const search = () => {
+   return function ({ query: { property, value, limit } }) {
 
-      return {
+      return data.filter((element) => (
+         element[property] === value
+      )).slice(0, limit)
 
-      }
    }
-
-   return null
 }
 
 export default makeQueryable

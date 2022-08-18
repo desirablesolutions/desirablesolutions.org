@@ -1,4 +1,4 @@
-import images from "@db/images"
+import images from "@models/data/db/images"
 import useDrawer from "@hooks/useDrawer"
 
 const navBar = {

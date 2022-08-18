@@ -2,7 +2,38 @@ import HandshakeIcon from '@mui/icons-material/Handshake';
 import TerrainIcon from '@mui/icons-material/Terrain';
 
 import meta from "@configs/meta";
-
+const servicesData = [
+    {
+        name: 'Web Development',
+    },
+    {
+        name: 'Mobile Development',
+    },
+    {
+        name: 'UI/UX Design',
+    },
+    {
+        name: 'Digital Marketing',
+    },
+    {
+        name: 'Operations Consultation',
+    },
+    {
+        name: 'Logo Design',
+    },
+    {
+        name: 'Graphic Design',
+    },
+    {
+        name: 'Content Writing',
+    },
+    {
+        name: 'Art & Illustration'
+    },
+    {
+        name: "Brand Identity",
+    }
+]
 const homePage = {
     hero: {
 
@@ -33,18 +64,24 @@ const homePage = {
         }
 
     },
-
-    formsSection: {
+textCarousel: {
+heading: '',
+title: 'Questions',
+},
+    formSection: {
+        title: 'Help',
+        heading: 'What\'s your problem?',
+        services: servicesData,
 
     },
 
 
-    summarySection:    {
+    summarySection: {
         id: 'principles',
         title: 'Principles',
         heading: {
             name: 'Solid Principles make a Solid Foundation.',
-            icon: <TerrainIcon/>
+            icon: <TerrainIcon />
         }
     },
 
@@ -74,8 +111,8 @@ const homePage = {
             name: 'Featured Project',
             description: '',
             covers: [''],
-            tags: [{name: '', href: ''}],
-            provisoners: [{name: '', profile: {src: ''}, }],
+            tags: [{ name: '', href: '' }],
+            provisoners: [{ name: '', profile: { src: '' }, }],
         }
     }
 }

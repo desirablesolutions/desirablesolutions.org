@@ -2,7 +2,7 @@ import CountUp from 'react-countup';
 import Link from "@components/Link"
 import Ornament from "@components/Ornament"
 
-const DataSummary = ({ order, title, heading, cta, data }) => {
+const DataSection = ({ order, title, heading, cta, data }) => {
 
     return (
         <section style={{
@@ -73,4 +73,4 @@ const DataSummary = ({ order, title, heading, cta, data }) => {
     )
 }
 
-export default DataSummary
+export default DataSection

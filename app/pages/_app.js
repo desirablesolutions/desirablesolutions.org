@@ -3,6 +3,7 @@ import "@libs/dashvars.css";
 import "@libs/globals.css";
 import "@libs/hover.css";
 import "@libs/tailwind.css";
+
 import "react-multi-carousel/lib/styles.css";
 import 'react-scramble-text/dist/index.css';
 
@@ -28,7 +29,7 @@ export default class Application extends App {
     const { Component, pageProps } = this.props
     return (
       <>
-        <PageTransition timeout={500} classNames="page-transition">
+        <PageTransition timeout={600} classNames="page-transition">
           <Store>
             <RecoilNexus/>
             <Component {...pageProps} />

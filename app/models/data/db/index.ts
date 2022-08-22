@@ -1,2 +1,3 @@
-export { default as Images } from "./src/images"
-export { default as Team  } from "./src/team"
+export { default as Images } from "./source/images"
+export { default as Team  } from "./source/team"
+export { default as NavBar } from "./source/navBar"

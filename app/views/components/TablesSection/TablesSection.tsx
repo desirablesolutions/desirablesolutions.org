@@ -1,6 +1,6 @@
 
 
-const ComparisonTable = ({ order, title, heading }) => {
+const TablesSection = ({ order, title, heading }) => {
 
     return (
 
@@ -242,4 +242,4 @@ const ComparisonTable = ({ order, title, heading }) => {
     )
 }
 
-export default ComparisonTable
+export default TablesSection

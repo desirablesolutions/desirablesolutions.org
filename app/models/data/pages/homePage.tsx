@@ -1,7 +1,9 @@
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import TerrainIcon from '@mui/icons-material/Terrain';
-
+import HourglassTopIcon from '@mui/icons-material/HourglassTop';
 import meta from "@configs/meta";
+
+
 const servicesData = [
     {
         name: 'Web Development',
@@ -34,6 +36,7 @@ const servicesData = [
         name: "Brand Identity",
     }
 ]
+
 const homePage = {
     hero: {
 
@@ -42,7 +45,7 @@ const homePage = {
         },
         cta: {
             name: 'Need help?',
-            icon: <HandshakeIcon />,
+            icon: (<HandshakeIcon />),
             href: '/help'
         },
         lines: {
@@ -64,10 +67,97 @@ const homePage = {
         }
 
     },
-textCarousel: {
-heading: '',
-title: 'Questions',
-},
+    textCarousel: {
+        heading: '',
+        title: 'Questions',
+    },
+
+    gallery: {
+
+        id: 'team-gallery',
+        title: 'Team',
+        heading: '"The Dream Team"'
+
+
+    },
+
+    dataSection: {
+        id: 'vision',
+        title: 'Vision.',
+        heading: {
+            name: 'Sincere work, serious goals.',
+            icon: <HourglassTopIcon />,
+        },
+        data: [
+            {
+                id: 'value',
+                title: {
+                    name: 'Value',
+                    icon: ''
+                },
+                value: {
+                    before: '~',
+                    number: 790000000
+                },
+                image: {
+                    src: '/assets/images/media/banners/value.svg',
+                    alt: ''
+                },
+                description: `7.9 billion invaluable human beings shall witness the birth of a loving meritocracy - the land of milk and honey. May our example of sincere & transformative service pave the way.`
+            }, {
+                id: 'values',
+                title: {
+                    name: 'Communities',
+                    icon: ''
+                },
+                value: {
+                    before: '~',
+                    number: 980000000
+                },
+                image: {
+                    src: '/assets/images/media/banners/community.svg',
+                    alt: ''
+                },
+                description: ''
+            },
+            {
+                id: 'tools',
+                title: {
+                    name: 'Tools',
+                    icon: ''
+                },
+                value: {
+                    before: '$',
+                    number: 500000000
+                },
+                image: {
+                    src: '/assets/images/media/banners/tools.svg',
+                    alt: ''
+                },
+                description: ''
+            },
+            {
+                id: 'values',
+                title: {
+                    name: 'Services',
+                    icon: ''
+                },
+                value: {
+                    before: '$',
+                    number: 500000000
+                },
+                image: {
+                    src: '/assets/images/media/banners/services.svg',
+                    alt: ''
+                },
+                description: ''
+            }
+        ],
+        cta: {
+            name: 'Read More',
+            href: '/vision'
+        }
+    },
     formSection: {
         title: 'Help',
         heading: 'What\'s your problem?',

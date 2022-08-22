@@ -1,10 +1,10 @@
 import Avatar from "@components/Avatar";
-import Image from "@components/Image";
+import Image from "@views/components/Image";
 import team from "@db/team";
 
 
 
-const Gallery = ({ title, order, heading }) => {
+const Gallery = ({ title, order, heading, data }) => {
 
 
   return (

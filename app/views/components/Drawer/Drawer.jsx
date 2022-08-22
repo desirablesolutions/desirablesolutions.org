@@ -22,19 +22,24 @@ let options = {
 };
 
 
+
 const Drawer = ({ links, heading }) => {
 
 
     let [drawerState, setDrawerState] = useRecoilState(drawerStateAtom);
 
+
+    const [closeDrawer, openDrawer] = [() => setDrawerState({ isOpen: false }),
+                                     () => setDrawerState({ isOpen: true })]
+
     return (
 
         <CSSTransition
             in={drawerState.isOpen}
-            timeout={300}
+            timeout={434}
             classNames="fade-in-left"
-            onEnter={() =>setDrawerState({ isOpen: true })}
-            onExited={() => setDrawerState({ isOpen: false})}
+            onEnter={closeDrawer}
+            onExited={openDrawer}
             unmountOnExit
         >
             <div className={`${drawerState.isOpen ? "fade-in-left" : "fade-out-left"} navbar-menu transition-all fixed top-0 left-0 bottom-0 w-5/6 sm:max-w-xs z-50`}>
@@ -85,7 +90,7 @@ const Drawer = ({ links, heading }) => {
                             </div>
                         </div>
                         <div className="pr-5 mr-auto">
-                            <h4 className="text-xs text-gray-400">Mach: 11.11.11</h4>
+                            <h4 className="text-xs text-gray-400">v13.0.0</h4>
                             <span className="text-white"><ScrambleTexts pauseTime={4000} speed={40} lines={["Do all to the glory of God.", "Désirable Solutions"]} /></span>
                         </div>
 

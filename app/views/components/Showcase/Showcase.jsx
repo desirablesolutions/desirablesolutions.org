@@ -6,8 +6,8 @@ import Section from "@components/Section"
 
 
 const Showcase = ({ title, featured, latest, order, heading, cta }) => {
-    
-    
+
+
     return (
 
         <Section order={order} title={title}>

@@ -1,6 +1,4 @@
 :root {
-        --black: #000000;
-        --white: #ffffff;
         --the-seasons-font: 'The Seasons', serif, cursive;
         --font-primary: var(--the-seasons-font);
 }

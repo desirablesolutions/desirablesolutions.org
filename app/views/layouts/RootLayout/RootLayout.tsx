@@ -8,13 +8,13 @@ const RootLayout = ({ children, metaData }: ILayout) => {
 
 
     return (
-        <>
+
+        <Box>
             <Meta {...metaData} />
             <CSSReset />
-            <Box>
-                {children}
-            </Box>
-        </>
+            {children}
+        </Box>
+
     )
 }
 

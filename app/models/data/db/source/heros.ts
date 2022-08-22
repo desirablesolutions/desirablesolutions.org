@@ -13,7 +13,7 @@ const heros = ({ query }) => {
                 },
                 cta: {
                     name: 'Need help?',
-                    icon: <HandshakeIcon />,
+                    icon: HandshakeIcon,
                     href: '/help'
                 },
                 lines: {
@@ -47,7 +47,7 @@ const heros = ({ query }) => {
     ]
 
 
-  return makeQueryable({ data, query })
+  return makeQueryable({ data })
 }
 
 

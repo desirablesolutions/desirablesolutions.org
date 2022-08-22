@@ -1,4 +1,4 @@
-import PageLayout from "@layouts/PageLayout"
+import PageLayout from "@views/layouts/PageLayout"
 import Carousel from "react-multi-carousel";
 import vendor from "@configs/vendor"
 import Section from "@components/Section"
@@ -6,7 +6,7 @@ import Section from "@components/Section"
 const ProjectLayout = ({ title, covers, impressum, description }) => {
 
     return (
-        <PageLayout pageTitle={title}>
+        <PageLayout metaData={title}>
 
             <Section>
             <section className="bg-transparent">

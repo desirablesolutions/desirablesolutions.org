@@ -1,30 +1,44 @@
-import type { IPage } from "@typings/Page"
-import Hero from "@components/Hero"
-import Showcase from "@components/Showcase"
 import FormSection from "@components/FormSection"
-import SummarySection from "@components/SummarySection"
-import TextCarousel from "@views/components/TextCarousel"
-import homePage from "@pages/homePage"
-import PageLayout from "@layouts/PageLayout"
+import TextCarousel from "@components/TextCarousel"
+import  homePage from "@pages/homePage"
+import type { IPage } from "@typings/Page"
+import SummarySection from "@views/components/ThreeColumnSection"
+import PageLayout from "@views/layouts/PageLayout"
+import dynamic from "next/dynamic"
 
-const HomePage: IPage = () => {
 
-  const metaData = {
-    pageTitle: 'Home'
-  }
+export interface IMeta {
+  pageTitle: string;
+}
+
+
+const metaData: IMeta = {
+  pageTitle: 'Home'
+}
+
+
+const Hero = dynamic(() => import("@components/Hero"), {
+  ssr: false
+})
+
+const Showcase = dynamic(() => import("@components/Showcase"), {
+  ssr: false
+})
+
+const HomePage: IPage = ({ data }) => {
 
   return (
-
     <PageLayout {...metaData}>
       <Hero {...homePage.hero} />
       <Showcase order={"01"} {...homePage.showcase} />
       <SummarySection order={"02"} {...homePage.summarySection} />
-      <TextCarousel order={"03"} {...homePage.textCarousel}/>
-      <FormSection  order={"04"} {...homePage.formSection} />
+      <TextCarousel order={"03"} {...homePage.textCarousel} />
+      <FormSection order={"04"} {...homePage.formSection} />
     </PageLayout>
 
   )
 }
+
 
 export default HomePage
 

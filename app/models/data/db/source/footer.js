@@ -43,7 +43,7 @@ const footer = {
         phoneNumber: '+1 (786) 766-9054',
         email: 'help@desirable.solutions',
         socials: {
-            kofi: '',
+            ko_fi: '',
             linkedin: '',
             facebook: '',
             twitter: '',

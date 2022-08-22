@@ -19,7 +19,25 @@ const vendor = {
                 items: 1
             }
         }
+    },
+
+    analog_clock: (width) => {
+        return {
+            width: `${width}px`,
+            border: true,
+            borderColor: "#000000",
+            baseColor: "#000000",
+            centerColor: "#FFFFFF",
+            centerBorderColor: "#ffffff",
+            handColors: {
+                second: "#FFFFFF",
+                minute: "#ffffff",
+                hour: "#ffffff"
+            }
+        }
     }
 }
 
 export default vendor
+
+

@@ -1,6 +1,6 @@
 import Section from "@components/Section"
 
-const SummarySection = ({ order, title, heading }) => {
+const ThreeColumnSection = ({ order, title, heading }) => {
 
     return (
 
@@ -183,6 +183,6 @@ const SummarySection = ({ order, title, heading }) => {
     )
 }
 
-export default SummarySection
+export default ThreeColumnSection
 
 

@@ -1,6 +1,6 @@
 import type { ILayout } from "@typings/Layout"
 
-import Meta from "@includes/Meta"
+import Meta from "@views/includes/Meta"
 import CSSReset from "@components/CSSReset"
 import Box from "@components/Box"
 

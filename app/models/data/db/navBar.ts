@@ -1,6 +1,6 @@
-import type { IHeader } from "@typings/index";
 
-const navBar: IHeader = {
+
+const navBar = {
     favicon: {
         src: '/assets/images/logo-transparent.png',
         alt: '',

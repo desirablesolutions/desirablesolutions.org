@@ -1,10 +1,12 @@
 import FadeAnimation from "@components/FadeAnimation"
-import BottomNav from "@includes/BottomNav"
+import Header from "@components/Header"
 import FloatingNavigator from "@includes/FloatingNavigator"
-import MenuNav from "@includes/MenuNav"
 import RootLayout from "@layouts/RootLayout"
 import type { ILayout } from "@typings/Layout"
-import Header from "@components/Header"
+import DrawerMenu from "@views/includes/DrawerMenu"
+
+import Footer from "@components/Footer"
+import footer from "@db/footer"
 
 
 
@@ -14,6 +16,7 @@ const PageLayout = ({ children, metaData }: ILayout) => {
     return (
 
         <RootLayout metaData={metaData}>
+            <DrawerMenu/>
             <Header favicon={{
                 src: '/assets/images/logo-transparent.png',
                 href: '/',
@@ -23,6 +26,7 @@ const PageLayout = ({ children, metaData }: ILayout) => {
             <FadeAnimation>
                 {children}
             </FadeAnimation>
+            <Footer {...footer}/>
         </RootLayout>
     )
 

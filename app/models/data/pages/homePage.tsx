@@ -1,6 +1,8 @@
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import TerrainIcon from '@mui/icons-material/Terrain';
 import HourglassTopIcon from '@mui/icons-material/HourglassTop';
+
+
 import meta from "@configs/meta";
 
 
@@ -186,7 +188,7 @@ const homePage = {
         latest: [{
             provisoners: [
                 {
-                    name: 'John Doe',
+                    name: 'Joshua Desir',
                     profile: {
                         src: ''
                     }

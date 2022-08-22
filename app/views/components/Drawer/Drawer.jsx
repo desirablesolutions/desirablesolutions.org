@@ -38,8 +38,8 @@ const Drawer = ({ links, heading }) => {
             in={drawerState.isOpen}
             timeout={434}
             classNames="fade-in-left"
-            onEnter={closeDrawer}
-            onExited={openDrawer}
+            onEnter={openDrawer}
+            onExited={closeDrawer}
             unmountOnExit
         >
             <div className={`${drawerState.isOpen ? "fade-in-left" : "fade-out-left"} navbar-menu transition-all fixed top-0 left-0 bottom-0 w-5/6 sm:max-w-xs z-50`}>

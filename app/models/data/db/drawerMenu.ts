@@ -1,8 +1,8 @@
 import meta from "@configs/meta"
 
-const menuNav = {
+const drawerMenu = {
     heading: "To love is to serve.",
     links: meta.pages
 }
 
-export default menuNav
+export default drawerMenu

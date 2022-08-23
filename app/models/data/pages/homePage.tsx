@@ -2,6 +2,7 @@ import HandshakeIcon from '@mui/icons-material/Handshake';
 import TerrainIcon from '@mui/icons-material/Terrain';
 import HourglassTopIcon from '@mui/icons-material/HourglassTop';
 
+import projects from "@db/projects"
 
 import meta from "@configs/meta";
 
@@ -185,27 +186,8 @@ const homePage = {
         },
         title: 'Projects.',
         heading: 'Designed by masters, inspired by life.',
-        latest: [{
-            provisoners: [
-                {
-                    name: 'Joshua Desir',
-                    profile: {
-                        src: ''
-                    }
-                }
-            ],
-            covers: [{
-                src: ''
-            }]
-        }],
-        featured: {
-            url: '/assets/images/featured-project.png',
-            name: 'Featured Project',
-            description: '',
-            covers: [''],
-            tags: [{ name: '', href: '' }],
-            provisoners: [{ name: '', profile: { src: '' }, }],
-        }
+        latest: [...projects],
+        featured: { ...projects[0] }
     }
 }
 

@@ -1,15 +1,14 @@
 import type { IPerson } from "@typings/Person"
 
-
 export interface IProject {
     id: string;
     name: string;
-    tags: [],
+    status: [],
     covers: [],
-    status: string;
     url: string;
     impressum: string;
+    production: string;
     description: string;
-    services: [];
+    tags: [];
     provisioners?: IPerson[]
 }

@@ -40,7 +40,7 @@ const footer = {
 
     },
     contact: {
-        phoneNumber: '+1 (786) 766-9054',
+        phoneNumber: '+1 (786)-766-9054',
         email: 'help@desirable.solutions',
         socials: {
             ko_fi: '',
@@ -49,7 +49,6 @@ const footer = {
             twitter: '',
             instagram: '',
             youtube: ''
-
         }
     }
 }

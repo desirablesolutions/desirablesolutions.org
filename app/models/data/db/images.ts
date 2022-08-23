@@ -3,7 +3,7 @@ import meta from "@configs/meta"
 import makeQueryable from "@utils/makeQueryable"
 
 
-const imagesData = {
+const images = {
     logo: {
         transparent: {
             src: "/assets/images/logo-transparent.png",
@@ -124,5 +124,4 @@ const imagesData = {
     ]
 }
 
-const images = imagesData
 export default images

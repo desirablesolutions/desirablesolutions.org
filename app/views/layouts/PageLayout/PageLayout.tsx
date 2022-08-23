@@ -20,7 +20,7 @@ const PageLayout = ({ children, metaData }: ILayout) => {
             <Header favicon={{
                 src: '/assets/images/logo-transparent.png',
                 href: '/',
-                alt: ''
+                alt: '',
             }} />
             <FloatingNavigator />
             <FadeAnimation>

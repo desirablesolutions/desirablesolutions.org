@@ -1,23 +1,20 @@
-import team from "@db/team"
-import images from "@db"
-import makeQueryable from "@utils/makeQueryable"
-import type { IProject } from "@typings/Project"
 
-const projectsData = [{
+
+const projects = [{
     id: 'yonder-airways',
     name: 'Yonder Airways',
     status: ["featured"],
     services: ["Logo Kit"],
-    covers: [images.projects],
+    covers: [{
+        src: ''
+    }],
     url: '/projets/yonder-airways',
-    provisoners: [team({
-        query: {
-            property: 'id',
-            value: 'joshua-desir',
-            limit: 0
+    provisoners: [],
+    tags: [
+        {
+            name: ''
         }
-    })],
-    tags: [],
+    ],
     production: 'July 15, 2022',
     impressum: 'A friendly travel company for a friendlier world.',
     description: (` Yonder Airways is an airline logo identity that communicates its competitive edge 
@@ -26,5 +23,4 @@ const projectsData = [{
 }]
 
 
-const projects = makeQueryable({ data: projectsData })
 export default projects

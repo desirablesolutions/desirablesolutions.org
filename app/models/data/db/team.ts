@@ -1,4 +1,3 @@
-import { Images } from "@db/index"
 import makeQueryable from '@utils/makeQueryable'
 
 
@@ -29,12 +28,4 @@ const Team = makeQueryable({ data: data })
 
 export default Team
 
-
-Team({
-    query: {
-        property: 'id',
-        value: 'joshua-desir',
-        limit: 1
-    }
-})
-
+s

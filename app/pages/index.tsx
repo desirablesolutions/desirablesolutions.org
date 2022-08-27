@@ -28,6 +28,8 @@ export async function getData() {
 }
 
 const HomePage: IPage = ({ pageData }) => {
+
+  console.log(`Data: ${JSON.stringify(pageData)}`)
   
   
 

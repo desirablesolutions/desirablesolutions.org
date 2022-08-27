@@ -9,7 +9,7 @@ export default function VisionPage() {
   }
 
   return (
-    <PageLayout pageTitle={pageTitle}>
+    <PageLayout metaData={pageTitle}>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto flex flex-col">
           <div className="lg:w-4/6 mx-auto">

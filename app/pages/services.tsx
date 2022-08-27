@@ -8,7 +8,7 @@ export default function ServicesPage() {
     }
 
     return (
-        <PageLayout pageTitle={pageTitle}>
+        <PageLayout metaData={pageTitle}>
             <section className="text-gray-400">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="text-center mb-20">

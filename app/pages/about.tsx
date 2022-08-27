@@ -9,7 +9,7 @@ export default function AboutPage() {
 
     return (
 
-        <PageLayout pageTitle={pageTitle}>
+        <PageLayout metaData={pageTitle}>
 
         </PageLayout>
     )

@@ -1,6 +1,5 @@
 
 export interface IQuery {
-   query?: any;
    limit: number;
    value: string;
    property: string;
@@ -8,7 +7,7 @@ export interface IQuery {
 
 const makeQueryable = ({ data }) => {
 
-   return function ({ query: { property, value, limit }} :IQuery) {
+   return function ({ property, value, limit } :IQuery) {
 
       return data.filter((element) => (
          element[property] == value

@@ -1,6 +1,6 @@
 import FadeAnimation from "@components/FadeAnimation"
 import Header from "@components/Header"
-import FloatingNavigator from "@includes/FloatingNavigator"
+import FloatingNavigator from "@views/includes/FloatingNavigator"
 import RootLayout from "@layouts/RootLayout"
 import type { ILayout } from "@typings/Layout"
 import DrawerMenu from "@views/includes/DrawerMenu"

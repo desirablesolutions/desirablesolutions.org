@@ -7,7 +7,7 @@ const ThreeColumnSection = ({ order, title, heading }) => {
         <Section order={order} title={title}>
 
             <h2 className="text-center font-heading text-3xl sm:text-6xl md:text-5xl text-white mb-24">
-                {heading.icon}{heading.name}
+                {heading.name}
             </h2>
 
             <div className="flex flex-wrap -mx-4">

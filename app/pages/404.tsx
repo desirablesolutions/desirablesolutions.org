@@ -1,6 +1,7 @@
 import PageLayout from "@layouts/PageLayout"
 
 export default function Custom404() {
+
     return (
         <PageLayout>
 

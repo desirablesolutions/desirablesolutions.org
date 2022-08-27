@@ -1,11 +1,40 @@
 
-import ScrambleTexts from "@components/ScrambleTexts"
-import theme from "@configs/theme"
-import HandshakeIcon from '@mui/icons-material/Handshake';
-import Section from "@components/Section"
+import ScrambleTexts from "@components/ScrambleTexts";
+import LinkIcon from "@components/LinkIcon";
 
 
-const Hero = ({ lines, bgImage, cta }) => {
+const HeroLinkIcon = ({ color = 'gray', size = 32 }) => (<LinkIcon color={color} size={size} />)
+
+export type FancyLine = {
+    before: string,
+    texts: string[],
+    speed: number,
+    pauseTime: number,
+    after: string,
+    href: string
+}
+
+export type Image = {
+    src: string,
+    alt: string
+}
+
+export type HeroProps = {
+    lines: {
+        firstLine: FancyLine,
+        secondLine: FancyLine,
+    },
+    bgImage: {
+        src: string
+    },
+    cta: {
+        name: string,
+        href: string
+
+    }
+}
+
+const Hero = ({ lines, bgImage, cta }: HeroProps) => {
 
     let { firstLine, secondLine } = lines
 
@@ -14,12 +43,11 @@ const Hero = ({ lines, bgImage, cta }) => {
         <section style={{
             background: `url(${bgImage.src}) no-repeat center center fixed`,
             backgroundSize: 'cover',
-            maxHeight: '100vh',
-            minHeight: '99vh'
+            minHeight: '100vh'
         }} className="relative pb-20 md:pb-52 box-border overflow-hidden">
 
             <div className="container px-4 mx-auto">
-                <div className="pt-40 sm:pt-64">
+                <div className="pt-36 sm:pt-64">
 
 
                     <h1 className="text-6xl xl:text-8xl 3xl:text-9xl text-white font-medium mb-20">
@@ -31,8 +59,10 @@ const Hero = ({ lines, bgImage, cta }) => {
                                     <ScrambleTexts lines={firstLine.texts}
                                         speed={firstLine.speed}
                                         pauseTime={firstLine.pauseTime} />
-                                    {firstLine.after}
+                                    {firstLine.after}<HeroLinkIcon />
                                 </span>
+
+
                             </a>
                         </span>
 
@@ -43,14 +73,14 @@ const Hero = ({ lines, bgImage, cta }) => {
                                     <ScrambleTexts lines={secondLine.texts}
                                         speed={secondLine.speed}
                                         pauseTime={secondLine.pauseTime} />
-                                    {secondLine.after}
+                                    {secondLine.after}<HeroLinkIcon />
                                 </span>
                             </a>
                         </span>
 
-                        <span className="inline-block absolute bottom text-center text-white px-5 py-4 mt-12 mr-8 text-sm bg-red-800 outline-white opacity-80 hover:outline border-white rounded-full">
+                        <span className="inline-block relative bottom text-center text-white px-5 py-4 mb-20 mt-12 mr-8 text-sm bg-red-800 outline-white opacity-95 hover:outline border-white rounded-full">
                             <a href={cta.href} className='text-white'>
-                                {cta.icon}{cta.name}
+                                {cta.name}
                             </a>
                         </span>
 

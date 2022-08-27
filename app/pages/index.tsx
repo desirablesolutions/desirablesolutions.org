@@ -1,43 +1,69 @@
 import FormSection from "@components/FormSection"
+import Hero from "@components/Hero"
+import Showcase from "@components/Showcase"
 import TextCarousel from "@components/TextCarousel"
-import homePage from "@pages/homePage"
 import type { IPage } from "@typings/Page"
 import ThreeColumnSection from "@views/components/ThreeColumnSection"
 import PageLayout from "@views/layouts/PageLayout"
-import dynamic from "next/dynamic"
 
-export interface IMeta {
-  pageTitle: string;
+
+
+export const resolver = (url) => {
+  return `http://localhost:3000${url}`
 }
 
-const metaData: IMeta = {
-  pageTitle: 'Home'
+export async function getData() {
+
+  const res = await fetch(resolver('/api/pages/'),
+
+    {
+      method: 'GET',
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json",
+      }
+    })
+  const articles = await res.json().then(data => data)
+  return articles
 }
 
-const Hero = dynamic(() => import("@components/Hero"), {
-  ssr: false
-})
-
-const Showcase = dynamic(() => import("@components/Showcase"), {
-  ssr: false
-})
-
-
-const HomePage: IPage = ({ data }) => {
-
+const HomePage: IPage = ({ pageData }) => {
+  
+  
 
   return (
-
-    <PageLayout {...metaData}>
-      <Hero {...homePage.hero} />
-      <Showcase order={"01"} {...homePage.showcase} />
-      <ThreeColumnSection order={"02"} {...homePage.summarySection} />
-      <TextCarousel order={"03"} {...homePage.textCarousel} />
-      <FormSection order={"04"} {...homePage.formSection} />
+    <PageLayout metaData={pageData.metaData}>
+      <Hero {...pageData.hero} />
+      <Showcase order={"01"} {...pageData.showcase} />
+      <ThreeColumnSection order={"02"} {...pageData.summarySection} />
+      <TextCarousel order={"03"} {...pageData.textCarousel} />
+      <FormSection order={"04"} {...pageData.formSection} />
     </PageLayout>
   )
 }
 
 
 export default HomePage
+
+
+
+export async function getStaticProps() {
+
+  let dataQuery = null;
+
+  await getData().then(data => {
+    dataQuery = data
+    console.log(dataQuery)
+  }).catch(err => {
+    console.log(err)
+  })
+
+
+  return {
+    props: {
+      pageData: dataQuery
+    },
+    revalidate: 5
+  }
+}
 

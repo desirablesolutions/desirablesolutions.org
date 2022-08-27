@@ -24,7 +24,7 @@ const DataSection = ({ order, title, heading, cta, data }) => {
             <div className="container px-4 mx-auto">
                 <div className="max-w-4xl mx-auto text-center mb-32">
                     <h2 className="font-heading text-5xl sm:text-6xl text-white">
-                        {heading.icon}{heading.name}
+                        {heading.name}
                     </h2>
                 </div>
 

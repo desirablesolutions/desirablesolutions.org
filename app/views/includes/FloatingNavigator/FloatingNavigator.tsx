@@ -14,7 +14,6 @@ const actions = [
 
 
 const DialSx = {
-  zIndex: '9999999',
   ".MuiSpeedDial-fab": {
     backgroundColor: '#000000',
     boxShadow: 'var(--box-shadow-4)',
@@ -27,7 +26,7 @@ const DialSx = {
 }
 
 
-export default function FloatingNavigator() {
+const FloatingNavigator = () => {
   return (
 
     <SpeedDial
@@ -48,3 +47,6 @@ export default function FloatingNavigator() {
 
   );
 }
+
+
+export default FloatingNavigator

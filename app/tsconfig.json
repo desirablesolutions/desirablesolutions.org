@@ -24,6 +24,7 @@
       "@layouts/*": ["views/layouts/*"],
       "@styles/*": ["views/styles/*"],
       "@libs/*": ["views/libs/*"],
+      "@services/*":["controllers/services/*"],
       "@utils/*":["controllers/utils/*"],
       "@pages/*":["models/data/pages/*"],
       "@typings/*":["models/typings/*"],
@@ -33,6 +34,6 @@
       "@hooks/*":["controllers/hooks/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/404.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/404.tsx", "pages/_app.js"],
   "exclude": ["node_modules"]
 }

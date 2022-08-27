@@ -27,5 +27,3 @@ const data = [
 const Team = makeQueryable({ data: data })
 
 export default Team
-
-s

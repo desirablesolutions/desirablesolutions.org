@@ -2,7 +2,11 @@ import Head from "next/head"
 import useMeta from "@hooks/useMeta"
 
 
-const Meta = ({ pageTitle }) => {
+
+export type MetaProps = {
+  pageTitle?: string
+}
+const Meta = ({ pageTitle }: MetaProps) => {
 
   let { title, description, url, image, basePaths, icons } = useMeta()
 

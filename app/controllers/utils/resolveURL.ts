@@ -1,4 +1,4 @@
-const LOCALHOST = "http://localhost:3000"
+const LOCALHOST = "https://localhost:3000"
 
 const resolveURL = (url: string) => {
     return `${LOCALHOST}${url}`

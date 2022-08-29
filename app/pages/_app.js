@@ -15,6 +15,7 @@ import App from 'next/app';
 import React from 'react';
 
 export default class Application extends App {
+  
   static async getInitialProps({ Component, router, ctx }) {
     let pageProps = {}
 

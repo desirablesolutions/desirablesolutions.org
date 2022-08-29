@@ -1,5 +1,5 @@
 
-const FormSection = ({ order, title, heading, services }) => {
+const HelpForm = ({ order, title, heading, services }) => {
 
     return (
         <section style={{
@@ -47,15 +47,15 @@ const FormSection = ({ order, title, heading, services }) => {
                                 </span>
                                 <div>
                                     <select
-                                        className="block max-w-xs mr-4 px-6 pb-2 mb-6 text-center text-2xl xl:text-3xl font-heading border-b border-gray-700 bg-transparent text-gray-700 outline-none"
-                                        aria-label="New select example"
+                                        className="bg-transparent block max-w-xs mr-4 px-6 pb-2 mb-6 text-center text-2xl xl:text-3xl font-heading border-b outline-none"
+                                        aria-label="Our Services"
                                     >
-                                        <option selected="">select service</option>
+                                        <option selected={true}>select service</option>
 
                                         {
                                             services.map((service, index) => {
                                                 return (
-                                                    <option value={index}>{service.name}</option>
+                                                    <option className="text-black text-center" key={index} value={index}>{service}</option>
                                                 )
                                             })
                                         }
@@ -75,11 +75,11 @@ const FormSection = ({ order, title, heading, services }) => {
                                     <input
                                         className="block max-w-xs mr-4 px-6 pb-2 mb-6 text-center text-2xl xl:text-3xl font-heading border-b border-gray-700 bg-transparent text-gray-700 placeholder-gray-700 outline-none"
                                         type="email"
-                                        placeholder="joe@shmoe.com"
+                                        placeholder="my@organization.com"
                                     />
                                 </div>
                             </div>
-                          
+
                             <a
                                 className="inline-block w-full lg:w-auto px-7 py-4 mt-3 text-center font-medium bg-red-700 hover:bg-red-400 hover:text-black text-white rounded transition duration-250"
                                 href="#"
@@ -101,4 +101,4 @@ const FormSection = ({ order, title, heading, services }) => {
     )
 }
 
-export default FormSection
+export default HelpForm

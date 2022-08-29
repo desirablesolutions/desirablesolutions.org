@@ -1,6 +1,8 @@
 
 import meta from "@configs/meta";
 import projects from "@db/projects";
+import getProjects from "@services/getProjects"
+
 
 const homePage = {
     init: () => {
@@ -157,11 +159,10 @@ const homePage = {
                 href: '/vision'
             }
         },
-        formSection: {
+        helpForm: {
             title: 'Help',
             heading: 'What\'s your problem?',
             services: meta.info.problems,
-
         },
 
 
@@ -188,7 +189,6 @@ const homePage = {
         },
 
         showcase: {
-            id: 'projects',
             cta: {
                 name: 'See more',
                 href: '/projects'

@@ -1,4 +1,4 @@
-import FormSection from "@components/FormSection"
+import HelpForm from "@components/HelpForm"
 import Hero from "@components/Hero"
 import Showcase from "@components/Showcase"
 import TextCarousel from "@components/TextCarousel"
@@ -30,7 +30,7 @@ const HomePage: IPage = ({ pageData }) => {
       <TextCarousel order={"03"} {...pageData.textCarousel} />
       <ComplexTable order={"05"} title={""} heading={"Hello"} />
       <Gallery order={"00"} title={""} {...pageData.gallery} />
-      <FormSection order={"06"} {...pageData.formSection} />
+      <HelpForm order={"06"} {...pageData.helpForm} />
     </PageLayout>
   )
 }

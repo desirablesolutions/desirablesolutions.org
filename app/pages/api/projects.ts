@@ -1,26 +1,17 @@
+import resolveURL from "@utils/resolveURL"
 import type { NextApiRequest, NextApiResponse } from 'next'
-import fs from 'fs'
-import path from 'path'
-
+import facade from "@services/facade"
 
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<any>
 ) {
-    const isReadOnly = req.method === 'GET'
 
-    const dirRelativeToPublicFolder = 'images'
+  let dataQuery;
 
-    const dir = path.resolve('./public/assets/', dirRelativeToPublicFolder);
-  
-    const filenames = fs.readdirSync(dir);
-
-    const { query } = req
-  
-    const images = filenames.map(name => path.join('/', dirRelativeToPublicFolder, name))
-  
-    res.statusCode = 200
-    res.json(images)
+  res.statusCode = 200
+  facade.databases.retrieve({ database_id: process.env.PROJECTS_DB_ID }).then(data => { dataQuery = data })
+  res.json(`${dataQuery}`)
 
 }
 

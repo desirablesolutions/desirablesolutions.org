@@ -4,6 +4,12 @@ export type Link = {
     name: string
     url?: string
 }
+
+export type NavLinks = {
+    links: Link[]
+    heading: string
+}
+
 export type FooterProps = {
     copyright: {
         title: string,
@@ -15,12 +21,7 @@ export type FooterProps = {
         alt: string
     },
     heading: string,
-    navLinks: [
-        {
-            heading: string,
-            links: Link[]
-        }
-    ],
+    navLinks: NavLinks[],
     email: string,
     phoneNumber: string,
     terminalLinks: Link[],
@@ -36,19 +37,46 @@ const logo = images({
 })
 
 const footer: FooterProps = {
-    heading: 'We out here',
+    heading: 'We solve problems. Period.',
     copyright: {
         title: '© 2022 Desirable Solutions. All rights reserved.',
-        description: 'lorem ipsum dolor sit amet'
+        description: 'To love is to serve.'
     },
     logo: { ...logo, url: '/' },
     navLinks: [
         {
-            heading: 'Company',
+            heading: 'Agency',
             links: [
                 {
                     name: 'About',
                     url: '/about'
+                }
+            ]
+        },
+        {
+            heading: 'Services',
+            links: [
+                {
+                    name: 'Web Design',
+                    url: '/services/web-design'
+                }
+            ]
+        },
+        {
+            heading: 'Projects',
+            links: [
+                {
+                    name: 'All Projects',
+                    url: '/projects'
+                }
+            ]
+        },
+        {
+            heading: 'Help',
+            links: [
+                {
+                    name: 'Contact',
+                    url: '/contact'
                 }
             ]
         }

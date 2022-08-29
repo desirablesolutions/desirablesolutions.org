@@ -13,7 +13,6 @@ export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<any>
 ) {
-let randomS = "Notion-Version: 2022-06-28"
 
 
     let data = homePage.init()

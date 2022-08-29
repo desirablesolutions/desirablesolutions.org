@@ -148,7 +148,6 @@ const Showcase = ({ title, featured, latest, order, heading, cta }) => {
                                             <Avatar
                                                 className="w-12 pr-1 h-12 mr-4 rounded"
                                                 src={project.covers[0].src}
-                                                alt=""
                                             />
                                         </a>
 
@@ -172,7 +171,6 @@ const Showcase = ({ title, featured, latest, order, heading, cta }) => {
                                                             <Avatar
                                                                 className="w-12 pr-1 h-12 mr-4 rounded"
                                                                 src={provisioner.profile.src}
-                                                                alt={provisioner.name}
                                                             />
 
                                                             <span className="text-white">

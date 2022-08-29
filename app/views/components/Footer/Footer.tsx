@@ -2,6 +2,7 @@ import SectionSx from "@styles/Section.sx";
 import Image from "next/image"
 import FadeAnimation from "../FadeAnimation";
 import { Fade } from "react-awesome-reveal";
+import { SocialIcon } from 'react-social-icons';
 
 const Logo = ({ alt, src, url }) => (
     <div className="w-full md:w-auto px-4 mb-12 md:mb-0">
@@ -46,28 +47,30 @@ const Footer = ({ copyright, logo, navLinks, email, phoneNumber, heading, termin
                                         {phoneNumber}
                                     </a>
                                     <a
-                                        className="inline-block text-red-400 hover:text-red-400"
+                                        className="inline-block text-red-300 hover:text-red-200"
                                         href="#"
                                     >
                                         {email}
                                     </a>
                                 </div>
                                 <div className="mt-8">
-                                    <a className="inline-flex mr-12 items-center" href="#">
-                                        <img
-                                            className="mr-4"
-                                            src="wrexa-assets/logos/brands/messenger.svg"
-                                            alt=""
-                                        />
-                                        <span className="font-light">chatshxxk</span>
+
+                                    <a className="inline-flex items-center" href="#">
+                                        <SocialIcon url="https://www.facebook.com/nextjs.org" />
+                                    </a>
+
+                                    <a className="inline-flex items-center" href="#">
+                                        <SocialIcon url="https://www.instagram.com/nextjs.org" />
                                     </a>
                                     <a className="inline-flex items-center" href="#">
-                                        <img
-                                            className="mr-4"
-                                            src="wrexa-assets/logos/brands/snapchat.svg"
-                                            alt=""
-                                        />
-                                        <span className="font-light">snapshxxk</span>
+                                        <SocialIcon url="https://www.twitter.com/nextjs.org" />
+                                    </a>
+
+                                    <a className="inline-flex items-center" href="#">
+                                        <SocialIcon url="https://www.linkedin.com/nextjs.org" />
+                                    </a>
+                                    <a className="inline-flex items-center" href="#">
+                                        <SocialIcon url="https://www.ko-fi.com/nextjs.org" />
                                     </a>
                                 </div>
                             </div>

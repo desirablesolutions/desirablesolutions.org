@@ -104,7 +104,7 @@ const Showcase = ({ title, featured, latest, order, heading, cta }) => {
                                                 <Avatar
                                                     className="w-12 pr-1 h-12 mr-4 rounded-full"
                                                     src={provisioner.profile.src}
-                                                    alt=""
+                                                    
                                                 />
                                                 <span key={`${index}`} className="text-gray-200 underline-from-left">
                                                     <a href="/team" className="text-gray-200">{provisioner.name}</a>

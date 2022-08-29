@@ -10,8 +10,7 @@ export default function handler(
   let dataQuery;
 
   res.statusCode = 200
-  facade.databases.retrieve({ database_id: process.env.PROJECTS_DB_ID }).then(data => { dataQuery = data })
-  res.json(`${dataQuery}`)
+
 
 }
 

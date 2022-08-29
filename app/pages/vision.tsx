@@ -3,13 +3,12 @@ import PageLayout from "@layouts/PageLayout"
 
 export default function VisionPage() {
 
-  const { pageTitle } = {
-    pageTitle: 'Vision',
-    description: ''
-  }
+const metaData = {
+  pageTitle: 'Vision'
+}
 
   return (
-    <PageLayout metaData={pageTitle}>
+    <PageLayout metaData={metaData}>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto flex flex-col">
           <div className="lg:w-4/6 mx-auto">

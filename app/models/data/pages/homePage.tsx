@@ -10,6 +10,31 @@ const homePage = {
     data: {
         metaData: {
             pageTitle: 'Home'
+        },
+        gallery: {
+            heading: 'Our Team',
+            data: [
+                {
+                    heading: 'Jeffrey Desir',
+                    subHeading: 'DevOps Engineer',
+                    description: 'Jeffrey is a DevOps Engineer with a passion for technology and a love for solving problems.',
+                    profile: {
+                        src: 'a',
+                        alt: ''
+                    },
+                    handle: '@desirtech'
+                },
+                {
+                    heading: 'Joshua Desir',
+                    subHeading: 'Founder / Designer',
+                    description: 'Jeffrey is a DevOps Engineer with a passion for technology and a love for solving problems.',
+                    profile: {
+                        src: 'a',
+                        alt: ''
+                    },
+                    handle: '@desirtech'
+                }
+            ]
         }
     },
 
@@ -149,7 +174,7 @@ const homePage = {
             columns: {
                 first: {
                     heading: 'Design',
-                    description: 'Measure twice, cut once.', 
+                    description: 'Measure twice, cut once.',
                 },
                 second: {
                     heading: 'Development',

@@ -3,13 +3,13 @@ import PageLayout from "@layouts/PageLayout"
 
 export default function AboutPage() {
 
-    const { pageTitle } = {
-        pageTitle: 'About'
-    }
+   const metaData = {
+    pageTitle: 'About'
+   }
 
     return (
 
-        <PageLayout metaData={pageTitle}>
+        <PageLayout metaData={metaData}>
 
         </PageLayout>
     )

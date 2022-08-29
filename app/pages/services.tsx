@@ -2,13 +2,12 @@ import PageLayout from "@views/layouts/PageLayout"
 
 
 export default function ServicesPage() {
-
-    const { pageTitle } = {
-        pageTitle: 'Services'
+    const metaData = {
+        pageTitle: "Services",
     }
 
     return (
-        <PageLayout metaData={pageTitle}>
+        <PageLayout metaData={metaData}>
             <section className="text-gray-400">
                 <div className="container px-5 py-24 mx-auto">
                     <div className="text-center mb-20">

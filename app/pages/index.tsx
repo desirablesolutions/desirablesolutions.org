@@ -29,7 +29,7 @@ const HomePage: IPage = ({ pageData }) => {
       <Collection/>
       <TextCarousel order={"03"} {...pageData.textCarousel} />
       <ComplexTable order={"05"} title={""} heading={"Hello"} />
-      <Gallery />
+      <Gallery order={"00"} title={""} {...pageData.gallery} />
       <FormSection order={"06"} {...pageData.formSection} />
     </PageLayout>
   )

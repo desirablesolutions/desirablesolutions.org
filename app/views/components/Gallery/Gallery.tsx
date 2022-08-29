@@ -1,32 +1,44 @@
-import Avatar from "@components/Avatar";
-import Image from "@views/components/Image";
-import team from "@db/team";
+import Section from "@views/components/Section";
+import Image from "next/image";
 
-import Section from "@views/components/Section"
+import images from "@db/images"
 
-const Gallery = () => {
+
+
+const logo = images({
+  property: 'id',
+  value: 'logo-transparent'
+})
+
+
+const joshuaDesir = images({
+  property: 'id',
+  value: 'joshua-desir'
+})
+
+export type GalleryProps = {
+  order: string,
+  title: string,
+  heading: string,
+}
+const Gallery = ({ order, title, heading, data }) => {
 
 
   return (
-    <Section>
+    <Section order={order} title={title}>
       <section className="pt-24 pb-24 md:pb-40">
         <div className="container px-4 mx-auto">
-          <div className="flex items-center mb-6">
-            <span className="font-heading text-xl">02</span>
-            <div className="mx-4 rounded-full bg-gray-200 h-1 w-1" />
-            <span className="font-heading text-xl">Creative team</span>
-          </div>
           <div className="flex flex-wrap -mx-4 mb-20">
             <div className="w-full md:w-1/2 px-4 mb-6 md:mb-0">
-              <h1 className="font-heading text-5xl sm:text-6xl">Our Team</h1>
+              <h1 className="font-heading text-5xl sm:text-6xl">{heading}</h1>
             </div>
             <div className="w-full md:w-1/2 px-4 md:text-right">
-              <a className="inline-block" href="#">
-                <img
+              <a className="inline-block" href="/team">
+                <Image height="75px" width="75px"
                   className="w-16 h-16"
-                  src="wrexa-assets/logos/logo-wrexa.svg"
-                  alt=""
-                />
+                  src={logo.src}
+                  alt={logo.alt} />
+
               </a>
             </div>
           </div>
@@ -75,10 +87,16 @@ const Gallery = () => {
             </a>
             <div className="w-full lg:w-1/2 3xl:w-auto px-4 3xl:px-12 mb-16 lg:mb-0 lg:border-r">
               <div className="max-w-md mx-auto relative pb-16 lg:pb-0 border-b lg:border-b-0">
+
+
                 <div className="absolute top-0 left-0 -mt-2 w-full">
-                  <div className="mx-5 rounded-t-xl h-4 bg-gray-200" />
+
+
+                  <div className="mx-5 rounded-t-xl h-4 bg-white" />
                 </div>
-                <div className="relative bg-white rounded-md">
+
+
+                <div className="relative rounded-md">
                   <img
                     className="block w-full h-96 object-cover rounded-md"
                     src="wrexa-assets/images/men-blue-short.png"
@@ -86,7 +104,7 @@ const Gallery = () => {
                   />
                   <div className="pt-12 pb-16 px-6 sm:px-12">
                     <h4 className="text-2xl mb-2">Joshua Desir</h4>
-                    <span className="text-indigo-500">
+                    <span className="text-red-500">
                       Founder &amp; Master Designer
                     </span>
                     <p className="mt-8 font-light">
@@ -106,48 +124,63 @@ const Gallery = () => {
                     </div>
                   </div>
                 </div>
+
+
+
+
               </div>
             </div>
+
             <div className="w-full lg:w-1/2 3xl:w-auto px-4 3xl:px-12">
               <div className="max-w-md mx-auto relative">
                 <div className="absolute top-0 left-0 -mt-2 w-full">
                   <div className="mx-5 rounded-t-xl h-4 bg-gray-200" />
                 </div>
-                <div className="relative bg-white rounded-md">
-                  <img
-                    className="block w-full h-96 object-cover rounded-md"
-                    src="wrexa-assets/images/smiling-young-woman.png"
-                    alt=""
-                  />
-                  <div className="pt-12 pb-16 px-6 sm:px-12">
-                    <h4 className="text-2xl mb-2">Jeffrey Desir</h4>
-                    <span className="text-indigo-500">DevOps Engineer</span>
-                    <p className="mt-8 font-light">
-                      The house by the pond cras ornare, some chords for a three
-                      moments, like a sense of truth. The lorem ipsum house by the
-                      pond cras ornare, some chords for a three moments, like.
-                    </p>
-                  </div>
-                  <div className="pt-6 pb-7 px-6 sm:px-12 border-t border-gray-200">
-                    <div className="flex items-center">
-                      <img
-                        className="w-10 h-10 mr-4"
-                        src="wrexa-assets/logos/logo-wrexa.svg"
-                        alt=""
-                      />
-                      <span className="text-gray-300">Leeds, UK</span>
+
+
+
+
+                {
+                  <div className="relative rounded-md">
+                    <img
+                      className="block w-full h-96 object-cover rounded-md"
+                      src="wrexa-assets/images/smiling-young-woman.png"
+                      alt=""
+                    />
+                    <div className="pt-12 pb-16 px-6 sm:px-12">
+                      <h4 className="text-2xl mb-2">Jeffrey Desir</h4>
+                      <span className="text-red-500">DevOps Engineer</span>
+                      <p className="mt-8 font-light">
+                        The house by the pond cras ornare, some chords for a three
+                        moments, like a sense of truth. The lorem ipsum house by the
+                        pond cras ornare, some chords for a three moments, like.
+                      </p>
+                    </div>
+                    <div className="pt-6 pb-7 px-6 sm:px-12 border-t border-gray-200">
+                      <div className="flex items-center">
+                        <img
+                          className="w-10 h-10 mr-4"
+                          src="wrexa-assets/logos/logo-wrexa.svg"
+                          alt=""
+                        />
+                        <span className="text-gray-300">Leeds, UK</span>
+                      </div>
                     </div>
                   </div>
-                </div>
+                }
+
               </div>
+
             </div>
+
+
             <div className="lg:hidden mt-16 text-center">
               <a className="inline-block mr-6" href="#">
                 <svg
                   width={11}
                   height={20}
                   viewBox="0 0 11 20"
-                  fill="none"
+                  fill="white"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -165,7 +198,7 @@ const Gallery = () => {
                   width={12}
                   height={20}
                   viewBox="0 0 12 20"
-                  fill="none"
+                  fill="white"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -179,6 +212,9 @@ const Gallery = () => {
                 </svg>
               </a>
             </div>
+
+
+
           </div>
         </div>
       </section>

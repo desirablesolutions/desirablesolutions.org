@@ -1,7 +1,11 @@
+import SectionSx from "@styles/Section.sx"
+
+
+
 const SimpleForm = () => {
 
     return (
-        <section className="relative pt-32 lg:pb-32 overflow-hidden">
+        <section style={SectionSx} className="relative pt-32 lg:pb-32 overflow-hidden">
             <img
                 className="hidden lg:block absolute top-0 right-0 h-full py-10 w-1/2 3xl:w-3/5 object-cover"
                 src="wrexa-assets/images/laptop-table.png"
@@ -24,7 +28,7 @@ const SimpleForm = () => {
                     </p>
                     <div>
                         <form action="#" method="post">
-                            <div className="flex items-center justify-between pl-2 py-2 pr-2 bg-white rounded-lg">
+                            <div className="flex items-center justify-between pl-2 py-2 pr-2 rounded-lg">
                                 <input
                                     className="block px-6 w-full text-lg bg-transparent outline-none"
                                     type="text"
@@ -32,7 +36,7 @@ const SimpleForm = () => {
                                     aria-label=""
                                 />
                                 <button
-                                    className="flex-shrink-0 inline-block px-6 py-4 text-center font-medium bg-indigo-500 hover:bg-indigo-600 text-white rounded transition duration-250"
+                                    className="flex-shrink-0 inline-block px-6 py-4 text-center font-medium bg-red-500 hover:bg-red-600 text-white rounded transition duration-250"
                                     type="submit"
                                 >
                                     Join now

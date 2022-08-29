@@ -1,5 +1,7 @@
 import SectionSx from "@styles/Section.sx";
 import Image from "next/image"
+import FadeAnimation from "../FadeAnimation";
+import { Fade } from "react-awesome-reveal";
 
 const Logo = ({ alt, src, url }) => (
     <div className="w-full md:w-auto px-4 mb-12 md:mb-0">
@@ -107,6 +109,7 @@ const Footer = ({ copyright, logo, navLinks, email, phoneNumber, heading, termin
                             </p>
                         </div>
                         <div className="w-full lg:w-1/3 xl:w-auto px-4">
+
                             <div>
                                 {
                                     terminalLinks.map((link, index) => {
@@ -123,6 +126,7 @@ const Footer = ({ copyright, logo, navLinks, email, phoneNumber, heading, termin
                                     })}
 
                             </div>
+
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,6 @@
 import PageLayout from "@layouts/PageLayout"
 import type { IPage } from "@typings/Page"
 
-
 const HelpPage: IPage = ({ pageData }) => {
 
     return (
@@ -24,3 +23,5 @@ export async function getStaticProps() {
         }
     }
 }
+
+export default HelpPage

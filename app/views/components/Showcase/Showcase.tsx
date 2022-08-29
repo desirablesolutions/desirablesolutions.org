@@ -2,8 +2,23 @@ import Avatar from "@components/Avatar";
 import LinkArrowIcon from '@components/LinkArrowIcon';
 import Carousel from "react-multi-carousel";
 import vendor from "@configs/vendor"
-import Section from "@components/Section"
+import Section from "@views/components/Section"
 
+export type Project = {
+    title: string,
+    tags: object,
+    production: string,
+    provisioners: object
+}
+
+export type ShowcaseProps = {
+    title: String,
+    featured: Project,
+    latest: Project[],
+    order: string,
+    heading: string,
+    cta: object
+}
 
 const Showcase = ({ title, featured, latest, order, heading, cta }) => {
 

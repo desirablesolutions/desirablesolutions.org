@@ -2,44 +2,35 @@ import FormSection from "@components/FormSection"
 import Hero from "@components/Hero"
 import Showcase from "@components/Showcase"
 import TextCarousel from "@components/TextCarousel"
-import type { IPage } from "@typings/Page"
 import ThreeColumnSection from "@views/components/ThreeColumnSection"
-import PageLayout from "@views/layouts/PageLayout"
+import PageLayout from "@layouts/PageLayout"
+import IconGallery from "@components/IconGallery"
+import ComplexTable from "@components/ComplexTable"
+import getPages from "@services/getPages"
+import SimpleForm from "@components/SimpleForm"
+import Gallery from "@components/Gallery"
+import Collection from "@components/Collection"
+
+import type { IPage } from "@typings/Page"
 
 
-
-export const resolver = (url) => {
-  return `http://localhost:3000${url}`
-}
-
-export async function getData() {
-
-  const res = await fetch(resolver('/api/pages/'),
-
-    {
-      method: 'GET',
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Content-Type": "application/json",
-      }
-    })
-  const articles = await res.json().then(data => data)
-  return articles
-}
 
 const HomePage: IPage = ({ pageData }) => {
 
-  console.log(`Data: ${JSON.stringify(pageData)}`)
-  
-  
+  console.log(`[📃HomePage::Data]: ${JSON.stringify(pageData)}`)
 
   return (
     <PageLayout metaData={pageData.metaData}>
       <Hero {...pageData.hero} />
       <Showcase order={"01"} {...pageData.showcase} />
-      <ThreeColumnSection order={"02"} {...pageData.summarySection} />
+      <ThreeColumnSection order={"02"} {...pageData.threeColumnSection} />
+      <IconGallery />
+      <SimpleForm />
+      <Collection/>
       <TextCarousel order={"03"} {...pageData.textCarousel} />
-      <FormSection order={"04"} {...pageData.formSection} />
+      <ComplexTable order={"05"} title={""} heading={"Hello"} />
+      <Gallery />
+      <FormSection order={"06"} {...pageData.formSection} />
     </PageLayout>
   )
 }
@@ -53,13 +44,12 @@ export async function getStaticProps() {
 
   let dataQuery = null;
 
-  await getData().then(data => {
+  await getPages().then(data => {
     dataQuery = data
     console.log(dataQuery)
   }).catch(err => {
     console.log(err)
   })
-
 
   return {
     props: {

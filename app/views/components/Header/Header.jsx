@@ -5,13 +5,11 @@ import useDrawer from "@controllers/hooks/useDrawer"
 
 const Header = ({ favicon }) => {
 
-    let { src, href, alt } = favicon
-
+    const { src, url, alt } = favicon
 
     return (
 
         <Headroom>
-
 
             <section style={{
                 borderBottom: '1px solid white',
@@ -19,7 +17,7 @@ const Header = ({ favicon }) => {
                 className="relative backdrop-blur-xl z-50">
                 <nav className="relative px-6 sm:px-12 pt-4">
                     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-                        <a className="inline-block" href={href}>
+                        <a className="inline-block" href={url}>
                             <Image priority src={src} alt={alt} width="70px" height="70px" />
                         </a>
                     </div>

@@ -36,6 +36,8 @@
     "react-scroll-to-top": "^2.0.4",
     "react-scroll-viewport": "^0.3.0",
     "react-slick": "^0.29.0",
+    "react-spinners-kit": "^1.9.1",
+    "react-stagger": "^1.0.1",
     "react-use": "^17.4.0",
     "recoil": "^0.7.4",
     "recoil-nexus": "^0.4.0",

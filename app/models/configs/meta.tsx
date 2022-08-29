@@ -9,6 +9,11 @@ const meta = {
     title: 'Désirable Solutions',
     description: 'We solve problems.',
     url: 'https://desirable.solutions/',
+    socials: {
+ko_fi: {
+    url: 'https://ko-fi.com/desirablesolutions',
+}
+    },
     copyright: `© 2022 Désirable Solutions. All rights reserved.`,
     impressum: `In God We Trust.`,
     info: {

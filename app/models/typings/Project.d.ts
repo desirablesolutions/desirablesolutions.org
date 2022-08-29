@@ -1,14 +1,28 @@
 import type { IPerson } from "@typings/Person"
 
+
+
+export enum Status {
+    Production = "Production",
+}
+
+
+export enum Tags {
+    Frontend = "Frontend",
+    Backend = "Backend",
+    Mobile = "Mobile",
+    Testing = "Testing",
+    Design = "Design",
+    Other = "Other",
+}
 export interface IProject {
     id: string;
     name: string;
-    status: [],
+    status: Status,
     covers: [],
     url: string;
     impressum: string;
-    production: string;
     description: string;
-    tags: [];
-    provisioners?: IPerson[]
+    tags: Tags[];
+    provisioners: IPerson[]
 }

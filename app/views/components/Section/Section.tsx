@@ -1,4 +1,4 @@
-const Section = ({ children, order, title }) => {
+const Section = ({ children, order="", title="" }) => {
 
 
     const Stylizer = {

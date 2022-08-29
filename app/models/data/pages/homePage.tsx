@@ -3,14 +3,8 @@ import meta from "@configs/meta";
 import projects from "@db/projects";
 
 const homePage = {
-    init:  () => {
-
-        
-        const homePageData = homePage.data
-        const homePageQuery = () => {}
-
-        return { ...homePageData, ...homePage.query }
-
+    init: () => {
+        return { ...homePage.data, ...homePage.query }
     },
 
     data: {
@@ -146,11 +140,25 @@ const homePage = {
         },
 
 
-        summarySection: {
+        threeColumnSection: {
             id: 'principles',
             title: 'Principles',
             heading: {
-                name: 'Solid Principles make a Solid Foundation.',
+                name: 'Solid Principles for a Solid Foundation.',
+            },
+            columns: {
+                first: {
+                    heading: 'Design',
+                    description: 'Measure twice, cut once.', 
+                },
+                second: {
+                    heading: 'Development',
+                    description: 'Don\'t repeat yourself.',
+                },
+                third: {
+                    heading: 'Dependability',
+                    description: 'Hold it down.',
+                }
             }
         },
 

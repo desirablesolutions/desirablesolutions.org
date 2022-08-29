@@ -1,18 +1,24 @@
 
 export interface IQuery {
-   limit: number;
+   limit?: number;
    value: string;
    property: string;
 }
 
 const makeQueryable = ({ data }) => {
 
-   return function ({ property, value, limit } :IQuery) {
+   return function ({ property, value, limit = 1 }: IQuery) {
 
-      return data.filter((element) => (
-         element[property] == value
-      )).slice(0, limit).flat()
+      if (limit === 1) {
+         return data.filter((element) => (
+            element[property] == value
+         )).slice(0, limit)[0]
 
+      } else {
+         return data.filter((element) => (
+            element[property] == value
+         )).slice(0, limit)
+      }
    }
 }
 

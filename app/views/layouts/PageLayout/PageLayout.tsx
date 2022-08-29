@@ -4,32 +4,27 @@ import FloatingNavigator from "@views/includes/FloatingNavigator"
 import RootLayout from "@layouts/RootLayout"
 import type { ILayout } from "@typings/Layout"
 import DrawerMenu from "@views/includes/DrawerMenu"
-
-import Footer from "@components/Footer"
-import footer from "@db/footer"
-
+import header from "@configs/header"
+import Footer from "@views/components/Footer"
+import footer from "@configs/footer"
+import React from "react"
 
 
 const PageLayout = ({ children, metaData }: ILayout) => {
 
-
     return (
 
         <RootLayout metaData={metaData}>
-            <DrawerMenu/>
-            <Header favicon={{
-                src: '/assets/images/logo-transparent.png',
-                href: '/',
-                alt: '',
-            }} />
+            <DrawerMenu />
+            <Header {...header} />
             <FloatingNavigator />
             <FadeAnimation>
                 {children}
             </FadeAnimation>
-            <Footer {...footer}/>
+            <Footer {...footer} />
         </RootLayout>
     )
 
 }
 
-export default PageLayout
+export default React.memo(PageLayout)

@@ -1,7 +1,7 @@
 import PageLayout from "@views/layouts/PageLayout"
 import Carousel from "react-multi-carousel";
 import vendor from "@configs/vendor"
-import Section from "@components/Section"
+import Section from "@views/components/Section"
 
 const ProjectLayout = ({ title, covers, impressum, description }) => {
 

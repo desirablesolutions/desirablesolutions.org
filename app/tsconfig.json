@@ -34,6 +34,6 @@
       "@hooks/*":["controllers/hooks/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/404.tsx", "pages/_app.js", "models/configs/footer.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/404.tsx", "pages/_app.tsx", ],
   "exclude": ["node_modules"]
 }

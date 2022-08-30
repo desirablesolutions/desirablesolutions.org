@@ -11,13 +11,18 @@ import SimpleForm from "@components/SimpleForm"
 import Gallery from "@components/Gallery"
 import Collection from "@components/Collection"
 
+import FacadeService from "@controllers/services/facade"
+
 import type { IPage } from "@typings/Page"
+import { useEffect } from "react"
 
 
 
 const HomePage: IPage = ({ pageData }) => {
 
-  console.log(`[📃HomePage::Data]: ${JSON.stringify(pageData)}`)
+  useEffect(() => {
+    console.log(pageData)
+  }, [pageData])
 
   return (
     <PageLayout metaData={pageData.metaData}>
@@ -26,7 +31,7 @@ const HomePage: IPage = ({ pageData }) => {
       <ThreeColumnSection order={"02"} {...pageData.threeColumnSection} />
       <IconGallery />
       <SimpleForm />
-      <Collection/>
+      <Collection />
       <TextCarousel order={"03"} {...pageData.textCarousel} />
       <ComplexTable order={"05"} title={""} heading={"Hello"} />
       <Gallery order={"00"} title={""} {...pageData.gallery} />
@@ -46,7 +51,6 @@ export async function getStaticProps() {
 
   await getPages().then(data => {
     dataQuery = data
-    console.log(dataQuery)
   }).catch(err => {
     console.log(err)
   })

@@ -1,7 +1,6 @@
 
 import meta from "@configs/meta";
 import projects from "@db/projects";
-import getProjects from "@services/getProjects"
 
 
 const homePage = {
@@ -37,10 +36,7 @@ const homePage = {
                     handle: '@desirtech'
                 }
             ]
-        }
-    },
-
-    query: {
+        },
 
         hero: {
             bgImage: {
@@ -72,15 +68,6 @@ const homePage = {
         textCarousel: {
             heading: '',
             title: 'Questions',
-        },
-
-        gallery: {
-
-            id: 'team-gallery',
-            title: 'Team',
-            heading: '"The Dream Team"'
-
-
         },
 
         dataSection: {
@@ -164,8 +151,6 @@ const homePage = {
             heading: 'What\'s your problem?',
             services: meta.info.problems,
         },
-
-
         threeColumnSection: {
             id: 'principles',
             title: 'Principles',
@@ -187,7 +172,6 @@ const homePage = {
                 }
             }
         },
-
         showcase: {
             cta: {
                 name: 'See more',
@@ -198,6 +182,40 @@ const homePage = {
             latest: [...projects],
             featured: { ...projects[0] }
         }
+
+    },
+
+    query: {
+
+        gallery: () => {
+
+            return {
+                heading: 'Our Team',
+                data: [
+                    {
+                        heading: 'Jeffrey Desir',
+                        subHeading: 'DevOps Engineer',
+                        description: 'Jeffrey is a DevOps Engineer with a passion for technology and a love for solving problems.',
+                        profile: {
+                            src: 'a',
+                            alt: ''
+                        },
+                        handle: '@desirtech'
+                    },
+                    {
+                        heading: 'Joshua Desir',
+                        subHeading: 'Founder / Designer',
+                        description: 'Jeffrey is a DevOps Engineer with a passion for technology and a love for solving problems.',
+                        profile: {
+                            src: 'a',
+                            alt: ''
+                        },
+                        handle: '@desirtech'
+                    }
+                ]
+            }
+
+        },
     }
 }
 

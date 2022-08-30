@@ -37,7 +37,7 @@ const logo = images({
 })
 
 const footer: FooterProps = {
-    heading: 'We solve problems. Period.',
+    heading: 'We solve problems. No bullshit.',
     copyright: {
         title: '© 2022 Desirable Solutions. All rights reserved.',
         description: 'To love is to serve.'

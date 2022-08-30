@@ -3,8 +3,33 @@ import meta from "@configs/meta";
 import projects from "@db/projects";
 
 
-const homePage = {
+export type PageData = {
+    init: Function,
+    data: object,
+    query: object
+}
+
+
+
+const resolver = (queryList) => {
+    Object.keys(queryList).map(key => {
+        queryList[key] = queryList[key]()
+    })
+}
+
+
+const homePage: PageData = {
+
     init: () => {
+
+        try {
+            resolver(homePage.query)
+        }
+        
+        catch (e) {
+            console.log(e)
+        }
+
         return { ...homePage.data, ...homePage.query }
     },
 
@@ -38,33 +63,7 @@ const homePage = {
             ]
         },
 
-        hero: {
-            bgImage: {
-                src: '/assets/images/banner-primary.png'
-            },
-            cta: {
-                name: 'Need help?',
-                href: '/help'
-            },
-            lines: {
-                firstLine: {
-                    href: '/team',
-                    before: 'We solve',
-                    texts: [...meta.info.problems],
-                    speed: 77,
-                    pauseTime: 3333,
-                },
-                secondLine: {
-                    href: '/projects',
-                    texts: [...meta.info.sectors],
-                    before: 'problems for',
-                    speed: 90,
-                    pauseTime: 14000,
-                },
 
-            }
-
-        },
         textCarousel: {
             heading: '',
             title: 'Questions',
@@ -172,21 +171,54 @@ const homePage = {
                 }
             }
         },
-        showcase: {
-            cta: {
-                name: 'See more',
-                href: '/projects'
-            },
-            title: 'Projects.',
-            heading: 'Designed by masters, inspired by life.',
-            latest: [...projects],
-            featured: { ...projects[0] }
-        }
+
 
     },
 
     query: {
 
+        hero: () => {
+
+            return {
+                bgImage: {
+                    src: '/assets/images/banner-primary.png'
+                },
+                cta: {
+                    name: 'Need help?',
+                    href: '/help'
+                },
+                lines: {
+                    firstLine: {
+                        href: '/team',
+                        before: 'We solve',
+                        texts: [...meta.info.problems],
+                        speed: 77,
+                        pauseTime: 3333,
+                    },
+                    secondLine: {
+                        href: '/projects',
+                        texts: [...meta.info.sectors],
+                        before: 'problems for',
+                        speed: 90,
+                        pauseTime: 14000,
+                    },
+
+                }
+            }
+
+        },
+        showcase: () => {
+            return {
+                cta: {
+                    name: 'See more',
+                    href: '/projects'
+                },
+                title: 'Projects.',
+                heading: 'Designed by masters, inspired by life.',
+                latest: [...projects],
+                featured: { ...projects[0] }
+            }
+        },
         gallery: () => {
 
             return {

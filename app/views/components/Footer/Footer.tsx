@@ -2,6 +2,7 @@ import SectionSx from "@styles/Section.sx";
 import Image from "next/image"
 import FadeAnimation from "../FadeAnimation";
 import { Fade } from "react-awesome-reveal";
+
 import { SocialIcon } from 'react-social-icons';
 
 const Logo = ({ alt, src, url }) => (

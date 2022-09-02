@@ -10,8 +10,7 @@ export type PageData = {
 }
 
 
-
-const resolver = (queryList) => {
+const resolveDataPage = (queryList) => {
     Object.keys(queryList).map(key => {
         queryList[key] = queryList[key]()
     })
@@ -23,7 +22,7 @@ const homePage: PageData = {
     init: () => {
 
         try {
-            resolver(homePage.query)
+            resolveDataPage(homePage.query)
         }
         
         catch (e) {

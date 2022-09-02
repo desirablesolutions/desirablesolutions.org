@@ -1,6 +1,7 @@
 import { Client } from "@notionhq/client";
 
 const myFetch = (url) => {
+
   return fetch(url,
     {
       headers: {
@@ -16,6 +17,7 @@ const FacadeService = {
 
 
   interface: new Client({ auth: process.env.FACADE_API_KEY }),
+  
   getAllUsers: async () => {
     let response = FacadeService.interface.users.list({}).catch(err => { return (err) });
     return response

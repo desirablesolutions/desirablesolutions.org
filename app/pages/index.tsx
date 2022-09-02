@@ -25,7 +25,7 @@ const HomePage: IPage = ({ pageData }) => {
   }, [pageData])
 
   return (
-    <PageLayout metaData={pageData.metaData}>
+    <PageLayout metaData={{ pageTitle: ''}}>
       <Hero {...pageData.hero} />
       <Showcase order={"01"} {...pageData.showcase} />
       <ThreeColumnSection order={"02"} {...pageData.threeColumnSection} />
@@ -49,7 +49,7 @@ export async function getStaticProps() {
 
   let dataQuery = null;
 
-  await getPages().then(data => {
+   getPages().then(data => {
     dataQuery = data
   }).catch(err => {
     console.log(err)

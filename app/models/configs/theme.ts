@@ -1,7 +1,7 @@
 const theme = {
     animations: {
         textScrambler: {
-            chars: '₥৳₫ʤ←∆∂√∝∞∛⊖⊇⨂⨊',
+            chars: '←∆∂∝∞∛⊖⊇⨂⨊',
             className: 'inline-block'
         }
     },

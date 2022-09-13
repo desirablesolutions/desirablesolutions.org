@@ -10,9 +10,9 @@ const meta = {
     description: 'We solve problems.',
     url: 'https://desirable.solutions/',
     socials: {
-ko_fi: {
-    url: 'https://ko-fi.com/desirablesolutions',
-}
+        ko_fi: {
+            url: 'https://ko-fi.com/desirablesolutions',
+        }
     },
     copyright: `© 2022 Désirable Solutions. All rights reserved.`,
     impressum: `In God We Trust.`,
@@ -48,32 +48,32 @@ ko_fi: {
         {
             name: 'Projects',
             href: '/projects',
-            icon: <RedeemIcon/>
+            icon: '<RedeemIcon />'
         },
         {
             name: 'Team',
             href: '/team',
-            icon: <PeopleIcon/>
+            icon: <PeopleIcon />
         },
         {
             name: 'Vision',
             href: '/vision',
-            icon: <VisibilityIcon/>
+            icon: <VisibilityIcon />
         },
         {
             name: 'Help',
             href: '/help',
-            icon: <HandshakeIcon/>
+            icon: '<HandshakeIcon />'
         },
         {
-           name: 'Services',
-           href: '/services',
-              icon: <DesignServicesIcon/>
+            name: 'Services',
+            href: '/services',
+            icon: '<DesignServicesIcon />'
         },
         {
             name: 'About',
             href: '/about',
-            icon: <InfoOutlinedIcon/>
+            icon: ''
         }
     ],
     contact: {

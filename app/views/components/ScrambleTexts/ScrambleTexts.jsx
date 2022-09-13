@@ -1,5 +1,5 @@
 import TextScrambler from 'react-scramble-text'
-import theme from "@configs/theme"
+import theme from "@models/configs/theme"
 
 
 

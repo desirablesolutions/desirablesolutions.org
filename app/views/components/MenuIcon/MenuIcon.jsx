@@ -1,4 +1,4 @@
-import theme from "@configs/theme"
+import theme from "@models/configs/theme"
 import { default as MuiMenuIcon } from '@mui/icons-material/Menu'
 
 const MenuIcon = () => {

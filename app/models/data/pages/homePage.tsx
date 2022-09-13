@@ -1,7 +1,7 @@
 
 import meta from "@configs/meta";
 import projects from "@db/projects";
-
+import layout from "@configs/layout"
 
 export type PageData = {
     init: Function,
@@ -24,7 +24,7 @@ const homePage: PageData = {
         try {
             resolveDataPage(homePage.query)
         }
-        
+
         catch (e) {
             console.log(e)
         }
@@ -33,9 +33,16 @@ const homePage: PageData = {
     },
 
     data: {
-        metaData: {
-            pageTitle: 'Home'
+
+
+        layout: {
+            ...layout,
+            metaData: {
+                pageTitle: 'Home'
+            },
+
         },
+
         gallery: {
             heading: 'Our Team',
             data: [

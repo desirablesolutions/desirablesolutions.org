@@ -2,15 +2,15 @@ import FadeAnimation from "@components/FadeAnimation"
 import Header from "@components/Header"
 import FloatingNavigator from "@views/includes/FloatingNavigator"
 import RootLayout from "@layouts/RootLayout"
-import type { ILayout } from "@typings/Layout"
 import DrawerMenu from "@views/includes/DrawerMenu"
-import header from "@configs/header"
 import Footer from "@views/components/Footer"
-import footer from "@configs/footer"
 import React from "react"
 
+import type { ILayout } from "@typings/Layout"
 
-const PageLayout = ({ children, metaData }: ILayout) => {
+
+
+const PageLayout = ({ children, metaData, footer, header }: ILayout) => {
 
     return (
 

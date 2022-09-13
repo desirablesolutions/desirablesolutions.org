@@ -22,17 +22,8 @@ const HomePage: IPage = ({ pageData }) => {
   console.log(pageData)
 
   return (
-    <PageLayout metaData={{ pageTitle: '' }}>
-      <Hero {...pageData.hero} />
-      <Showcase order={"01"} {...pageData.showcase} />
-      <ThreeColumnSection order={"02"} {...pageData.threeColumnSection} />
-      <IconGallery />
-      <SimpleForm />
-      <Collection />
-      <TextCarousel order={"03"} {...pageData.textCarousel} />
-      <ComplexTable order={"05"} title={""} heading={"Hello"} />
-      <Gallery order={"00"} title={""} {...pageData.gallery} />
-      <HelpForm order={"06"} {...pageData.helpForm} />
+    <PageLayout {...pageData.layout}>
+
     </PageLayout>
   )
 }
@@ -52,3 +43,16 @@ export async function getStaticProps() {
   }
 }
 
+
+/*
+      <Hero {...pageData.hero} />
+      <Showcase order={"01"} {...pageData.showcase} />
+      <ThreeColumnSection order={"02"} {...pageData.threeColumnSection} />
+      <IconGallery />
+      <SimpleForm />
+      <Collection />
+      <TextCarousel order={"03"} {...pageData.textCarousel} />
+      <ComplexTable order={"05"} title={""} heading={"Hello"} />
+      <Gallery order={"00"} title={""} {...pageData.gallery} />
+      <HelpForm order={"06"} {...pageData.helpForm} />
+*/

@@ -13,16 +13,53 @@ const Logo = ({ alt, src, url }) => (
     </div>
 )
 
-const Footer = ({ copyright, logo, navLinks, email, phoneNumber, heading, terminalLinks, cta }) => {
+const Footer = ({ socials, copyright, favicon, navLinks, email, phoneNumber, heading, terminalLinks, cta }) => {
 
+
+    const Socials = () => {
+
+        return (
+            socials ? <div className="mt-8">
+
+                {
+                    socials.map((social, index) => {
+                        return (
+                            <a key={index} className="inline-flex items-center mr-2 hover:scale-90 transition-all hover:bg-opacity-60" href={social.url}>
+                                <SocialIcon bgColor="#FFFFFF" url={social.url} />
+                            </a>
+
+                        )
+                    })
+                }
+
+            </div> : <></>
+        )
+    }
+
+
+    const Copyright = () => {
+
+        return (
+            <div className="w-full lg:w-2/3 xl:w-auto px-4 mb-8 2xl:mb-0">
+                <span className="text-sm font-light">
+                    {copyright.title}
+                </span>
+                <p className="max-w-xl text-gray-400 text-xs font-light mt-5">
+                    {copyright.description}
+                </p>
+            </div>
+        )
+    }
 
     return (
 
         <section style={SectionSx} className="pt-24 md:pt-32">
             <div className="container px-4 mx-auto">
-                <div className="pb-24">
+
+
+                <div className="pb-24">                    
                     <div className="flex flex-wrap items-center justify-between -mx-4 mb-20">
-                        <Logo {...logo} />
+                        <Logo {...favicon} />
 
                         <div className="w-full md:w-auto px-4">
                             <a
@@ -33,6 +70,9 @@ const Footer = ({ copyright, logo, navLinks, email, phoneNumber, heading, termin
                             </a>
                         </div>
                     </div>
+
+
+
                     <div className="flex flex-wrap -mx-4">
                         <div className="w-full xl:w-2/6 px-4 mb-16 xl:mb-0">
                             <div className="max-w-md">
@@ -54,26 +94,7 @@ const Footer = ({ copyright, logo, navLinks, email, phoneNumber, heading, termin
                                         {email}
                                     </a>
                                 </div>
-                                <div className="mt-8">
-
-                                    <a className="inline-flex items-center" href="#">
-                                        <SocialIcon url="https://www.facebook.com/nextjs.org" />
-                                    </a>
-
-                                    <a className="inline-flex items-center" href="#">
-                                        <SocialIcon url="https://www.instagram.com/nextjs.org" />
-                                    </a>
-                                    <a className="inline-flex items-center" href="#">
-                                        <SocialIcon url="https://www.twitter.com/nextjs.org" />
-                                    </a>
-
-                                    <a className="inline-flex items-center" href="#">
-                                        <SocialIcon url="https://www.linkedin.com/nextjs.org" />
-                                    </a>
-                                    <a className="inline-flex items-center" href="#">
-                                        <SocialIcon url="https://www.ko-fi.com/nextjs.org" />
-                                    </a>
-                                </div>
+                                <Socials />
                             </div>
                         </div>
                         {
@@ -99,19 +120,19 @@ const Footer = ({ copyright, logo, navLinks, email, phoneNumber, heading, termin
                             })}
 
                     </div>
+                    
                 </div>
             </div>
             <div className="py-12">
                 <div className="container px-4 mx-auto">
+
+
                     <div className="flex flex-wrap items-start justify-between -mx-4">
-                        <div className="w-full lg:w-2/3 xl:w-auto px-4 mb-8 2xl:mb-0">
-                            <span className="text-sm font-light">
-                                {copyright.title}
-                            </span>
-                            <p className="max-w-xl text-gray-400 text-xs font-light mt-5">
-                                {copyright.description}
-                            </p>
-                        </div>
+
+
+                        <Copyright />
+
+
                         <div className="w-full lg:w-1/3 xl:w-auto px-4">
 
                             <div>
@@ -132,7 +153,11 @@ const Footer = ({ copyright, logo, navLinks, email, phoneNumber, heading, termin
                             </div>
 
                         </div>
+
+
                     </div>
+
+
                 </div>
             </div>
         </section>

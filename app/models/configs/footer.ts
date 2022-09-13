@@ -1,48 +1,37 @@
 import images from "@db/images"
-
-export type Link = {
-    name: string
-    url?: string
-}
-
-export type NavLinks = {
-    links: Link[]
-    heading: string
-}
-
-export type FooterProps = {
-    copyright: {
-        title: string,
-        description: string
-    },
-    logo: {
-        src: string,
-        url: string,
-        alt: string
-    },
-    heading: string,
-    navLinks: NavLinks[],
-    email: string,
-    phoneNumber: string,
-    terminalLinks: Link[],
-    cta: {
-        name: string,
-        url: string
-    }
-}
+import type { Footer } from "@typings/Footer"
 
 const logo = images({
     property: "id",
     value: 'logo-transparent'
 })
 
-const footer: FooterProps = {
-    heading: 'We solve problems. No bullshit.',
+const footer: Footer = {
+    heading: 'We solve problems.',
     copyright: {
-        title: '© 2022 Desirable Solutions. All rights reserved.',
+        title: '© 2022 Désirable  Solutions. All rights reserved.',
         description: 'To love is to serve.'
     },
-    logo: { ...logo, url: '/' },
+    socials: [
+        {
+            name: 'facebook',
+            url: 'https://www.facebook.com/desirable.solutions'
+        },
+        {
+            name: 'twitter',
+            url: 'https://twitter.com/desirable_s'
+        },
+        {
+            name: 'instagram',
+            url: 'https://www.instagram.com/desirable_solutions/'
+        },
+        {
+            name: 'linkedin',
+            url: 'https://www.linkedin.com/company/desirable-solutions/'
+        },
+
+    ],
+    favicon: { ...logo, url: '/' },
     navLinks: [
         {
             heading: 'Agency',

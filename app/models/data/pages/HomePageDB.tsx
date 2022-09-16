@@ -1,9 +1,9 @@
 
+import layout from "@configs/layout";
 import meta from "@configs/meta";
 import projects from "@db/projects";
-import layout from "@configs/layout"
 
-export type PageData = {
+export type DataPage = {
     init: Function,
     data: object,
     query: object
@@ -17,19 +17,22 @@ const resolveDataPage = (queryList) => {
 }
 
 
-const homePage: PageData = {
+
+
+
+const HomePageDB: DataPage = {
 
     init: () => {
 
         try {
-            resolveDataPage(homePage.query)
+            resolveDataPage(HomePageDB.query)
         }
 
         catch (e) {
             console.log(e)
         }
 
-        return { ...homePage.data, ...homePage.query }
+        return { ...HomePageDB.data, ...HomePageDB.query }
     },
 
     data: {
@@ -42,6 +45,7 @@ const homePage: PageData = {
             },
 
         },
+
 
         gallery: {
             heading: 'Our Team',
@@ -258,4 +262,4 @@ const homePage: PageData = {
 }
 
 
-export default homePage
+export default HomePageDB

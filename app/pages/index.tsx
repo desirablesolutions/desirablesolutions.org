@@ -8,7 +8,7 @@ import Showcase from "@components/Showcase"
 import SimpleForm from "@components/SimpleForm"
 import TextCarousel from "@components/TextCarousel"
 import PageLayout from "@layouts/PageLayout"
-import homePage from "@pages/homePage"
+import HomePageDB from@models/data/pages/HomePageDBgeDB"
 import ThreeColumnSection from "@views/components/ThreeColumnSection"
 
 
@@ -21,8 +21,16 @@ const HomePage: IPage = ({ pageData }) => {
 
   console.log(pageData)
 
+
+
   return (
     <PageLayout {...pageData.layout}>
+      {
+        pageData.components.map((component, index) => {
+          const Component = component.component
+          return <Component {...component.props} key={index} />
+        }
+      }
 
     </PageLayout>
   )
@@ -37,7 +45,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      pageData: homePage.init()
+      pageData: HomePageDB.init()
     },
     revalidate: 5
   }

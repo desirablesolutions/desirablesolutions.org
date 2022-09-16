@@ -1,4 +1,4 @@
-import homePage from "@pages/homePage"
+import homePage from "@models/data/pages/HomePageDB"
 import type { NextApiRequest, NextApiResponse } from 'next'
 import type { APIMethods } from "@typings/APIMethods"
 

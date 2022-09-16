@@ -8,9 +8,8 @@ import Showcase from "@components/Showcase"
 import SimpleForm from "@components/SimpleForm"
 import TextCarousel from "@components/TextCarousel"
 import PageLayout from "@layouts/PageLayout"
-import HomePageDB from@models/data/pages/HomePageDBgeDB"
-import ThreeColumnSection from "@views/components/ThreeColumnSection"
-
+import HomePageDB from "@pages/HomePageDB"
+import ThreeColumnSection from "@components/ThreeColumnSection"
 
 import type { IPage } from "@typings/Page"
 
@@ -18,20 +17,20 @@ import type { IPage } from "@typings/Page"
 
 const HomePage: IPage = ({ pageData }) => {
 
-
   console.log(pageData)
-
-
 
   return (
     <PageLayout {...pageData.layout}>
-      {
-        pageData.components.map((component, index) => {
-          const Component = component.component
-          return <Component {...component.props} key={index} />
-        }
-      }
-
+      <Hero {...pageData.hero} />
+      <Showcase order={"01"} {...pageData.showcase} />
+      <ThreeColumnSection order={"02"} {...pageData.threeColumnSection} />
+      <IconGallery />
+      <SimpleForm />
+      <Collection />
+      <TextCarousel order={"03"} {...pageData.textCarousel} />
+      <ComplexTable order={"05"} title={""} heading={"Hello"} />
+      <Gallery order={"00"} title={""} {...pageData.gallery} />
+      <HelpForm order={"06"} {...pageData.helpForm} />
     </PageLayout>
   )
 }
@@ -51,16 +50,3 @@ export async function getStaticProps() {
   }
 }
 
-
-/*
-      <Hero {...pageData.hero} />
-      <Showcase order={"01"} {...pageData.showcase} />
-      <ThreeColumnSection order={"02"} {...pageData.threeColumnSection} />
-      <IconGallery />
-      <SimpleForm />
-      <Collection />
-      <TextCarousel order={"03"} {...pageData.textCarousel} />
-      <ComplexTable order={"05"} title={""} heading={"Hello"} />
-      <Gallery order={"00"} title={""} {...pageData.gallery} />
-      <HelpForm order={"06"} {...pageData.helpForm} />
-*/

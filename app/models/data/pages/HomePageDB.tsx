@@ -16,10 +16,6 @@ const resolveDataPage = (queryList) => {
     })
 }
 
-
-
-
-
 const HomePageDB: DataPage = {
 
     init: () => {

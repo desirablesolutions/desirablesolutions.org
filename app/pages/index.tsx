@@ -8,16 +8,12 @@ import Showcase from "@components/Showcase"
 import SimpleForm from "@components/SimpleForm"
 import TextCarousel from "@components/TextCarousel"
 import PageLayout from "@layouts/PageLayout"
-import HomePageDB from "@pages/HomePageDB"
 import ThreeColumnSection from "@components/ThreeColumnSection"
 
-import type { IPage } from "@typings/Page"
 
 
 
-const HomePage: IPage = ({ pageData }) => {
-
-  console.log(pageData)
+const HomePage = ({ pageData }) => {
 
   return (
     <PageLayout {...pageData.layout}>
@@ -38,15 +34,4 @@ const HomePage: IPage = ({ pageData }) => {
 
 export default HomePage
 
-
-
-export async function getStaticProps() {
-
-  return {
-    props: {
-      pageData: HomePageDB.init()
-    },
-    revalidate: 5
-  }
-}
 

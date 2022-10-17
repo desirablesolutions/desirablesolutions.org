@@ -6,11 +6,7 @@ const TextCarousel = ({ order, title, heading }) => {
 
     return (
 
-        <section style={{
-            borderTop: '1px solid #e6e6e6',
-            background: `url('/assets/images/bg.png') #000000 no-repeat center center fixed`,
-            filter: 'opacity(0.91)'
-        }} className="py-24 md:py-40">
+        <section className="py-24 md:py-40">
             <div className="container px-4 mx-auto">
                 <div className="flex items-center mb-20">
                     <span className="font-heading outline p-1 text-white text-xl">{order}</span>

@@ -1,13 +1,8 @@
 const IconsShowcase = () => {
 
-  const Stylizer = {
-    borderTop: '1px solid #e6e6e6',
-    background: `url('/assets/images/bg.png') #000000 no-repeat center center fixed`,
-    filter: 'opacity(0.91)'
 
-}
   return (
-    <section style={Stylizer}className="py-40">
+    <section className="py-40">
       <div className="container px-4 mx-auto">
         <h2 className="text-center font-heading text-4xl text-white mb-16">
           Trusted by brands all over the world

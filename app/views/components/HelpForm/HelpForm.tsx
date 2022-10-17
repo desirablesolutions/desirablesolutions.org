@@ -2,11 +2,7 @@
 const HelpForm = ({ order, title, heading, services }) => {
 
     return (
-        <section style={{
-            borderTop: '1px solid #e6e6e6',
-            background: `url('/assets/images/bg.png') #000000 no-repeat center center fixed`,
-            filter: 'opacity(0.91)'
-        }} className="pt-24 md:pt-40 xl:pb-40  relative overflow-hidden">
+        <section className="pt-24 md:pt-40 xl:pb-40  relative overflow-hidden">
             <div className="container px-4 mx-auto">
                 <img
                     className="hidden xl:block absolute top-0 right-0 w-1/4 mt-10 h-full object-cover"

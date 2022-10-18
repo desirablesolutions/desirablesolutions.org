@@ -9,6 +9,7 @@ import SimpleForm from "@components/SimpleForm"
 import TextCarousel from "@components/TextCarousel"
 import PageLayout from "@layouts/PageLayout"
 import ThreeColumnSection from "@components/ThreeColumnSection"
+import PageService from "@controllers/services/page"
 
 
 
@@ -35,3 +36,13 @@ const HomePage = ({ pageData }) => {
 export default HomePage
 
 
+export async function getServerSideProps() {
+
+  const page = PageService().getPage("home")
+
+  return {
+    props: {
+      page
+    }
+  }
+}

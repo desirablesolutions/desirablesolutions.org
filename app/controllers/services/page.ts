@@ -1,26 +1,36 @@
-import resolveURL from "@utils/resolveURL"
+import pages from "@pages"
+import NotionService from "@services/notion"
 
+const PageService = () => {
 
-const getPages = async () => {
+    const serviceObject = {
 
-    const res = await fetch(resolveURL('/api/pages/'),
+        getPage: async (pageKey: string) => {
 
-        {
-            method: 'GET',
-            headers: {
-                "Access-Control-Allow-Origin": "*",
-                "Content-Type": "application/json",
+            const { getCentralDogma } = NotionService()
+
+            const CentralDogma = (await getCentralDogma())
+
+            const { layout, data, id, version } = pages({ store: CentralDogma, pageKey })
+
+            const pageObject = {
+                id,
+                version,
+                layout,
+                data,
             }
-        })
 
-    try {
-        const queryData = await res.json().then(data => data)
-        return queryData
-    } catch (e) {
-        console.log(e)
-        return null
+            return { ...pageObject }
+
+        },
+
     }
+
+    return { ...serviceObject }
 
 }
 
-export default getPages
+
+
+
+export default PageService

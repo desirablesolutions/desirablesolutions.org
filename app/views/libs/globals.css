@@ -4,6 +4,27 @@
 }
 
 
+.page-transition-enter {
+        opacity: 0.1;
+        backdropFilter: blur(50px);
+}
+
+.page-transition-enter-active {
+        opacity: 1;
+        backdropFilter: blur(5px);
+
+        transition: opacity backdropFilter 1200ms;
+}
+
+.page-transition-exit {
+        opacity: 1;
+}
+
+.page-transition-exit-active {
+        opacity: 0;
+        transition: opacity 1.2s;
+}
+
 @font-face {
         font-family: "The Seasons";
         src: url("/assets/fonts/the-seasons/the-seasons-Regular.ttf") format("truetype");

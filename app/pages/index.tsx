@@ -7,38 +7,38 @@ import IconGallery from "@components/IconGallery"
 import Showcase from "@components/Showcase"
 import SimpleForm from "@components/SimpleForm"
 import TextCarousel from "@components/TextCarousel"
-import PageLayout from "@layouts/PageLayout"
 import ThreeColumnSection from "@components/ThreeColumnSection"
 import PageService from "@controllers/services/page"
 
+const HomePage = ({ page: { data } }) => {
 
 
-
-const HomePage = ({ pageData }) => {
+  const { hero, showcase, gallery, collection, complexTable, iconGallery, textCarousel, threeColumnSection, simpleForm, helpForm } = data
 
   return (
-    <PageLayout {...pageData.layout}>
-      <Hero {...pageData.hero} />
-      <Showcase order={"01"} {...pageData.showcase} />
-      <ThreeColumnSection order={"02"} {...pageData.threeColumnSection} />
-      <IconGallery />
-      <SimpleForm />
-      <Collection />
-      <TextCarousel order={"03"} {...pageData.textCarousel} />
-      <ComplexTable order={"05"} title={""} heading={"Hello"} />
-      <Gallery order={"00"} title={""} {...pageData.gallery} />
-      <HelpForm order={"06"} {...pageData.helpForm} />
-    </PageLayout>
+    <>
+      <Hero {...hero} />
+      <Showcase order={"01"} {...showcase} />
+      <ThreeColumnSection order={"02"} {...threeColumnSection} />
+      <IconGallery {...iconGallery} />
+      <SimpleForm {...simpleForm} />
+      <Collection {...collection} />
+      <TextCarousel {...textCarousel} />
+      <ComplexTable {...complexTable} />
+      <Gallery {...gallery} />
+      <HelpForm  {...helpForm} />
+    </>
   )
 }
-
 
 export default HomePage
 
 
 export async function getServerSideProps() {
 
-  const page = PageService().getPage("home")
+  const { getPage } = PageService()
+  
+  const page = await getPage("home")
 
   return {
     props: {

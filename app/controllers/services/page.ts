@@ -1,4 +1,4 @@
-import pages from "@pages"
+import pages from "@pages/index"
 import NotionService from "@services/notion"
 
 const PageService = () => {
@@ -11,13 +11,12 @@ const PageService = () => {
 
             const CentralDogma = (await getCentralDogma())
 
-            const { layout, data, id, version } = pages({ store: CentralDogma, pageKey })
+            const { id, version } = pages({ store: CentralDogma, key: pageKey })
 
             const pageObject = {
                 id,
                 version,
-                layout,
-                data,
+
             }
 
             return { ...pageObject }

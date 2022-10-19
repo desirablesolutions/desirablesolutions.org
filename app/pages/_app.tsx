@@ -12,43 +12,36 @@ import RecoilNexus from "recoil-nexus";
 import { PageTransition } from 'next-page-transitions';
 import App from 'next/app';
 import React from 'react';
-
+import PageLayout from "@layouts/PageLayout"
 import type { AppProps } from 'next/app'
 
 
 export interface IApplication extends AppProps {
+  layout?: any,
 }
 
-export default function Application({ Component, pageProps }: IApplication) {
+export default function Application({ Component, pageProps, layout }: IApplication) {
 
 
   return (
-    <>
-      <PageTransition timeout={700} classNames="page-transition">
-        <Store>
-          <RecoilNexus />
-          <Component {...pageProps} />
-        </Store>
-      </PageTransition>
-      <style>{`
-          .page-transition-enter {
-            opacity: 0.1;
-            backdropFilter: blur(50px);
-          }
-          .page-transition-enter-active {
-            opacity: 1;
-            backdropFilter: blur(5px);
 
-            transition: opacity backdropFilter 1200ms;
-          }
-          .page-transition-exit {
-            opacity: 1;
-          }
-          .page-transition-exit-active {
-            opacity: 0;
-            transition: opacity 1.2s;
-          }
-        `}</style>
-    </>
+    <PageTransition timeout={700} classNames="page-transition">
+      <Store>
+        <RecoilNexus />
+        <PageLayout {...layout}>
+          <Component {...pageProps} />
+        </PageLayout>
+      </Store>
+    </PageTransition>
+
   )
+}
+
+Application.getInitalProps = async () => {
+  const layout = {
+    metaData: {
+
+    }
+  }
+  return { layout }
 }

@@ -1,26 +1,21 @@
-import images from "@db/images"
+import type { HeaderProps } from "@typings/Header"
 
-export type HeaderProps = {
-    favicon: {
-        src: string,
-        url: string,
-        alt: string
+const header = ({ favicon }: HeaderProps) => {
+
+    const defaultObject: HeaderProps = {
+        favicon: {
+            image: {
+                src: "IMAGE_NOT_FOUND",
+            },
+            url: "URL_NOT_FOUND"
+        }
     }
+
+    const headerObject: HeaderProps = {
+        favicon: favicon ?? defaultObject?.favicon,
+    }
+
+    return { ...headerObject } as HeaderProps
 }
 
-
-const logo = images({
-    property: 'id',
-    value: 'logo-transparent',
-})
-
-const header: HeaderProps = {
-
-    favicon: {
-        src: logo.src,
-        url: "/",
-        alt: logo.alt
-
-    }
-}
 export default header

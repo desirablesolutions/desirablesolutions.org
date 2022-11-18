@@ -1,4 +1,11 @@
-const Section = ({ children, order="", title="" }) => {
+export type SectionProps = {
+    title?: string,
+    order?: string,
+    children?: any
+}
+
+
+const Section = ({ children, order, title }: SectionProps) => {
 
 
     const Stylizer = {

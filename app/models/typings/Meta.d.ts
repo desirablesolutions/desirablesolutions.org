@@ -1,5 +1,4 @@
 
-export interface IMeta {
-    pageTitle: string;
-  }
-  
+export type MetaProps = {
+  pageTitle?: string
+}

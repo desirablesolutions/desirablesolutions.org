@@ -36,12 +36,11 @@ export type HeroProps = {
 
 const Hero = ({ lines, bgImage, cta }: HeroProps) => {
 
-    let { firstLine, secondLine } = lines
 
 
     return (
         <section style={{
-            background: `url(${bgImage.src}) no-repeat center center fixed`,
+            background: `url(${bgImage?.src}) no-repeat center center fixed`,
             backgroundSize: 'cover',
             minHeight: '100vh'
         }} className="relative pb-20 md:pb-52 box-border overflow-hidden">
@@ -50,16 +49,29 @@ const Hero = ({ lines, bgImage, cta }: HeroProps) => {
                 <div className="pt-36 sm:pt-64">
 
 
+
+                </div>
+            </div>
+        </section>
+
+    )
+}
+
+export default Hero
+
+/*
+
+
                     <h1 className="text-6xl xl:text-8xl 3xl:text-9xl text-white font-medium mb-20">
 
                         <span className="block leading-none">
-                            <a className="inline-flex text-white" href={firstLine.href}>
+                            <a className="inline-flex text-white" href={firstLine?.href}>
                                 <span className="mr-4 underline-from-left hover:animate-pulse transition-all">
-                                    {firstLine.before}
-                                    <ScrambleTexts lines={firstLine.texts}
-                                        speed={firstLine.speed}
-                                        pauseTime={firstLine.pauseTime} />
-                                    {firstLine.after}<HeroLinkIcon />
+                                    {firstLine?.before}
+                                    <ScrambleTexts lines={firstLine?.texts}
+                                        speed={firstLine?.speed}
+                                        pauseTime={firstLine?.pauseTime} />
+                                    {firstLine?.after}<HeroLinkIcon />
                                 </span>
 
 
@@ -86,12 +98,4 @@ const Hero = ({ lines, bgImage, cta }: HeroProps) => {
 
 
                     </h1>
-
-                </div>
-            </div>
-        </section>
-
-    )
-}
-
-export default Hero
+*/

@@ -1,27 +1,12 @@
 import Section from "@views/components/Section";
 import Image from "next/image";
 
-import images from "@db/images"
-
-
-
-const logo = images({
-  property: 'id',
-  value: 'logo-transparent'
-})
-
-
-const joshuaDesir = images({
-  property: 'id',
-  value: 'joshua-desir'
-})
-
 export type GalleryProps = {
   order: string,
   title: string,
   heading: string,
 }
-const Gallery = ({ order, title, heading, data }) => {
+const Gallery = ({ order, title, heading, data, logo }) => {
 
 
   return (

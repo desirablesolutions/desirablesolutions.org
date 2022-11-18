@@ -1,32 +1,13 @@
-import { Client } from "@notionhq/client";
+import types from "@db/types"
 
-const myFetch = (url) => {
+const FacadeService = () => {
 
-  return fetch(url,
-    {
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Content-Type": "application/json",
-        "Notion-Version": "2022-06-28"
-      }
-    })
-}
+    const serviceObject = {
+        version: Date.now(),
+        types: types(),
+    }
 
-
-const FacadeService = {
-
-
-  interface: new Client({ auth: process.env.FACADE_API_KEY }),
-  
-  getAllUsers: async () => {
-    let response = FacadeService.interface.users.list({}).catch(err => { return (err) });
-    return response
-  },
-
-  getResponseStatus: () => {
-
-  }
-
+    return { ...serviceObject }
 }
 
 export default FacadeService

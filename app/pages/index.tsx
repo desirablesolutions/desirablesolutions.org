@@ -12,21 +12,12 @@ import PageService from "@controllers/services/page"
 
 const HomePage = ({ page: { data } }) => {
 
-
   const { hero, showcase, gallery, collection, complexTable, iconGallery, textCarousel, threeColumnSection, simpleForm, helpForm } = data
 
   return (
     <>
       <Hero {...hero} />
-      <Showcase order={"01"} {...showcase} />
-      <ThreeColumnSection order={"02"} {...threeColumnSection} />
-      <IconGallery {...iconGallery} />
-      <SimpleForm {...simpleForm} />
-      <Collection {...collection} />
-      <TextCarousel {...textCarousel} />
-      <ComplexTable {...complexTable} />
-      <Gallery {...gallery} />
-      <HelpForm  {...helpForm} />
+      <HelpForm />
     </>
   )
 }
@@ -34,15 +25,16 @@ const HomePage = ({ page: { data } }) => {
 export default HomePage
 
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
 
   const { getPage } = PageService()
-  
+
   const page = await getPage("home")
 
   return {
     props: {
       page
-    }
+    },
+    revalidate: 5
   }
 }

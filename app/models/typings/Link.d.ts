@@ -1,5 +1,5 @@
 
-export type Link = {
+export type LinkProps = {
     name: string
     url?: string
 }

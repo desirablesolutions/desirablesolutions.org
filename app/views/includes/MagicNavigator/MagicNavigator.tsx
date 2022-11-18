@@ -26,7 +26,8 @@ const DialSx = {
 }
 
 
-const FloatingNavigator = () => {
+const MagicNavigator = () => {
+  
   return (
 
     <SpeedDial
@@ -37,10 +38,10 @@ const FloatingNavigator = () => {
       {actions.map((action) => (
         <SpeedDialAction
 
-          key={action.name}
+          key={action?.name}
           tooltipOpen={true}
-          icon={action.icon}
-          tooltipTitle={<span className="text-black">{action.name}</span>}
+          icon={action?.icon}
+          tooltipTitle={<span className="text-black">{action?.name}</span>}
         />
       ))}
     </SpeedDial>
@@ -49,4 +50,4 @@ const FloatingNavigator = () => {
 }
 
 
-export default FloatingNavigator
+export default MagicNavigator

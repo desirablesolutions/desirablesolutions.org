@@ -6,9 +6,7 @@ import Box from "@components/Box"
 
 const RootLayout = ({ children, metaData }: ILayout) => {
 
-
     return (
-
         <Box>
             <Meta {...metaData} />
             <CSSReset />

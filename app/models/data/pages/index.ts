@@ -10,6 +10,16 @@ const pages = ({ store, key }) => {
             data: {
                 hero: {
                     title: "Home Hero Title",
+                    lines: {
+                        first: {
+                            before: 'a'
+
+                        },
+
+                        second: {
+                            before: 'b'
+                        }
+                    }
                 }
             }
         }

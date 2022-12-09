@@ -9,20 +9,7 @@ import SimpleForm from "@components/SimpleForm"
 import TextCarousel from "@components/TextCarousel"
 import ThreeColumnSection from "@components/ThreeColumnSection"
 import PageService from "@controllers/services/page"
-
-const HomePage = ({ page: { data } }) => {
-
-  const { hero, showcase, gallery, collection, complexTable, iconGallery, textCarousel, threeColumnSection, simpleForm, helpForm } = data
-
-  return (
-    <>
-      <Hero {...hero} />
-      <HelpForm />
-    </>
-  )
-}
-
-export default HomePage
+import PageLayout from "@layouts/PageLayout";
 
 
 export async function getStaticProps() {
@@ -35,6 +22,23 @@ export async function getStaticProps() {
     props: {
       page
     },
-    revalidate: 5
+    revalidate: 1
   }
 }
+
+function HomePage({ page }) {
+
+  const { hero, showcase, gallery, collection, complexTable, iconGallery, textCarousel, threeColumnSection, simpleForm, helpForm } = page.data
+
+  return (
+    <>
+    </>
+  )
+
+}
+
+HomePage.layout = { PageLayout }
+
+export default HomePage
+
+

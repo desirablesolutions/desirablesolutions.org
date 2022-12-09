@@ -26,19 +26,13 @@ const pages = ({ store, key }) => {
 
     }
 
-    const layoutData = layout({
-        header: {
-        },
-        footer: {},
-        menu: {},
-        metaData: pageData[key].metaData
-    })
-
-
     const pageObject = {
         version: Date.now(),
         data: pageData[key]?.data,
-        layout: layoutData
+        layout: layout({
+
+            metaData: pageData[key].metaData
+        })
     }
 
     return { ...pageObject }

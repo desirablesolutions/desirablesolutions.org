@@ -1,6 +1,6 @@
 {
   "name": "desirable.solutions",
-  "version": "11.11.11",
+  "version": "1.0.0",
   "description": "We solve problems.",
   "main": "index.js",
   "directories": {
@@ -8,15 +8,15 @@
   },
   "scripts": {
     "app:dev": "cd app && npm i --force && npm run dev",
-    "readme:g": "npx @appnest/readme generate",
+    "readme:g": "npx @appnest/readme generate --config=docs.config.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Inform-Inspire-LLC/desirable.solutions.git"
   },
-  "author": "Jeffrey J. Desir",
-  "license": "MIT",
+  "author": "Jeffrey Desir",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/Inform-Inspire-LLC/desirable.solutions/issues"
   },

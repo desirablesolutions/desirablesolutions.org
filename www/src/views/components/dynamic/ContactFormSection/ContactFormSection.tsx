@@ -1,7 +1,7 @@
 export default function ContactFormSection() {
     return (
         <section
-            className="pt-24 md:pt-40 xl:pb-40 bg-gray-900 relative overflow-hidden"
+            className="pt-24 md:pt-40 xl:pb-40 relative overflow-hidden"
         >
             <div className="container px-4 mx-auto">
                 <img

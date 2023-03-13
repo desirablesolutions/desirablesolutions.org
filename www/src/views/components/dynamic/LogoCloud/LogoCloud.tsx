@@ -1,6 +1,6 @@
 export default function LogoCloud() {
     return (
-        <section className="py-40 bg-gray-900">
+        <section className="py-40">
             <div className="container px-4 mx-auto">
                 <h2 className="text-center font-heading text-4xl text-white mb-16">
                     Trusted by brands all over the world

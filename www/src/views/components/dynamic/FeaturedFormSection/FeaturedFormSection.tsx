@@ -1,6 +1,6 @@
 export default function FeaturedFormSection() {
     return (
-        <section className="bg-gray-900 relative overflow-hidden">
+        <section className="relative overflow-hidden">
             <img
                 className="hidden lg:block absolute top-0 left-0 w-3/5 h-full mt-10 object-cover"
                 src="wrexa-assets/images/young-students.png"

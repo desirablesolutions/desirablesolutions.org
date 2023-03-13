@@ -1,6 +1,6 @@
 export default function FeaturedSummary() {
     return (
-        <section className="relative py-24 md:pt-32 bg-gray-900">
+        <section className="relative py-24 md:pt-32">
             <div className="container px-4 mx-auto relative">
                 <img
                     className="hidden md:block absolute bottom-0 left-0 mb-52 lg:mb-12 w-full"

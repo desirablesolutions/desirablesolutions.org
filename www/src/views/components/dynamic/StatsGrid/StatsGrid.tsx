@@ -1,6 +1,6 @@
 export default function StatsGrid() {
     return (
-        <section className="relative bg-gray-100 overflow-hidden">
+        <section className="relative overflow-hidden">
             <div className="pt-40 sm:pt-64 pb-52 sm:pb-64 bg-gray-100">
                 <div className="absolute top-0 left-0 w-full">
                     <div className="h-8 mx-10 bg-white" />

@@ -1,6 +1,6 @@
 export default function FeaturedMedia() {
     return (
-        <section className="pt-24 pb-24 md:pb-40 bg-gray-100">
+        <section className="pt-24 pb-24 md:pb-40">
             <div className="container px-4 mx-auto">
                 <div className="flex items-center mb-6">
                     <span className="font-heading text-xl">02</span>

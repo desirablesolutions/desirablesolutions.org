@@ -1,6 +1,6 @@
 export default function ContentGrid() {
     return (
-        <section className="py-24 md:pb-40 md:pt-52 bg-gray-900 overflow-hidden">
+        <section className="py-24 md:pb-40 md:pt-52 overflow-hidden">
             <div className="container px-4 mx-auto">
                 <div className="flex flex-wrap items-center -mx-4 mb-32">
                     <div className="w-full 3xl:w-1/2 px-4 mb-16 3xl:mb-0">

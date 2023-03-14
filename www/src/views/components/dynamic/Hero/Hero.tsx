@@ -1,4 +1,32 @@
+export type TextScramblerSpanProps = {
+  static?: string;
+  dynamic?: {
+    obfuscator?: string;
+    texts?: string[]
+  }
+}
+
+export type TextScramblerProps = {
+  spans: {
+    primary?: TextScramblerSpanProps;
+    secondary?: TextScramblerSpanProps
+    tertiary?: TextScramblerSpanProps
+  }
+}
+
+export type CallToActionProps = {
+  name?: string;
+  url?: string
+}
+
+export interface IHeroProps {
+  title?: TextScramblerProps;
+  cta?: CallToActionProps
+}
+
 export default function Hero() {
+
+
   return (
     <section className="relative pb-24 md:pb-52 overflow-hidden">
       <div className="h-16">

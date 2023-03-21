@@ -5,11 +5,10 @@ export interface Props {
 
 const { sx } = Astro.props;
 
-export const read = (symbol) => symbol ?? null;
 ---
 
 <body
-  class:list={["bg-humble-beginnings", "bg-fixed bg-cover top-0", ...read(sx)]}
+  class:list={["bg-humble-beginnings", "bg-fixed bg-cover top-0"]}
 >
   <slot />
 </body>

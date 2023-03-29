@@ -1,3 +1,6 @@
+import define from "blakprint"
+
+
 export type TextScramblerSpanProps = {
   static?: string;
   dynamic?: {

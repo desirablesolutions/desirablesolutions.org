@@ -31,7 +31,7 @@ export default function Hero() {
 
 
   return (
-    <section className="relative pb-24 md:pb-52 overflow-hidden">
+    <section className="relative pb-24 md:pb-52 overflow-hidden font-serif">
       <div className="h-16">
         <div className="absolute top-0 left-1/2">
           <div className="w-px h-16 bg-gray-900" />

@@ -11,6 +11,62 @@
 
 
 
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/dark.png)]#features
+
+## ✨Features
+
+* Magic Navigator 
+* Progressive-lazy-load images
+* 
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/dark.png)]#authors
+
+## ✒️Authors
+
+- [@desirtech](https://www.github.com/octokatherine)
+- [@desirdesigns](https://www.github.com/octokatherine)
+- [@desirablesolutions](https://www.github.com/octokatherine)
+
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/dark.png)]#roadmap
+
+## 🛣️Roadmap
+
+
+📍**Phase A**  
+* 🎉MVP Launch!
+
+
+**Phase B**
+1. Community Marketing 
+
+
+**Phase C**
+1. Community Marketing 
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/dark.png)]#tech-stack
+
+## ⚙️Tech Stack
+
+* React
+* Recoil
+* TailwindCSS
+* NextJs
+* Notion
+* Facade 
+  
+
+
+[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/dark.png)]#support
+
+## 🆘Support
+
+For support, email help@desirable.solutions
+
+---
+
 
 [![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/dark.png)]#changelog
 
@@ -37,14 +93,9 @@
 * Animations optimized. 
 * App Layout polyfilled. 
 
+<h2>Copyright</h2>
+<h2>📜License</h2>
 
+> This project is under the GPL version-3.0 ("the License") ☂️. 
 
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/dark.png)]#license
-
-## 📜License
-
-> This project is under the MIT License☂️. 
-
-**Data property of Inform & Inspire, LLC**<br/>
-**©️ 2022 WTFMVMT. All Rights Reserved.**
 

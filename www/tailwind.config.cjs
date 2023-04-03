@@ -6,8 +6,8 @@ module.exports = {
 			backgroundImage: {
 				"humble-beginnings": "url('/assets/images/cover.jpg')",
 			},
-			fonts: {
-				serif: "The Seasons, serif"
+			fontFamily: {
+				serif: "The Seasons"
 			}
 		},
 	},

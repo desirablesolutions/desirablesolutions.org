@@ -1,29 +1,30 @@
-type ImageProps = {
+import type { IncludeView } from "@typings/views";
+import type { NavBarProps } from "@typings/includes";
 
-}
-type FaviconProps = {
-  image?: ImageProps;
-  url?: string;
-}
-export type NavBarProps = {
-  favicon?: FaviconProps
-}
-
-export const defaultProps: NavBarProps = {
+export const defaultProps = {
   favicon: {
-    url: "URL_NOT_FOUND"
-  }
-}
-export default function NavBar(props: NavBarProps): JSX.Element {
+    url: "URL_NOT_FOUND",
+  },
+};
+
+
+export default function NavBar(props: NavBarProps): IncludeView {
   return (
     <section className="top-0 fixed w-full">
       <div className="backdrop-blur-sm">
         <nav className="px-8 py-8 mr-12 overflow-hidden">
           <div className="flex items-center w-full">
-            <a className="self-center inline-block 3xl:mr-52" href={props?.favicon?.url ?? defaultProps.favicon.url}>
-              <img src="wrexa-assets/logos/logo-wrexa.svg" alt="" width="auto" />
+            <a
+              className="self-center inline-block 3xl:mr-52"
+              href={props?.favicon?.url ?? defaultProps.favicon.url}
+            >
+              <img
+                src="wrexa-assets/logos/logo-wrexa.svg"
+                alt=""
+                width="auto"
+              />
             </a>
-            <button className="flex items-center justify-center ml-auto bg-white rounded-full 3xl:hidden navbar-burger w-14 h-14 hover:bg-gray-100">
+            <button className="flex  items-center justify-center ml-auto bg-white rounded-full 3xl:hidden navbar-burger w-14 h-14 hover:bg-gray-100">
               <svg
                 width={20}
                 height={9}
@@ -51,49 +52,7 @@ export default function NavBar(props: NavBarProps): JSX.Element {
                 />
               </svg>
             </button>
-            <ul className="items-center hidden mr-auto 3xl:flex">
-              <li className="mr-14">
-                <a
-                  className="inline-flex items-center text-sm text-gray-900 hover:text-gray-700"
-                  href="#"
-                >
-                  <span className="mr-4">Collection</span>
-                  <svg
-                    width={12}
-                    height={7}
-                    viewBox="0 0 12 7"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 2L6 6L2 2"
-                      stroke="currentColor"
-                      strokeWidth="1.5"
-                      strokeMiterlimit={10}
-                      strokeLinecap="square"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li className="mr-14">
-                <a
-                  className="inline-block text-sm text-gray-900 hover:text-gray-700"
-                  href="#"
-                >
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a
-                  className="inline-block text-sm text-gray-900 hover:text-gray-700"
-                  href="#"
-                >
-                  About
-                </a>
-              </li>
-            </ul>
-          
+            
             <a
               className="items-center hidden px-8 py-3 bg-white shadow 3xl:flex rounded-2xl"
               href="#"
@@ -132,8 +91,6 @@ export default function NavBar(props: NavBarProps): JSX.Element {
           </div>
         </nav>
       </div>
-     
     </section>
-
-  )
+  );
 }

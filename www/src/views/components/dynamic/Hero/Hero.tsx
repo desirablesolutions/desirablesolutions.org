@@ -1,4 +1,8 @@
 
+export type HeroProps = {
+  title?: JSX.Element,
+
+}
 export const defaultProps = {
   title: (
     <>
@@ -26,7 +30,7 @@ export default function Hero(props) {
       </div>
       <div className="container px-4 mx-auto">
         <div className="pt-40 sm:pt-64">
-          <h1 className="text-6xl xl:text-8xl 3xl:text-9xl text-white font-medium mb-20">
+          <h1 className="text-11xl xl:text-8xl 3xl:text-9xl text-white font-medium mb-20">
             {props.title ?? defaultProps.title}
           </h1>
           <div>

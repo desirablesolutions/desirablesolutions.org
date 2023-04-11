@@ -1,4 +1,4 @@
-## ✒️Authors
+<h2>✒️Authors</h2>
 
 - [@desirtech](https://www.github.com/octokatherine)
 - [@desirdesigns](https://www.github.com/octokatherine)

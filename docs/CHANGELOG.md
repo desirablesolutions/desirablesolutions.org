@@ -1,5 +1,5 @@
 
-## ⌚Changelog
+<h2>⌚Changelog</h2>
 
 **🎉Version 3.0.0**
 * Optimized Model Layer for Arbituary API Connections

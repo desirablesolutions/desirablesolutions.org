@@ -72,7 +72,7 @@ export default function StatsGrid() {
                                 <div className="flex w-26 h-26 mb-12 items-center justify-center rounded-full bg-white">
                                     <span className="font-heading text-3xl">10M</span>
                                 </div>
-                                <h4 className="font-heading text-2xl mb-6">Wrexa's users</h4>
+                                <h4 className="font-heading text-2xl mb-6">Wrexas users</h4>
                                 <p className="font-light mb-14">
                                     Really, like a sense of truth that comes from within. The final
                                     game.

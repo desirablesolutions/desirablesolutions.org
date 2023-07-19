@@ -23,13 +23,11 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #000000ED;
+  background-attachment: fixed;
+  background-image: url("/assets/images/cover.jpg");
 }
+
 
 ::-webkit-scrollbar-track {
   background-color: var(--color-primary);

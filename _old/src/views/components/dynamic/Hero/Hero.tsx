@@ -1,3 +1,4 @@
+<<<<<<< HEAD:_old/src/views/components/dynamic/Hero/Hero.tsx
 import type { JSXComponentType } from "@typings/views"
 import type { HeroProps } from "@typings/components"
 
@@ -5,6 +6,14 @@ import RightDownArrow from "@components/dynamic/RightDownArrow";
 
 
 export const defaultProps: HeroProps = {
+=======
+
+export type HeroProps = {
+  title?: JSX.Element,
+
+}
+export const defaultProps = {
+>>>>>>> main:www/src/views/components/dynamic/Hero/Hero.tsx
   title: (
     <>
       <span className="block leading-none">We solve</span>
@@ -19,6 +28,7 @@ export const defaultProps: HeroProps = {
       </span>
     </>
   ),
+<<<<<<< HEAD:_old/src/views/components/dynamic/Hero/Hero.tsx
   cta: {
     primary: {},
     secondary: {}
@@ -36,6 +46,10 @@ export default function Hero(props: HeroProps): JSXComponentType<HeroProps> {
       </h1>
     )
   }
+=======
+};
+export default function Hero(props) {
+>>>>>>> main:www/src/views/components/dynamic/Hero/Hero.tsx
   return (
     <section className="relative pb-24 md:pb-52 overflow-hidden font-serif">
       <div className="h-16">
@@ -46,7 +60,13 @@ export default function Hero(props: HeroProps): JSXComponentType<HeroProps> {
       </div>
       <div className="container px-4 mx-auto">
         <div className="pt-40 sm:pt-64">
+<<<<<<< HEAD:_old/src/views/components/dynamic/Hero/Hero.tsx
           <Title />
+=======
+          <h1 className="text-11xl xl:text-8xl 3xl:text-9xl text-white font-medium mb-20">
+            {props.title ?? defaultProps.title}
+          </h1>
+>>>>>>> main:www/src/views/components/dynamic/Hero/Hero.tsx
           <div>
             {
               props?.cta?.secondary ? (
@@ -73,6 +93,5 @@ export default function Hero(props: HeroProps): JSXComponentType<HeroProps> {
         </div>
       </div>
     </section>
-
-  )
+  );
 }

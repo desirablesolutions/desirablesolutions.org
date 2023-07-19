@@ -1,27 +1,18 @@
 <!-- ⚠️ This README has been generated from the file(s) "DOCUMENTATION.md" ⚠️--><h1 align="center">Desirable Solutions</h1>
+<h3 align="center">We are a creative engineering firm serving Godkind!</h3>
 
 
-### We solve problems. 
-
-
- [![MIT License](https://img.shields.io/badge/License-MIT-purple.svg)](https://choosealicense.com/licenses/mit/) | ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/wtfmvmt/wtfmvmt?color=purple&label=activity&logo=github&logoColor=yellow&style=plastic) | ![Website](https://img.shields.io/website?down_color=red&down_message=fuck%21&label=status&logo=git&logoColor=yellow&up_message=systems%20online&url=https%3A%2F%desirable.solutions)
 
 <img src="./docs/logo.png" />
 
 
+<h2>✨Features</h2>
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/dark.png)]#features
-
-## ✨Features
 
 * Magic Navigator 
 * Progressive-lazy-load images
 * 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/dark.png)]#authors
-
-## ✒️Authors
+<h2>✒️Authors</h2>
 
 - [@desirtech](https://www.github.com/octokatherine)
 - [@desirdesigns](https://www.github.com/octokatherine)
@@ -67,10 +58,7 @@ For support, email help@desirable.solutions
 
 ---
 
-
-[![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/dark.png)]#changelog
-
-## ⌚Changelog
+<h2>⌚Changelog</h2>
 
 **🎉Version 3.0.0**
 * Optimized Model Layer for Arbituary API Connections
@@ -93,7 +81,7 @@ For support, email help@desirable.solutions
 * Animations optimized. 
 * App Layout polyfilled. 
 
-<h2>Copyright</h2>
+(load:docs/COPYRIGHT.md)
 <h2>📜License</h2>
 
 > This project is under the GPL version-3.0 ("the License") ☂️. 

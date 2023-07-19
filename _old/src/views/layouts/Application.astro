@@ -1,0 +1,32 @@
+---
+import "@libs/globals.css";
+
+import Container from "@includes/static/Container/Container.astro";
+import Meta from "@includes/static/Meta/Meta.astro";
+import NavBar from "@includes/dynamic/NavBar";
+import Footer from "@includes/static/Footer/Footer.astro";
+import Contact from "@includes/static/Contact/Contact.astro"
+
+import type { MetaProps, NavBarProps, FooterProps, ContactProps } from "@typings/includes"
+export interface IApplication {
+  layout?: {
+    metaData?: MetaProps
+    navBar?: NavBarProps,
+    footer?: FooterProps
+    contact?: ContactProps
+  }
+}
+
+const { layout }: IApplication = Astro?.props
+---
+
+<!DOCTYPE html>
+<html>
+  <Meta {...layout?.metaData} />
+  <Container>
+    <NavBar {...layout?.navBar}/>
+    <slot />
+    <Contact {...layout?.contact}/>
+    <Footer {...layout?.footer}/>
+  </Container>
+</html>

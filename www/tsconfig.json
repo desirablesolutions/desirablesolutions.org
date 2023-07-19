@@ -1,55 +1,41 @@
 {
-  "extends": "astro/tsconfigs/base",
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "baseUrl": "./src/",
-    "jsxImportSource": "react",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "paths": {
-      "@views/*": [
-        "views/*"
-      ],
-      "@models/*": [
-        "models/*"
-      ],
-      "@controllers/*": [
-        "controllers/*"
-      ],
-      "@layouts/*": [
-        "views/layouts/*"
-      ],
-      "@includes/*": [
-        "views/includes/*"
-      ],
-      "@hooks/*": [
-        "controllers/hooks/*"
-      ],
-      "@components/*": [
-        "views/components/*"
-      ],
-      "@db/*": [
-        "models/data/db/*"
-      ],
-      "@pages/*": [
-        "models/data/pages/*"
-      ],
-      "@services/*": [
-        "controllers/services/*"
-      ],
-      "@styles/*": [
-        "views/styles/*"
-      ],
-      "@libs/*": [
-        "views/libs/*"
-      ],
-      "@configs/*": [
-        "models/configs/*"
-      ],
-      "@typings/*": [
-        "models/typings/*"
-      ],
-      "@utils/*": [
-        "controllers/utils/*"
-      ]
+      "@/*": ["./src/*"],
+      "@includes/*": ["./src/views/includes/*"],
+      "@components/*": ["./src/views/components/*"],
+      "@utils/*": ["./src/controllers/utils/*"],
+      "@assets/*": ["./src/models/data/assets/*"],
+
+      "@typings/*": ["./src/models/typings/*"],
+      "@services/*": ["./src/controllers/services/*"],
+      "@hooks/*": ["./src/controllers/hooks/*"],
+
+      "@pages/*": ["./src/models/data/pages/*"],
+
+      "@libs/*": ["./src/views/libs/*"]
+
     }
-  }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
 }

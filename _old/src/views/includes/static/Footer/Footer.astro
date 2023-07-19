@@ -1,0 +1,23 @@
+---
+export type FooterProps = {
+  favicon?:{
+    image?: ImageProps,
+    url?: string
+  },
+  title?: string
+}
+
+export const defaultProps: FooterProps = {
+  favicon: {
+    image: {
+      src: 'wrexa-assets/logos/wrexa-co-logo-name-dark.svg',
+      alt: 'Wrexa Co Logo Name Dark'
+    },
+    url: '#'
+  }
+}
+
+const { title } = Astro.props
+---
+
+

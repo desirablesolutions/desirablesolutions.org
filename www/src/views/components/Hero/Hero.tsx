@@ -19,14 +19,18 @@ export const defaultProps = {
   },
 };
 
+export type HeroProps = {};
+
 export default function Hero(props: any) {
+  const { title } = props;
   const Title = () => {
     return (
       <h1 className="text-8xl xl:text-8xl 3xl:text-9xl text-white font-medium mb-20">
-        {props?.title ?? defaultProps.title}
+        {title ?? defaultProps.title}
       </h1>
     );
   };
+
   return (
     <section className="relative pb-24 md:pb-52 overflow-hidden font-serif">
       <div className="h-16">

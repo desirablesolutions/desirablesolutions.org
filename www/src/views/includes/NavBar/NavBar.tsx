@@ -1,5 +1,3 @@
-import { NavBarType, } from "blakprint";
-
 
 export const defaultProps = {
   favicon: {
@@ -8,9 +6,6 @@ export const defaultProps = {
 };
 
 
-export type NavBarProps = NavBarType<{
-  links?: LinkProps[]
-}
 
 export default function NavBar(props: any) {
   return (

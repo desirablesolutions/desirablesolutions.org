@@ -3,6 +3,7 @@
 
 
 export const defaultProps = {
+  title: "",
   favicon: {
     image: {
       src: "wrexa-assets/logos/wrexa-co-logo-name-dark.svg",
@@ -146,7 +147,7 @@ export default function Footer({ title }: any) {
                 </li>
                 <li className="mb-4">
                   <a className="inline-block font-light text-gray-900" href="#">
-                    FAQ's
+                    FAQs
                   </a>
                 </li>
                 <li>
@@ -191,7 +192,7 @@ export default function Footer({ title }: any) {
               <ul>
                 <li className="mb-4">
                   <a className="inline-block font-light text-gray-900" href="#">
-                    FAQ's
+                    FAQs
                   </a>
                 </li>
                 <li className="mb-4">

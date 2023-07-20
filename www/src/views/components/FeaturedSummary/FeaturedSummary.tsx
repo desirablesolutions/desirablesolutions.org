@@ -1,22 +1,6 @@
-import type { JSXComponentType } from "@typings/views"
-import type { ImageProps } from "@typings/image"
 
 
-
-export type FeatureProps = {
-    
-}
-export type FeaturedSummaryProps = {
-    title?: string,
-    features?: FeatureProps[],
-    heading?: {
-        order?: number | string,
-        name?: string,
-        bgImage?: ImageProps
-    },
-}
-
-export const defaultProps: FeaturedSummaryProps = {
+export const defaultProps: any = {
     title: "How Did we Get Here?",
     features: [
         {
@@ -32,13 +16,13 @@ export const defaultProps: FeaturedSummaryProps = {
     }
 }
 
-export default function FeaturedSummary(props: FeaturedSummaryProps): JSXComponentType<FeaturedSummaryProps> {
+export default function FeaturedSummary(props: any):any {
 
 
     const Title = () => {
         return (
-            <div className="text-center mb-32 z-0">
-                <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl text-white">
+            <div className="z-0 mb-32 text-center">
+                <h1 className="text-5xl text-white font-heading sm:text-6xl md:text-7xl">
                     {props?.title ?? defaultProps.title}
                 </h1>
             </div>
@@ -48,28 +32,28 @@ export default function FeaturedSummary(props: FeaturedSummaryProps): JSXCompone
     const Heading = () => {
         return (
             <div className="flex items-center mb-24 sm:mb-40">
-                <span className="font-heading text-xl text-white">01</span>
-                <div className="mx-4 rounded-full bg-gray-200 h-1 w-1" />
-                <span className="font-heading text-xl text-white">Introduction</span>
+                <span className="text-xl text-white font-heading">01</span>
+                <div className="w-1 h-1 mx-4 bg-gray-200 rounded-full" />
+                <span className="text-xl text-white font-heading">Introduction</span>
             </div>
         )
     }
     return (
         <section className="relative py-24 md:pt-32">
-            <div className="container px-4 mx-auto relative">
+            <div className="container relative px-4 mx-auto">
                 <img
-                    className="hidden md:block absolute bottom-0 left-0 mb-52 lg:mb-12 w-full"
+                    className="absolute bottom-0 left-0 hidden w-full md:block mb-52 lg:mb-12"
                     src={props?.heading?.bgImage?.src ?? defaultProps.heading.bgImage.src}
                     alt=""
                 />
                 <div className="relative">
                     <Heading />
                     <Title />
-                    <div className="flex flex-wrap -mx-4 mb-24 md:mb-52">
-                        <div className="w-full md:w-1/2 2xl:w-1/4 px-4 mb-16 2xl:mb-0">
-                            <div className="max-w-xs mx-auto pt-8 pb-14 px-12 bg-gray-800 rounded-xl">
+                    <div className="flex flex-wrap mb-24 -mx-4 md:mb-52">
+                        <div className="w-full px-4 mb-16 md:w-1/2 2xl:w-1/4 2xl:mb-0">
+                            <div className="max-w-xs px-12 pt-8 mx-auto bg-gray-800 pb-14 rounded-xl">
                                 <span className="text-sm text-gray-500">Step 1</span>
-                                <h4 className="text-3xl text-white mt-1 mb-8">
+                                <h4 className="mt-1 mb-8 text-3xl text-white">
                                     Download our Application
                                 </h4>
                                 <div>
@@ -83,10 +67,10 @@ export default function FeaturedSummary(props: FeaturedSummaryProps): JSXCompone
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full md:w-1/2 2xl:w-1/4 px-4 2xl:mt-52 mb-16 2xl:mb-0">
-                            <div className="max-w-xs mx-auto pt-8 pb-14 px-12 bg-gray-800 rounded-xl">
+                        <div className="w-full px-4 mb-16 md:w-1/2 2xl:w-1/4 2xl:mt-52 2xl:mb-0">
+                            <div className="max-w-xs px-12 pt-8 mx-auto bg-gray-800 pb-14 rounded-xl">
                                 <span className="text-sm text-gray-500">Step 2</span>
-                                <h4 className="text-3xl text-white mt-1 mb-8">
+                                <h4 className="mt-1 mb-8 text-3xl text-white">
                                     Register your account
                                 </h4>
                                 <div>
@@ -100,10 +84,10 @@ export default function FeaturedSummary(props: FeaturedSummaryProps): JSXCompone
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full md:w-1/2 2xl:w-1/4 px-4 2xl:mt-52 mb-16 md:mb-0">
-                            <div className="max-w-xs mx-auto pt-8 pb-14 px-12 bg-gray-800 rounded-xl">
+                        <div className="w-full px-4 mb-16 md:w-1/2 2xl:w-1/4 2xl:mt-52 md:mb-0">
+                            <div className="max-w-xs px-12 pt-8 mx-auto bg-gray-800 pb-14 rounded-xl">
                                 <span className="text-sm text-gray-500">Step 3</span>
-                                <h4 className="text-3xl text-white mt-1 mb-8">
+                                <h4 className="mt-1 mb-8 text-3xl text-white">
                                     Find your unique style
                                 </h4>
                                 <div>
@@ -117,10 +101,10 @@ export default function FeaturedSummary(props: FeaturedSummaryProps): JSXCompone
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full md:w-1/2 2xl:w-1/4 px-4">
-                            <div className="max-w-xs mx-auto pt-8 pb-14 px-12 bg-gray-800 rounded-xl">
+                        <div className="w-full px-4 md:w-1/2 2xl:w-1/4">
+                            <div className="max-w-xs px-12 pt-8 mx-auto bg-gray-800 pb-14 rounded-xl">
                                 <span className="text-sm text-gray-500">Step 4</span>
-                                <h4 className="text-3xl text-white mt-1 mb-8">Build your home!</h4>
+                                <h4 className="mt-1 mb-8 text-3xl text-white">Build your home!</h4>
                                 <div>
                                     <span className="font-light text-gray-500">Get started.</span>
                                     <a
@@ -140,18 +124,18 @@ export default function FeaturedSummary(props: FeaturedSummaryProps): JSXCompone
                     />
                     <div className="sm:flex">
                         <a
-                            className="inline-block w-full sm:w-auto sm:mr-24 md:mr-40 mb-2 sm:mb-0 text-white"
+                            className="inline-block w-full mb-2 text-white sm:w-auto sm:mr-24 md:mr-40 sm:mb-0"
                             href="#"
                         >
                             Download application
                         </a>
                         <a
-                            className="inline-block w-full sm:w-auto sm:mr-auto mb-2 sm:mb-0 text-white"
+                            className="inline-block w-full mb-2 text-white sm:w-auto sm:mr-auto sm:mb-0"
                             href="#"
                         >
                             Select plan
                         </a>
-                        <a className="inline-block w-full sm:w-auto text-white" href="#">
+                        <a className="inline-block w-full text-white sm:w-auto" href="#">
                             Start a conversation
                         </a>
                     </div>

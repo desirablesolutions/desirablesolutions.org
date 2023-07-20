@@ -9,13 +9,15 @@ export const defaultProps = {
         <span className="relative z-10 block leading-none">
           for {"{"}y{"}"}.
         </span>
-        <div className="hidden lg:block absolute bottom-0 left-0 w-full h-px mb-1 xl:mb-3 3xl:mb-4 bg-white" />
+        <div className="absolute bottom-0 left-0 hidden w-full h-px mb-1 bg-white lg:block xl:mb-3 3xl:mb-4" />
       </span>
     </>
   ),
   cta: {
     primary: {},
-    secondary: {},
+    secondary: {
+      name: "default"
+    },
   },
 };
 
@@ -25,14 +27,14 @@ export default function Hero(props: any) {
   const { title } = props;
   const Title = () => {
     return (
-      <h1 className="text-8xl xl:text-8xl 3xl:text-9xl text-white font-medium mb-20">
+      <h1 className="mb-20 font-medium text-white text-8xl xl:text-8xl 3xl:text-9xl">
         {title ?? defaultProps.title}
       </h1>
     );
   };
 
   return (
-    <section className="relative pb-24 md:pb-52 overflow-hidden font-serif">
+    <section className="relative pb-24 overflow-hidden font-serif md:pb-52">
       <div className="h-16">
         <div className="absolute top-0 left-1/2">
           <div className="w-px h-16 bg-gray-900" />
@@ -44,12 +46,12 @@ export default function Hero(props: any) {
           <Title />
           <div>
             {props?.cta?.secondary ? (
-              <a className="inline-flex mb-20 items-center text-white" href="#">
+              <a className="inline-flex items-center mb-20 text-white" href="#">
                 <span className="mr-4">{props?.cta?.secondary?.name}</span>
                 <div />
               </a>
             ) : (
-              <a className="inline-flex mb-20 items-center text-white" href="#">
+              <a className="inline-flex items-center mb-20 text-white" href="#">
                 <span className="mr-4">
                   {defaultProps?.cta?.secondary?.name}
                 </span>
@@ -59,7 +61,7 @@ export default function Hero(props: any) {
           </div>
           {props?.cta ? (
             <a
-              className="inline-block w-full sm:w-auto px-7 py-4 text-center font-medium bg-indigo-500 hover:bg-indigo-600 text-white rounded transition duration-250"
+              className="inline-block w-full py-4 font-medium text-center text-white transition bg-indigo-500 rounded sm:w-auto px-7 hover:bg-indigo-600 duration-250"
               href={props?.cta.primary?.url}
             >
               {props?.cta?.primary.name}

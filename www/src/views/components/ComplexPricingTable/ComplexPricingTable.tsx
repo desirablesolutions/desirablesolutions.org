@@ -3,17 +3,17 @@ export default function ComplexPricingTable() {
         <section className="pt-32 pb-40">
             <div className="container px-4 mx-auto mb-24 sm:mb-40">
                 <div className="flex items-center mb-12">
-                    <span className="font-heading text-xl text-white">05</span>
-                    <div className="mx-4 rounded-full bg-gray-200 h-1 w-1" />
-                    <span className="font-heading text-xl text-white">Pricing</span>
+                    <span className="text-xl text-white font-heading">05</span>
+                    <div className="w-1 h-1 mx-4 bg-gray-200 rounded-full" />
+                    <span className="text-xl text-white font-heading">Pricing</span>
                 </div>
                 <div className="text-center">
-                    <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl text-white mb-7">
+                    <h1 className="text-5xl text-white font-heading sm:text-6xl lg:text-7xl mb-7">
                         Our Advantages
                     </h1>
-                    <p className="text-gray-500 mb-16">The house by the pond cras ornare.</p>
-                    <div className="inline-flex p-2 items-center border border-gray-800 rounded-full">
-                        <button className="inline-flex items-center px-4 sm:px-8 py-2 text-white bg-gray-800 rounded-full shadow">
+                    <p className="mb-16 text-gray-500">The house by the pond cras ornare.</p>
+                    <div className="inline-flex items-center p-2 border border-gray-800 rounded-full">
+                        <button className="inline-flex items-center px-4 py-2 text-white bg-gray-800 rounded-full shadow sm:px-8">
                             <svg
                                 width={34}
                                 height={34}
@@ -42,24 +42,24 @@ export default function ComplexPricingTable() {
                                     />
                                 </defs>
                             </svg>
-                            <span className="ml-3 sm:ml-5 sm:text-lg font-medium">Annualy</span>
+                            <span className="ml-3 font-medium sm:ml-5 sm:text-lg">Annualy</span>
                         </button>
-                        <button className="inline-block px-4 sm:px-10 sm:text-lg font-medium text-blueGray-500 hover:text-blueGray-300">
+                        <button className="inline-block px-4 font-medium sm:px-10 sm:text-lg text-blueGray-500 hover:text-blueGray-300">
                             Monthly
                         </button>
                     </div>
                 </div>
             </div>
             <div className="relative">
-                <div className="hidden lg:block absolute bottom-0 left-0 h-px w-full mb-68 bg-gray-700 bg-opacity-50 z-10" />
-                <div className="hidden lg:block absolute bottom-0 left-0 h-px w-full mb-92 bg-gray-700 bg-opacity-50 z-10" />
+                <div className="absolute bottom-0 left-0 z-10 hidden w-full h-px bg-gray-700 bg-opacity-50 lg:block mb-68" />
+                <div className="absolute bottom-0 left-0 z-10 hidden w-full h-px bg-gray-700 bg-opacity-50 lg:block mb-92" />
                 <div className="container px-4 mx-auto">
                     <div className="flex flex-wrap -mx-4">
-                        <div className="w-full lg:w-1/3 px-4 mb-16 lg:mb-0 relative">
-                            <div className="lg:hidden absolute bottom-0 left-0 h-px w-full mb-36 bg-gray-700 bg-opacity-50" />
-                            <div className="lg:hidden absolute bottom-0 left-0 h-px w-full mb-12 bg-gray-700 bg-opacity-50" />
+                        <div className="relative w-full px-4 mb-16 lg:w-1/3 lg:mb-0">
+                            <div className="absolute bottom-0 left-0 w-full h-px bg-gray-700 bg-opacity-50 lg:hidden mb-36" />
+                            <div className="absolute bottom-0 left-0 w-full h-px mb-12 bg-gray-700 bg-opacity-50 lg:hidden" />
                             <div className="max-w-md mx-auto pt-18">
-                                <h2 className="font-heading text-4xl text-white mb-4">Lite</h2>
+                                <h2 className="mb-4 text-4xl text-white font-heading">Lite</h2>
                                 <p className="text-gray-500 mb-26">
                                     The house by the pond cras ornare.
                                 </p>
@@ -68,11 +68,11 @@ export default function ComplexPricingTable() {
                                 <h5 className="text-lg text-white">Commercial right</h5>
                             </div>
                         </div>
-                        <div className="w-full lg:w-1/3 px-4 mb-16 lg:mb-0 relative">
-                            <div className="lg:hidden absolute bottom-0 left-0 h-px w-full mb-68 bg-gray-700 bg-opacity-50" />
-                            <div className="lg:hidden absolute bottom-0 left-0 h-px w-full mb-92 bg-gray-700 bg-opacity-50" />
-                            <div className="max-w-md mx-auto pt-18 px-12 pb-20 bg-gray-800 rounded-2xl">
-                                <h2 className="font-heading text-4xl text-white mb-8">Team</h2>
+                        <div className="relative w-full px-4 mb-16 lg:w-1/3 lg:mb-0">
+                            <div className="absolute bottom-0 left-0 w-full h-px bg-gray-700 bg-opacity-50 lg:hidden mb-68" />
+                            <div className="absolute bottom-0 left-0 w-full h-px bg-gray-700 bg-opacity-50 lg:hidden mb-92" />
+                            <div className="max-w-md px-12 pb-20 mx-auto bg-gray-800 pt-18 rounded-2xl">
+                                <h2 className="mb-8 text-4xl text-white font-heading">Team</h2>
                                 <div className="flex mb-20">
                                     <span className="mr-2 text-2xl text-white">£</span>
                                     <span className="text-3xl text-white">22.49</span>
@@ -101,7 +101,7 @@ export default function ComplexPricingTable() {
                                                 />
                                             </defs>
                                         </svg>
-                                        <span className="ml-4 text-white font-light">10TB</span>
+                                        <span className="ml-4 font-light text-white">10TB</span>
                                     </div>
                                     <div className="flex items-center mb-14">
                                         <svg
@@ -125,7 +125,7 @@ export default function ComplexPricingTable() {
                                                 />
                                             </defs>
                                         </svg>
-                                        <span className="ml-4 text-white font-light">
+                                        <span className="ml-4 font-light text-white">
                                             10 team members
                                         </span>
                                     </div>
@@ -151,12 +151,12 @@ export default function ComplexPricingTable() {
                                                 />
                                             </defs>
                                         </svg>
-                                        <span className="ml-4 text-white font-light">Yes</span>
+                                        <span className="ml-4 font-light text-white">Yes</span>
                                     </div>
                                 </div>
                                 <div>
                                     <a
-                                        className="inline-block w-full px-8 py-4 text-center font-medium bg-indigo-500 hover:bg-indigo-600 text-white rounded transition duration-250"
+                                        className="inline-block w-full px-8 py-4 font-medium text-center text-white transition bg-indigo-500 rounded hover:bg-indigo-600 duration-250"
                                         href="#"
                                     >
                                         Start free trial
@@ -164,11 +164,11 @@ export default function ComplexPricingTable() {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-full lg:w-1/3 px-4 relative">
-                            <div className="lg:hidden absolute bottom-0 left-0 h-px w-full mb-68 bg-gray-700 bg-opacity-50" />
-                            <div className="lg:hidden absolute bottom-0 left-0 h-px w-full mb-92 bg-gray-700 bg-opacity-50" />
-                            <div className="max-w-md mx-auto pt-18 px-12 pb-20 bg-gray-800 rounded-2xl">
-                                <h2 className="font-heading text-4xl text-white mb-8">Plus</h2>
+                        <div className="relative w-full px-4 lg:w-1/3">
+                            <div className="absolute bottom-0 left-0 w-full h-px bg-gray-700 bg-opacity-50 lg:hidden mb-68" />
+                            <div className="absolute bottom-0 left-0 w-full h-px bg-gray-700 bg-opacity-50 lg:hidden mb-92" />
+                            <div className="max-w-md px-12 pb-20 mx-auto bg-gray-800 pt-18 rounded-2xl">
+                                <h2 className="mb-8 text-4xl text-white font-heading">Plus</h2>
                                 <div className="flex mb-20">
                                     <span className="mr-2 text-2xl text-white">£</span>
                                     <span className="text-3xl text-white">25.49</span>
@@ -197,7 +197,7 @@ export default function ComplexPricingTable() {
                                                 />
                                             </defs>
                                         </svg>
-                                        <span className="ml-4 text-white font-light">10TB</span>
+                                        <span className="ml-4 font-light text-white">10TB</span>
                                     </div>
                                     <div className="flex items-center mb-14">
                                         <svg
@@ -221,7 +221,7 @@ export default function ComplexPricingTable() {
                                                 />
                                             </defs>
                                         </svg>
-                                        <span className="ml-4 text-white font-light">
+                                        <span className="ml-4 font-light text-white">
                                             10 team members
                                         </span>
                                     </div>
@@ -247,12 +247,12 @@ export default function ComplexPricingTable() {
                                                 />
                                             </defs>
                                         </svg>
-                                        <span className="ml-4 text-white font-light">Yes</span>
+                                        <span className="ml-4 font-light text-white">Yes</span>
                                     </div>
                                 </div>
                                 <div>
                                     <a
-                                        className="inline-block w-full px-8 py-4 text-center font-medium bg-indigo-500 hover:bg-indigo-600 text-white rounded transition duration-250"
+                                        className="inline-block w-full px-8 py-4 font-medium text-center text-white transition bg-indigo-500 rounded hover:bg-indigo-600 duration-250"
                                         href="#"
                                     >
                                         Start free trial

@@ -18,7 +18,14 @@ export default async function Home() {
   
   return (
     <>
-      <Hero />
+    
+    </>
+  );
+}
+
+/*
+
+  <Hero />
       <FeaturedSummary />
       <ContentReel />
       <StatsGrid />
@@ -27,7 +34,6 @@ export default async function Home() {
       <FeaturedFormSection />
       <ComplexPricingTable />
       <FeaturedMedia />
-      <ContactFormSection />
-    </>
-  );
-}
+      <ContactFormSection /> 
+      
+      */

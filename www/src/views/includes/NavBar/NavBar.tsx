@@ -1,13 +1,21 @@
+import { NavBarType, } from "blakprint";
+
+
 export const defaultProps = {
   favicon: {
     url: "URL_NOT_FOUND",
   },
 };
 
+
+export type NavBarProps = NavBarType<{
+  links?: LinkProps[]
+}
+
 export default function NavBar(props: any) {
   return (
-    <section className="top-0 z-50 fixed w-full">
-      <div className="backdrop-blur-sm hover:backdrop-blur-lg duration-1000 delay-100 ease-in-out z-50 cursor-pointer">
+    <section className="fixed top-0 z-50 w-full">
+      <div className="z-50 duration-1000 ease-in-out delay-100 cursor-pointer backdrop-blur-sm hover:backdrop-blur-lg">
         <nav className="px-8 py-8 mr-12 overflow-hidden">
           <div className="flex items-center w-full">
             <a
@@ -20,7 +28,7 @@ export default function NavBar(props: any) {
                 width="auto"
               />
             </a>
-            <button className="flex  items-center justify-center ml-auto bg-white rounded-full 3xl:hidden navbar-burger w-14 h-14 hover:bg-gray-100">
+            <button className="flex items-center justify-center ml-auto bg-white rounded-full 3xl:hidden navbar-burger w-14 h-14 hover:bg-gray-100">
               <svg
                 width={20}
                 height={9}

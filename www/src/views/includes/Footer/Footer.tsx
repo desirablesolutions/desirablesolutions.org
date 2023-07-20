@@ -1,3 +1,8 @@
+import  { defineModel, FooterType } from "blakprint"
+
+
+
+
 export const defaultProps = {
   favicon: {
     image: {
@@ -7,6 +12,9 @@ export const defaultProps = {
     url: "#",
   },
 };
+
+
+
 
 export default function Footer({ title }: any) {
   return (

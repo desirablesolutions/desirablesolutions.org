@@ -15,9 +15,9 @@ export default async function Home() {
 
   const data = await usePage()
 
-  
   return (
     <>
+      <Hero />
       <FeaturedSummary />
       <ContentReel />
       <StatsGrid />
@@ -30,10 +30,3 @@ export default async function Home() {
     </>
   );
 }
-
-/*
-
-  <Hero />
-    
-      
-      */

@@ -1,13 +1,13 @@
 export const defaultProps = {
   title: (
     <>
-      <span className="block leading-none">We solve</span>
+      <span className="block leading-none">We are a</span>
       <span className="block leading-none">
-        {"{"}x{"}"} problems
+      creative engineering firm 
       </span>
       <span className="relative inline-block">
         <span className="relative z-10 block leading-none">
-          for {"{"}y{"}"}.
+        serving Godkind!
         </span>
         <div className="absolute bottom-0 left-0 hidden w-full h-px mb-1 bg-white lg:block xl:mb-3 3xl:mb-4" />
       </span>

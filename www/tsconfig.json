@@ -25,6 +25,7 @@
       "@components/*": ["./src/views/components/*"],
       "@utils/*": ["./src/controllers/utils/*"],
       "@assets/*": ["./src/models/data/assets/*"],
+      "@layouts/*": ["./src/views/layouts/*"],
 
       "@typings/*": ["./src/models/typings/*"],
       "@services/*": ["./src/controllers/services/*"],

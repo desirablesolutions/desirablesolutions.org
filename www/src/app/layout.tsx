@@ -2,6 +2,7 @@ import "@libs/globals.css";
 
 import NavBar from "@includes/NavBar";
 import Footer from "@includes/Footer";
+import Layout from "@layouts/Layout"
 
 export const metadata = {
   title: "Desirable Solutions",

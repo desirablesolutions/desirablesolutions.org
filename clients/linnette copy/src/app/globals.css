@@ -18,8 +18,10 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-color: #FAB041;
-  background-attachment: fixed;
-  background-image: url("/bg.svg");
-  background-size: contain;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }

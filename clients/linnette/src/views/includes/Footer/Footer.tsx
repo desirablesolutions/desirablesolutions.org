@@ -1,89 +1,199 @@
 export default function Footer() {
     return (
-        <footer className="py-6 dark:bg-gray-800 dark:text-gray-50">
-        <div className="container px-6 mx-auto space-y-6 divide-y divide-gray-400 md:space-y-12 divide-opacity-50">
-            <div className="grid grid-cols-12">
-                <div className="pb-6 col-span-full md:pb-0 md:col-span-6">
-                    <a rel="noopener noreferrer" href="#" className="flex justify-center space-x-3 md:justify-start">
-                        <div className="flex items-center justify-center w-12 h-12 rounded-full dark:bg-violet-400">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" className="flex-shrink-0 w-5 h-5 rounded-full dark:text-gray-900">
-                                <path d="M18.266 26.068l7.839-7.854 4.469 4.479c1.859 1.859 1.859 4.875 0 6.734l-1.104 1.104c-1.859 1.865-4.875 1.865-6.734 0zM30.563 2.531l-1.109-1.104c-1.859-1.859-4.875-1.859-6.734 0l-6.719 6.734-6.734-6.734c-1.859-1.859-4.875-1.859-6.734 0l-1.104 1.104c-1.859 1.859-1.859 4.875 0 6.734l6.734 6.734-6.734 6.734c-1.859 1.859-1.859 4.875 0 6.734l1.104 1.104c1.859 1.859 4.875 1.859 6.734 0l21.307-21.307c1.859-1.859 1.859-4.875 0-6.734z"></path>
-                            </svg>
-                        </div>
-                        <span className="self-center text-2xl font-semibold">Brand name</span>
-                    </a>
-                </div>
-                <div className="col-span-6 text-center md:text-left md:col-span-3">
-                    <p className="pb-1 text-lg font-medium">Category</p>
-                    <ul>
-                        <li>
-                            <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Link</a>
-                        </li>
-                        <li>
-                            <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Link</a>
-                        </li>
-                        <li>
-                            <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Link</a>
-                        </li>
-                        <li>
-                            <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Link</a>
-                        </li>
-                        <li>
-                            <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Link</a>
-                        </li>
-                    </ul>
-                </div>
-                <div className="col-span-6 text-center md:text-left md:col-span-3">
-                    <p className="pb-1 text-lg font-medium">Category</p>
-                    <ul>
-                        <li>
-                            <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Link</a>
-                        </li>
-                        <li>
-                            <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Link</a>
-                        </li>
-                        <li>
-                            <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Link</a>
-                        </li>
-                        <li>
-                            <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Link</a>
-                        </li>
-                        <li>
-                            <a rel="noopener noreferrer" href="#" className="hover:dark:text-violet-400">Link</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div className="grid justify-center pt-6 lg:justify-between">
-                <div className="flex flex-col self-center text-sm text-center md:block lg:col-start-1 md:space-x-6">
-                    <span>©2023 All rights reserved</span>
-                    <a rel="noopener noreferrer" href="#">
-                        <span>Privacy policy</span>
-                    </a>
-                    <a rel="noopener noreferrer" href="#">
-                        <span>Terms of service</span>
-                    </a>
-                </div>
-                <div className="flex justify-center pt-4 space-x-4 lg:pt-0 lg:col-end-13">
-                    <a rel="noopener noreferrer" href="#" title="Email" className="flex items-center justify-center w-10 h-10 rounded-full dark:bg-violet-400 dark:text-gray-900">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
-                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                        </svg>
-                    </a>
-                    <a rel="noopener noreferrer" href="#" title="Twitter" className="flex items-center justify-center w-10 h-10 rounded-full dark:bg-violet-400 dark:text-gray-900">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" fill="currentColor" className="w-5 h-5">
-                            <path d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z"></path>
-                        </svg>
-                    </a>
-                    <a rel="noopener noreferrer" href="#" title="GitHub" className="flex items-center justify-center w-10 h-10 rounded-full dark:bg-violet-400 dark:text-gray-900">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-5 h-5">
-                            <path d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.5,4.7,2.2,8.9,6.3,10.5C8.7,21.4,9,21.2,9,20.8v-1.6c0,0-0.4,0.1-0.9,0.1 c-1.4,0-2-1.2-2.1-1.9c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1 c0.4,0,0.7-0.1,0.9-0.2c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6C7,7.2,7,6.6,7.3,6 c0,0,1.4,0,2.8,1.3C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3C15.3,6,16.8,6,16.8,6C17,6.6,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4 c0.7,0.8,1.2,1.8,1.2,3c0,2.2-1.7,3.5-4,4c0.6,0.5,1,1.4,1,2.3v2.6c0,0.3,0.3,0.6,0.7,0.5c3.7-1.5,6.3-5.1,6.3-9.3 C22,6.1,16.9,1.4,10.9,2.1z"></path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+<section className="py-12 backdrop-blur-lg md:py-20">
+  <div className="container px-4 mx-auto">
+    <div className="max-w-2xl mx-auto text-center mb-14">
+      <a className="inline-block mb-14" href="#">
+        <img src="asitrastudio-assets/logos/logo-asitra-white.svg" alt="" />
+      </a>
+      <h3 className="mb-8 text-3xl tracking-tight text-white sm:text-4xl">
+        Join our newsletter to stay up to date on features and realases
+      </h3>
+      <div className="max-w-sm mx-auto mb-8">
+        <p className="text-lg text-coolGray-500">
+          During this phase the design is developed to meet the required
+          technical standards
+        </p>
+      </div>
+      <a
+        className="inline-block px-8 py-5 font-medium leading-none text-center text-black transition duration-150 bg-white rounded-full hover:text-white hover:bg-blue-500"
+        href="#"
+      >
+        Subscribe
+      </a>
+    </div>
+    <div className="max-w-lg mx-auto lg:max-w-none">
+      <ul className="flex flex-wrap items-center justify-center -mx-4 -mb-3">
+        <li className="px-4 mb-3">
+          <a
+            className="inline-block text-white hover:text-coolGray-400"
+            href="#"
+          >
+            Contact
+          </a>
+        </li>
+        <li className="px-4 mb-3">
+          <a
+            className="inline-block text-white hover:text-coolGray-400"
+            href="#"
+          >
+            Blog
+          </a>
+        </li>
+        <li className="px-4 mb-3">
+          <a
+            className="inline-block text-white hover:text-coolGray-400"
+            href="#"
+          >
+            Our Story
+          </a>
+        </li>
+        <li className="px-4 mb-3">
+          <a
+            className="inline-block text-white hover:text-coolGray-400"
+            href="#"
+          >
+            Help centre
+          </a>
+        </li>
+        <li className="px-4 mb-3">
+          <a
+            className="inline-block text-white hover:text-coolGray-400"
+            href="#"
+          >
+            <span className="mr-2">Careers</span>
+            <span className="inline-block px-2 py-1 text-xs text-white uppercase bg-blue-500 rounded-full">
+              Hiring
+            </span>
+          </a>
+        </li>
+        <li className="px-4 mb-3">
+          <a
+            className="inline-block text-white hover:text-coolGray-400"
+            href="#"
+          >
+            Changelog
+          </a>
+        </li>
+        <li className="px-4 mb-3">
+          <a
+            className="inline-block text-white hover:text-coolGray-400"
+            href="#"
+          >
+            Community
+          </a>
+        </li>
+        <li className="px-4 mb-3">
+          <a
+            className="inline-block text-white hover:text-coolGray-400"
+            href="#"
+          >
+            Guidelines
+          </a>
+        </li>
+      </ul>
+      <ul className="items-center justify-center mt-10 -mb-4 sm:flex">
+        <li className="mb-4 mr-10">
+          <a
+            className="inline-flex items-center font-medium text-white hover:text-coolGray-400"
+            href="#"
+          >
+            <svg
+              width={19}
+              height={13}
+              viewBox="0 0 17 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.0809 1.78777C15.5109 2.03477 14.9219 2.20577 14.2949 2.28177C14.9409 1.90177 15.4349 1.29377 15.6629 0.552768C15.0549 0.913768 14.3899 1.16077 13.6869 1.31277C13.1169 0.704768 12.2999 0.324768 11.4069 0.324768C9.67786 0.324768 8.29086 1.73077 8.29086 3.44077C8.29086 3.68777 8.30986 3.91577 8.36686 4.14377C5.78286 4.02977 3.50286 2.77577 1.96386 0.894768C0.861859 2.87077 2.09686 4.50477 2.91386 5.05577C2.41986 5.05577 1.92586 4.90377 1.50786 4.67577C1.50786 6.21477 2.59086 7.48777 3.99686 7.77277C3.69286 7.86777 3.00886 7.92477 2.59086 7.82977C2.98986 9.06477 4.14886 9.97677 5.49786 9.99577C4.43386 10.8318 2.87586 11.4968 0.880859 11.2878C2.26786 12.1808 3.90186 12.6938 5.66886 12.6938C11.4069 12.6938 14.5229 7.94377 14.5229 3.83977C14.5229 3.70677 14.5229 3.57377 14.5039 3.44077C15.1499 2.96577 15.6819 2.41477 16.0809 1.78777Z"
+                fill="currentColor"
+              />
+            </svg>
+            <span className="ml-3">Twitter</span>
+          </a>
+        </li>
+        <li className="mb-4 mr-10">
+          <a
+            className="inline-flex items-center font-medium text-white hover:text-coolGray-400"
+            href="#"
+          >
+            <svg
+              width={19}
+              height={19}
+              viewBox="0 0 19 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0018 4.8916C7.73315 4.8916 5.89648 6.73027 5.89648 8.99694C5.89648 11.2656 7.73515 13.1023 10.0018 13.1023C12.2705 13.1023 14.1072 11.2636 14.1072 8.99694C14.1072 6.72827 12.2685 4.8916 10.0018 4.8916ZM10.0018 11.6616C8.52915 11.6616 7.33715 10.4689 7.33715 8.99694C7.33715 7.52494 8.52982 6.33227 10.0018 6.33227C11.4738 6.33227 12.6665 7.52494 12.6665 8.99694C12.6672 10.4689 11.4745 11.6616 10.0018 11.6616Z"
+                fill="currentColor"
+              />
+              <path
+                d="M13.2988 1.05026C11.8268 0.981591 8.18082 0.984924 6.70749 1.05026C5.41282 1.11092 4.27082 1.42359 3.35015 2.34426C1.81148 3.88292 2.00815 5.95626 2.00815 8.99692C2.00815 12.1089 1.83482 14.1343 3.35015 15.6496C4.89482 17.1936 6.99815 16.9916 10.0028 16.9916C13.0855 16.9916 14.1495 16.9936 15.2395 16.5716C16.7215 15.9963 17.8402 14.6716 17.9495 12.2923C18.0188 10.8196 18.0148 7.17426 17.9495 5.70092C17.8175 2.89226 16.3102 1.18892 13.2988 1.05026ZM15.6288 14.6316C14.6202 15.6403 13.2208 15.5503 9.98349 15.5503C6.65015 15.5503 5.31348 15.5996 4.33815 14.6216C3.21482 13.5036 3.41815 11.7083 3.41815 8.98626C3.41815 5.30292 3.04015 2.65026 6.73682 2.46092C7.58615 2.43092 7.83615 2.42092 9.97415 2.42092L10.0042 2.44092C13.5568 2.44092 16.3442 2.06892 16.5115 5.76492C16.5495 6.60826 16.5582 6.86159 16.5582 8.99626C16.5575 12.2909 16.6202 13.6356 15.6288 14.6316Z"
+                fill="currentColor"
+              />
+              <path
+                d="M14.2718 5.68869C14.8017 5.68869 15.2312 5.25918 15.2312 4.72935C15.2312 4.19953 14.8017 3.77002 14.2718 3.77002C13.742 3.77002 13.3125 4.19953 13.3125 4.72935C13.3125 5.25918 13.742 5.68869 14.2718 5.68869Z"
+                fill="currentColor"
+              />
+            </svg>
+            <span className="ml-3">Instagram</span>
+          </a>
+        </li>
+        <li className="mb-4">
+          <a
+            className="inline-flex items-center font-medium text-white hover:text-coolGray-400"
+            href="#"
+          >
+            <svg
+              width={19}
+              height={14}
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.1004 13.0993V8.30161C13.1004 5.94368 12.5928 4.14249 9.84186 4.14249C8.51552 4.14249 7.6313 4.86297 7.27106 5.55069H7.23831V4.35536H4.63477V13.0993H7.35294V8.7601C7.35294 7.61388 7.5658 6.51679 8.97401 6.51679C10.3658 6.51679 10.3822 7.81038 10.3822 8.8256V13.083H13.1004V13.0993Z"
+                fill="currentColor"
+              />
+              <path
+                d="M0.212891 4.35538H2.93106V13.0994H0.212891V4.35538Z"
+                fill="currentColor"
+              />
+              <path
+                d="M1.57195 -9.15527e-05C0.704104 -9.15527e-05 0 0.704012 0 1.57186C0 2.43971 0.704104 3.16019 1.57195 3.16019C2.4398 3.16019 3.14391 2.43971 3.14391 1.57186C3.14391 0.704012 2.4398 -9.15527e-05 1.57195 -9.15527e-05Z"
+                fill="currentColor"
+              />
+            </svg>
+            <span className="ml-3">Linkedin</span>
+          </a>
+        </li>
+      </ul>
+      <div className="flex flex-wrap mt-16 -mx-4">
+        <div className="w-full px-4 mb-6 sm:w-1/2 md:mb-0">
+          <span className="text-sm font-medium text-coolGray-500">
+            © 2023 Realestate.co
+          </span>
         </div>
-    </footer>
+        <div className="w-full px-4 -mb-2 sm:w-1/2 md:text-right">
+          <a
+            className="inline-block mb-2 mr-12 text-sm font-medium text-coolGray-500 hover:text-coolGray-400"
+            href="#"
+          >
+            Terms of Use
+          </a>
+          <a
+            className="inline-block mb-2 text-sm font-medium text-coolGray-500 hover:text-coolGray-400"
+            href="#"
+          >
+            Privacy Policy
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     )
 }

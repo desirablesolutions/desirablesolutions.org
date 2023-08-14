@@ -2,7 +2,7 @@ export const defaultProps = {
   title: (
     <>
       <span className="block leading-none">We solve</span>
-      <span className="block leading-none">(x) problems</span>
+      <span className="block leading-none">Complex problems</span>
       <span className="block leading-none">for (y)</span>
         <div className="absolute bottom-0 left-0 hidden w-full h-px mb-1 bg-white lg:block xl:mb-3 3xl:mb-4" />
      

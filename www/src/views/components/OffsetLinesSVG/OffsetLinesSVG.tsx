@@ -12,7 +12,7 @@ export default function OffsetLinesSVG() {
           y1="1.25"
           x2="19.25"
           y2="1.25"
-          stroke="black"
+          stroke="white"
           strokeWidth="1.5"
           strokeLinecap="round"
         />
@@ -21,7 +21,7 @@ export default function OffsetLinesSVG() {
           y1="8.25"
           x2="13.25"
           y2="8.25"
-          stroke="black"
+          stroke="white"
           strokeWidth="1.5"
           strokeLinecap="round"
         />

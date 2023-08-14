@@ -1,14 +1,15 @@
 export default function NavBarContainer({ children, sx}: any) {
     return (
-<section className="relative">
-  <nav>
-    <div className="container px-4 mx-auto">
-      <div className="relative flex items-center h-24">
-     { children}
-      </div>
-    </div>
-  </nav>
-
-</section>
+      <section className="sticky top-0 left-0 w-full backdrop-blur-sm">
+      <nav>
+        <div className="container px-4 mx-auto">
+          <div className="relative flex items-center h-24">
+      {children}
+          </div>
+        </div>
+      </nav>
+  
+    </section>
+    
     )
 }

@@ -1,15 +1,23 @@
 export default function NavBarFavicon({ favicon } : any) {
     return (
+   <>
         <a
-              className="self-center inline-block 3xl:mr-52"
-              href={favicon?.url}
-            >
-              <img
-                src="assets/images/logo.png"
-                alt=""
-                className="object-contain h-14"
-                width="auto"
-              />
-            </a>
+            className="absolute hidden transform -translate-x-1/2 -translate-y-1/2 xl:block top-1/2 left-1/2"
+            href="#"
+          >
+            <img
+              className="h-14"
+              src="assets/images/logo.png"
+              alt=""
+            />
+          </a>
+          <a className="inline-block xl:hidden" href="#">
+            <img
+              className="h-14"
+              src="assets/images/logo.png"              alt=""
+            />
+          </a>
+   
+   </>
     )
 }

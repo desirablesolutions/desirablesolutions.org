@@ -1,4 +1,4 @@
-export default function ContactFormSection() {
+export default function Contact() {
     return (
         <section
             className="relative pt-24 overflow-hidden md:pt-40 xl:pb-40"

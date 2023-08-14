@@ -21,6 +21,10 @@
   }
 }
 
+* {
+  font-family: The Seasons !important;
+
+}
 body {
   color: rgb(var(--foreground-rgb));
   background-color: #000000ED;

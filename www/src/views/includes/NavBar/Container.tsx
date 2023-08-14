@@ -1,6 +1,6 @@
 export default function NavBarContainer({ children, sx}: any) {
     return (
-      <section className="sticky top-0 left-0 w-full backdrop-blur-sm">
+      <section className="sticky top-0 left-0 w-full backdrop-blur-smw">
       <nav>
         <div className="container px-4 mx-auto">
           <div className="relative flex items-center h-24">

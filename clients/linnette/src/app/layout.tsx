@@ -1,28 +1,32 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import Footer from "@includes/Footer"
-import { Unica_One } from 'next/font/google'
-import NavBar from "@includes/NavBar"
+import Container from "@includes/Container";
+import Footer from "@includes/Footer";
+import NavBar from "@includes/NavBar";
+import "@libs/globals.css";
+import type { MetadataProps } from "@typings/index";
+import { DefinitionParams, LayoutType, defineLayout } from "blakprint";
 
-const inter = Unica_One({ weight: ['400'],subsets: ["latin"] })
-
-export const metadata: Metadata = {
-  title: 'Linnettes Lens.',
-  description: 'how to combine Art and Engineering one project at a time.',
+export async function generateMetadata(): Promise<MetadataProps> {
+  return {
+    title: "Linnettes Lens.",
+    description: "how to combine Art and Engineering one project at a time.",
+  };
 }
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>
-        <NavBar/>
-        {children}
-      <Footer/>
-      </body>
-    </html>
-  )
+  children: React.ReactNode;
+}): DefinitionParams<LayoutType<any, React.ReactNode, Error>> {
+
+
+  const Component = defineLayout<any, React.ReactNode, Error>(() => (
+    <Container>
+      <NavBar navBar={null} />
+      {children}
+      <Footer footer={null}/>
+    </Container>
+  ));
+
+  return Component.value() as (typeof Component)["value"];
+
 }

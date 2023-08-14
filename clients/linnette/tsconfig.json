@@ -29,10 +29,10 @@
       "@typings/*": ["./src/models/typings/*"],
       "@services/*": ["./src/controllers/services/*"],
       "@hooks/*": ["./src/controllers/hooks/*"],
+      "@libs/*": ["./src/views/libs/*"],
 
       "@pages/*": ["./src/models/data/pages/*"],
 
-      "@libs/*": ["./src/views/libs/*"]
 
     }
   },

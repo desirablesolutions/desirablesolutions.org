@@ -7,7 +7,7 @@ import ContentReel from "@components/ContentReel";
 import FeaturedSummary from "@components/FeaturedSummary";
 import FeaturedFormSection from "@components/FeaturedFormSection";
 import StatsGrid from "@components/StatsGrid";
-
+import DetailSummary from "@components/DetailSummary"
 import { usePage } from "@hooks/usePage"
 
 
@@ -18,6 +18,8 @@ export default async function Home() {
   return (
     <>
       <Hero />
+      <FeaturedMedia />
+
       <FeaturedSummary />
       <ContentReel />
       <StatsGrid />
@@ -25,7 +27,7 @@ export default async function Home() {
       <ContentReel />
       <FeaturedFormSection />
       <ComplexPricingTable />
-      <FeaturedMedia />
+      <DetailSummary/>
       <ContactFormSection /> 
     </>
   );

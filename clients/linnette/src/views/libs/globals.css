@@ -23,3 +23,22 @@ body {
   background-image: url("/bg.svg");
   background-size: contain;
 }
+
+
+
+
+::-webkit-scrollbartrack {
+  background-color: var(--color-primary);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #000000
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #980000;
+  cursor: pointer;
+  border-radius: 8px;
+
+}

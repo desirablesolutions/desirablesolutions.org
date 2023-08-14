@@ -1,3 +1,6 @@
+"use client";
+
+
 import React from 'react';
 import { useDistortionEffectCarousel } from 'distortion-effect-carousel';
 
@@ -13,11 +16,13 @@ export default function DistortionCarousel({ images, displacmentImage }: MyCarou
         displacmentImage,
       });
     
-      // ... do something with next() and prev()
       return (
         <div
+        onClick={() => next()}
+        className='object-fit pointer-select'
           style={{
-            height: '100%',
+            height: '100vh',
+            cursor: 'pointer',
           }}
           ref={ref}
         />

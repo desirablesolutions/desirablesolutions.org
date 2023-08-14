@@ -1,5 +1,5 @@
 import { default as Container } from "./Container"
-
+import DistortionCarousel from "@components/DistortionCarousel"
 export type HeroProps = {
     
 }

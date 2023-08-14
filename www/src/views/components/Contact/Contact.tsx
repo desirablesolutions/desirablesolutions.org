@@ -36,7 +36,7 @@ export default function Contact() {
                                     />
                                 </div>
                                 <span className="mb-6 text-2xl text-white xl:text-3xl font-heading">
-                                    and I’m looking
+                                    and Im looking
                                 </span>
                             </div>
                             <div className="flex flex-wrap mt-6 -mb-6">

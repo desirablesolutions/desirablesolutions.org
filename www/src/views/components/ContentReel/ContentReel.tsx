@@ -85,7 +85,7 @@ export default function ContentGrid() {
                 <h4 className="mt-1 mb-6 text-3xl">Leslie Alexander</h4>
                 <p className="text-lg text-coolGray-500">
                   Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy text
+                  industry. Lorem Ipsum has been the industrys standard dummy text
                   ever since the 1500s
                 </p>
               </div>
@@ -103,7 +103,7 @@ export default function ContentGrid() {
                 <h4 className="mt-1 mb-6 text-3xl">Leslie Alexander</h4>
                 <p className="text-lg text-coolGray-500">
                   Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy text
+                  industry. Lorem Ipsum has been the industrys standard dummy text
                   ever since the 1500s
                 </p>
               </div>
@@ -121,7 +121,7 @@ export default function ContentGrid() {
                 <h4 className="mt-1 mb-6 text-3xl">Leslie Alexander</h4>
                 <p className="text-lg text-coolGray-500">
                   Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy text
+                  industry. Lorem Ipsum has been the industrys standard dummy text
                   ever since the 1500s
                 </p>
               </div>
@@ -139,7 +139,7 @@ export default function ContentGrid() {
                 <h4 className="mt-1 mb-6 text-3xl">Leslie Alexander</h4>
                 <p className="text-lg text-coolGray-500">
                   Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy text
+                  industry. Lorem Ipsum has been the industrys standard dummy text
                   ever since the 1500s
                 </p>
               </div>

@@ -7,26 +7,14 @@
   src: url('/assets/fonts/The Seasons Regular.ttf') format('ttf');
 }
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 * {
   font-family: The Seasons !important;
 
 }
+
+
 body {
-  color: rgb(var(--foreground-rgb));
   background-color: #000000ED;
   background-attachment: fixed;
   background-image: url("/assets/images/cover.jpg");

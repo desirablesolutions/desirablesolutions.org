@@ -38,7 +38,7 @@ export default function Hero(props: any) {
       </div>
       <div className="container px-4 mx-auto">
         <div className="">
-        <h1 className="mb-20 font-medium text-white text-9xl xl:text-8xl 3xl:text-9xl">
+        <h1 className="mb-20 font-medium text-white text-9xl ">
         {title ?? defaultProps.title}
       </h1>
           <div>

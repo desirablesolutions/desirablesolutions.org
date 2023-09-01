@@ -1,0 +1,12 @@
+{
+     "rewrites": [
+    {
+      "source": "/data/",
+      "destination": "https://publish.obsidian.md/serve?url=desirable.solutions/data/"
+    },
+    {
+      "source": "/data/:path*",
+      "destination": "https://publish.obsidian.md/serve?url=desirable.solutions/data/:path*"
+    }
+  ]
+}

@@ -2,11 +2,11 @@
      "rewrites": [
     {
       "source": "/data/",
-      "destination": "https://publish.obsidian.md/serve?url=desirable.solutions/data/"
+      "destination": "https://publish.obsidian.md/serve?url=desirablesolutions.org/data/"
     },
     {
       "source": "/data/:path*",
-      "destination": "https://publish.obsidian.md/serve?url=desirable.solutions/data/:path*"
+      "destination": "https://publish.obsidian.md/serve?url=desirablesolutions.org/data/:path*"
     }
   ]
 }

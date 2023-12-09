@@ -1,0 +1,12 @@
+@import url("./super.module.css");
+@import url("./scrollbar.module.css");
+
+:root {
+    --color-primary: #C8C8C8;
+}
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,5 +1,4 @@
 export const meta = {
-    phone: "407-493-2238  |  therapy@drkaitwhitcomb.com"
+    phone: "407-493-2238  |  tcomherapy@drkaitwhitcomb."
 }
 
-"$150.00"

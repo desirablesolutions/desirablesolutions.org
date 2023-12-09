@@ -7,10 +7,10 @@ import Footer from "@includes/Footer";
 import NavBar from "@includes/NavBar";
 import Navigator from "@includes/Navigator";
 import type { Metadata } from "next";
-import { Manrope } from "next/font/google";
+import { Gloria_Hallelujah } from "next/font/google";
 
-const web_font = Manrope({
-  weight: "200",
+const web_font = Gloria_Hallelujah({
+  weight: "400",
   subsets: ["latin"],
 });
 

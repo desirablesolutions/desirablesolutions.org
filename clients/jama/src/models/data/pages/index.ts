@@ -12,16 +12,20 @@ export const pages: PageStoreType = {
             label: "Home",
           },
           {
-            label: "About",
-            url: "/about",
+            label: "Me",
+            url: "/me",
           },
           {
-            label: "Services",
-            url: "/services",
+            label: "Poetry",
+            url: "/poetry",
           },
           {
-            label: "Contact",
-            url: "/contact",
+            label: "Books",
+            url: "/books",
+          },
+           {
+            label: "Education",
+            url: "/education",
           },
         ],
       },

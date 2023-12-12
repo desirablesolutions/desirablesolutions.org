@@ -7,9 +7,9 @@ import Footer from "@includes/Footer";
 import NavBar from "@includes/NavBar";
 import Navigator from "@includes/Navigator";
 import type { Metadata } from "next";
-import { Gloria_Hallelujah } from "next/font/google";
+import { Zeyada } from "next/font/google";
 
-const web_font = Gloria_Hallelujah({
+const web_font = Zeyada({
   weight: "400",
   subsets: ["latin"],
 });

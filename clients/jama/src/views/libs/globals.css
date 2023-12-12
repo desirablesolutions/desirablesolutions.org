@@ -5,6 +5,17 @@
     --color-primary: #C8C8C8;
 }
 
+*:hover {
+ color: #D39D24
+
+}
+
+body { 
+    background-image: url("/e.jpg");
+    background-size: cover;
+    background-position: 67% 67%;
+    
+}
 
 
 @tailwind base;

@@ -9,9 +9,9 @@ export function defaultProps(override?: FooterProps): FooterProps {
           },
           url: "https://ko-fi.com/desirablesolutions",
         },
-        phoneNumber: "(407) 493-2238",
-        emailAddress: "therapy@drkaitwhitcomb.com",
-        copyright: "©️ Dr. Kait Whitcomb LLC, 2023",
+        phoneNumber: "(407) 888-8888",
+        emailAddress: "jamariley@gmail.com",
+        copyright: "©️ Jama Riley, 2023",
         links: [
           {
             label: "Home",

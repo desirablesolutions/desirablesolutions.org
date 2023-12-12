@@ -4,7 +4,7 @@ import { tuid } from "@utils/index";
 
 export function Container({ children }: any) {
   return (
-    <div className="items-center justify-center hidden w-full h-full mt-2 mb-2 overflow-hidden overflow-x-hidden border-black border-opacity-100 gap-44 lg:flex no-scrollbar border-seperate border-1">
+    <div className="items-center justify-center hidden w-full h-full mt-2 mb-2 overflow-hidden overflow-x-hidden border-white border-opacity-80 gap-44 lg:flex no-scrollbar border-seperate border-1">
       {children}
     </div>
   );

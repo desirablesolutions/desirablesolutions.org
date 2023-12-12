@@ -22,7 +22,7 @@ export default function Item({
     <motion.div     initial={{ opacity: 0, scale: 0.97 }}
     animate={{ opacity: 1, scale: 0.999 }}
     transition={{ duration: 0.7 }}
-      className={classSet([defaultSx(), sx, orderSx(order), columnSpanSx(span)])}
+      className={classSet([defaultSx(), sx,"hover:scale-90 cursor-pointer hover:bg-opacity-80", orderSx(order), columnSpanSx(span)])}
     >
       {children}
     </motion.div>

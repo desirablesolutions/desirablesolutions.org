@@ -33,7 +33,7 @@ export const pages: PageStoreType = {
         favicon: {
           image: {
             alt: "logo",
-            src: "https://static.wixstatic.com/media/254c65_f4b64d6d825546f186dc0a4358ffa178~mv2.png/v1/fill/w_346,h_154,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Kait%20Whitcomb%20logo-04.png",
+            src: "/logo.png"
           },
           url: "/"
         },
@@ -47,11 +47,19 @@ export const pages: PageStoreType = {
             url: "/about",
           },
           {
-            name: "Services",
+            name: "Poety",
             url: "/services",
           },
           {
-            name: "Contact",
+            name: "Writings",
+            url: "/contact",
+          },
+           {
+            name: "Library",
+            url: "/contact",
+          },
+          {
+            name: "Store",
             url: "/contact",
           },
         ],
@@ -81,21 +89,21 @@ export const pages: PageStoreType = {
   data: {
     home: {
       metaData: {
-        title: "Dr. Kait Whitcomb | Licensed Psychologist",
-        themeColor: "#C3CFBD",
+        title: "Jama Riley | Writer",
+        themeColor: "#FF69B4",
         icons: {
           icon: '/icons/apple-touch-icon.png',
           apple: '/icons/apple-touch-icon.png',
 
         },
-        description: "Individual therapy from a licensed psychologist",
+        description: "A witty wordsmith weaving whimsical webs of wonder",
       },
       data: {
         masonry: {
           container: {
             gap: 1,
             rows: 1,
-            columns: 3,
+            columns: 2,
           },
 
           grids: [
@@ -108,64 +116,48 @@ export const pages: PageStoreType = {
               items: [
                 {
                   type: "image",
-                  span: 2,
-                  src: images.landscape,
+                  span: 1,
+                  src: "/q.jpg"
                 },
 
-                {
-                  type: "header",
-                  content: "Office and Telehealth Visits Available",
-                  span: 2,
-                },
-
+            
                 {
                   type: "image",
                   span: 1,
 
-                  src: images.office,
+                  src: "/her.jpg",
+                },
+                
+                {
+                  type: "image",
+                  span: 1,
+
+                  src: "/q.jpg",
+                },
+                
+                {
+                  type: "image",
+                  span: 1,
+
+                  src: "/r.jpg",
+                },
+                
+                {
+                  type: "image",
+                  span: 1,
+
+                  src: "/e.jpg",
                 },
                 {
                   type: "image",
                   span: 1,
 
-                  src: images.flowers,
+                  src: "/gg.jpg",
                 },
+
               ],
             },
-            {
-              columns: 1,
-              gap: 1,
-              span: 1,
-              order: 0,
-
-              items: [
-                {
-                  type: "callout",
-                  sx: "flex-start content-start",
-                  title: `Individual Therapy from a Licensed Psychologist`,
-                  link: {
-                    label: "Learn More",
-                    url: "/about",
-                  },
-                  content: `I work with adult clients to help them find the healing they’re looking for. I’m glad you’re here!
-
-                  `,
-                },
-                {
-                  type: "image",
-
-                  src: images.profile,
-                },
-
-                {
-                  type: "contact",
-                  title: "Dr. Kait Whitcomb, LLC",
-                  emailAddress: "therapy@drkaitwhitcomb.com",
-                  faxNumber: "(407) 542-1804",
-                  phoneNumber: "(407) 493-2238",
-                },
-              ],
-            },
+         
           ],
         },
       },

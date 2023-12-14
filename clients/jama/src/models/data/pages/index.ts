@@ -199,59 +199,7 @@ export const pages: PageStoreType = {
             rows: 1,
             columns: 3,
           },
-          items: [
-            {
-              type: "header",
-              content: "Individual Therapy Services",
-              span: 3,
-            },
-          ],
-
-          grids: [
-            {
-              span: 3,
-              columns: 3,
-              items: [
-                {
-                  type: "callout",
-                  span: 2,
-                  title: "My approach",
-                  content: `
-                  ​I specialize in treating adults with PTSD, OCD, anxiety, and depression.
-                   While every client is different, individual therapy with me often follows a 
-                   similar pattern. First, we’ll do a free phone consultation to make sure I’m a good
-                    fit for you. Then we’ll do a few sessions together, so I can better understand your concerns, 
-                    history, and goals. After that, we’ll develop a flexible treatment plan using research-supported 
-                    treatments. This document will help you understand what to expect from our time together, so you 
-                    can see the steps we'll take to help you reach your goals.`,
-                },
-                {
-                  type: "callout",
-                  span: 1,
-                  title: "Fees",
-                  subTitle: "$150/Session​",
-                  content: `
-                  
-        
-                  Each session is 50 minutes. We schedule a recurring appointment time to ensure 
-                  that you receive the consistent care you need, at an interval that makes sense for you.
-
-                  I do not accept insurance.`,
-                },
-              ],
-            },
-            {
-              columns: 1,
-              gap: 1,
-              span: 3,
-              items: [
-                {
-                  type: "image",
-                  src: images.nature,
-                },
-              ],
-            },
-          ],
+         
         },
       },
     },

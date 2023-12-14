@@ -122,7 +122,7 @@ export const pages: PageStoreType = {
                   type: "image",
                   span: 1,
 
-                  src: "/her.jpg",
+                  src: "/nature.jpg",
                 },
                 
                 {

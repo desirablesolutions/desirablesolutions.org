@@ -43,24 +43,21 @@ export const pages: PageStoreType = {
             name: "Home",
           },
           {
-            name: "About",
-            url: "/about",
+            name: "Me",
+            url: "/me",
           },
           {
             name: "Poety",
-            url: "/services",
+            url: "/poetry",
           },
-          {
-            name: "Writings",
-            url: "/contact",
-          },
+      
            {
             name: "Library",
-            url: "/contact",
+            url: "/library",
           },
           {
             name: "Store",
-            url: "/contact",
+            url: "/store",
           },
         ],
       },
@@ -162,7 +159,7 @@ export const pages: PageStoreType = {
         },
       },
     },
-    about: {
+    poetry: {
       layout: {
         metaData: {
           pageTitle: "About Me",
@@ -226,7 +223,7 @@ If you think I might be a good fit, I’d love to hear from you. Please call or 
         },
       },
     },
-    contact: {
+    store: {
       data: {
         masonry: {
           container: {
@@ -282,7 +279,7 @@ If you think I might be a good fit, I’d love to hear from you. Please call or 
         },
       },
     },
-    services: {
+    library: {
       metaData: {
         pageTitle: "Services",
       },

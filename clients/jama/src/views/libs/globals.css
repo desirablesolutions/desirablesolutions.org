@@ -11,8 +11,9 @@
 }
 
 body { 
-    background-image: url("/e.jpg");
+    background-image: url("/bg1.jpg");
     background-size: cover;
+    background-attachment: fixed;
     background-position: 67% 67%;
     
 }

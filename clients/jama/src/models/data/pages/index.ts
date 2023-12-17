@@ -114,15 +114,14 @@ export const pages: PageStoreType = {
                 {
                   type: "image",
                   span: 1,
-                  src: "/q.jpg"
+                  src: "/a.JPG"
                 },
 
-            
                 {
                   type: "image",
                   span: 1,
 
-                  src: "/nature.jpg",
+                  src: "/b.PNG",
                 },
                 
                 {
@@ -136,20 +135,20 @@ export const pages: PageStoreType = {
                   type: "image",
                   span: 1,
 
-                  src: "/r.jpg",
+                  src: "/h.jpg",
                 },
                 
                 {
                   type: "image",
                   span: 1,
 
-                  src: "/e.jpg",
+                  src: "/j.jpg",
                 },
                 {
                   type: "image",
                   span: 1,
 
-                  src: "/gg.jpg",
+                  src: "/paint.jpg",
                 },
 
               ],
@@ -214,6 +213,18 @@ export const pages: PageStoreType = {
             rows: 1,
             columns: 3,
           },
+
+          grids: {
+
+            items: [
+              {
+                type: "image",
+                span: 1,
+
+                src: "/paint.jpg",
+              },
+            ]
+          }
         
         },
       },

@@ -204,7 +204,7 @@ export const pages: PageStoreType = {
     },
     me: {
       metaData: {
-        pageTitle: "Services",
+        pageTitle: "Me",
       },
       data: {
         masonry: {
@@ -214,17 +214,18 @@ export const pages: PageStoreType = {
             columns: 3,
           },
 
-          grids: {
-
-            items: [
-              {
-                type: "image",
-                span: 1,
-
-                src: "/paint.jpg",
-              },
-            ]
-          }
+          grids: [
+            {
+              items: [
+                {
+                  type: "image",
+                  span: 3,
+  
+                  src: "/paint.jpg",
+                },
+              ]
+            }
+          ]
         
         },
       },
